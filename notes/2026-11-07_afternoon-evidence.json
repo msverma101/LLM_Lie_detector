@@ -1,0 +1,265 @@
+{
+  "title": "Afternoon retrospective evidence snapshot",
+  "date": "2026-11-07",
+  "timezone": "Europe/Berlin",
+  "inspection_started_utc": "2026-11-07T14:36:09Z",
+  "committed_evidence_cutoff": "73c44dca6d2ce04773972a1b3b26e1e5ece38b3a",
+  "scope": "Local repository and named local drafts. No new experiment, remote run inspection or independent replication.",
+  "source_files": [
+    {
+      "path": "CLAUDE.md",
+      "git_blob": "668bdb0de9c1dd7dde317b799cc5215e8912db5f",
+      "sha256": "67d5748a90bbe55b19fef778d44fd820c30ee797509f687befb524d033c1c225"
+    },
+    {
+      "path": "docs/research-question.md",
+      "git_blob": "2b38205509223ab98586add4bde79b14ee1d9deb",
+      "sha256": "6eafa3a90240fd0496d282025ddf5cb2b584f137dfe533e20f3960f7be466e8f"
+    },
+    {
+      "path": "docs/research-plan-5min.md",
+      "git_blob": "ff0cbbf256c6617e996994a197dc02b1cd62e208",
+      "sha256": "556026e6ba82444001b47182136703a2124447265047bf3116fd1203f2b5d6f9"
+    },
+    {
+      "path": "notes/2026-11-07_kickoff-discord.md",
+      "git_blob": "303d55b0ca23b09c1b76405ee5f615015ddf15ae",
+      "sha256": "e3364a494a59ea37e0d864cb5e6555dc3819b2d11c00296560b45a60cf7824f2"
+    },
+    {
+      "path": "notes/2026-11-07_idea_probes-x-weight-space.md",
+      "git_blob": "e4119b6d6c00377e5acb073ec6969a265646d705",
+      "sha256": "0da04e8b2429010f2d4695b9adaab4ffb300603e6966d8402f76f3d0dcdb0e5c"
+    },
+    {
+      "path": "experiments/research_loop/PROGRESS.md",
+      "git_blob": "1f92d60bde9bf428a16cd470b2af8650c3c94d7e",
+      "sha256": "6ce6b4365b2138ca0bf7e93f8f077d5f1f2d7476159c86ddb91aa2208a3864f3"
+    },
+    {
+      "path": "experiments/research_loop/RESULTS.md",
+      "git_blob": "99ce29fe33811137b967c05e078b8512381e48de",
+      "sha256": "af56850222dd2b7a54f57477e1162c6760d4c62ae4277bfec3bca38fa10b8d77"
+    },
+    {
+      "path": "experiments/research_loop/results/results.tsv",
+      "git_blob": "d7a0a335da6a84a20cb62a7a7d7be56400ddf3a6",
+      "sha256": "485c9ada4144b5e7df5b71b9b5730b3460356fb2bebe46f42449388485589287"
+    },
+    {
+      "path": "experiments/research_loop/results/best_probe_iter009.py",
+      "git_blob": "eb72715e748b1e743fb0b60e2c2a151791abaefb",
+      "sha256": "8c2bf9e4d814b7885bdc32707205807112efcac720ec84cabb3dc29f22ddb73d"
+    },
+    {
+      "path": "experiments/research_loop/cache_activations.py",
+      "git_blob": "2769713bad1e2fe76b844fdbc3eb56aef2cf7859",
+      "sha256": "1be8012dd29c1e72a767d3aac8d739544237ea9db9dbd2d9341ae3ade744f7a4"
+    },
+    {
+      "path": "experiments/research_loop/eval.py",
+      "git_blob": "9c8e21f1731878214f8cad9840a7a2eb964506d9",
+      "sha256": "3f53e09cba6e0d15f787701f1b91781d8d6ad515d03ab09d7e62568a14a9f2df"
+    },
+    {
+      "path": "experiments/research_loop/loop.py",
+      "git_blob": "54dcf1528fb4d550cac427ccb2ee9d10183bfae9",
+      "sha256": "1843e4dd24811c68612a2fe489315a651d3f03e7af594f77796d0186a82b5831"
+    },
+    {
+      "path": "experiments/research_loop/probe.py",
+      "git_blob": "ff7ecd732a02bff067905dbcab798cba723c69c8",
+      "sha256": "b577be63e3e492269ea701cd601f4ea039bb4ef2c877fbdcb22ffa12c3f0a8de"
+    },
+    {
+      "path": "experiments/research_loop/program.md",
+      "git_blob": "afa36fac60947e1fd41c75d5d38dfdffee447844",
+      "sha256": "9a1900c8deeeb1057bd73e777dc73f116637ef32ff088aa3ae7dd274856e7fc8"
+    },
+    {
+      "path": "experiments/research_loop/search.py",
+      "git_blob": "8795e787cbed5b8d87addf3707015ab47ace1496",
+      "sha256": "074d88b8f33479f11a9b3834a04d14f73f0bc71d2ce3a412457b9da729431049"
+    },
+    {
+      "path": "experiments/research_loop/errors.py",
+      "git_blob": "f45a7284d5d3a804fa51e4b7aef6b983d498fb3c",
+      "sha256": "a4ebe90488156cf2ec293754c661b1d630323b99195bbb6b9acea4a0db153a4c"
+    },
+    {
+      "path": "experiments/research_loop/report.py",
+      "git_blob": "9ab36cf1bdd617c157a0190955aa20236ab88d17",
+      "sha256": "fd116258e9276036b7e1bf82723945a5d1fe1566f77e3a0e90b3ae9f6721de91"
+    },
+    {
+      "path": "experiments/research_loop/research_loop.ipynb",
+      "git_blob": "245b09dd7e9ca291d28965ebcabbf7bfa970f3c8",
+      "sha256": "d1a76f5fdd9d71120cacf7139f0b22774f2ada75e4d7cdd5fb0348d7b20d9fb6"
+    }
+  ],
+  "commits": [
+    {
+      "sha": "375854d3fd7b9d478d348a6ce7dc84086cc8f0fa",
+      "committed_at": "2026-11-07T13:19:45+01:00",
+      "subject": "Initial commit"
+    },
+    {
+      "sha": "3b3685554270d904b654d81ce8942d7ed3287354",
+      "committed_at": "2026-11-07T13:28:18+01:00",
+      "subject": "Add project scaffold, literature and CLAUDE.md (discovery phase)"
+    },
+    {
+      "sha": "95ff2c3283a31e5e429f0c043121d1d6cecbb824",
+      "committed_at": "2026-11-07T13:36:23+01:00",
+      "subject": "Add literature, kickoff and idea notes from soenkessuggestions"
+    },
+    {
+      "sha": "723ebbe6bac274a83d5bd505678cae1ca04dc255",
+      "committed_at": "2026-11-07T13:44:48+01:00",
+      "subject": "Propose research question; translate idea note to English"
+    },
+    {
+      "sha": "5148fe2a426e39efd25e3b6741273fabc9eca3cc",
+      "committed_at": "2026-11-07T13:52:07+01:00",
+      "subject": "Add plain-language explainer of the FIBS paper and weight-space programming post"
+    },
+    {
+      "sha": "ae450862e76fb63c47852ee767df47d5e9d9a524",
+      "committed_at": "2026-11-07T13:54:55+01:00",
+      "subject": "Add illustrated README with banner and Mermaid diagrams"
+    },
+    {
+      "sha": "6e9cdc416863d8843d6e50fa084c865e3b41424c",
+      "committed_at": "2026-11-07T14:18:46+01:00",
+      "subject": "Add Claude-driven research loop for FIBS lie-detection probes (Colab)"
+    },
+    {
+      "sha": "178ffa125d41a1e2876c83d52e054cf34965dfdc",
+      "committed_at": "2026-11-07T14:27:00+01:00",
+      "subject": "Research loop: keep tool-result endings, 4k token cap, oversample long families; simpler Colab setup"
+    },
+    {
+      "sha": "6c5c5641971c3f1225f3cb397a33c9f88fc568ed",
+      "committed_at": "2026-11-07T14:31:32+01:00",
+      "subject": "Prefilter over-long rows by character length before tokenizing"
+    },
+    {
+      "sha": "8068e562586412d1493d229f4ccb4bda7d3088c1",
+      "committed_at": "2026-11-07T14:43:24+01:00",
+      "subject": "Add research loop progress log (14:50 status)"
+    },
+    {
+      "sha": "f16a482034b89af445fcf465c1c3ace10567be52",
+      "committed_at": "2026-11-07T14:51:44+01:00",
+      "subject": "Progress log: baseline numbers and first loop iterations"
+    },
+    {
+      "sha": "3253ca912b8100eb3787c2c23d6f330f897a810a",
+      "committed_at": "2026-11-07T15:11:23+01:00",
+      "subject": "Progress log: research loop finished, test macro-AUROC 0.806 -> 0.845"
+    },
+    {
+      "sha": "8dc5539fd4c757664d2c3c2ccf34c7981e74e47a",
+      "committed_at": "2026-11-07T15:23:25+01:00",
+      "subject": "Add research loop results write-up with charts"
+    },
+    {
+      "sha": "846bcd23417ad82398756ad256b5022a77511705",
+      "committed_at": "2026-11-07T15:26:18+01:00",
+      "subject": "research_loop: TPR at fixed FPR, error analysis, non-LLM search baseline"
+    },
+    {
+      "sha": "73c44dca6d2ce04773972a1b3b26e1e5ece38b3a",
+      "committed_at": "2026-11-07T15:34:38+01:00",
+      "subject": "Add five-minute Colab research plan and presentation guide"
+    }
+  ],
+  "reported_setup": {
+    "source": "experiments/research_loop/RESULTS.md",
+    "model": "Qwen/Qwen3.5-2B",
+    "n_transcripts": 2940,
+    "n_present_families": 27,
+    "n_train_families": 14,
+    "n_validation_families": 7,
+    "n_test_families": 6,
+    "cache_minutes_reported": "12.8",
+    "loop_minutes_reported": "22",
+    "status": "reported; no activation cache available locally to verify counts"
+  },
+  "table_checks": {
+    "n_rows": 16,
+    "n_nonbaseline_proposals": 15,
+    "accepted_nonbaseline_iterations": [
+      4,
+      9
+    ],
+    "discarded_nonbaseline": 13,
+    "selected_iteration": 9,
+    "selected_validation_gain": "0.0375",
+    "selected_test_gain": "0.0394",
+    "pooling_step_validation_gain": "0.0322",
+    "pooling_step_test_gain": "0.0218",
+    "weighting_step_validation_gain": "0.0053",
+    "weighting_step_test_gain": "0.0176",
+    "discarded_iteration_11_test_minus_selected": "0.0076",
+    "uncertainty": "not calculable from aggregate table alone"
+  },
+  "local_drafts": [
+    {
+      "path": "presentation/afternoon-wrap-up.md",
+      "tracked_at_base": false,
+      "present_at_inspection": true,
+      "sha256_at_snapshot": "a1801da2df6db7e208f100526ecd58f3f627b2be3d44193d117a2065b90adcf5",
+      "status": "local work in progress; not evidence of execution"
+    },
+    {
+      "path": "experiments/research_loop/robustness.py",
+      "tracked_at_base": false,
+      "present_at_inspection": true,
+      "sha256_at_snapshot": "35793d04fee0c90e063dca5f41a8e9e103e1589a2449e8c2cb13ad890f901e8e",
+      "status": "local work in progress; not evidence of execution"
+    },
+    {
+      "path": "experiments/research_loop/results/baseline_probe.py",
+      "tracked_at_base": false,
+      "present_at_inspection": true,
+      "sha256_at_snapshot": "270e56a6519e7951a12ef395bfc11a338795239ddd2a42a51c6c666d876e8109",
+      "status": "local work in progress; not evidence of execution"
+    },
+    {
+      "path": "experiments/weight_space_edit/README.md",
+      "tracked_at_base": false,
+      "present_at_inspection": true,
+      "sha256_at_snapshot": "735fb9b48caafca57ca2948ce43827f40f029b73c789feed4c8f37f982a9dcb7",
+      "status": "local work in progress; not evidence of execution"
+    }
+  ],
+  "expected_local_outputs": [
+    {
+      "path": "experiments/research_loop/acts",
+      "present_at_snapshot": false
+    },
+    {
+      "path": "experiments/research_loop/runs",
+      "present_at_snapshot": false
+    },
+    {
+      "path": "experiments/research_loop/runs_search",
+      "present_at_snapshot": false
+    },
+    {
+      "path": "experiments/research_loop/runs/robustness.json",
+      "present_at_snapshot": false
+    },
+    {
+      "path": "experiments/research_loop/runs/robustness.md",
+      "present_at_snapshot": false
+    }
+  ],
+  "cautions": [
+    "Commit times are publication times, not precise experiment event times.",
+    "Prose loop-start, elapsed-time and finish entries conflict.",
+    "Missing local artifacts may still exist in Colab or other branches.",
+    "Working drafts may change after these hashes were recorded."
+  ]
+}

@@ -19,6 +19,8 @@ definition together. Everything here is a proposal, open for discussion.
 with a repository audit, concrete questions and expected research value.
 [Presentation guide](docs/presentation-guide.md) covers the workshop talk.
 
+**Afternoon analysis:** [timeline, results, limitations and lessons](notes/2026-11-07_afternoon-retrospective.md).
+
 > [!TIP]
 > **First result (2026-11-07):** an automated research loop in which Claude Opus 5.5 improves
 > the FIBS lie-detection probe raised macro-AUROC on **kinds of lies never seen in training**
