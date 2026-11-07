@@ -160,6 +160,6 @@ agent tasks (≥7B).
 - Preregister before the first data point (repo CLAUDE.md, CONCEPT-0001).
 
 ## 5. Where we searched
-Rerun anytime without API keys: `python3 literature/tools/find_sota.py --days 60` writes `literature/sota-candidates.md`.
+Rerun anytime without API keys: `python3 research-findings/tools/find_sota.py --days 60` writes `research-findings/script-output/sota-candidates.md`.
 
 arXiv (API keyword, date-window and reference-list scans), OpenAlex (citations and keywords, covers journals and ACL/EMNLP), OpenReview (ICLR 2027 submissions and 2026 workshops), the research pages of Anthropic, Apollo, Goodfire and Transluce, GitHub replications of the MIT post, and web/LessWrong searches. Full list and method in `state-of-the-art.md`. Semantic Scholar refused requests without an API key.

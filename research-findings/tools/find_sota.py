@@ -6,18 +6,18 @@ Uses only free sources that need no account or API key:
   - OpenAlex (papers that cite the seed papers, plus keyword search)
   - OpenReview (conference submissions, e.g. ICLR 2027)
 
-It removes papers already listed in literature/*.md, extracts reported scores
+It removes papers already listed in research-findings/*.md and literature/*.md, extracts reported scores
 (AUROC/AUC/accuracy) from abstracts, and flags papers that may be at par with or
 better than the two yardsticks:
   - FIBS (arXiv 2610.12445): probes at 0.987 AUROC on SHADE-Arena, 0.980 on BashArena
   - Weight-Space Programming (MIT blog, Nov 2026): LLM reads/edits raw weights
 
-Output: literature/sota-candidates.md (a ranked list to read by hand).
+Output: research-findings/script-output/sota-candidates.md (a ranked list to read by hand).
 
 Usage:
-  python3 literature/tools/find_sota.py              # papers from the last 60 days
-  python3 literature/tools/find_sota.py --days 365   # wider window
-  python3 literature/tools/find_sota.py --aspect weights --out literature/sota-candidates-weights.md
+  python3 research-findings/tools/find_sota.py              # papers from the last 60 days
+  python3 research-findings/tools/find_sota.py --days 365   # wider window
+  python3 research-findings/tools/find_sota.py --aspect weights --out research-findings/script-output/sota-candidates-weights.md
 """
 import argparse
 import datetime as dt
@@ -30,8 +30,9 @@ import urllib.request
 import xml.etree.ElementTree as ET
 
 UA = {"User-Agent": "llm-lie-detector-literature-script"}
-LIT = pathlib.Path(__file__).resolve().parent.parent
-OUT = LIT / "sota-candidates.md"
+FINDINGS = pathlib.Path(__file__).resolve().parent.parent  # research-findings/
+REPO = FINDINGS.parent
+OUT = FINDINGS / "script-output" / "sota-candidates.md"
 
 SEEDS = {  # arXiv ID -> (name, aspect); citing papers of these are collected
     "2610.12445": ("FIBS probes", "detection"),
@@ -204,8 +205,10 @@ def main():
     ap.add_argument("--out", default=str(OUT), help="output markdown file")
     args = ap.parse_args()
     out = pathlib.Path(args.out)
+    out.parent.mkdir(parents=True, exist_ok=True)
 
-    known_text = " ".join(p.read_text() for p in LIT.glob("*.md") if not p.name.startswith("sota-candidates"))
+    known_files = list(FINDINGS.glob("*.md")) + list((REPO / "literature").glob("*.md"))
+    known_text = " ".join(p.read_text() for p in known_files)
     known = norm(known_text) and re.sub(r"[^a-z0-9]", "", known_text.lower())
 
     papers = arxiv(args.days, args.aspect) + openalex(args.days, args.aspect) + openreview(args.days, args.aspect)
@@ -240,7 +243,7 @@ def main():
     lines = [
         "# SOTA candidates (generated)",
         "",
-        f"Generated {dt.date.today()} by `literature/tools/find_sota.py --days {args.days} --aspect {args.aspect}`.",
+        f"Generated {dt.date.today()} by `research-findings/tools/find_sota.py --days {args.days} --aspect {args.aspect}`.",
         "Sources: arXiv API, OpenAlex citations of the seed papers, OpenReview. No API keys.",
         "",
         "Yardsticks: **FIBS** probes 0.987 AUROC (SHADE-Arena) / 0.980 (BashArena); "

@@ -1,6 +1,6 @@
 # SOTA candidates (generated)
 
-Generated 2026-11-07 by `literature/tools/find_sota.py --days 60 --aspect detection`.
+Generated 2026-11-07 by `research-findings/tools/find_sota.py --days 60 --aspect detection`.
 Sources: arXiv API, OpenAlex citations of the seed papers, OpenReview. No API keys.
 
 Yardsticks: **FIBS** probes 0.987 AUROC (SHADE-Arena) / 0.980 (BashArena); **Weight-Space Programming** reads and edits raw weights (0.016% edit, MATH-500 7.9% -> 48.1%).

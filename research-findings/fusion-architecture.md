@@ -116,4 +116,4 @@ Expected outcome: rough per-channel AUROCs and ρ. If ρ is low, fusion is worth
 FIBS 2610.12445; honesty adapters (OpenReview gpt1K3Ia4D); Introspection Adapters 2604.16812; AuditBench 2602.22755;
 Weight Oracles 2610.07334; Computation not weight access 2611.07847; LoRA backdoor spectra 2602.15195; model diffing
 (ICML 2026 workshop); leaky organisms (COLM 2026); Neural Chameleons 2512.11949; operational validity 2610.04575.
-See `literature/findings-2026-11-07.md`.
+See `research-findings/findings-2026-11-07.md`.
