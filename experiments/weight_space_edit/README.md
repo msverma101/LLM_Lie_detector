@@ -3,6 +3,12 @@
 > **Implemented (7 Nov 2026, evening):** [`wsp.py`](wsp.py) + Colab notebook [`wsp.ipynb`](wsp.ipynb).
 > Results of the first run (negative: no test gain over the unedited probe or a plain refit): [`runs_wsp/run1/RESULTS.md`](runs_wsp/run1/RESULTS.md).
 >
+> **Second attempt: the WSP research loop** [`wsp_loop.py`](wsp_loop.py). It was built from the run-1 post-mortem and the public
+> discussion of the WSP post. Changes: a sandboxed numpy kernel instead of fixed edit ops; several sessions with
+> keep/revert (each starts from the best weights so far); a smoother selection score (mean TPR over 1–5% FPR) with a bootstrap
+> noise bar; extra activation pools allowed; framing as "find the blocker, fix its cause". Still no imports, no fitting
+> routines, no optimizer; calibration and test never enter the kernel. Live deck: [`../../presentation/wsp-loop-live.html`](../../presentation/wsp-loop-live.html).
+>
 > How the implementation answers the review feedback:
 >
 > | Feedback | Implementation |
