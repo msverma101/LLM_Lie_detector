@@ -1,0 +1,27 @@
+{
+  "model": "Qwen/Qwen3.5-2B",
+  "model_revision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+  "dataset_revision": "4ad7414fc2e1cc8d694b160e360722a13bee718e",
+  "seed": 20261107,
+  "layers": [
+    7,
+    10,
+    13,
+    16,
+    19,
+    22
+  ],
+  "max_tokens": 1536,
+  "dtype": "float16",
+  "sampling": "stable hash, balanced quadrant caps; no truncation",
+  "calibration": "honest target-domain groups with group hash modulo 5 = 0; disjoint from test",
+  "historical_independence": "not established: prior exact row IDs unavailable; family identities previously discussed",
+  "label_scope": "FIBS labels on supplied completions; no assertion about Qwen2B subjective belief or intent",
+  "render_contract": "text-only ChatML adaptation, tools serialized; reasoning sidecars omitted; not official EFC replay",
+  "rejected": {
+    "over_length": 2602,
+    "render_error": 0,
+    "conflicting_groups": 700
+  },
+  "counts": "{('calib', 'among', 'deceptive_honest'): 7, ('calib', 'among', 'honest_honest'): 2, ('calib', 'harm', 'deceptive_honest'): 20, ('calib', 'harm', 'honest_honest'): 20, ('calib', 'medqa', 'deceptive_honest'): 20, ('calib', 'medqa', 'honest_honest'): 20, ('calib', 'model', 'deceptive_honest'): 20, ('calib', 'model', 'honest_honest'): 20, ('calib', 'sandbagging', 'deceptive_honest'): 20, ('calib', 'sandbagging', 'honest_honest'): 20, ('calib', 'werewolf', 'deceptive_honest'): 20, ('calib', 'werewolf', 'honest_honest'): 20, ('fit', 'anti', 'deceptive_deceptive'): 20, ('fit', 'anti', 'deceptive_honest'): 20, ('fit', 'anti', 'honest_deceptive'): 20, ('fit', 'anti', 'honest_honest'): 20, ('fit', 'doluschat', 'deceptive_deceptive'): 20, ('fit', 'doluschat', 'deceptive_honest'): 20, ('fit', 'doluschat', 'honest_deceptive'): 20, ('fit', 'doluschat', 'honest_honest'): 20, ('fit', 'fever', 'deceptive_deceptive'): 20, ('fit', 'fever', 'deceptive_honest'): 20, ('fit', 'fever', 'honest_deceptive'): 20, ('fit', 'fever', 'honest_honest'): 20, ('fit', 'instructed', 'deceptive_deceptive'): 20, ('fit', 'instructed', 'deceptive_honest'): 20, ('fit', 'instructed', 'honest_deceptive'): 20, ('fit', 'instructed', 'honest_honest'): 20, ('fit', 'lies', 'deceptive_deceptive'): 20, ('fit', 'lies', 'deceptive_honest'): 20, ('fit', 'lies', 'honest_deceptive'): 20, ('fit', 'lies', 'honest_honest'): 20, ('fit', 'multi', 'deceptive_deceptive'): 20, ('fit', 'multi', 'deceptive_honest'): 20, ('fit', 'multi', 'honest_deceptive'): 20, ('fit', 'multi', 'honest_honest'): 20, ('fit', 'persona_prefill', 'deceptive_deceptive'): 20, ('fit', 'persona_prefill', 'deceptive_honest'): 20, ('fit', 'persona_prefill', 'honest_deceptive'): 20, ('fit', 'persona_prefill', 'honest_honest'): 20, ('fit', 'synthetic', 'deceptive_deceptive'): 20, ('fit', 'synthetic', 'deceptive_honest'): 20, ('fit', 'wikihow', 'deceptive_deceptive'): 20, ('fit', 'wikihow', 'honest_honest'): 20, ('fit', 'wikihownest', 'deceptive_deceptive'): 20, ('fit', 'wikihownest', 'deceptive_honest'): 20, ('fit', 'wikihownest', 'honest_deceptive'): 20, ('fit', 'wikihownest', 'honest_honest'): 20, ('inspect', 'liarsbench', 'deceptive_deceptive'): 20, ('inspect', 'liarsbench', 'deceptive_honest'): 20, ('inspect', 'liarsbench', 'honest_deceptive'): 20, ('inspect', 'liarsbench', 'honest_honest'): 20, ('inspect', 'mask', 'deceptive_deceptive'): 20, ('inspect', 'mask', 'deceptive_honest'): 20, ('inspect', 'mask', 'honest_deceptive'): 20, ('inspect', 'mask', 'honest_honest'): 20, ('inspect', 'original', 'deceptive_deceptive'): 20, ('inspect', 'original', 'deceptive_honest'): 20, ('inspect', 'original', 'honest_deceptive'): 20, ('inspect', 'original', 'honest_honest'): 20, ('inspect', 'ultrachat', 'honest_deceptive'): 20, ('inspect', 'ultrachat', 'honest_honest'): 20, ('selection', 'b1-bare', 'deceptive_deceptive'): 20, ('selection', 'b1-bare', 'honest_honest'): 20, ('selection', 'b1-followup', 'deceptive_deceptive'): 20, ('selection', 'b1-followup', 'deceptive_honest'): 20, ('selection', 'b1-followup', 'honest_deceptive'): 20, ('selection', 'b1-followup', 'honest_honest'): 20, ('selection', 'caving', 'deceptive_deceptive'): 20, ('selection', 'caving', 'deceptive_honest'): 20, ('selection', 'caving', 'honest_deceptive'): 20, ('selection', 'caving', 'honest_honest'): 20, ('selection', 'negotiation', 'honest_deceptive'): 11, ('selection', 'negotiation', 'honest_honest'): 20, ('test', 'among', 'deceptive_deceptive'): 4, ('test', 'among', 'deceptive_honest'): 20, ('test', 'among', 'honest_deceptive'): 5, ('test', 'among', 'honest_honest'): 10, ('test', 'harm', 'deceptive_deceptive'): 20, ('test', 'harm', 'deceptive_honest'): 20, ('test', 'harm', 'honest_deceptive'): 20, ('test', 'harm', 'honest_honest'): 20, ('test', 'medqa', 'deceptive_deceptive'): 20, ('test', 'medqa', 'deceptive_honest'): 20, ('test', 'medqa', 'honest_deceptive'): 20, ('test', 'medqa', 'honest_honest'): 20, ('test', 'model', 'deceptive_deceptive'): 20, ('test', 'model', 'deceptive_honest'): 20, ('test', 'model', 'honest_deceptive'): 20, ('test', 'model', 'honest_honest'): 20, ('test', 'sandbagging', 'deceptive_deceptive'): 20, ('test', 'sandbagging', 'deceptive_honest'): 20, ('test', 'sandbagging', 'honest_deceptive'): 20, ('test', 'sandbagging', 'honest_honest'): 20, ('test', 'werewolf', 'deceptive_deceptive'): 20, ('test', 'werewolf', 'deceptive_honest'): 20, ('test', 'werewolf', 'honest_deceptive'): 20, ('test', 'werewolf', 'honest_honest'): 20}"
+}

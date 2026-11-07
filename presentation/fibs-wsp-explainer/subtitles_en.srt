@@ -1,0 +1,119 @@
+1
+00:00:00,735 --> 00:00:04,362
+Our approach connects FIBS with weight-space
+programming. A separate detector
+
+2
+00:00:04,382 --> 00:00:08,137
+reads a frozen language model’s internal
+activations. We aim to catch more
+
+3
+00:00:08,157 --> 00:00:13,303
+lies with fewer false alarms. Only the detector
+is edited; the language model stays unchanged.
+
+4
+00:00:14,815 --> 00:00:20,242
+First, inspect false alarms and missed lies.
+Each case needs the full conversation,
+
+5
+00:00:20,454 --> 00:00:24,994
+the final answer, and a checkable reason for its
+label. Correctly classified
+
+6
+00:00:25,014 --> 00:00:31,241
+cases provide controls. This separates detector
+errors from ambiguous labels or missing context.
+
+7
+00:00:32,756 --> 00:00:36,918
+One hypothesis: the detector mistakes an earlier
+lie for a currently honest
+
+8
+00:00:36,938 --> 00:00:41,147
+correction. Test matched cases with truthful or
+deceptive history, and
+
+9
+00:00:41,167 --> 00:00:45,346
+truthful or deceptive final answers. State the
+prediction before editing.
+
+10
+00:00:45,657 --> 00:00:49,267
+This is a proposed diagnostic test, not an
+established finding.
+
+11
+00:00:50,749 --> 00:00:55,005
+After testing the explanation, Claude examines
+layer contributions and
+
+12
+00:00:55,025 --> 00:00:58,994
+writes a targeted change to the detector’s
+weights. The monitored language
+
+13
+00:00:59,014 --> 00:01:03,866
+model stays frozen. Compare the original
+detector, the direct edit, ordinary
+
+14
+00:01:03,886 --> 00:01:09,261
+optimization, and random edits. Check the
+targeted errors and possible side effects.
+
+15
+00:01:10,743 --> 00:01:15,079
+The loop is: inspect errors, test an
+explanation, edit, and measure again.
+
+16
+00:01:15,341 --> 00:01:19,355
+Keep development, selection, and calibration
+separate. The final evaluation
+
+17
+00:01:19,420 --> 00:01:23,580
+needs genuinely untouched cases. Report
+detection and actual false alarms.
+
+18
+00:01:23,853 --> 00:01:27,316
+Save weights, predictions, and decisions so
+others can check the work.
+
+19
+00:01:28,755 --> 00:01:33,946
+In the original WSP report, Qwen’s MATH five
+hundred score rises from seven
+
+20
+00:01:33,966 --> 00:01:38,906
+point nine to forty-eight point one percent. The
+edit changes just zero
+
+21
+00:01:38,926 --> 00:01:43,945
+point zero one six percent of the language
+model’s weights, reducing repetition
+
+22
+00:01:43,965 --> 00:01:49,050
+loops. Gemma shows no clear gain. This
+demonstrates feasibility, not better
+
+23
+00:01:49,070 --> 00:01:53,588
+lie detection. Our proposal transfers the
+editing approach to the separate
+
+24
+00:01:53,608 --> 00:01:59,228
+detector. Whether that improves detection is the
+hypothesis this loop must test.

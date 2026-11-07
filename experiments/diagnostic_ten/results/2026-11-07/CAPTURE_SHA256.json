@@ -1,0 +1,12 @@
+{
+  "acts_last.npy": "abf630379b5729fcc9fd699de2b33da59c8e567289fa436d4312d95a2b1ae14f",
+  "acts_mean_answer.npy": "c071df1d67fe0c3641a345b01122fee7a4677d096997b5fa64c27c13c38e1fbc",
+  "acts_mean_turn.npy": "782e2b6aa8532ccc7b7e513497b9eedacae7052b5c19d1253927bfe0144a708a",
+  "capture_manifest.json": "1eaa84301b3d23d5e183b930cd7cd542e59cce56eeda43c0382219c4afada896",
+  "cases_calib.jsonl": "875e86761a00f42eac27b9b89adcdb770e617318d796230b0852557ab0ba007c",
+  "cases_fit.jsonl": "9d2790b26782ec0665ae881b8c29460feb247dcea31544812830a677a8e91e65",
+  "cases_inspect.jsonl": "0c7c34343c77279122f7f2c6bf4622c98f0f03be1978e24aeb609b9ee3d25771",
+  "cases_selection.jsonl": "5d1a1c8bcb6ce3319722234e679cb77bc7e129af03493602cf259ef92a592c7b",
+  "cases_test.jsonl": "c96ca8ac59e1bc36130759e8b54747f0680b4221afbe724206b1261720f3bad2",
+  "meta.csv": "ef360e63cdc44c126ea6e36204ffb4cd6d6514b5ac2b2a589af1240a7f82387d"
+}

@@ -1,0 +1,16 @@
+{
+  "created_unix": 1794074055.5054958,
+  "winners": {
+    "original": "theta0.npz",
+    "wsp": "attempt_10/wsp.npz",
+    "ordinary": "attempt_10/ordinary.npz",
+    "random_control": "attempt_10/random.npz"
+  },
+  "hashes": {
+    "original": "67c89ae42dabd63226381aa9367b1861144c8f538c5e202f99b85ff8b9a7a959",
+    "wsp": "c980b0585826159ba25b56aae0a3bf8a270e4a4834ea65bfe52acdb7284a6321",
+    "ordinary": "3a79996b0be64e6a80c17d2d483c3d17827fe2a93277d48fc961682d8bef83db",
+    "random_control": "c980b0585826159ba25b56aae0a3bf8a270e4a4834ea65bfe52acdb7284a6321"
+  },
+  "selection_queries_per_arm": 10
+}
