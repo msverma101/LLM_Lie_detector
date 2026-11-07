@@ -1,0 +1,220 @@
+[
+  {
+    "attempt": 1,
+    "name": "answer_view_fixed",
+    "category": "readout_view",
+    "hypothesis": "Averaging answer tokens exposes contradictions obscured by conventional endings.",
+    "falsifying_prediction": "Fails if answer averaging does not improve the development error pattern or selection score.",
+    "rationale": "Development evidence and limitations are recorded in DIAGNOSIS.md before selection.",
+    "branches": [
+      {
+        "pool": "mean_answer",
+        "mix": 1
+      }
+    ],
+    "operations": []
+  },
+  {
+    "attempt": 2,
+    "name": "turn_view_fixed",
+    "category": "readout_view",
+    "hypothesis": "Including the final user question helps contextual contradiction detection.",
+    "falsifying_prediction": "Fails if question averaging dilutes signal and increases honest-control scores.",
+    "rationale": "Development evidence and limitations are recorded in DIAGNOSIS.md before selection.",
+    "branches": [
+      {
+        "pool": "mean_turn",
+        "mix": 1
+      }
+    ],
+    "operations": []
+  },
+  {
+    "attempt": 3,
+    "name": "middle_last",
+    "category": "direct_ensemble_weight_edit",
+    "hypothesis": "Middle layers are more discriminative on diagnostic families than outer layers.",
+    "falsifying_prediction": "Fails if removing outer contributions loses recall or raises false alarms.",
+    "rationale": "Development evidence and limitations are recorded in DIAGNOSIS.md before selection.",
+    "branches": [
+      {
+        "pool": "last",
+        "mix": 1,
+        "layers": [
+          1,
+          2,
+          3
+        ]
+      }
+    ],
+    "operations": []
+  },
+  {
+    "attempt": 4,
+    "name": "middle_answer",
+    "category": "readout_view_and_direct_ensemble_edit",
+    "hypothesis": "Answer averaging and middle-layer weighting address separate weaknesses.",
+    "falsifying_prediction": "Fails if their combination fails to improve the fixed selection metric.",
+    "rationale": "Development evidence and limitations are recorded in DIAGNOSIS.md before selection.",
+    "branches": [
+      {
+        "pool": "mean_answer",
+        "mix": 1,
+        "layers": [
+          1,
+          2,
+          3
+        ]
+      }
+    ],
+    "operations": []
+  },
+  {
+    "attempt": 5,
+    "name": "answer_normalized",
+    "category": "unlabelled_data_assisted_normalization",
+    "hypothesis": "Transport may fail because answer means have a different unlabelled scale.",
+    "falsifying_prediction": "Fails if new scaling causes regressions relative to fixed-normalization transport.",
+    "rationale": "Development evidence and limitations are recorded in DIAGNOSIS.md before selection.",
+    "branches": [
+      {
+        "pool": "mean_answer",
+        "mix": 1,
+        "layers": [
+          1,
+          2,
+          3
+        ],
+        "normalization": "pool_fit"
+      }
+    ],
+    "operations": []
+  },
+  {
+    "attempt": 6,
+    "name": "turn_normalized",
+    "category": "unlabelled_data_assisted_normalization",
+    "hypothesis": "Turn pooling needs its own unlabelled scale to preserve useful standardised directions.",
+    "falsifying_prediction": "Fails if scale adjustment fails to improve turn transport.",
+    "rationale": "Development evidence and limitations are recorded in DIAGNOSIS.md before selection.",
+    "branches": [
+      {
+        "pool": "mean_turn",
+        "mix": 1,
+        "layers": [
+          1,
+          2,
+          3
+        ],
+        "normalization": "pool_fit"
+      }
+    ],
+    "operations": []
+  },
+  {
+    "attempt": 7,
+    "name": "diagnosed_middle_weights",
+    "category": "direct_ensemble_weight_edit",
+    "hypothesis": "Block 13 is strongest on diagnostic data, with blocks 10 and 16 supporting it.",
+    "falsifying_prediction": "Fails if the fixed 0.2/0.5/0.3 mix does not transfer to selection.",
+    "rationale": "Development evidence and limitations are recorded in DIAGNOSIS.md before selection.",
+    "branches": [
+      {
+        "pool": "last",
+        "mix": 1,
+        "layers": [
+          1,
+          2,
+          3
+        ],
+        "weights": [
+          0.2,
+          0.5,
+          0.3
+        ]
+      }
+    ],
+    "operations": []
+  },
+  {
+    "attempt": 8,
+    "name": "length_direction_half",
+    "category": "unlabelled_data_assisted_weight_projection",
+    "hypothesis": "Some long honest explanations receive elevated scores; remove half the answer-length direction.",
+    "falsifying_prediction": "Fails if missed lies or correct controls worsen after the projection.",
+    "rationale": "Development evidence and limitations are recorded in DIAGNOSIS.md before selection.",
+    "branches": [
+      {
+        "pool": "mean_answer",
+        "mix": 1,
+        "layers": [
+          1,
+          2,
+          3
+        ],
+        "normalization": "pool_fit"
+      }
+    ],
+    "operations": [
+      {
+        "kind": "remove_length_direction",
+        "strength": 0.5
+      }
+    ]
+  },
+  {
+    "attempt": 9,
+    "name": "conservative_weight_clip",
+    "category": "direct_weight_structure_edit",
+    "hypothesis": "A few high-magnitude coefficients may carry unstable nuisance contributions.",
+    "falsifying_prediction": "Fails if clipping the top 0.5 percent harms discrimination or leaves the error pattern unchanged.",
+    "rationale": "Development evidence and limitations are recorded in DIAGNOSIS.md before selection.",
+    "branches": [
+      {
+        "pool": "last",
+        "mix": 1,
+        "layers": [
+          1,
+          2,
+          3
+        ]
+      }
+    ],
+    "operations": [
+      {
+        "kind": "clip_weight_quantile",
+        "quantile": 0.995
+      }
+    ]
+  },
+  {
+    "attempt": 10,
+    "name": "complementary_views",
+    "category": "direct_ensemble_weight_edit_with_multiple_views",
+    "hypothesis": "Last-token and answer-mean readouts may make complementary errors.",
+    "falsifying_prediction": "Fails if equal blending does not beat the original while retaining the honest controls.",
+    "rationale": "Development evidence and limitations are recorded in DIAGNOSIS.md before selection.",
+    "branches": [
+      {
+        "pool": "last",
+        "mix": 0.5,
+        "layers": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "pool": "mean_answer",
+        "mix": 0.5,
+        "layers": [
+          1,
+          2,
+          3
+        ],
+        "normalization": "pool_fit"
+      }
+    ],
+    "operations": []
+  }
+]
