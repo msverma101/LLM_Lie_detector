@@ -2,6 +2,8 @@
 
 Completed 7 November 2026 on a Tesla T4. The monitored Qwen3.5-2B stayed frozen. Ten hypotheses were committed before selection evaluation; a fixed rule selected attempt 10 (an equal blend of middle-layer last-token and answer-mean readouts). Both winning arms were hashed before the one final evaluation.
 
+**Methodology clarification:** this was a fixed batch of restricted detector variants, not a fully adaptive WSP loop. The [post-hoc audit](POSTHOC_AUDIT.md) documents the implementation gap, comparator limitations and family-level blind spots. It does not alter the frozen results.
+
 ## Final results
 
 439 test examples (209 labelled falsehoods, 230 honest answers); 209 separate honest calibration examples. These are within-run group holdouts in previously discussed families, not a pristine historical-domain evaluation.
