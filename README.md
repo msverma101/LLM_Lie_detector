@@ -15,6 +15,10 @@ We are a team at the **Claude Impact Lab workshop** working on **LLM lying detec
 We are in the **discovery phase**: collecting sources, comparing ideas and shaping a project
 definition together. Everything here is a proposal, open for discussion.
 
+**Five-minute follow-up proposal:** [research plan and Colab handoff](docs/research-plan-5min.md)
+with a repository audit, concrete questions and expected research value.
+[Presentation guide](docs/presentation-guide.md) covers the workshop talk.
+
 > [!TIP]
 > **First result (2026-11-07):** an automated research loop in which Claude Opus 5.5 improves
 > the FIBS lie-detection probe raised macro-AUROC on **kinds of lies never seen in training**
