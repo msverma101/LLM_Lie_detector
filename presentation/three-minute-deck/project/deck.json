@@ -1,0 +1,18 @@
+{
+  "v": 4,
+  "createdOnFiles": {"v": 1, "at": "2026-11-07T16:40:00Z"},
+  "lists": "css",
+  "title": "Can We Catch a Model Lying?",
+  "order": ["cover", "bet", "log", "loop", "found", "wsp", "interface", "library", "lessons"],
+  "sections": {
+    "s1": {"description": "The question and the two papers we wanted to combine", "start": "cover"},
+    "s2": {"description": "How the afternoon went, straight from git", "start": "log"},
+    "s3": {"description": "Two experiments: Claude rewrites the probe, Claude edits the weights", "start": "loop"},
+    "s4": {"description": "What the literature says and what we learned", "start": "library"}
+  },
+  "faces": {
+    "space-grotesk": {"family": "Space Grotesk", "href": "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400..700&display=swap"},
+    "jetbrains-mono": {"family": "JetBrains Mono", "href": "https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap"}
+  },
+  "designSystems": []
+}

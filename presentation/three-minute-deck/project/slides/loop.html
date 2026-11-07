@@ -1,0 +1,37 @@
+<section id="loop" data-transition="push" style="background:#14111F;color:#F4F1EA;font-family:'Space Grotesk', Arial, sans-serif;padding:128px">
+<p style="position:absolute;left:128px;top:128px;width:900px;font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;letter-spacing:2px;color:#FF7A59">EXPERIMENT 1 · CLAUDE REWRITES THE DETECTOR</p>
+<h2 style="position:absolute;left:128px;top:176px;width:1664px;font-size:72px;font-weight:700;line-height:1.1">Better on lies it has never seen</h2>
+<div style="position:absolute;left:128px;top:330px;width:560px;height:600px;display:flex;flex-direction:column;gap:28px">
+<p style="font-size:32px;line-height:1.4;color:#BDB6CF">Claude proposes probe code → fixed harness trains it → scores it on <b style="color:#F4F1EA">new kinds of lies</b> → keep or revert.</p>
+<p style="font-size:120px;font-weight:700;line-height:1;color:#FF7A59">0.845</p>
+<p style="font-size:32px;line-height:1.4;color:#BDB6CF">test macro-AUROC, up from 0.806. Test families were never shown to Claude.</p>
+</div>
+<x-embed style="position:absolute;left:740px;top:320px;width:1052px;height:600px"><!doctype html><html><head><meta charset="utf-8"><style>
+html,body{margin:0;background:transparent;font-family:-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;overflow:hidden}
+text{font-size:24px;fill:#BDB6CF}
+.ln{fill:none;stroke-width:6;stroke-linejoin:round;stroke-linecap:round;stroke-dasharray:3000;stroke-dashoffset:3000;animation:draw 3.5s ease-out .4s forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+.dot{opacity:0;animation:pop .4s ease-out forwards}
+@keyframes pop{from{opacity:0}to{opacity:1}}
+</style></head><body>
+<svg id="s" width="1052" height="600" viewBox="0 0 1052 600"></svg>
+<script>
+var val=[.8493,.8502,.7485,.8492,.8815,.8788,.8578,.8812,.8828,.8868,.8837,.8888,.8829,.8878,.8877,.8856];
+var tst=[.8059,.8023,.7333,.8060,.8277,.8256,.8361,.8269,.8310,.8453,.8406,.8529,.8431,.8463,.8411,.8479];
+var kept=[0,4,9];var X0=90,X1=1020,Y0=520,Y1=30,lo=.72,hi=.90;
+function x(i){return X0+i*(X1-X0)/15}function y(v){return Y0-(v-lo)/(hi-lo)*(Y0-Y1)}
+var s=document.getElementById('s'),h='';
+[.75,.80,.85,.90].forEach(function(v){h+='<line x1="'+X0+'" x2="'+X1+'" y1="'+y(v)+'" y2="'+y(v)+'" stroke="#2E2850" stroke-width="2"/><text x="0" y="'+(y(v)+8)+'">'+v.toFixed(2)+'</text>'});
+[0,5,10,15].forEach(function(i){h+='<text x="'+(x(i)-12)+'" y="572">'+i+'</text>'});
+h+='<text x="'+(X1-190)+'" y="572">iteration</text>';
+function path(a){return a.map(function(v,i){return(i?'L':'M')+x(i)+' '+y(v)}).join(' ')}
+h+='<path class="ln" d="'+path(val)+'" stroke="#6EA8FF"/>';
+h+='<path class="ln" d="'+path(tst)+'" stroke="#FF7A59" style="animation-delay:.9s"/>';
+kept.forEach(function(i,k){h+='<circle class="dot" cx="'+x(i)+'" cy="'+y(tst[i])+'" r="13" fill="#FF7A59" stroke="#14111F" stroke-width="4" style="animation-delay:'+(1.6+k*.9)+'s"/>'});
+h+='<text x="'+(X0+20)+'" y="'+(Y1+20)+'" style="fill:#6EA8FF;font-weight:700">val (Claude sees)</text>';
+h+='<text x="'+(X0+20)+'" y="'+(Y1+56)+'" style="fill:#FF7A59;font-weight:700">test (hidden) ● kept</text>';
+h+='<text x="'+(x(2)+18)+'" y="'+(y(.7333)+8)+'">oops: mass-mean</text>';
+s.innerHTML=h;
+</script></body></html></x-embed>
+<aside>(0:50–1:15) Experiment one. Claude acts as a researcher: it proposes a change to the probe code, a fixed harness trains it and scores it on families of lies the probe has never seen. Keep if it helps, revert otherwise. Blue is validation, which Claude sees. Orange is test, which Claude never sees. We went from 0.806 to 0.845 AUROC on unseen kinds of lies. Iteration 2 shows that not every idea is a good one.</aside>
+</section>

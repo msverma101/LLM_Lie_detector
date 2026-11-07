@@ -1,0 +1,26 @@
+<section id="interface" data-transition="push" style="background:radial-gradient(circle at 50% 55%, #2A2347 0%, #14111F 70%);color:#F4F1EA;font-family:'Space Grotesk', Arial, sans-serif;padding:128px">
+<p style="position:absolute;left:128px;top:128px;width:900px;font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;letter-spacing:2px;color:#FF7A59">THE IDEA · THE INTERFACE</p>
+<h2 style="position:absolute;left:128px;top:176px;width:1664px;font-size:72px;font-weight:700;line-height:1.1">A lie detector that debugs itself</h2>
+<x-embed style="position:absolute;left:128px;top:300px;width:1664px;height:640px"><!doctype html><html><head><meta charset="utf-8"><style>
+html,body{margin:0;background:transparent;font-family:-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;color:#F4F1EA;overflow:hidden}
+.box{position:absolute;width:420px;border-radius:24px;padding:26px 30px;box-sizing:border-box;background:#1E1A30;opacity:0;transform:translateY(20px);animation:in .6s ease-out forwards}
+.box h3{margin:0 0 10px;font-size:34px}.box p{margin:0;font-size:24px;line-height:1.35;color:#BDB6CF}
+.tag{font-size:24px;font-weight:700;letter-spacing:2px;margin-bottom:6px}
+@keyframes in{to{opacity:1;transform:none}}
+.edge{position:absolute;font-size:24px;font-weight:700;padding:8px 18px;border-radius:999px;background:#14111F;border:2px solid #FF7A59;color:#FF7A59;opacity:0;animation:in .5s ease-out forwards;white-space:nowrap}
+#c{position:absolute;left:0;top:0}
+</style></head><body>
+<svg id="c" width="1664" height="640" viewBox="0 0 1664 640">
+<path id="p" d="M520 150 C 800 40, 900 40, 1150 150 M1150 470 C 900 600, 800 600, 520 470" fill="none" stroke="#2E2850" stroke-width="6" stroke-dasharray="14 12"/>
+<circle r="16" fill="#FF7A59"><animateMotion dur="5s" repeatCount="indefinite" path="M520 150 C 800 40, 900 40, 1150 150 L1150 470 C 900 600, 800 600, 520 470 Z"/></circle>
+</svg>
+<div class="box" style="left:80px;top:110px;border:3px solid #6EA8FF;animation-delay:.2s"><div class="tag" style="color:#6EA8FF">🔬 FIBS DETECTOR</div><h3>Flags lies</h3><p>Score per answer. Logs every miss and every false alarm.</p></div>
+<div class="box" style="left:1164px;top:110px;border:3px solid #FF7A59;animation-delay:1.2s"><div class="tag" style="color:#FF7A59">🕵️ WSP DETECTIVE</div><h3>Asks why</h3><p>Reads probe weights + activations of the misses and <b style="color:#F4F1EA">computes</b> where the signal went.</p></div>
+<div class="box" style="left:1164px;top:400px;border:3px solid #FF7A59;animation-delay:2.2s"><div class="tag" style="color:#FF7A59">🔧 THE FIX</div><h3>Changes the formula</h3><p>New layer weights, pooling or direction, or a direct weight edit θ + Δθ.</p></div>
+<div class="box" style="left:80px;top:400px;border:3px solid #6EA8FF;animation-delay:3.2s"><div class="tag" style="color:#6EA8FF">⚖️ THE REFEREE</div><h3>Keep or revert</h3><p>Tested on kinds of lies never seen in training. Locked test set.</p></div>
+<div class="edge" style="left:640px;top:16px;animation-delay:.8s">📁 case file: transcript · per-layer scores · w</div>
+<div class="edge" style="left:560px;top:580px;animation-delay:3.8s">🔁 next round, from the best detector so far</div>
+<div class="edge" style="left:560px;top:290px;border-color:#BDB6CF;color:#BDB6CF;animation-delay:4.4s">“werewolf lies sit in layer 13, not 22”</div>
+</body></html></x-embed>
+<aside>(1:55–2:20) So here is our idea, and both parts already exist. The new part is the interface between them. FIBS is the lie detector: every time it misses a lie or raises a false alarm, it writes a case file: the conversation, the score per layer, and the probe's weights. WSP is the detective: Claude reads the weights and the activations of the misses, computes where the signal went, and proposes a fix, either to the formula or directly to the weights. The referee tests the fix on lies the detector has never seen. If it helps, it stays. Next round. A lie detector that debugs itself. Experiment one shows that changing the formula works. Experiment two shows that without case files and computation, editing weights is guesswork.</aside>
+</section>
