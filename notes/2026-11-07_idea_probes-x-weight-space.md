@@ -1,44 +1,44 @@
-# Idee (Vorschlag): FIBS-Probes × Weight-Space Programming verknüpfen
+# Idea (proposal): combining FIBS probes with weight-space programming
 
-Status: **Diskussionsvorschlag**, nichts entschieden. Autor: soenkebartling (mit Claude).
+Status: **proposal for discussion**, nothing decided. Author: soenkebartling (with Claude).
 
-## Warum die beiden zusammenpassen
+## Why the two fit together
 
-| | FIBS-Probes (Aktivierungen) | Weight-Space Programming (Gewichte) |
+| | FIBS probes (activations) | Weight-space programming (weights) |
 |---|---|---|
-| Stärke | erkennt *dass* gelogen wird, auch introspektive Lügen (bis 99.7% AUROC) | kann erklären *wo/warum* etwas passiert und es gezielt editieren (z. B. Qwen3.5-0.8B: 0.016% der Gewichte, MATH-500 7.9 → 48.1%) |
-| Schwäche | Blackbox-Klassifikator: sagt nicht, welcher Mechanismus lügt | Exp. 7: Aus reinen Gewichten konnte Astra den sykophantischen Gemma-270M **nicht** erkennen. Erst mit einem Aktivierungs-Tool (Attention-Patterns) gelang es 3/3 |
+| Strength | detects *that* a model lies, including introspective lies (up to 99.7% AUROC) | can explain *where/why* something happens and edit it in a targeted way (e.g. Qwen3.5-0.8B: 0.016% of weights edited, MATH-500 7.9% -> 48.1%) |
+| Weakness | black-box classifier: does not say which mechanism is lying | Exp. 7: from weights alone, Astra could **not** identify the sycophantic Gemma-270M. Only with an activation tool (attention patterns) did it succeed 3/3 |
 
-Kernbeobachtung: Exp. 7 zeigt, dass der Weight-Reader ein **Aktivierungssignal als Werkzeug braucht**. Ein FIBS-Probe ist genau so ein Signal, und zwar spezifisch für Lügen.
+Key observation: Exp. 7 shows that the weight reader **needs an activation signal as a tool**. A FIBS probe is exactly such a signal, and it is specific to lying.
 
-## Vier Verknüpfungen (aufsteigend nach Ehrgeiz)
+## Four ways to combine them (in order of ambition)
 
-1. **Probe als Werkzeug für den Weight-Auditor** (Detektion).
-   Zwei gleich feingetunte Kopien eines kleinen Modells: eine ehrlich, eine lügt (z. B. bestreitet ein verstecktes Ziel, wie FIBS *bird-labs* vs. *animal-welfare*). Claude bekommt Gewichte + Tool "Probe-Score pro Layer/Token auf selbstgeschriebenen Prompts", aber keine Outputs. Frage: Welches Modell lügt?
-   → Vergleich: nur Gewichte vs. nur Probe vs. beides.
+1. **Probe as a tool for the weight auditor** (detection).
+   Two identically fine-tuned copies of a small model: one honest, one lying (e.g. denying a hidden goal, as in FIBS *bird-labs* vs. *animal-welfare*). Claude gets the weights plus a tool returning probe scores per layer/token on prompts it writes itself, but no model outputs. Question: which model is the liar?
+   Compare: weights only vs. probe only vs. both.
 
-2. **Probe-Richtung → Gewichte zurückverfolgen** (Erklärung).
-   Linearer Probe liefert eine Richtung *w* im Residual Stream. Welche MLPs/Heads schreiben in *w* (Gewichtsmatrix × *w*)? Analog zu Exp. 8, wo die Looping-Richtung in den MLPs von Layer 15/19 lag. Ergebnis: "Lügen-Schaltkreis"-Hypothese, in natürlicher Sprache erklärt.
+2. **Trace the probe direction back into the weights** (explanation).
+   A linear probe gives a direction *w* in the residual stream. Which MLPs/heads write into *w* (weight matrix x *w*)? Analogous to Exp. 8, where the looping direction sat in the MLPs of layers 15/19. Result: a "lying circuit" hypothesis, explained in natural language.
 
-3. **Gezielte Edits + Probe als Messinstrument** (Intervention).
-   Die gefundene Richtung aus wenigen Output-Spalten herausprojizieren und prüfen, ob (a) das Verhalten ehrlicher wird (MASK, Hidden-Goal-Fragen) und (b) der Probe-Score fällt.
-   ⚠ Goodhart: Ein Edit kann den Probe blind machen, ohne die Lüge zu entfernen. Wir brauchen einen **probe-unabhängigen Verhaltens-Groundtruth**. Umgekehrt zeigt das auch die Robustheit des Probes: Lässt er sich durch kleine Edits austricksen?
+3. **Targeted edits, with the probe as the measuring instrument** (intervention).
+   Project the found direction out of a few output columns and check whether (a) behavior becomes more honest (MASK, hidden-goal questions) and (b) the probe score drops.
+   Caution (Goodhart): an edit can blind the probe without removing the lie. We need a **behavioral ground truth that does not depend on the probe**. Conversely, this also tests probe robustness: can small edits fool it?
 
-4. **Gewichts-Audit ohne Evaluation** (Fernziel).
-   Kann ein LLM aus Gewichten + wenigen Probe-Abfragen eine eingebaute Lüge (Backdoor, verstecktes Ziel) finden, *bevor* es dafür einen Testdatensatz gibt?
+4. **Weight audit without evaluation** (long-term goal).
+   Can an LLM find a built-in lie (backdoor, hidden goal) from the weights plus a few probe queries, *before* a test set for it exists?
 
-## Machbarer Workshop-Kern (Vorschlag)
+## Feasible workshop core (proposal)
 
-- Modell: Gemma 3 270M oder Qwen3.5-0.8B (beide in der Weight-Space-Arbeit genutzt)
-- Daten: FIBS-Teilmenge (contextual falsehoods) zum Training eines **linearen** Probes
-- Modellorganismen: 2-3 Paare ehrlich/lügend, kleine LoRA- oder Full-Finetunes
-- Weight-Reader: Claude mit Python-Kernel über die Gewichte (kein Astra-Zugang)
-- Deliverable: Tabelle "wer findet den Lügner?" (Gewichte / Probe / beides) + eine erklärte Richtung + Edit-Ergebnis mit Verhaltens- und Probe-Messung
+- Model: Gemma 3 270M or Qwen3.5-0.8B (both used in the weight-space work)
+- Data: a FIBS subset (contextual falsehoods) to train a **linear** probe
+- Model organisms: 2-3 honest/lying pairs, small LoRA or full fine-tunes
+- Weight reader: Claude with a Python kernel over the weights (no access to Astra)
+- Deliverable: a "who finds the liar?" table (weights / probe / both), one explained direction, and an edit result measured both behaviorally and with the probe
 
-## Offene Fragen
+## Open questions
 
-- Funktionieren FIBS-Probes auf so kleinen Modellen überhaupt? (Das Paper zeigt Gewinne mit Skalierung, Hauptergebnisse auf Qwen3.5-397B.)
-- Glaubt ein 270M-Modell überhaupt etwas Stabiles, damit "knowing falsehood" sinnvoll ist?
-- Wie viel Claude-Kontext und wie viele Forward-Passes für den Auditor? (Exp. 8: erst mit 50 Forward-Passes deutlicher Effekt)
-- Dual-Use: Edits, die den Probe blind machen, sind auch eine Anleitung zum Umgehen. Wie berichten wir das?
-- Passt `Fredo220/verified-reasoning-monitoring` (falsche Erfolgsmeldungen) als dritte Datenquelle?
+- Do FIBS probes work on models this small at all? (The paper shows gains with scale; main results are on Qwen3.5-397B.)
+- Does a 270M model hold stable enough beliefs for "knowing falsehood" to be meaningful?
+- How much Claude context and how many forward passes does the auditor need? (Exp. 8: a clear effect only with 50 forward passes)
+- Dual use: edits that blind the probe are also a recipe for evading it. How do we report that?
+- Does `Fredo220/verified-reasoning-monitoring` (false success reports) fit as a third data source?
