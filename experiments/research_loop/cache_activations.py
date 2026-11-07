@@ -50,7 +50,7 @@ def family_of(source: str) -> str:
     return source  # unknown: kept as its own family (eval.py puts unknown families into train)
 
 
-def load_candidates(n_per_family: int, seed: int, data_dir: str | None) -> pd.DataFrame:
+def load_candidates(n_per_family: int, seed: int, data_dir: str | None, max_chars: int) -> pd.DataFrame:
     """Sample up to 8 * n_per_family / 4 candidates per (family, quadrant); we keep n/4 after length filtering."""
     per_cell = max(1, n_per_family // 4)
     parts = []
@@ -62,6 +62,8 @@ def load_candidates(n_per_family: int, seed: int, data_dir: str | None) -> pd.Da
                                    repo_type="dataset")
         df = pd.read_parquet(path, columns=COLS)
         df["family"] = df["source"].map(family_of)
+        # cheap prefilter: rows far too long to fit max_tokens are never tokenized
+        df = df[df["messages_json"].str.len() + df["completion"].fillna("").str.len() < max_chars]
         for _, g in df.groupby("family"):
             parts.append(g.sample(n=min(len(g), 8 * per_cell), random_state=seed))
         del df
@@ -153,7 +155,7 @@ def main():
     end_token = "<|im_end|>" if "<|im_end|>" in tok.get_vocab() else (tok.eos_token or "")
 
     # 1) pick rows: balanced per family x quadrant, short enough
-    cand = load_candidates(args.n_per_family, args.seed, args.data_dir)
+    cand = load_candidates(args.n_per_family, args.seed, args.data_dir, max_chars=args.max_tokens * 5)
     per_cell = max(1, args.n_per_family // 4)
     rendered, keep_rows = [], []
     for (fam, quad), g in cand.groupby(["family", "quadrant"], sort=True):
