@@ -25,7 +25,14 @@ flowchart LR
 | `probe.py` | The only file the loop edits. Starts as the FIBS paper's LinearEnsemble baseline |
 | `program.md` | Instructions and rules for the researcher agent |
 | `loop.py` | The loop. Claude only sees **val** scores; **test** families are reserved for the final result |
-| `report.py` | Plot + summary table |
+| `errors.py` | Error analysis at a fixed threshold (5% false alarms on honest val answers): missed lies and false alarms by family, quadrant, source, with examples. VAL by default |
+| `search.py` | Comparison without an LLM: random hyperparameter search, same budget and keep rule, results in `runs_search/` |
+| `report.py` | Plot + summary table, incl. TPR at fixed FPR and Claude loop vs. search |
+
+Final criterion ("more lies caught without more false alarms"): besides macro-AUROC,
+`eval.py` reports **TPR at a fixed FPR**. One threshold is set so that 1% / 5% of honest
+*val* answers are flagged and applied unchanged to *test*. A better probe has higher test
+TPR at a test FPR that does not rise. Negative or unclear results go into the summary too.
 
 Honesty rules built in: test families are never shown to the agent, `predict` may not use
 batch statistics, and every candidate probe is saved in `runs/`.

@@ -4,7 +4,7 @@ This is the only expensive step (needs a GPU). Run it once; the research loop th
 trains probes on the cached activations in seconds.
 
 Output directory (--out):
-  meta.csv               one row per example: family, source, quadrant, label, n_tokens
+  meta.csv               one row per example: family, source, quadrant, label, answer (first 300 chars), n_tokens
   acts_last.npy          float16 [N, L, d]  residual stream at the last token of the final answer
   acts_mean_answer.npy   float16 [N, L, d]  mean over the final assistant answer tokens
   acts_mean_turn.npy     float16 [N, L, d]  mean over the final user turn + assistant answer
@@ -173,6 +173,8 @@ def main():
             keep_rows.append(row.Index)
             kept += 1
     meta = cand.loc[keep_rows, ["family", "source", "quadrant", "label"]].reset_index(drop=True)
+    # short snippet of the final answer, so errors.py can show concrete misses / false alarms
+    meta["answer"] = cand.loc[keep_rows, "completion"].fillna("").str.slice(0, 300).str.replace(r"\s+", " ", regex=True).values
     meta["n_tokens"] = [len(r[0]) for r in rendered]
     print(f"selected {len(meta)} rows from {meta.family.nunique()} families; "
           f"median {int(meta.n_tokens.median())} tokens", flush=True)

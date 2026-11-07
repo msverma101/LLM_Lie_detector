@@ -16,6 +16,40 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 RUNS = os.path.join(HERE, "runs")
 
 
+def op_rows(base_res, best_res):
+    rows = []
+    for k in ("1fpr", "5fpr"):
+        for split in ("val", "test"):
+            for m in ("tpr", "fpr"):
+                key = f"{split}_{m}_at_{k}"
+                if key in base_res and key in best_res:
+                    a, b = base_res[key], best_res[key]
+                    label = f"{split} {m.upper()} @ {k[:-3]}% val-FPR threshold"
+                    rows.append(f"| {'**' + label + '**' if split == 'test' else label} | {a:.3f} | {b:.3f} | {b - a:+.3f} |")
+    return rows
+
+
+def search_rows(best):
+    """Compare with search.py (plain hyperparameter search, same budget) if it was run."""
+    tsv = os.path.join(HERE, "runs_search", "results.tsv")
+    if not os.path.exists(tsv):
+        return ["(No comparison run: `python search.py --acts acts` gives the non-LLM baseline.)", ""]
+    s = pd.read_csv(tsv, sep="\t")
+    s["kept"] = s.kept.astype(bool)
+    sb = s[s.kept & s.val_auroc.notna()].sort_values("val_auroc").iloc[-1]
+    res = json.load(open(os.path.join(HERE, "runs_search", f"iter_{int(sb.iter):03d}.json")))
+    llm = json.load(open(os.path.join(RUNS, f"iter_{int(best.iter):03d}.json")))
+    rows = ["## Claude loop vs. plain hyperparameter search (same budget)\n",
+            "| | search best | Claude best | Claude - search |", "|---|---|---|---|",
+            f"| val macro-AUROC | {sb.val_auroc:.4f} | {best.val_auroc:.4f} | {best.val_auroc - sb.val_auroc:+.4f} |",
+            f"| **test macro-AUROC** | {sb.test_auroc:.4f} | {best.test_auroc:.4f} | {best.test_auroc - sb.test_auroc:+.4f} |"]
+    for k in ("test_tpr_at_5fpr", "test_fpr_at_5fpr", "test_tpr_at_1fpr", "test_fpr_at_1fpr"):
+        if k in res and k in llm:
+            rows.append(f"| {k} | {res[k]:.3f} | {llm[k]:.3f} | {llm[k] - res[k]:+.3f} |")
+    rows += ["", f"Search best: `runs_search/iter_{int(sb.iter):03d}.py`: {sb.hypothesis}", ""]
+    return rows
+
+
 def main():
     df = pd.read_csv(os.path.join(RUNS, "results.tsv"), sep="\t")
     df["kept"] = df.kept.astype(bool)
@@ -66,7 +100,12 @@ def main():
         f"| val macro-AUROC (optimized) | {base.val_auroc:.4f} | {best.val_auroc:.4f} | {best.val_auroc - base.val_auroc:+.4f} |",
         f"| **test macro-AUROC (held out)** | {base.test_auroc:.4f} | {best.test_auroc:.4f} | {best.test_auroc - base.test_auroc:+.4f} |",
         f"| train AUROC | {base.train_auroc:.4f} | {best.train_auroc:.4f} | |",
+        *op_rows(base_res, best_res),
         "",
+        "Operating points: one threshold per probe, set so that 1% / 5% of honest VAL answers are flagged, "
+        "then applied unchanged to TEST. Success = higher test TPR at a test FPR that does not rise.",
+        "",
+        *search_rows(best),
         f"{len(df) - 1} experiments: {int(df.kept.sum()) - 1} kept, {int((df.status == 'discard').sum())} discarded, "
         f"{int(df.status.isin(['crash', 'bad_proposal']).sum())} failed.",
         f"\nBest probe: `runs/iter_{int(best.iter):03d}.py`: {best.hypothesis}\n",

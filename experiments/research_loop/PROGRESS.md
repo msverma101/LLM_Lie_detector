@@ -113,10 +113,31 @@ A change is kept only if it beats the best val score by more than 0.002.
 5. **Time budget:** 200 per family (4,900 rows) ran at 1.5 rows/s, ETA 54 min, too long.
    Cut to 120 per family (2,940 rows); speed rose to ~4 rows/s once past the long rows.
 
+## Added after Fred's task list (2026-11-07)
+
+Fred's six steps vs. the code:
+
+| Step | Where |
+|---|---|
+| 1. Check data and detector | partly: same layers as the published probes. **Open:** load the published FIBS probe weights and check that they reproduce on our activations |
+| 2. Split + baseline | `eval.py` (14/7/7 families), baseline = iter 0 |
+| 3. Error analysis | **new** `errors.py`: missed lies / false alarms by family, quadrant, source (val only while we still optimize) |
+| 4. LLM changes the detector | `loop.py`. **Open question for Fred:** the loop edits the probe *code*, not the probe *weights* directly (weight-space programming). Do we keep it this way or add a weight-editing condition? |
+| 5. Compare with ordinary optimization | **new** `search.py`: random hyperparameter search, same budget and keep rule |
+| 6. Final test + documentation | `eval.py` now also reports TPR at 1% / 5% FPR (threshold from honest val answers, applied to test); `report.py` shows it, plus loop vs. search |
+
+`cache_activations.py` now also stores the first 300 chars of the final answer in `meta.csv`
+(for examples in `errors.py`). The run that is already going doesn't have it; errors.py then
+shows the tables without examples.
+
+Tested end to end on synthetic activations (eval, errors, search, loop --mock, report).
+
 ## Next
 
 - [x] Baseline numbers (val / test macro-AUROC)
+- [ ] Error analysis of the baseline (`errors.py`)
 - [x] Research loop: 15 iterations (~22 min, 2 kept)
+- [ ] Comparison: `search.py`, 15 trials
 - [x] Results: progress plot, per-family baseline vs. best, the best probe's idea (in Colab)
 - [ ] Copy `runs/` (plot, summary, all 15 probes) from Colab into the repo
 - [ ] Optional (weight-space angle): ask Claude to explain the best probe's weights
