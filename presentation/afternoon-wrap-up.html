@@ -65,7 +65,7 @@ th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--line);font-
 th{font-family:"JetBrains Mono";font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:400}
 /* timeline */
 .tl-wrap{position:relative;margin-top:8px}
-.tl-row{display:grid;grid-template-columns:80px 22px 1fr;gap:12px;align-items:center;margin:9px 0}
+.tl-row{display:grid;grid-template-columns:80px 22px 1fr;gap:12px;align-items:center;margin:6px 0}
 .tl-row .time{font-family:"JetBrains Mono";color:var(--muted);font-size:17px}
 .tl-row .dot{width:14px;height:14px;border-radius:50%;background:var(--violet);box-shadow:0 0 0 4px rgba(167,139,250,.18)}
 .tl-row.bug .dot{background:var(--lie);box-shadow:0 0 0 4px rgba(244,63,94,.2)}
@@ -82,6 +82,18 @@ th{font-family:"JetBrains Mono";font-size:13px;letter-spacing:.08em;text-transfo
 .track .b0{background:var(--muted);opacity:.45}
 .track .b1{background:var(--truth);height:8px;top:7px;opacity:.95}
 .active .track .b0{transition:width 1s ease .4s} .active .track .b1{transition:width 1.2s cubic-bezier(.2,.8,.2,1) 1.1s}
+/* diverging bars */
+.erow{display:grid;grid-template-columns:150px 1fr;gap:10px;align-items:center;margin:16px 0;font-size:18px}
+.etrack{position:relative;height:56px;background:var(--panel2);border-radius:6px}
+.etrack:before{content:"";position:absolute;left:50%;top:-4px;bottom:-4px;width:2px;background:var(--muted);opacity:.6}
+.etrack .bs,.etrack .bt{position:absolute;height:22px;width:0}
+.etrack .bs{top:5px;background:var(--violet)} .etrack .bt{top:29px;background:var(--truth)}
+.etrack .neg{background:var(--lie)!important}
+.etrack span{position:absolute;font-family:"JetBrains Mono";font-size:13px;line-height:22px;color:var(--ink);opacity:0;white-space:nowrap}
+.active .etrack .bs{transition:width .9s cubic-bezier(.2,.8,.2,1) .5s}
+.active .etrack .bt{transition:width .9s cubic-bezier(.2,.8,.2,1) 1.9s}
+.active .etrack span{transition:opacity .4s 2.8s;opacity:.9}
+.erow.me{color:var(--amber);font-weight:700}
 /* heatmap */
 .heat{display:grid;grid-template-columns:150px repeat(6,1fr);gap:8px;margin-top:6px}
 .heat .h{font-family:"JetBrains Mono";font-size:14px;color:var(--muted);text-align:center;align-self:center}
@@ -127,7 +139,7 @@ th{font-family:"JetBrains Mono";font-size:13px;letter-spacing:.08em;text-transfo
 <div id="stage">
 
 <!-- 1 TITLE -->
-<section class="slide" data-sec="25" data-notes="Hi! This afternoon we asked one question: can we catch a language model lying, and find where the lie lives? Here is what five of us, one Colab GPU and Claude did in about two and a half hours.">
+<section class="slide" data-sec="20" data-notes="Hi! This afternoon we asked one question: can we catch a language model lying, and find where the lie lives? Here is what five of us, one Colab GPU and Claude did in about two and a half hours.">
   <div class="kicker r">Claude Impact Lab 2026 · team llm-lying-detection · 7 Nov</div>
   <h1 class="r" style="--d:1">Can we catch a<br>model <span class="l">lying</span>? <span class="pop" style="--d:4;display:inline-block">🕵️</span></h1>
   <p class="r muted" style="--d:2;margin-top:22px;font-size:26px">One afternoon · one Colab T4 · 27 kinds of lies · 15 experiments by Claude</p>
@@ -139,7 +151,7 @@ th{font-family:"JetBrains Mono";font-size:13px;letter-spacing:.08em;text-transfo
 </section>
 
 <!-- 2 QUESTION -->
-<section class="slide" data-sec="25" data-notes="The definition we used is FIBS's: a knowing falsehood. Not a hallucination — the model contradicts something it demonstrably believes, like a fact it read two turns earlier. We split that into three questions: detect, generalize, locate.">
+<section class="slide" data-sec="20" data-notes="The definition we used is FIBS's: a knowing falsehood. Not a hallucination — the model contradicts something it demonstrably believes, like a fact it read two turns earlier. We split that into three questions: detect, generalize, locate.">
   <div class="kicker r">01 · the question</div>
   <h2 class="r" style="--d:1;font-size:40px;max-width:1050px">Can we tell when a model says something it <span class="a">believes</span> is false, and find <span class="v">where</span> that lie lives?</h2>
   <div class="card r" style="--d:2;margin:6px 0 24px;font-size:20px">
@@ -154,7 +166,7 @@ th{font-family:"JetBrains Mono";font-size:13px;letter-spacing:.08em;text-transfo
 </section>
 
 <!-- 3 TWO PAPERS -->
-<section class="slide" data-sec="25" data-notes="Two papers, each solves half. FIBS probes know THAT a model lies, at 98.7% AUROC, but are black boxes. Weight-space programming lets an LLM read weights and explain where things happen — but it failed to find a sycophantic model from weights alone, and succeeded 3 of 3 once it got an activation signal. Our bet: a lie probe is that missing signal.">
+<section class="slide" data-sec="20" data-notes="Two papers, each solves half. FIBS probes know THAT a model lies, at 98.7% AUROC, but are black boxes. Weight-space programming lets an LLM read weights and explain where things happen — but it failed to find a sycophantic model from weights alone, and succeeded 3 of 3 once it got an activation signal. Our bet: a lie probe is that missing signal.">
   <div class="kicker r">02 · two papers, two halves</div>
   <h2 class="r" style="--d:1">One knows <span class="tl">THAT</span>. One knows <span class="a">WHERE</span>.</h2>
   <div class="grid2">
@@ -175,22 +187,22 @@ th{font-family:"JetBrains Mono";font-size:13px;letter-spacing:.08em;text-transfo
 </section>
 
 <!-- 4 APPROACHES -->
-<section class="slide" data-sec="35" data-notes="We ended up with five approaches. A: give an auditor two identical models, one fine-tuned to lie, plus probe scores — can it find the liar? B: a ladder from detection to editing. C: a Claude research loop that rewrites the probe. D: a dumb random-search control. E: Fred's protocol where the LLM edits the probe's weights directly. We ran C, because it fits an afternoon on one GPU and gives a hard number.">
+<section class="slide" data-sec="30" data-notes="We ended up with five approaches. A: give an auditor two identical models, one fine-tuned to lie, plus probe scores — can it find the liar? B: a ladder from detection to editing. C: a Claude research loop that rewrites the probe. D: a dumb random-search control. E: Fred's protocol where the LLM edits the probe's weights directly. We ran C first, because it fits an afternoon on one GPU and gives a hard number — and Fred's E ran right after.">
   <div class="kicker r">03 · five approaches on the table</div>
-  <h2 class="r" style="--d:1">We had five ideas. We ran <span class="t">one</span>.</h2>
+  <h2 class="r" style="--d:1">We had five ideas. We ran <span class="t">two</span>.</h2>
   <div class="appr">
     <div class="card r" style="--d:2"><span class="letter v">A</span><h3>Liar auditor</h3><p>Two identical small models, one fine-tuned to lie. Claude gets weights, probe scores, or both. Who's the liar?</p><span class="chip muted">📝 proposed</span></div>
     <div class="card r" style="--d:3"><span class="letter v">B</span><h3>The ladder</h3><p>Detect → trace probe direction into MLPs/heads → edit it out → audit without evals.</p><span class="chip muted">📝 proposed</span></div>
     <div class="card r chosen" style="--d:4"><span class="letter t">C</span><h3>Claude research loop</h3><p>Claude rewrites the probe <i>code</i>; a fixed harness scores it on unseen lie families; keep or revert.</p><span class="chip t">✅ ran today</span></div>
     <div class="card r" style="--d:5"><span class="letter a">D</span><h3>Brute-force control</h3><p>Random hyperparameter search. Same budget, same keep rule. Does the LLM beat dice?</p><span class="chip a">🔧 built, not run</span></div>
-    <div class="card r" style="--d:6"><span class="letter v">E</span><h3>WSP on the probe</h3><p>LLM edits the trained probe <i>weights</i> directly (θ→θ+Δθ), vs. gradient fine-tuning. Fred's protocol.</p><span class="chip muted">📝 protocol ready</span></div>
+    <div class="card r" style="--d:6"><span class="letter v">E</span><h3>WSP on the probe</h3><p>LLM edits the trained probe <i>weights</i> directly (θ→θ+Δθ), vs. gradient fine-tuning. Fred's protocol.</p><span class="chip l">❌ ran: negative</span></div>
   </div>
 </section>
 
 <!-- 5 TIMELINE -->
-<section class="slide" data-sec="30" data-notes="The lab log. The laptop had 8 GB, so we moved to Colab. Then the usual: families missing because some answers end in a tool result, row selection hanging on 100,000-token transcripts, and a 54-minute caching ETA that we cut to 13 minutes. Baseline at 14:55, loop at 14:56, result at 15:10.">
+<section class="slide" data-sec="20" data-notes="The lab log. The laptop had 8 GB, so we moved to Colab. Then the usual: families missing because some answers end in a tool result, row selection hanging on 100,000-token transcripts, and a 54-minute caching ETA that we cut to 13 minutes. Baseline at 14:55, loop at 14:56, result at 15:10. Then approach E ran, and came back negative at 16:06.">
   <div class="kicker r">04 · the afternoon, as a lab log</div>
-  <h2 class="r" style="--d:1">13:00 → 15:30, with bugs 🐛</h2>
+  <h2 class="r" style="--d:1">13:00 → 16:10, with bugs 🐛</h2>
   <div class="tl-wrap">
     <div class="tl-line"></div>
     <div class="tl-row r" style="--d:2"><span class="time">13:00</span><span class="dot"></span><p>Team forms on Discord · sources collected</p></div>
@@ -202,11 +214,13 @@ th{font-family:"JetBrains Mono";font-size:13px;letter-spacing:.08em;text-transfo
     <div class="tl-row r" style="--d:8"><span class="time">14:55</span><span class="dot"></span><p>Baseline: val 0.849 · test 0.806</p></div>
     <div class="tl-row r" style="--d:9"><span class="time">14:56</span><span class="dot"></span><p>🔁 Loop: 15 iterations · 22 min · 0 crashes</p></div>
     <div class="tl-row r win" style="--d:10"><span class="time">15:10</span><span class="dot"></span><p>🎉 test 0.806 → <b class="t">0.845</b></p></div>
+    <div class="tl-row r" style="--d:11"><span class="time">15:54</span><span class="dot"></span><p>🧠 Approach E: Claude edits the probe <i>weights</i> directly</p></div>
+    <div class="tl-row r bug" style="--d:12"><span class="time">16:06</span><span class="dot"></span><p>❌ E on the sealed test: no gain — an honest negative</p></div>
   </div>
 </section>
 
 <!-- 6 LOOP -->
-<section class="slide" data-sec="25" data-notes="The loop: Claude reads the current best probe and every past result, writes a hypothesis and a complete new probe. A fixed harness trains on 14 lie families and scores on 7 others. Kept only if it beats the best by more than 0.002. The test families are logged but never shown to Claude — that's our honesty guard.">
+<section class="slide" data-sec="20" data-notes="The loop: Claude reads the current best probe and every past result, writes a hypothesis and a complete new probe. A fixed harness trains on 14 lie families and scores on 7 others. Kept only if it beats the best by more than 0.002. The test families are logged but never shown to Claude — that's our honesty guard.">
   <div class="kicker r">05 · how the loop works</div>
   <h2 class="r" style="--d:1">Propose → test → keep or revert → repeat</h2>
   <div style="display:grid;grid-template-columns:640px 1fr;gap:34px;align-items:center">
@@ -257,7 +271,7 @@ th{font-family:"JetBrains Mono";font-size:13px;letter-spacing:.08em;text-transfo
 </section>
 
 <!-- 8 EXPERIMENTS -->
-<section class="slide" data-sec="30" data-notes="All 15 experiments. Two kept. Iteration 4 — use three ways of pooling the activations, 18 probes — was the big step. Iteration 9 — trust each probe by how well it transfers between training families — was the winner. Removing family identity and the fancy OOD methods like V-REx did not help. The lesson: the problem is less nuisance offsets and more which layer you read.">
+<section class="slide" data-sec="25" data-notes="All 15 experiments. Two kept. Iteration 4 — use three ways of pooling the activations, 18 probes — was the big step. Iteration 9 — trust each probe by how well it transfers between training families — was the winner. Removing family identity and the fancy OOD methods like V-REx did not help. The lesson: the problem is less nuisance offsets and more which layer you read.">
   <div class="kicker r">07 · what Claude tried</div>
   <h2 class="r" style="--d:1">15 experiments, 2 keepers</h2>
   <svg class="exp r" style="--d:2" viewBox="0 0 1136 250" id="expChart"></svg>
@@ -273,7 +287,7 @@ th{font-family:"JetBrains Mono";font-size:13px;letter-spacing:.08em;text-transfo
 </section>
 
 <!-- 9 HEATMAP -->
-<section class="slide" data-sec="20" data-notes="And this answers our locate question, at least roughly. The winning probe puts 65 percent of its trust on layer 13, and 97 percent on layers 10 to 16, of 24. The lie signal that transfers across kinds of lies sits in the middle of the network — consistent with the literature on truth representations.">
+<section class="slide" data-sec="15" data-notes="And this answers our locate question, at least roughly. The winning probe puts 65 percent of its trust on layer 13, and 97 percent on layers 10 to 16, of 24. The lie signal that transfers across kinds of lies sits in the middle of the network — consistent with the literature on truth representations.">
   <div class="kicker r">08 · where the lie lives</div>
   <h2 class="r" style="--d:1">The middle of the network 🎯</h2>
   <div class="heat" id="heat"></div>
@@ -281,32 +295,53 @@ th{font-family:"JetBrains Mono";font-size:13px;letter-spacing:.08em;text-transfo
   <p class="r muted" style="--d:7;font-size:18px">small number = cross-family CV AUROC of that view. Matches "truth peaks at intermediate depth".</p>
 </section>
 
-<!-- 10 REVIEW -->
-<section class="slide" data-sec="55" data-notes="Now let's be our own Reviewer 2. C is promising, not proven: one seed, the gain is about two standard errors, we selected on val, and the winning trick is classic ML. And crucially, without D — the random search — we can't claim the LLM beat brute force. E is the most faithful to our original idea and ready to run. A is the best science but the most work. B is a roadmap, with real dual-use concerns. Also our own docs list 7 test families; it's 6.">
-  <div class="kicker r">09 · peer review of our own approaches</div>
+<!-- 10 APPROACH E -->
+<section class="slide" data-sec="35" data-notes="Approach E: instead of rewriting code, Claude edited the trained probe's weights directly. Fred's protocol was strict: a separate calibration set, and the test set unsealed exactly once. On the selection data Claude's edits looked great, plus 6 points. On the sealed test: nothing. 0.500 versus 0.503. A plain refit did better, and random edits of the same size did about as well. Claude itself said its gains were probably noise. Big caveat: Claude only had eight fixed edit operations, not a free Python kernel, so this is not weight-space programming the way the MIT post does it.">
+  <div class="kicker r">09 · approach E: Claude edits the weights directly</div>
+  <h2 class="r" style="--d:1">The gain evaporated 💨</h2>
+  <div class="stamp" style="color:var(--teal);border-color:var(--teal)">HONEST NEGATIVE</div>
+  <div style="display:grid;grid-template-columns:640px 1fr;gap:30px;align-items:start">
+    <div class="card r" style="--d:2">
+      <p class="mono muted" style="font-size:13px;margin-bottom:6px">CHANGE vs. ORIGINAL PROBE · TPR @ 5% FPR · <span class="v">▬ selection</span> · <span class="t">▬ sealed test</span></p>
+      <div id="eChart"></div>
+      <p class="mono muted" style="font-size:12px;margin-top:6px">θ = θ₀ + Δθ<sub>Claude</sub> · 20 evals per arm · test unsealed once · threshold from a separate calibration set</p>
+    </div>
+    <div>
+      <div class="guard r" style="--d:4"><b>📉</b><span>Claude − original on test: <b class="mono">−0.003</b> <span class="mono muted">[−0.039, +0.025]</span></span></div>
+      <div class="guard r" style="--d:5"><b>🎲</b><span>≈ <b>random edits</b> of the same size; a plain <b>refit</b> beat it <span class="mono muted">(−0.034 [−0.069, −0.003])</span></span></div>
+      <div class="guard r" style="--d:6"><b>🤖</b><span>Claude's own verdict: gains "probably within noise"</span></div>
+      <div class="guard r" style="--d:7"><b>🕳️</b><span>Calibration leaks: 5% FPR → <b class="l">7–10%</b> on new families</span></div>
+      <div class="guard r" style="--d:8"><b>⚠️</b><span class="muted">Only 8 fixed edit ops, no free Python kernel → <b>not</b> WSP as the MIT post does it</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 11 REVIEW -->
+<section class="slide" data-sec="40" data-notes="Now let's be our own Reviewer 2. C is promising, not proven: one seed, the gain is about two standard errors, we selected on val, and the winning trick is classic ML. And crucially, without D — the random search — we can't claim the LLM beat brute force. E was our most rigorous run, and it was negative — but with a restricted edit vocabulary, so it doesn't refute weight-space programming. A is the best science but the most work. B is a roadmap, with real dual-use concerns. Also our own docs list 7 test families; it's 6.">
+  <div class="kicker r">10 · peer review of our own approaches</div>
   <h2 class="r" style="--d:1">Reviewer #2 has thoughts 🧐</h2>
   <div class="stamp">MAJOR REVISIONS</div>
   <table class="rev">
     <tr class="r" style="--d:2"><th>approach</th><th>👍 strength</th><th>👎 concern</th><th>score</th></tr>
     <tr class="r" style="--d:3"><td class="t">C · Loop</td><td>Real number on <i>unseen</i> lie types; hidden test; a few $ to reproduce</td><td>1 seed; +0.039 ≈ 2 SE; winner's curse on 7 val families; winner = classic ML (ensemble + CV)</td><td class="stars">★★★★☆</td></tr>
     <tr class="r" style="--d:4"><td class="a">D · Search</td><td>Answers "does the LLM beat dice?"</td><td>Not run → we <b>can't</b> yet claim Claude added value</td><td class="stars">★★☆☆☆</td></tr>
-    <tr class="r" style="--d:5"><td class="v">E · WSP-edit</td><td>Closest to our idea; 4 partitions, calibration set, H1 vs H2</td><td>Needs saved activations + probe checkpoint; spec truncated after §5</td><td class="stars">★★★☆☆</td></tr>
+    <tr class="r" style="--d:5"><td class="l">E · WSP-edit</td><td>Most rigorous run: calibration set, test unsealed once, random-edit control; $2, 8 min</td><td><b>Negative</b> (0.500 vs 0.503, refit 0.533); 8 fixed ops ≠ real WSP; test families already seen in C</td><td class="stars">★★★☆☆</td></tr>
     <tr class="r" style="--d:6"><td class="v">A · Auditor</td><td>Clean ground truth (we build the liar)</td><td>Must fine-tune liars; probes on 270M untested; 2–3 pairs = anecdote</td><td class="stars">★★★☆☆</td></tr>
     <tr class="r" style="--d:7"><td class="v">B · Ladder</td><td>Good roadmap; flags Goodhart (blind probe ≠ fixed lie)</td><td>Dual-use; step 4 is a PhD, not a workshop</td><td class="stars">★★☆☆☆</td></tr>
   </table>
-  <p class="r muted" style="--d:8;font-size:15px;margin-top:10px">🐞 Self-found: docs say 7 test families → really <b>6</b> (longcontext dropped) · TPR@FPR threshold set on val the loop optimized · not comparable to paper (own baseline, HF hooks, 2B vs 397B)</p>
+  <p class="r muted" style="--d:8;font-size:15px;margin-top:10px">🐞 Self-found: docs say 7 test families → really <b>6</b> (longcontext dropped) · C's TPR@FPR threshold set on val the loop optimized · E: calibration doesn't transfer across families · not comparable to paper (own baseline, HF hooks, 2B vs 397B)</p>
 </section>
 
 <!-- 11 NEXT -->
-<section class="slide" data-sec="20" data-notes="Five next steps, cheapest first. Seeds and confidence intervals, the random-search control, a clean calibration split, reproduce the published probe, and then approach E: let Claude read and edit the layer-13 weights.">
-  <div class="kicker r">10 · next experiments</div>
+<section class="slide" data-sec="20" data-notes="Five next steps, cheapest first. Seeds and confidence intervals, the random-search control, per-domain calibration, reproduce the published probe, and E version 2 with a real Python kernel — actual weight-space programming.">
+  <div class="kicker r">11 · next experiments</div>
   <h2 class="r" style="--d:1">From "promising" to "proven"</h2>
   <ul class="next">
     <li class="r" style="--d:2"><span class="n">1</span>🎲 3–5 seeds + bootstrap CIs over families <span class="chip t">cheap · cached</span></li>
     <li class="r" style="--d:3"><span class="n">2</span>🤖 vs 🎰 run <span class="mono">search.py</span>: does Claude beat random search?</li>
-    <li class="r" style="--d:4"><span class="n">3</span>🧪 separate calibration split → honest TPR @ 1% FPR</li>
+    <li class="r" style="--d:4"><span class="n">3</span>🧪 calibrate per domain: 5% FPR became 7–10% on new families</li>
     <li class="r" style="--d:5"><span class="n">4</span>🔍 reproduce the published FIBS probe weights</li>
-    <li class="r" style="--d:6"><span class="n">5</span>🧠 approach E: Claude reads &amp; edits the layer-13 probe</li>
+    <li class="r" style="--d:6"><span class="n">5</span>🧠 E v2, real WSP: a free Python kernel, not 8 fixed ops</li>
   </ul>
 </section>
 
@@ -317,7 +352,7 @@ th{font-family:"JetBrains Mono";font-size:13px;letter-spacing:.08em;text-transfo
     <h1 class="r" style="--d:1;margin-top:14px">Questions?</h1>
     <p class="r" style="--d:2;font-size:28px;margin-top:18px">We promise to answer truthfully.</p>
     <p class="r muted" style="--d:3;font-size:20px;margin-top:8px">(and if not: AUROC 0.845 on lies it has never seen<span class="blink">_</span>)</p>
-    <p class="r mono muted" style="--d:5;font-size:15px;margin-top:40px">github.com/msverma101/LLM_lie_detector · experiments/research_loop/RESULTS.md</p>
+    <p class="r mono muted" style="--d:5;font-size:15px;margin-top:40px">github.com/msverma101/LLM_lie_detector · research_loop/RESULTS.md · weight_space_edit/runs_wsp/run1/RESULTS.md</p>
   </div>
   <svg class="poly" viewBox="0 0 1280 120" preserveAspectRatio="none"><path id="polyPath2" stroke="var(--truth)"/></svg>
 </section>
@@ -354,6 +389,15 @@ for(const [pool,row] of Object.entries(H)){
   row.forEach(([w,cv])=>{const a=Math.min(1,w/32);
     heat.insertAdjacentHTML('beforeend',`<div class="cell" style="--d:${k++};background:rgba(167,139,250,${(.06+a*.85).toFixed(2)});color:${a>.4?'#fff':'var(--ink)'}">${w}%<small>CV ${cv.toFixed(3)}</small></div>`)});
 }
+
+/* approach E chart: delta vs original, selection and test */
+(function(){
+ const arms=[["Claude edits",.061,-.003,1],["random edits",.050,-.017],["gradient FT",.077,.016],["plain refit",.089,.030]];
+ const box=document.getElementById('eChart'); const sc=v=>(Math.abs(v)/.1*50).toFixed(1)+'%';
+ const bar=(cls,v)=>{const side=v<0?'right:50%':'left:50%';return `<div class="${cls}${v<0?' neg':''}" style="${side}" data-w="${sc(v)}"></div>`};
+ const lab=(top,v)=>{const pos=v<0?`right:calc(50% + ${sc(v)} + 6px)`:`left:calc(50% + ${sc(v)} + 6px)`;return `<span style="top:${top}px;${pos}">${v>0?'+':v<0?'−':''}${Math.abs(v).toFixed(3)}</span>`};
+ arms.forEach(([n,a,b,me])=>box.insertAdjacentHTML('beforeend',`<div class="erow${me?' me':''}"><span>${me?'🤖 ':''}${n}</span><div class="etrack">${bar('bs',a)}${bar('bt',b)}${lab(5,a)}${lab(29,b)}</div></div>`));
+})();
 
 /* experiments chart */
 (function(){

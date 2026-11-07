@@ -8,7 +8,7 @@
 
 ---
 
-## 1 · The question *(0:00 – 0:25)*
+## 1 · The question *(0:00 – 0:40, incl. title)*
 
 > **Can we tell when a language model says something it *believes* is false,
 > and find *where* in the network that lie lives?**
@@ -24,7 +24,7 @@ Three sub-questions we picked up during the afternoon:
 
 ---
 
-## 2 · Two papers, two halves *(0:25 – 0:50)*
+## 2 · Two papers, two halves *(0:40 – 1:00)*
 
 | | 🔬 **Telling FIBS** (FAR.AI) | 🧠 **Weight-Space Programming** (MIT) |
 |---|---|---|
@@ -36,7 +36,7 @@ Three sub-questions we picked up during the afternoon:
 
 ---
 
-## 3 · Five approaches on the table *(0:50 – 1:25)*
+## 3 · Five approaches on the table *(1:00 – 1:30)*
 
 | # | Approach | Who / where | Status |
 |---|---|---|---|
@@ -44,13 +44,13 @@ Three sub-questions we picked up during the afternoon:
 | B | **Ladder of combinations**: detect → trace probe direction into MLPs/heads → edit it out → audit without evals | `notes/…probes-x-weight-space.md` | 📝 proposed |
 | C | **Claude research loop**: Claude rewrites the probe *code*, fixed harness scores it on unseen lie families, keep-or-revert, repeat | `experiments/research_loop/` | ✅ **ran** |
 | D | **Brute-force control**: random hyperparameter search, same budget, same keep rule | `research_loop/search.py` | 🔧 built, not run |
-| E | **WSP on the probe itself**: LLM edits the trained probe *weights* directly (θ → θ + Δθ), vs. gradient fine-tuning | `experiments/weight_space_edit/` (Fred) | 📝 protocol ready |
+| E | **WSP on the probe itself**: LLM edits the trained probe *weights* directly (θ → θ + Δθ), vs. gradient fine-tuning | `experiments/weight_space_edit/` (Fred) | ❌ **ran: negative** |
 
-We picked **C** because it fit in an afternoon on one GPU and gives a hard number.
+We ran **C** first because it fit in an afternoon on one GPU and gives a hard number; **E** followed after 15:40.
 
 ---
 
-## 4 · The afternoon, as a lab log *(1:25 – 1:55)*
+## 4 · The afternoon, as a lab log *(1:30 – 1:50)*
 
 | Time | What happened |
 |---|---|
@@ -63,10 +63,12 @@ We picked **C** because it fit in an afternoon on one GPU and gives a hard numbe
 | 14:55 | Baseline: val 0.849 · test 0.806 |
 | 14:56 | 🔁 Loop: 15 iterations in 22 min, 0 crashes |
 | 15:10 | 🎉 Test 0.806 → **0.845** |
+| 15:54 | 🧠 Approach E: Claude edits the probe *weights* directly |
+| 16:06 | ❌ E on sealed test: no gain — an honest negative |
 
 ---
 
-## 5 · The loop *(1:55 – 2:20)*
+## 5 · The loop *(1:50 – 2:10)*
 
 ```
 probe.py (best) → Claude Opus 5.5 → new probe.py + hypothesis
@@ -82,7 +84,7 @@ Setup: Qwen3.5-2B · FIBS-v1 · 2,940 conversations · split **by family** (14 t
 
 ---
 
-## 6 · The headline number *(2:20 – 2:45)*
+## 6 · The headline number *(2:10 – 2:35)*
 
 | | Baseline (FIBS LinearEnsemble) | Best (iter 9) | Δ |
 |---|---|---|---|
@@ -95,7 +97,7 @@ Every unseen family improved or held. Biggest wins on the hardest:
 
 ---
 
-## 7 · What Claude tried (15 experiments) *(2:45 – 3:15)*
+## 7 · What Claude tried (15 experiments) *(2:35 – 3:00)*
 
 | Idea family | Iters | Verdict |
 |---|---|---|
@@ -110,7 +112,7 @@ Every unseen family improved or held. Biggest wins on the hardest:
 
 ---
 
-## 8 · Where the lie lives *(3:15 – 3:35)*
+## 8 · Where the lie lives *(3:00 – 3:15)*
 
 Weight the winning probe puts on each (pool × layer), Qwen3.5-2B, 24 layers:
 
@@ -125,37 +127,61 @@ in line with "truth peaks at intermediate depth".
 
 ---
 
-## 9 · Reviewer #2 reviews our approaches *(3:35 – 4:30)*
+## 9 · Approach E: Claude edits the weights directly *(3:15 – 3:50)*
+
+θ = θ₀ + Δθ_Claude on the saved LinearEnsemble probe. Five family-disjoint partitions
+(dev / selection / **separate calibration** / test), test unsealed **once**, 20 evaluations per arm.
+
+| arm | selection TPR @ 5% FPR | **test TPR @ calibrated 5%** | test macro-AUROC |
+|---|---|---|---|
+| original θ₀ | 0.317 | 0.503 | 0.791 |
+| **Claude's weight edits** | **0.378** 📈 | **0.500** 💨 | 0.790 |
+| random edits, same size | 0.367 | 0.486 | 0.787 |
+| gradient fine-tune | 0.394 | 0.519 | 0.809 |
+| plain refit on dev | 0.406 | **0.533** | 0.806 |
+
+- **Negative result:** the selection gain did not transfer. Claude − original = −0.003 [−0.039, +0.025];
+  Claude − refit = −0.034 [−0.069, −0.003] (the only interval that excludes 0).
+- Claude's edits ≈ random edits of the same size. Claude itself called its gain "probably within noise".
+- Bright spot (not significant): best AUROC on `among`, the hardest family (0.677 vs. 0.635).
+- 🕳️ Calibration leaks: a 5% FPR threshold flags **7–10%** of honest answers on new families.
+- **Caveat:** fixed 8-op edit vocabulary + a data-derived edit, no free Python kernel → this tests a
+  constrained search over a convex probe, **not** weight-space programming as the MIT post does it.
+
+---
+
+## 10 · Reviewer #2 reviews our approaches *(3:50 – 4:30)*
 
 | Approach | 👍 Strength | 👎 Concern | Score |
 |---|---|---|---|
 | **C · Research loop** | Real number on *unseen* lie types; hidden test; fully reproducible for a few $ | 1 seed, +0.039 ≈ 2 SE; winner's curse on 7 val families; winning idea is classic ML (ensembling + CV selection); TPR@FPR threshold set on val the loop optimized | ⭐⭐⭐⭐ promising, not proven |
 | **D · Search control** | Answers "does the LLM beat brute force?" | Not run yet → we **cannot** claim the LLM added value | ⭐⭐ (blocks C's claim) |
-| **E · WSP on probe weights** | Closest to our original idea; strong protocol (4 partitions, calibration set, H1 vs H2) | 3 h budget; needs published probe checkpoint + saved Colab activations; Fred's text truncated after §5 | ⭐⭐⭐ ready to run |
+| **E · WSP on probe weights** | Best-designed test of the day: separate calibration set, test unsealed once, 5 arms incl. random-edit control; ≈ $2, 8 min | Negative (0.500 vs 0.503, below plain refit 0.533); fixed edit vocabulary ≠ real WSP; LinearEnsemble, not the published EFC probe; test families already seen by humans in C | ⭐⭐⭐ rigorous, negative |
 | **A · Liar auditor** | Clean ground truth (we build the liar); directly tests the WSP gap | Need to fine-tune liar models; FIBS probes on 270M models untested; 2–3 pairs = anecdote | ⭐⭐⭐ best science, most work |
 | **B · Ladder** | Good roadmap; flags Goodhart (edit blinds probe ≠ fixes lie) | Steps 3–4 are dual-use; step 4 is a research program, not a workshop | ⭐⭐ vision |
 
 Small bugs Reviewer #2 found in our own docs:
 - `PROGRESS.md` lists `longcontext` as a test family, but it dropped out → **6** test families, not 7.
 - Iter 11 had the best test (0.853) but was correctly discarded on val → ranking of near-ties is noisy.
+- E showed calibration doesn't transfer: 5% FPR on calibration families → 7–10% on test families.
 - Absolute numbers aren't comparable to the paper (own baseline, HF hooks instead of vLLM, 2B vs 397B).
 
 ---
 
-## 10 · Next experiments *(4:30 – 4:50)*
+## 11 · Next experiments *(4:30 – 4:50)*
 
 1. 🎲 3–5 seeds + bootstrap CIs over **families** (cheap, features cached)
 2. 🤖 vs 🎰 run `search.py` — does Claude beat random search?
-3. 🧪 separate calibration split → honest TPR @ 1 % FPR
+3. 🧪 calibrate per domain: a 5 % threshold became 7–10 % on new families
 4. 🔍 load published FIBS probe weights, check they reproduce
-5. 🧠 approach E: let Claude read and edit layer-13 probe weights
+5. 🧠 E v2, real WSP: a free Python kernel instead of 8 fixed edit ops
 
 ---
 
-## 11 · Thank you *(4:50 – 5:00)*
+## 12 · Thank you *(4:50 – 5:00)*
 
 > **Questions?**
 > We promise to answer truthfully.
 > *(And if not: our probe scores AUROC 0.845 on lies it has never seen.)*
 
-`github.com/msverma101/LLM_lie_detector` · results: `experiments/research_loop/RESULTS.md`
+`github.com/msverma101/LLM_lie_detector` · results: `experiments/research_loop/RESULTS.md` · `experiments/weight_space_edit/runs_wsp/run1/RESULTS.md`
