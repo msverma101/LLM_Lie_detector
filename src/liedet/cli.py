@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import argparse
 import hashlib
+import os
 import json
 import platform
 import sys
@@ -143,6 +144,12 @@ def cmd_final_test(a) -> int:
     return pipeline.cmd_final_test(a)
 
 
+def cmd_serve(a) -> int:
+    from .serve import serve
+    serve(a.host, a.port, a.results, a.model, a.run, a.dtype, a.token or os.environ.get("LIEDET_UI_TOKEN"), a.per_minute, a.token_file)
+    return 0
+
+
 def cmd_weights(a) -> int:
     from .weights_report import run_weight_report
     return run_weight_report(a)
@@ -187,6 +194,9 @@ def main(argv=None) -> int:
     p.add_argument("--arms", required=True); p.add_argument("--out", required=True); p.add_argument("--variant", default="followup")
     p.add_argument("--alpha", type=float, default=0.05); p.add_argument("--n-boot", type=int, default=10000)
     p.add_argument("--force", action="store_true"); p.set_defaults(fn=cmd_final_test)
+    p = sub.add_parser("serve"); p.add_argument("--host", default="127.0.0.1"); p.add_argument("--port", type=int, default=8790)
+    p.add_argument("--results", required=True); p.add_argument("--model"); p.add_argument("--run"); p.add_argument("--dtype", default="bfloat16")
+    p.add_argument("--token"); p.add_argument("--token-file"); p.add_argument("--per-minute", type=int, default=12); p.set_defaults(fn=cmd_serve)
     p = sub.add_parser("weights"); p.add_argument("--model", required=True); p.add_argument("--data", required=True)
     p.add_argument("--features", required=True); p.add_argument("--out", required=True)
     p.add_argument("--dtype", default="float32"); p.add_argument("--layer-pos", type=int, default=3)
