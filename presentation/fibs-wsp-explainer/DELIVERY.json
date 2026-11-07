@@ -1,0 +1,12 @@
+{
+  "duration_seconds": 120.0,
+  "video": "1920x1080, H.264, 30 fps, yuv420p",
+  "audio": "English synthetic narration, AAC stereo, 48 kHz; -16.1 LUFS, -1.5 dBTP",
+  "subtitles": "English, optional embedded track plus external SRT",
+  "own_experiment_results_in_video": false,
+  "monitored_llm_edited_in_proposal": false,
+  "sha256": "364c3fed47a7cbade4562f574261dc6c20361861116bbb9e2abb5483775626a5",
+  "pixel_review": "Six scene layouts inspected, including loop and final scope statement",
+  "subtitle_cues": 24,
+  "quality_check": "All 11 delivery checks passed; content and levels checked on identical audio/video streams before final subtitle-only remux."
+}
