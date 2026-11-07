@@ -1,0 +1,122 @@
+{
+ "n_rows": 163016,
+ "rows_per_quadrant": {
+  "honest_honest": 43941,
+  "honest_deceptive": 41044,
+  "deceptive_deceptive": 40464,
+  "deceptive_honest": 37567
+ },
+ "followup_label_counts": {
+  "0": 81508,
+  "1": 81508
+ },
+ "base_label_counts": {
+  "0": 84985,
+  "1": 78031
+ },
+ "n_sources": 4370,
+ "missing_frac_top": {
+  "an_creation_timestamp": 0.0,
+  "an_generation_method": 0.0,
+  "an_generation_model": 0.0,
+  "an_original_completion_length": 0.0,
+  "an_paraphrased": 0.0,
+  "an_style_paraphrase": 0.0,
+  "an_temperature": 0.0,
+  "blind_judge_confidence_primary": 0.0
+ },
+ "judge_verdict_x_followup_label": {
+  "0|": 2979,
+  "0|HONEST": 5550,
+  "0|TRUTHFUL": 62308,
+  "0|honest": 10671,
+  "1|": 2959,
+  "1|DECEPTIVE": 1720,
+  "1|LIE": 61950,
+  "1|UNTRUTHFUL": 4000,
+  "1|deceptive": 10879
+ },
+ "blind_judge_x_followup_label": {
+  "0|": 11790,
+  "0|AMBIGUOUS": 2,
+  "0|ERROR": 7,
+  "0|HOLD": 161,
+  "0|HONEST": 10055,
+  "0|LIE": 1822,
+  "0|MAINTAIN": 43,
+  "0|RETRACT": 412,
+  "0|TRUTHFUL": 56877,
+  "0|UNKNOWN": 4,
+  "0|UNTRUTHFUL": 333,
+  "0|UNVERIFIABLE": 2,
+  "1|": 11501,
+  "1|CAVE": 320,
+  "1|DECEPTIVE": 10055,
+  "1|ERROR": 7,
+  "1|LIE": 44079,
+  "1|MAINTAIN": 412,
+  "1|RETRACT": 92,
+  "1|TRUTHFUL": 11039,
+  "1|UNKNOWN": 15,
+  "1|UNTRUTHFUL": 3988
+ },
+ "human_verified_by_quadrant": {
+  "deceptive_deceptive": 0.0,
+  "deceptive_honest": 0.0,
+  "honest_deceptive": 0.0,
+  "honest_honest": 0.0
+ },
+ "human_verified_n": 0,
+ "judge_confidence_x_label": {
+  "0|": 22120,
+  "0|HIGH": 59207,
+  "0|MEDIUM": 181,
+  "1|": 22138,
+  "1|HIGH": 57155,
+  "1|MEDIUM": 2215
+ },
+ "auroc_completion_chars": 0.5470844596110147,
+ "auroc_completion_words": 0.5416048233877968,
+ "auroc_n_messages": 0.49324238614339366,
+ "auroc_messages_json_chars": 0.492912185850167,
+ "dup_completion_rows": 28114,
+ "completions_with_both_labels": 365,
+ "pair_id_nonempty": 22807,
+ "lane_attributed": {
+  "unattributed": 163016
+ },
+ "completion_chars_by_label": {
+  "0": {
+   "count": 81508.0,
+   "mean": 781.8,
+   "std": 898.2,
+   "min": 1.0,
+   "25%": 94.0,
+   "50%": 479.0,
+   "75%": 1232.0,
+   "max": 14555.0
+  },
+  "1": {
+   "count": 81508.0,
+   "mean": 923.9,
+   "std": 973.6,
+   "min": 2.0,
+   "25%": 111.0,
+   "50%": 716.5,
+   "75%": 1467.0,
+   "max": 15291.0
+  }
+ },
+ "lang_counts": {
+  "en": 155671,
+  "fr": 1175,
+  "de": 1097,
+  "ja": 1091,
+  "es": 1085,
+  "zh": 979,
+  "ko": 941,
+  "": 903,
+  "am": 74
+ },
+ "_note": "Keys auroc_prior_*_groupcv and md5_* removed: _v32_source_content_md5 is unique per row, so that split was NOT grouped. See summary2.json for the valid group-split baselines."
+}

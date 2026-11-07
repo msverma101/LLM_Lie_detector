@@ -74,3 +74,9 @@ Control: Gemma 3 270M (does not loop) showed no meaningful gain (MATH-500 6.8 to
 - Edited Qwen model: https://huggingface.co/RikiyaT/Qwen3.5-0.8B-weight-space-programming
 - Demo: https://huggingface.co/spaces/akhaliq/weight-space-programming-demo
 - Related cited work: arXiv 2102.11174, arXiv 2301.05062, Karpathy "Software 2.0", Elhage et al. (induction heads)
+
+## Addendum 2026-11-07 (verification against the page)
+
+- Checked on the live page: publication date November 2, 2026; authors; MATH-500 7.9% -> 48.1% with 131,072 changed weights (0.016%); Exp. 7 head 10.2 attention shares 94.3%/0.75% (honest) and 3.5%/85.7% (sycophant).
+- Not found on the page: "1,125 turns audited tool-free" and the model id `gpt-6-astra`. Both come from the logs repo as read in the first pass; treat them as unverified here.
+- Page text contains no mention of deception probes; the link to lie detection is our own mapping (see `lie-detection-improvement-plan.md`).
