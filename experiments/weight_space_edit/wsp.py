@@ -650,7 +650,7 @@ def cmd_final(a):
     for r in rows:
         L.append(f"| {r['arm']} | {r['sel_tpr5']:.3f} | {r['sel_auroc']:.3f} | {r['test_tpr5']:.3f} | {r['test_fpr5']:.3f} | "
                  f"{r['test_tpr1']:.3f} | {r['test_fpr1']:.3f} | {r['test_macro_auroc']:.3f} | {r['edit_total']:.3f} |")
-    L += ["", "Paired differences, bootstrap over the 7 test families (mean [95% interval]), threshold from calibration at 5% FPR:", "",
+    L += ["", f"Paired differences, bootstrap over the {len(fams)} test families (mean [95% interval]), threshold from calibration at 5% FPR:", "",
           "| comparison | Δ test TPR@5% | Δ test FPR@5% | Δ test macro-AUROC |", "|---|---|---|---|"]
     L += [f"| {d[0]} | {d[1]} | {d[2]} | {d[3]} |" for d in diffs]
     L += ["", "Per-family test AUROC:", "", "| family | " + " | ".join(r["arm"] for r in rows) + " |", "|---|" + "---|" * len(rows)]

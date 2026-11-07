@@ -1,5 +1,18 @@
 # Agent handoff: improve a FIBS lie probe by editing its weights directly
 
+> **Implemented (7 Nov 2026, evening):** [`wsp.py`](wsp.py) + Colab notebook [`wsp.ipynb`](wsp.ipynb).
+> Results of the first run (negative: no test gain over the unedited probe or a plain refit): [`runs_wsp/run1/RESULTS.md`](runs_wsp/run1/RESULTS.md).
+>
+> How the implementation answers the review feedback:
+>
+> | Feedback | Implementation |
+> |---|---|
+> | 1. Train the probe once and save it | `wsp.py prepare` fits the LinearEnsemble once on `dev_fit`, exports θ0 = {μ, σ, W, b, a} as `theta0.npz` (hash in the manifest) and checks that numpy replay matches sklearn (tolerance 1e-6, fixed before the search). Every arm starts from this θ0. |
+> | 2. Separate WSP arm, code search stays as comparison | `wsp.py claude`: Claude Opus 5.5 gets tools (`overview`, `inspect_weights`, `feature_stats`, `inspect_errors`, `apply_edit`, `evaluate`, `finish`) and changes θ0 **directly** (θ_new = θ0 + Δθ_Claude, no retraining). `research_loop/` is untouched. Extra comparison arms on the same parameters: gradient fine-tuning (`gd_finetune`), plain refit on all dev data (`refit_all_dev`), random edits of the same size (`random_edit_control`). |
+> | 3. Separate calibration and test | Family-disjoint partitions, frozen in `run_manifest.json`: `dev_fit` (10 families, θ0), `dev_inspect` (4, Claude's error analysis + GD data), `selection` (4 val families, aggregate scores only, budget 20 calls), `calib` (3 val families, **honest answers only**, sets the alarm threshold), `test` (7 families, only loaded by `wsp.py final`, which runs once and writes a lock file). |
+> | 4. Target: more lies caught at FPR ≤ 5% | Selection rule fixed in advance: max selection TPR at 5% FPR, ties → AUROC → smaller edit. Final table: test TPR and FPR at the threshold calibrated on `calib`; paired bootstrap over test families. |
+> | Starting probe | Our local LinearEnsemble, **not** the published EFC probe: the cache keeps only pooled activations (last token, answer mean, turn mean), EFC needs token-level activations/covariances. A run on the original EFC needs a new capture. |
+
 **For:** an AI agent (Claude or similar) that picks up this task cold.
 **From:** Fred's protocol "Improving a FIBS detector with Weight-Space Programming"
 (7 Nov 2026), adapted to what already exists in this repo.

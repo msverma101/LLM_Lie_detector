@@ -4,6 +4,24 @@ Goal for the workshop (deadline 17:00): an automated research loop in which Clau
 an existing lie-detection method, the linear probes from the FIBS paper, and we can show
 measured progress on kinds of lies the probe never saw.
 
+## Update 16:05 CET: weight-space programming arm (direct weight edits)
+
+Feedback: the loop changes the *training code*; our chosen approach was Claude editing a trained
+detector's *weights*. New arm in `../weight_space_edit/` (`wsp.py`, `wsp.ipynb`): probe trained
+once and saved (θ0), Claude edits θ0 directly via tools, family-disjoint dev / selection /
+calibration / test partitions, threshold from calibration negatives, test unsealed once.
+
+| arm | test TPR @ calibrated 5% | test FPR | test macro-AUROC |
+|---|---|---|---|
+| original θ0 | 0.503 | 0.083 | 0.791 |
+| **Claude weight edits** | 0.500 | 0.075 | 0.790 |
+| gradient fine-tune | 0.519 | 0.097 | 0.809 |
+| refit on all dev | 0.533 | 0.083 | 0.806 |
+| random edits (same size) | 0.486 | 0.072 | 0.787 |
+
+**Negative result:** the selection gain (0.317 → 0.378) did not transfer; WSP ≈ original ≈ random
+edits, below a plain refit. Cost ≈ $2 API, ~8 min. Write-up: `../weight_space_edit/runs_wsp/run1/RESULTS.md`.
+
 ## Status at 15:10 CET: loop finished
 
 | Step | Status |

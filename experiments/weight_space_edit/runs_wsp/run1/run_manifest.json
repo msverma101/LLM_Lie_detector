@@ -1,0 +1,102 @@
+{
+  "created": "2026-11-07 14:56:28",
+  "activation_root": "/content/LLM_lie_detector/experiments/research_loop/acts",
+  "info": {
+    "model": "Qwen/Qwen3.5-2B",
+    "layers": [
+      7,
+      10,
+      13,
+      16,
+      19,
+      22
+    ],
+    "dtype": "torch.float16",
+    "n_per_family": 120,
+    "max_tokens": 4096,
+    "seed": 0,
+    "pools": [
+      "last",
+      "mean_answer",
+      "mean_turn"
+    ],
+    "n": 2940,
+    "d_model": 2048
+  },
+  "source_model": "Qwen/Qwen3.5-2B",
+  "pool": "last",
+  "probe": "LinearEnsemble (per-layer logreg C=0.01, mean of probs)",
+  "probe_origin": "own LinearEnsemble trained here on dev_fit (no compatible published EFC checkpoint: the cache keeps only pooled activations, EFC needs token-level activations/covariances)",
+  "theta0_hash": "38c1d9b800cbc832",
+  "replay_max_abs_diff": 1.814719620130134e-07,
+  "replay_tol": 1e-06,
+  "seed": 0,
+  "eval_budget_per_arm": 20,
+  "selection_rule": "(fixed before the search): maximize selection TPR at 5% FPR (threshold from the selection honest answers); ties within 0.005 -> higher selection macro-AUROC -> smaller edit.",
+  "llm_model": "claude-opus-5-5",
+  "partitions": {
+    "dev_fit": {
+      "families": [
+        "anti",
+        "doluschat",
+        "fever",
+        "instructed",
+        "lies",
+        "multi",
+        "persona_prefill",
+        "synthetic",
+        "wikihow",
+        "wikihownest"
+      ],
+      "n": 1080,
+      "n_lie": 540,
+      "row_hash": "159ed16e005af2c9"
+    },
+    "dev_inspect": {
+      "families": [
+        "liarsbench",
+        "mask",
+        "original",
+        "ultrachat"
+      ],
+      "n": 420,
+      "n_lie": 210,
+      "row_hash": "24fd40ed023616ee"
+    },
+    "selection": {
+      "families": [
+        "b1-bare",
+        "b1-followup",
+        "caving",
+        "negotiation"
+      ],
+      "n": 360,
+      "n_lie": 180,
+      "row_hash": "736c5d138d4b51e4"
+    },
+    "calib": {
+      "families": [
+        "fabricated",
+        "sycophancy",
+        "truthfulqa"
+      ],
+      "n": 180,
+      "n_lie": 0,
+      "row_hash": "25ada8839d136805"
+    },
+    "test": {
+      "families": [
+        "among",
+        "harm",
+        "medqa",
+        "model",
+        "sandbagging",
+        "werewolf"
+      ],
+      "n": 720,
+      "n_lie": 360,
+      "row_hash": "fc295b3787847189"
+    }
+  },
+  "note": "transcribed from the Colab runtime output (runs_wsp/run1/run_manifest.json there)"
+}

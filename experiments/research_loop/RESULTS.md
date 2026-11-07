@@ -246,8 +246,9 @@ We want to be honest about how much this result shows.
 6. **We trained our own baseline** rather than loading the published FIBS probe weights, and
    our activations came from Hugging Face transformers, not the paper's vLLM hooks. Absolute
    numbers are not comparable to the paper.
-7. **Not yet weight-space programming.** The loop edits probe *code*. Our original idea, an
-   LLM reading and editing *weights*, is not tested here.
+7. **Not weight-space programming.** The loop edits probe *code*. Our original idea, an
+   LLM reading and editing *weights*, is tested separately in
+   [`../weight_space_edit/`](../weight_space_edit/runs_wsp/run1/RESULTS.md) (result: no gain on test, see §8).
 8. **Cost and compute were tiny** (one T4, 15 API calls). That is a strength for
    reproducibility, but a bigger search might find more.
 9. **Dual use.** Methods that make probes generalize could also be studied to make lies *harder*
@@ -264,8 +265,21 @@ We want to be honest about how much this result shows.
 - [ ] Load the published FIBS probe weights and check that they reproduce on our activations.
 - [ ] Operating point: share of lies caught at a fixed 1% / 5% false-alarm rate (already in
       `eval.py` on the teammate's branch).
-- [ ] Weight-space angle: let Claude read the best probe's weight vectors at layer 13 and
-      explain which directions it uses.
+- [x] Weight-space angle: done as a separate arm, see §8.
+
+## 8. Follow-up: direct weight edits (weight-space programming arm)
+
+Reviewer feedback: this loop changes *who writes the training code*
+(θ_new = Train(Claude's code, D)), but our chosen approach was *Claude edits a trained detector's
+weights* (θ_new = θ_old + Δθ_Claude). We added that arm in
+[`../weight_space_edit/wsp.py`](../weight_space_edit/wsp.py), with a saved checkpoint θ0, a separate
+calibration set for the alarm threshold, a test set loaded only once, and TPR at 5% FPR as the target.
+
+**Result (one run, 6 test families):** Claude's edits raised selection TPR@5% from 0.317 to 0.378,
+but on test they caught the same share of lies as the unedited probe (0.500 vs. 0.503, Δ −0.003
+[−0.039, +0.025]) and fewer than a plain refit on the same data (0.533, Δ −0.034 [−0.069, −0.003]).
+They were indistinguishable from random edits of the same size. Details:
+[`runs_wsp/run1/RESULTS.md`](../weight_space_edit/runs_wsp/run1/RESULTS.md).
 
 ## 7. Reproduce
 
