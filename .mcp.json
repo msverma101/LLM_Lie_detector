@@ -1,0 +1,45 @@
+{
+  "mcpServers": {
+    "corvin_orchestration": {
+      "args": [
+        "-m",
+        "corvin_orchestration.mcp_server"
+      ],
+      "command": "/home/shumway/.local/share/uv/tools/corvinos/bin/python",
+      "env": {
+        "CORVIN_CALLER_PERSONA": "assistant",
+        "PYTHONPATH": "/home/shumway/projects/CorvinOS/core/orchestration:/home/shumway/projects/CorvinOS/core/workflows:/home/shumway/projects/CorvinOS/core/console:/home/shumway/projects/CorvinOS/corvin_operator/bridges/shared:/home/shumway/projects/CorvinOS/corvin_operator/forge",
+        "CORVIN_HOME": "/home/shumway/projects/CorvinOS/.corvin",
+        "CORVIN_TENANT_ID": "_default"
+      }
+    },
+    "forge": {
+      "args": [
+        "/home/shumway/projects/CorvinOS/corvin_operator/forge/forge.py",
+        "mcp",
+        "--permission-mode",
+        "yes"
+      ],
+      "command": "/home/shumway/.local/share/uv/tools/corvinos/bin/python",
+      "env": {
+        "FORGE_ALLOWED_TOOLS": "",
+        "FORGE_PERSONA": "assistant",
+        "CORVIN_HOME": "/home/shumway/projects/CorvinOS/.corvin",
+        "CORVIN_TENANT_ID": "_default"
+      }
+    },
+    "skill_forge": {
+      "args": [
+        "-m",
+        "skill_forge.mcp_server"
+      ],
+      "command": "/home/shumway/.local/share/uv/tools/corvinos/bin/python",
+      "env": {
+        "PYTHONPATH": "/home/shumway/projects/CorvinOS/corvin_operator/skill-forge:/home/shumway/projects/CorvinOS/corvin_operator/forge",
+        "SKILL_FORGE_PERSONA": "assistant",
+        "CORVIN_HOME": "/home/shumway/projects/CorvinOS/.corvin",
+        "CORVIN_TENANT_ID": "_default"
+      }
+    }
+  }
+}
