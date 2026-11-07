@@ -51,7 +51,7 @@ def family_of(source: str) -> str:
 
 
 def load_candidates(n_per_family: int, seed: int, data_dir: str | None) -> pd.DataFrame:
-    """Sample up to 2 * n_per_family / 4 candidates per (family, quadrant); we keep n/4 after length filtering."""
+    """Sample up to 8 * n_per_family / 4 candidates per (family, quadrant); we keep n/4 after length filtering."""
     per_cell = max(1, n_per_family // 4)
     parts = []
     for split in SPLITS:
@@ -63,7 +63,7 @@ def load_candidates(n_per_family: int, seed: int, data_dir: str | None) -> pd.Da
         df = pd.read_parquet(path, columns=COLS)
         df["family"] = df["source"].map(family_of)
         for _, g in df.groupby("family"):
-            parts.append(g.sample(n=min(len(g), 2 * per_cell), random_state=seed))
+            parts.append(g.sample(n=min(len(g), 8 * per_cell), random_state=seed))
         del df
     out = pd.concat(parts, ignore_index=True)
     out["label"] = out["quadrant"].str.endswith("_deceptive").astype(int)
@@ -91,7 +91,7 @@ def to_chat(messages):
 def render(tok, row, end_token):
     """Return (token ids, answer_start, turn_start, last_idx) or None if the row can't be rendered."""
     chat = to_chat(json.loads(row.messages_json))
-    if not chat or chat[-1]["role"] != "user":
+    if not chat or chat[-1]["role"] == "assistant":  # must end with a user turn or a tool result
         return None
     completion = (row.completion or "").strip()
     if not completion:
@@ -105,9 +105,9 @@ def render(tok, row, end_token):
     enc = tok(full, add_special_tokens=False, return_offsets_mapping=True)
     ids, offs = enc["input_ids"], enc["offset_mapping"]
 
-    turn_char = prompt.rfind("<|im_start|>user")
-    if turn_char < 0:
-        turn_char = prompt.rfind(chat[-1]["content"][:50]) if chat[-1]["content"] else -1
+    # final turn = the last message before the assistant header (a user question or a tool result)
+    header = prompt.rfind("<|im_start|>assistant")
+    turn_char = prompt.rfind("<|im_start|>", 0, header) if header > 0 else -1
     answer_char, answer_end_char = len(prompt), len(prompt) + len(completion)
 
     def first_token_at(c):
@@ -129,7 +129,7 @@ def main():
     ap.add_argument("--model", default="Qwen/Qwen3.5-2B")
     ap.add_argument("--layers", default="7,10,13,16,19,22", help="decoder blocks to read (0-indexed)")
     ap.add_argument("--n_per_family", type=int, default=120, help="examples per family, balanced over the 4 quadrants")
-    ap.add_argument("--max_tokens", type=int, default=2048, help="skip rows longer than this")
+    ap.add_argument("--max_tokens", type=int, default=4096, help="skip rows longer than this")
     ap.add_argument("--seed", type=int, default=0)
     ap.add_argument("--dtype", default="auto", choices=["auto", "bfloat16", "float16", "float32"])
     ap.add_argument("--data_dir", default=None, help="local parquet files <split>.parquet (for testing)")
