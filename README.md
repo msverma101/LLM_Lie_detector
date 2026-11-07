@@ -1,5 +1,9 @@
 # LLM_Lie_detector
 
+<video src="presentation/plumbline-paper-video/plumbline-lie-detection-paper.en.mp4" controls width="720"></video>
+
+**Video (English, 9:47):** [Plumbline: lies in a model, honestly measured](presentation/plumbline-paper-video/plumbline-lie-detection-paper.en.mp4) · German version: [plumbline-lie-detection-paper.de.mp4](presentation/plumbline-paper-video/plumbline-lie-detection-paper.de.mp4)
+
 Harness to test whether lies of a frozen LLM (Qwen3.5-2B) can be detected from **activations** (published FIBS probes)
 and whether **weight-space edits of the probe** proposed by an LLM (Weight-Space Programming, WSP) add anything over
 ordinary optimisation. Every claim is measured with a preregistered plan; negative results are written up like positive ones.
