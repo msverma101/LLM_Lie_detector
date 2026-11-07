@@ -1,0 +1,27 @@
+[project]
+name = "liedet"
+version = "0.1.0"
+description = "Activation-space and weight-space lie detection harness for a frozen LLM (Qwen3.5-2B)"
+requires-python = ">=3.11"
+dependencies = ["torch", "transformers>=5", "numpy", "scipy", "scikit-learn", "safetensors"]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+fibs = ["probe-inference"]
+
+[project.scripts]
+liedet = "liedet.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["slow: needs the real Qwen3.5-2B download (set LIEDET_REAL_MODEL)"]
+
+[tool.setuptools.package-data]
+liedet = ["ui/*"]

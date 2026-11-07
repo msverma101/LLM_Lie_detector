@@ -1,0 +1,9 @@
+__pycache__/
+*.py[cod]
+kb/graph/
+kb/.lock
+.kb-cache/
+kb/.txn
+kb/.txn.tmp
+.kbw-*
+data/scratch/

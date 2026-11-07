@@ -1,0 +1,14 @@
+{"src": "01M6V1CVC266NDRETANWQJD9SC", "rel": "derived_from", "dst": "01M6V11KWKJJQG68SFYNQ1F9KX", "external": false, "resolved": true}
+{"src": "01M6V1CVC266NDRETANWQJD9SC", "rel": "source", "dst": "https://rikiyat.github.io/blog/weight-space-programming/", "external": true, "resolved": true}
+{"src": "01M6V1YAEXAEGV9G4YX53QJ12T", "rel": "derived_from", "dst": "01M6V11KWKJJQG68SFYNQ1F9KX", "external": false, "resolved": true}
+{"src": "01M6V1YAEXAEGV9G4YX53QJ12T", "rel": "related", "dst": "01M6V1CVC266NDRETANWQJD9SC", "external": false, "resolved": true}
+{"src": "01M6V1YAEXAEGV9G4YX53QJ12T", "rel": "related", "dst": "01M6S6SWHB99X5HGMY1XBJQW3C", "external": false, "resolved": true}
+{"src": "01M6V11KWKJJQG68SFYNQ1F9KX", "rel": "source", "dst": "https://rikiyat.github.io/blog/weight-space-programming/", "external": true, "resolved": true}
+{"src": "01M6V43Z8YC5GNFB7T8ES68HDT", "rel": "derived_from", "dst": "01M6V11KWKJJQG68SFYNQ1F9KX", "external": false, "resolved": true}
+{"src": "01M6V43Z8YC5GNFB7T8ES68HDT", "rel": "related", "dst": "01M6V1YAEXAEGV9G4YX53QJ12T", "external": false, "resolved": true}
+{"src": "01M6V43Z8YC5GNFB7T8ES68HDT", "rel": "related", "dst": "01M6V1CVC266NDRETANWQJD9SC", "external": false, "resolved": true}
+{"src": "01M6SA0VMNFFE5V5HJ8F9DNAJN", "rel": "related", "dst": "01M6S6SWW2R6HACZY5TD8W6AGF", "external": false, "resolved": true}
+{"src": "01M6SGHF1JTW0VY31FN3A2ZXDT", "rel": "related", "dst": "01M6SA0VMNFFE5V5HJ8F9DNAJN", "external": false, "resolved": true}
+{"src": "01M6SGHF1JTW0VY31FN3A2ZXDT", "rel": "related", "dst": "01M6S6SWW2R6HACZY5TD8W6AGF", "external": false, "resolved": true}
+{"src": "01M6S6SWP6S4JY28YTYDRARNAV", "rel": "child_of", "dst": "01M6S6SWBFE1SAB4CP30WWMJS1", "external": false, "resolved": true}
+{"src": "01M6S6SWW2R6HACZY5TD8W6AGF", "rel": "child_of", "dst": "01M6S6SWP6S4JY28YTYDRARNAV", "external": false, "resolved": true}

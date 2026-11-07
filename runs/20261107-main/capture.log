@@ -1,0 +1,53 @@
+facts=231 rows=1848 train/calib/test facts=116/46/69 -> data
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights: 100%|██████████| 320/320 [00:00<00:00, 17058.47it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+belief 0/231
+belief 20/231
+belief 40/231
+belief 60/231
+belief 80/231
+belief 100/231
+belief 120/231
+belief 140/231
+belief 160/231
+belief 180/231
+belief 200/231
+belief 220/231
+capture 25/924
+capture 50/924
+capture 75/924
+capture 100/924
+capture 125/924
+capture 150/924
+capture 175/924
+capture 200/924
+capture 225/924
+capture 250/924
+capture 275/924
+capture 300/924
+capture 325/924
+capture 350/924
+capture 375/924
+capture 400/924
+capture 425/924
+capture 450/924
+capture 475/924
+capture 500/924
+capture 525/924
+capture 550/924
+capture 575/924
+capture 600/924
+capture 625/924
+capture 650/924
+capture 675/924
+capture 700/924
+capture 725/924
+capture 750/924
+capture 775/924
+capture 800/924
+capture 825/924
+capture 850/924
+capture 875/924
+capture 900/924
+captured rows=1848 belief_kept=222/231 -> features

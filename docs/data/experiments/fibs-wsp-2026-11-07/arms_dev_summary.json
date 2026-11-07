@@ -1,0 +1,38 @@
+{
+  "variant": "followup",
+  "seed": 0,
+  "rounds": 6,
+  "per_round": 5,
+  "proposer": "claude",
+  "proposer_model": "claude-opus-5-5",
+  "arms": {
+    "A0_published": {
+      "train_recall": 0.15765765765765766,
+      "calib_recall": 0.21739130434782608,
+      "n_proposed": null,
+      "n_accepted": null,
+      "n_invalid": null
+    },
+    "A1_finetune": {
+      "train_recall": 0.16666666666666666,
+      "calib_recall": 0.21739130434782608,
+      "n_proposed": null,
+      "n_accepted": null,
+      "n_invalid": null
+    },
+    "A2_random": {
+      "train_recall": 0.2702702702702703,
+      "calib_recall": 0.32608695652173914,
+      "n_proposed": 30,
+      "n_accepted": 5,
+      "n_invalid": 0
+    },
+    "A3_wsp_llm": {
+      "train_recall": 0.25675675675675674,
+      "calib_recall": 0.3804347826086957,
+      "n_proposed": 26,
+      "n_accepted": 3,
+      "n_invalid": 0
+    }
+  }
+}

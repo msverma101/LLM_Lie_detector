@@ -1,0 +1,51 @@
+{
+ "blind_coverage": 0.8568974824557098,
+ "blind_disagree_overall": 0.09806139396369051,
+ "blind_disagree_on_pos": 0.1649353432878474,
+ "blind_disagree_on_neg": 0.03091689023427973,
+ "n_families": 28,
+ "auroc_metadata_prior|deception_type|by_source": 0.48329681892688814,
+ "auroc_metadata_prior|follow_up_category|by_source": 0.5487386957915482,
+ "auroc_metadata_prior|family|by_source": 0.4808107690895733,
+ "auroc_metadata_prior|family+followup|by_source": 0.5077205227060525,
+ "auroc_metadata_prior|generation_model|by_source": 0.5943432223117375,
+ "auroc_metadata_prior|deception_type|by_family": 0.5004825128190602,
+ "auroc_metadata_prior|follow_up_category|by_family": 0.549617965824384,
+ "auroc_metadata_prior|family|by_family": 0.5,
+ "auroc_metadata_prior|family+followup|by_family": 0.5,
+ "auroc_metadata_prior|generation_model|by_family": 0.5955316803906421,
+ "auroc_chars_overall": 0.5470844596110147,
+ "pair_types": {
+  "": 156330,
+  "b1_bare_agentic_pair": 4034,
+  "natural": 2248,
+  "code_bugs_reverse_pair": 404
+ },
+ "pair_groups": 20545,
+ "pair_groups_size_dist": {
+  "1": 18621,
+  "2": 1646,
+  "3": 226,
+  "4": 45,
+  "5": 6,
+  "6": 1
+ },
+ "pair_groups_with_both_labels": 1348,
+ "identical_completion_both_labels": 365,
+ "rows_in_those": 26516,
+ "identical_completion_both_labels_by_family": {
+  "mask": 2756,
+  "sycophancy": 2422,
+  "synthetic": 1902,
+  "sandbagging": 1785,
+  "liarsbench": 1632,
+  "medqa": 1623,
+  "doluschat": 1602,
+  "harm": 1591
+ },
+ "followup_vs_base_agree_rate": 0.5177712617166413,
+ "followup_label_by_base": {
+  "0": 0.48295581573218804,
+  "1": 0.5185631351642296
+ }
+}

@@ -1,3 +1,18 @@
 docs/
 __pycache__/
 .venv/
+
+# liedet harness additions (the team's lines above are unchanged)
+*.egg-info/
+.pytest_cache/
+# run artefacts: tracked, EXCEPT what is huge, secret or ephemeral
+# (features.npz is reproducible with runs/20261107-main/run_capture.sh; its sha256 is in docs/data/experiments/*/FEATURES_SHA256.txt)
+runs/**/features/features.npz
+runs/ui/token
+runs/ui/public_url.txt
+runs/ui/cloudflared-empty.yml
+# docs/ is a nested knowledge-base repo mirrored by scripts/sync_docs_snapshot.sh
+docs/.git/
+docs/scripts/
+docs/kb/.lock
+docs/data/scratch/

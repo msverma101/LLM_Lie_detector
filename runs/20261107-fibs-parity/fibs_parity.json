@@ -1,0 +1,37 @@
+{
+  "n_rows": 194,
+  "n_pos": 97,
+  "archs": {
+    "linear": {
+      "auroc": 0.9374003613561483,
+      "by_family": {},
+      "score_mean_pos": 0.7316782983713014,
+      "score_mean_neg": 0.24033494570245167
+    },
+    "mlp": {
+      "auroc": 0.9867148474864491,
+      "by_family": {},
+      "score_mean_pos": 0.8798000220993922,
+      "score_mean_neg": 0.10989342050595073
+    },
+    "efc": {
+      "auroc": 0.9975555319375067,
+      "by_family": {},
+      "score_mean_pos": 9.03114404444842,
+      "score_mean_neg": -7.434131923333271
+    },
+    "axial": {
+      "auroc": 0.9961738760760973,
+      "by_family": {},
+      "score_mean_pos": 7.073826782943047,
+      "score_mean_neg": -6.188893355352363
+    }
+  },
+  "published_validation_auroc_qwen3.5-2b": {
+    "linear": 0.926,
+    "mlp": 0.968,
+    "efc": 0.987,
+    "axial": 0.991,
+    "source": "fibs-probes README, authors-reported, in-distribution"
+  }
+}

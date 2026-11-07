@@ -1,0 +1,22 @@
+{
+ "liedet": "0.1.0",
+ "model": "/home/shumway/.cache/huggingface/hub/models--Qwen--Qwen3.5-2B/snapshots/15852e8c16360a2fea060d615a32b45270f8a8fc/",
+ "dtype": "bfloat16",
+ "layers": [
+  7,
+  10,
+  13,
+  16,
+  19,
+  22
+ ],
+ "d_model": 2048,
+ "n_layers": 24,
+ "python": "3.12.3",
+ "torch": "2.15.0+cpu",
+ "transformers": "5.22.2",
+ "n_rows": 1848,
+ "n_facts": 231,
+ "rows_sha256": "507f89cc7e69eb2cb199514f52fefe676bf7f062466e51498e3553ec0b9c4be4",
+ "belief_kept": 222
+}

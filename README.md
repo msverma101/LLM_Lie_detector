@@ -1,5 +1,7 @@
 # LLM_Lie_detector
 
+[![Plumbline explainer, animated preview (30 s). Click to open the English video](presentation/plumbline-paper-video/plumbline-preview.en.gif)](presentation/plumbline-paper-video/plumbline-lie-detection-paper.en.mp4)
+
 ## Plumbline: lies in a model, honestly measured (video)
 
 <video src="presentation/plumbline-paper-video/plumbline-lie-detection-paper.en.mp4" poster="presentation/plumbline-paper-video/poster.jpg" controls width="720"></video>
@@ -17,3 +19,7 @@ English, 9:47, built like a paper (abstract, introduction, methodology, results,
 ## Ten documented detector experiments
 
 [Results, hypotheses, controls and reproducibility bundle](experiments/diagnostic_ten/REPORT.md). Ten real candidates were evaluated with a frozen LLM. The WSP improvement hypothesis was not supported; ordinary fitting showed a modest favourable point estimate. [Five-criterion evidence](experiments/diagnostic_ten/CRITERIA.md).
+
+## Harness and preregistered experiment
+
+[Documentation of the `liedet` package](src/liedet/README.md): published FIBS probes, calibrated evaluation, LLM-proposed probe edits (WSP) and the first preregistered run (WSP not supported on 65 held-out facts). Plan, result note and raw data are under [`docs/`](docs/) and `docs/data/experiments/fibs-wsp-2026-11-07/`.
