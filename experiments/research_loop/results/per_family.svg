@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 538" width="900" height="538" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif">
+<rect width="900" height="538" rx="14" fill="#ffffff"/>
+<text x="30" y="30" font-size="19" font-weight="700" fill="#1c1917">Per family: baseline vs. best probe</text>
+<text x="30" y="50" font-size="13" fill="#78716c">AUROC on unseen families. Grey = baseline, teal = iter 9. Biggest gains on the hardest families; truthfulqa unchanged.</text>
+<line x1="190.0" x2="190.0" y1="70" y2="486" stroke="#e7e5e4"/>
+<text x="190.0" y="504" font-size="12" fill="#78716c" text-anchor="middle">0.5</text>
+<line x1="308.0" x2="308.0" y1="70" y2="486" stroke="#e7e5e4"/>
+<text x="308.0" y="504" font-size="12" fill="#78716c" text-anchor="middle">0.6</text>
+<line x1="426.0" x2="426.0" y1="70" y2="486" stroke="#e7e5e4"/>
+<text x="426.0" y="504" font-size="12" fill="#78716c" text-anchor="middle">0.7</text>
+<line x1="544.0" x2="544.0" y1="70" y2="486" stroke="#e7e5e4"/>
+<text x="544.0" y="504" font-size="12" fill="#78716c" text-anchor="middle">0.8</text>
+<line x1="662.0" x2="662.0" y1="70" y2="486" stroke="#e7e5e4"/>
+<text x="662.0" y="504" font-size="12" fill="#78716c" text-anchor="middle">0.9</text>
+<line x1="780.0" x2="780.0" y1="70" y2="486" stroke="#e7e5e4"/>
+<text x="780.0" y="504" font-size="12" fill="#78716c" text-anchor="middle">1.0</text>
+<text x="30" y="92" font-size="11" font-weight="700" fill="#0d9488" letter-spacing="0.08em">VAL</text>
+<text x="176" y="92" font-size="13" fill="#1c1917" text-anchor="end">b1-bare</text>
+<line x1="633.2" x2="693.5" y1="88" y2="88" stroke="#0d9488" stroke-width="3" stroke-opacity="0.35"/>
+<circle cx="633.2" cy="88" r="6" fill="#a8a29e"/>
+<circle cx="693.5" cy="88" r="7" fill="#0d9488"/>
+<text x="707.5" y="92" font-size="12" font-weight="600" fill="#0d9488">+0.051</text>
+<text x="176" y="122" font-size="13" fill="#1c1917" text-anchor="end">b1-followup</text>
+<line x1="714.2" x2="740.0" y1="118" y2="118" stroke="#0d9488" stroke-width="3" stroke-opacity="0.35"/>
+<circle cx="714.2" cy="118" r="6" fill="#a8a29e"/>
+<circle cx="740.0" cy="118" r="7" fill="#0d9488"/>
+<text x="754.0" y="122" font-size="12" font-weight="600" fill="#0d9488">+0.022</text>
+<text x="176" y="152" font-size="13" fill="#1c1917" text-anchor="end">caving</text>
+<line x1="297.5" x2="376.2" y1="148" y2="148" stroke="#0d9488" stroke-width="3" stroke-opacity="0.35"/>
+<circle cx="297.5" cy="148" r="6" fill="#a8a29e"/>
+<circle cx="376.2" cy="148" r="7" fill="#0d9488"/>
+<text x="390.2" y="152" font-size="12" font-weight="600" fill="#0d9488">+0.067</text>
+<text x="176" y="182" font-size="13" fill="#1c1917" text-anchor="end">fabricated</text>
+<line x1="724.3" x2="764.0" y1="178" y2="178" stroke="#0d9488" stroke-width="3" stroke-opacity="0.35"/>
+<circle cx="724.3" cy="178" r="6" fill="#a8a29e"/>
+<circle cx="764.0" cy="178" r="7" fill="#0d9488"/>
+<text x="778.0" y="182" font-size="12" font-weight="600" fill="#0d9488">+0.034</text>
+<text x="176" y="212" font-size="13" fill="#1c1917" text-anchor="end">negotiation</text>
+<line x1="502.0" x2="587.3" y1="208" y2="208" stroke="#0d9488" stroke-width="3" stroke-opacity="0.35"/>
+<circle cx="502.0" cy="208" r="6" fill="#a8a29e"/>
+<circle cx="587.3" cy="208" r="7" fill="#0d9488"/>
+<text x="601.3" y="212" font-size="12" font-weight="600" fill="#0d9488">+0.072</text>
+<text x="176" y="242" font-size="13" fill="#1c1917" text-anchor="end">sycophancy</text>
+<line x1="670.1" x2="689.5" y1="238" y2="238" stroke="#0d9488" stroke-width="3" stroke-opacity="0.35"/>
+<circle cx="670.1" cy="238" r="6" fill="#a8a29e"/>
+<circle cx="689.5" cy="238" r="7" fill="#0d9488"/>
+<text x="703.5" y="242" font-size="12" font-weight="600" fill="#0d9488">+0.016</text>
+<text x="176" y="272" font-size="13" fill="#1c1917" text-anchor="end">truthfulqa</text>
+<line x1="673.8" x2="674.7" y1="268" y2="268" stroke="#0d9488" stroke-width="3" stroke-opacity="0.35"/>
+<circle cx="673.8" cy="268" r="6" fill="#a8a29e"/>
+<circle cx="674.7" cy="268" r="7" fill="#0d9488"/>
+<text x="688.7" y="272" font-size="12" font-weight="600" fill="#0d9488">+0.001</text>
+<line x1="30" x2="870" y1="292" y2="292" stroke="#e7e5e4" stroke-dasharray="4 4"/>
+<text x="30" y="312" font-size="11" font-weight="700" fill="#d97706" letter-spacing="0.08em">TEST</text>
+<text x="176" y="312" font-size="13" fill="#1c1917" text-anchor="end">among</text>
+<line x1="311.0" x2="426.7" y1="308" y2="308" stroke="#0d9488" stroke-width="3" stroke-opacity="0.35"/>
+<circle cx="311.0" cy="308" r="6" fill="#a8a29e"/>
+<circle cx="426.7" cy="308" r="7" fill="#0d9488"/>
+<text x="440.7" y="312" font-size="12" font-weight="600" fill="#0d9488">+0.098</text>
+<text x="176" y="342" font-size="13" fill="#1c1917" text-anchor="end">harm</text>
+<line x1="716.8" x2="733.7" y1="338" y2="338" stroke="#0d9488" stroke-width="3" stroke-opacity="0.35"/>
+<circle cx="716.8" cy="338" r="6" fill="#a8a29e"/>
+<circle cx="733.7" cy="338" r="7" fill="#0d9488"/>
+<text x="747.7" y="342" font-size="12" font-weight="600" fill="#0d9488">+0.014</text>
+<text x="176" y="372" font-size="13" fill="#1c1917" text-anchor="end">medqa</text>
+<line x1="520.0" x2="571.5" y1="368" y2="368" stroke="#0d9488" stroke-width="3" stroke-opacity="0.35"/>
+<circle cx="520.0" cy="368" r="6" fill="#a8a29e"/>
+<circle cx="571.5" cy="368" r="7" fill="#0d9488"/>
+<text x="585.5" y="372" font-size="12" font-weight="600" fill="#0d9488">+0.044</text>
+<text x="176" y="402" font-size="13" fill="#1c1917" text-anchor="end">model</text>
+<line x1="714.2" x2="724.7" y1="398" y2="398" stroke="#0d9488" stroke-width="3" stroke-opacity="0.35"/>
+<circle cx="714.2" cy="398" r="6" fill="#a8a29e"/>
+<circle cx="724.7" cy="398" r="7" fill="#0d9488"/>
+<text x="738.7" y="402" font-size="12" font-weight="600" fill="#0d9488">+0.009</text>
+<text x="176" y="432" font-size="13" fill="#1c1917" text-anchor="end">sandbagging</text>
+<line x1="633.8" x2="687.6" y1="428" y2="428" stroke="#0d9488" stroke-width="3" stroke-opacity="0.35"/>
+<circle cx="633.8" cy="428" r="6" fill="#a8a29e"/>
+<circle cx="687.6" cy="428" r="7" fill="#0d9488"/>
+<text x="701.6" y="432" font-size="12" font-weight="600" fill="#0d9488">+0.046</text>
+<text x="176" y="462" font-size="13" fill="#1c1917" text-anchor="end">werewolf</text>
+<line x1="410.3" x2="440.4" y1="458" y2="458" stroke="#0d9488" stroke-width="3" stroke-opacity="0.35"/>
+<circle cx="410.3" cy="458" r="6" fill="#a8a29e"/>
+<circle cx="440.4" cy="458" r="7" fill="#0d9488"/>
+<text x="454.4" y="462" font-size="12" font-weight="600" fill="#0d9488">+0.026</text>
+</svg>

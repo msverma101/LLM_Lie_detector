@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 430" width="900" height="430" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif">
+<rect width="900" height="430" rx="14" fill="#ffffff"/>
+<text x="70" y="30" font-size="19" font-weight="700" fill="#1c1917">Research loop: 15 experiments proposed by Claude Opus 5.5</text>
+<text x="70" y="50" font-size="13" fill="#78716c">macro-AUROC on families never used for training. Claude only saw val; test stayed hidden.</text>
+<line x1="70" x2="710" y1="370.0" y2="370.0" stroke="#e7e5e4"/>
+<text x="60" y="374.0" font-size="12" fill="#78716c" text-anchor="end">0.72</text>
+<line x1="70" x2="710" y1="301.1" y2="301.1" stroke="#e7e5e4"/>
+<text x="60" y="305.1" font-size="12" fill="#78716c" text-anchor="end">0.76</text>
+<line x1="70" x2="710" y1="232.2" y2="232.2" stroke="#e7e5e4"/>
+<text x="60" y="236.2" font-size="12" fill="#78716c" text-anchor="end">0.80</text>
+<line x1="70" x2="710" y1="163.3" y2="163.3" stroke="#e7e5e4"/>
+<text x="60" y="167.3" font-size="12" fill="#78716c" text-anchor="end">0.84</text>
+<line x1="70" x2="710" y1="94.4" y2="94.4" stroke="#e7e5e4"/>
+<text x="60" y="98.4" font-size="12" fill="#78716c" text-anchor="end">0.88</text>
+<text x="70.0" y="390" font-size="12" fill="#78716c" text-anchor="middle">0</text>
+<text x="112.7" y="390" font-size="12" fill="#78716c" text-anchor="middle">1</text>
+<text x="155.3" y="390" font-size="12" fill="#78716c" text-anchor="middle">2</text>
+<text x="198.0" y="390" font-size="12" fill="#78716c" text-anchor="middle">3</text>
+<text x="240.7" y="390" font-size="12" fill="#78716c" text-anchor="middle">4</text>
+<text x="283.3" y="390" font-size="12" fill="#78716c" text-anchor="middle">5</text>
+<text x="326.0" y="390" font-size="12" fill="#78716c" text-anchor="middle">6</text>
+<text x="368.7" y="390" font-size="12" fill="#78716c" text-anchor="middle">7</text>
+<text x="411.3" y="390" font-size="12" fill="#78716c" text-anchor="middle">8</text>
+<text x="454.0" y="390" font-size="12" fill="#78716c" text-anchor="middle">9</text>
+<text x="496.7" y="390" font-size="12" fill="#78716c" text-anchor="middle">10</text>
+<text x="539.3" y="390" font-size="12" fill="#78716c" text-anchor="middle">11</text>
+<text x="582.0" y="390" font-size="12" fill="#78716c" text-anchor="middle">12</text>
+<text x="624.7" y="390" font-size="12" fill="#78716c" text-anchor="middle">13</text>
+<text x="667.3" y="390" font-size="12" fill="#78716c" text-anchor="middle">14</text>
+<text x="710.0" y="390" font-size="12" fill="#78716c" text-anchor="middle">15</text>
+<text x="390.0" y="416" font-size="13" fill="#78716c" text-anchor="middle">iteration (0 = baseline from the FIBS paper)</text>
+<path d="M70.0,147.3 L112.7,147.3 L112.7,147.3 L155.3,147.3 L155.3,147.3 L198.0,147.3 L198.0,147.3 L240.7,147.3 L240.7,91.8 L283.3,91.8 L283.3,91.8 L326.0,91.8 L326.0,91.8 L368.7,91.8 L368.7,91.8 L411.3,91.8 L411.3,91.8 L454.0,91.8 L454.0,82.7 L496.7,82.7 L496.7,82.7 L539.3,82.7 L539.3,82.7 L582.0,82.7 L582.0,82.7 L624.7,82.7 L624.7,82.7 L667.3,82.7 L667.3,82.7 L710.0,82.7 L710.0,82.7" fill="none" stroke="#0d9488" stroke-width="2.5"/>
+<path d="M70.0,222.0 L112.7,222.0 L112.7,222.0 L155.3,222.0 L155.3,222.0 L198.0,222.0 L198.0,222.0 L240.7,222.0 L240.7,184.5 L283.3,184.5 L283.3,184.5 L326.0,184.5 L326.0,184.5 L368.7,184.5 L368.7,184.5 L411.3,184.5 L411.3,184.5 L454.0,184.5 L454.0,154.2 L496.7,154.2 L496.7,154.2 L539.3,154.2 L539.3,154.2 L582.0,154.2 L582.0,154.2 L624.7,154.2 L624.7,154.2 L667.3,154.2 L667.3,154.2 L710.0,154.2 L710.0,154.2" fill="none" stroke="#d97706" stroke-width="2.5" stroke-dasharray="6 4"/>
+<circle cx="70.0" cy="222.0" r="5" fill="#d97706" stroke="#d97706" stroke-width="1"/>
+<circle cx="70.0" cy="147.3" r="7" fill="#0d9488" stroke="#0d9488" stroke-width="1.6"/>
+<circle cx="112.7" cy="228.3" r="3.5" fill="#fde6c4" stroke="#d97706" stroke-width="1"/>
+<circle cx="112.7" cy="145.8" r="4.5" fill="#ffffff" stroke="#a8a29e" stroke-width="1.6"/>
+<circle cx="155.3" cy="347.0" r="3.5" fill="#fde6c4" stroke="#d97706" stroke-width="1"/>
+<circle cx="155.3" cy="321.0" r="4.5" fill="#ffffff" stroke="#a8a29e" stroke-width="1.6"/>
+<circle cx="198.0" cy="221.9" r="3.5" fill="#fde6c4" stroke="#d97706" stroke-width="1"/>
+<circle cx="198.0" cy="147.5" r="4.5" fill="#ffffff" stroke="#a8a29e" stroke-width="1.6"/>
+<circle cx="240.7" cy="184.5" r="5" fill="#d97706" stroke="#d97706" stroke-width="1"/>
+<circle cx="240.7" cy="91.8" r="7" fill="#0d9488" stroke="#0d9488" stroke-width="1.6"/>
+<circle cx="283.3" cy="188.2" r="3.5" fill="#fde6c4" stroke="#d97706" stroke-width="1"/>
+<circle cx="283.3" cy="96.4" r="4.5" fill="#ffffff" stroke="#a8a29e" stroke-width="1.6"/>
+<circle cx="326.0" cy="170.1" r="3.5" fill="#fde6c4" stroke="#d97706" stroke-width="1"/>
+<circle cx="326.0" cy="132.7" r="4.5" fill="#ffffff" stroke="#a8a29e" stroke-width="1.6"/>
+<circle cx="368.7" cy="185.9" r="3.5" fill="#fde6c4" stroke="#d97706" stroke-width="1"/>
+<circle cx="368.7" cy="92.4" r="4.5" fill="#ffffff" stroke="#a8a29e" stroke-width="1.6"/>
+<circle cx="411.3" cy="178.8" r="3.5" fill="#fde6c4" stroke="#d97706" stroke-width="1"/>
+<circle cx="411.3" cy="89.7" r="4.5" fill="#ffffff" stroke="#a8a29e" stroke-width="1.6"/>
+<circle cx="454.0" cy="154.2" r="5" fill="#d97706" stroke="#d97706" stroke-width="1"/>
+<circle cx="454.0" cy="82.7" r="7" fill="#0d9488" stroke="#0d9488" stroke-width="1.6"/>
+<circle cx="496.7" cy="162.4" r="3.5" fill="#fde6c4" stroke="#d97706" stroke-width="1"/>
+<circle cx="496.7" cy="88.1" r="4.5" fill="#ffffff" stroke="#a8a29e" stroke-width="1.6"/>
+<circle cx="539.3" cy="141.2" r="3.5" fill="#fde6c4" stroke="#d97706" stroke-width="1"/>
+<circle cx="539.3" cy="79.3" r="4.5" fill="#ffffff" stroke="#a8a29e" stroke-width="1.6"/>
+<circle cx="582.0" cy="158.0" r="3.5" fill="#fde6c4" stroke="#d97706" stroke-width="1"/>
+<circle cx="582.0" cy="89.5" r="4.5" fill="#ffffff" stroke="#a8a29e" stroke-width="1.6"/>
+<circle cx="624.7" cy="152.6" r="3.5" fill="#fde6c4" stroke="#d97706" stroke-width="1"/>
+<circle cx="624.7" cy="81.0" r="4.5" fill="#ffffff" stroke="#a8a29e" stroke-width="1.6"/>
+<circle cx="667.3" cy="161.5" r="3.5" fill="#fde6c4" stroke="#d97706" stroke-width="1"/>
+<circle cx="667.3" cy="81.1" r="4.5" fill="#ffffff" stroke="#a8a29e" stroke-width="1.6"/>
+<circle cx="710.0" cy="149.7" r="3.5" fill="#fde6c4" stroke="#d97706" stroke-width="1"/>
+<circle cx="710.0" cy="84.9" r="4.5" fill="#ffffff" stroke="#a8a29e" stroke-width="1.6"/>
+<text x="240.7" y="77.8" font-size="12" font-weight="600" fill="#0d9488" text-anchor="middle">all 3 poolings</text>
+<text x="454.0" y="68.7" font-size="12" font-weight="600" fill="#0d9488" text-anchor="middle">weight by cross-family transfer</text>
+<line x1="732" x2="758" y1="78" y2="78" stroke="#0d9488" stroke-width="2.5"/>
+<text x="766" y="82" font-size="13" fill="#1c1917">val (optimized)</text>
+<line x1="732" x2="758" y1="104" y2="104" stroke="#d97706" stroke-width="2.5" stroke-dasharray="6 4"/>
+<text x="766" y="108" font-size="13" fill="#1c1917">test (hidden)</text>
+<circle cx="745" cy="130" r="7" fill="#0d9488"/><text x="766" y="134" font-size="13" fill="#1c1917">kept</text>
+<circle cx="745" cy="154" r="4.5" fill="#fff" stroke="#a8a29e" stroke-width="1.6"/><text x="766" y="158" font-size="13" fill="#1c1917">discarded</text>
+<text x="732" y="198" font-size="13" font-weight="700" fill="#1c1917">Test macro-AUROC</text>
+<text x="732" y="220" font-size="13" fill="#78716c">baseline  0.806</text>
+<text x="732" y="240" font-size="13" fill="#78716c">best         0.845</text>
+<text x="732" y="266" font-size="22" font-weight="800" fill="#d97706">+0.039</text>
+</svg>

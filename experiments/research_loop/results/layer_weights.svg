@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 348" width="820" height="348" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif">
+<rect width="820" height="348" rx="14" fill="#ffffff"/>
+<text x="30" y="30" font-size="19" font-weight="700" fill="#1c1917">Where the transferable lie signal sits</text>
+<text x="30" y="50" font-size="13" fill="#78716c">Weight the best probe gives each of its 18 sub-probes (big number) and their cross-family CV AUROC (small).</text>
+<text x="30" y="68" font-size="13" fill="#78716c">Qwen3.5-2B has 24 layers: the middle (layers 10-16) carries ~97% of the weight.</text>
+<text x="202.5" y="84" font-size="13" fill="#78716c" text-anchor="middle">layer 7</text>
+<text x="307.5" y="84" font-size="13" fill="#78716c" text-anchor="middle">layer 10</text>
+<text x="412.5" y="84" font-size="13" fill="#78716c" text-anchor="middle">layer 13</text>
+<text x="517.5" y="84" font-size="13" fill="#78716c" text-anchor="middle">layer 16</text>
+<text x="622.5" y="84" font-size="13" fill="#78716c" text-anchor="middle">layer 19</text>
+<text x="727.5" y="84" font-size="13" fill="#78716c" text-anchor="middle">layer 22</text>
+<text x="136" y="128.0" font-size="14" fill="#1c1917" text-anchor="end">last</text>
+<rect x="153" y="95" width="99" height="56" rx="8" fill="#0d9488" fill-opacity="0.07"/>
+<text x="202.5" y="123.0" font-size="16" font-weight="700" fill="#1c1917" text-anchor="middle">0%</text>
+<text x="202.5" y="140.0" font-size="11" fill="#1c1917" fill-opacity="0.85" text-anchor="middle">CV 0.874</text>
+<rect x="258" y="95" width="99" height="56" rx="8" fill="#0d9488" fill-opacity="0.19"/>
+<text x="307.5" y="123.0" font-size="16" font-weight="700" fill="#1c1917" text-anchor="middle">5%</text>
+<text x="307.5" y="140.0" font-size="11" fill="#1c1917" fill-opacity="0.85" text-anchor="middle">CV 0.907</text>
+<rect x="363" y="95" width="99" height="56" rx="8" fill="#0d9488" fill-opacity="0.94"/>
+<text x="412.5" y="123.0" font-size="16" font-weight="700" fill="#ffffff" text-anchor="middle">32%</text>
+<text x="412.5" y="140.0" font-size="11" fill="#ffffff" fill-opacity="0.85" text-anchor="middle">CV 0.926</text>
+<rect x="468" y="95" width="99" height="56" rx="8" fill="#0d9488" fill-opacity="0.25"/>
+<text x="517.5" y="123.0" font-size="16" font-weight="700" fill="#1c1917" text-anchor="middle">7%</text>
+<text x="517.5" y="140.0" font-size="11" fill="#1c1917" fill-opacity="0.85" text-anchor="middle">CV 0.911</text>
+<rect x="573" y="95" width="99" height="56" rx="8" fill="#0d9488" fill-opacity="0.10"/>
+<text x="622.5" y="123.0" font-size="16" font-weight="700" fill="#1c1917" text-anchor="middle">1%</text>
+<text x="622.5" y="140.0" font-size="11" fill="#1c1917" fill-opacity="0.85" text-anchor="middle">CV 0.894</text>
+<rect x="678" y="95" width="99" height="56" rx="8" fill="#0d9488" fill-opacity="0.08"/>
+<text x="727.5" y="123.0" font-size="16" font-weight="700" fill="#1c1917" text-anchor="middle">1%</text>
+<text x="727.5" y="140.0" font-size="11" fill="#1c1917" fill-opacity="0.85" text-anchor="middle">CV 0.888</text>
+<text x="136" y="190.0" font-size="14" fill="#1c1917" text-anchor="end">mean_answer</text>
+<rect x="153" y="157" width="99" height="56" rx="8" fill="#0d9488" fill-opacity="0.07"/>
+<text x="202.5" y="185.0" font-size="16" font-weight="700" fill="#1c1917" text-anchor="middle">0%</text>
+<text x="202.5" y="202.0" font-size="11" fill="#1c1917" fill-opacity="0.85" text-anchor="middle">CV 0.877</text>
+<rect x="258" y="157" width="99" height="56" rx="8" fill="#0d9488" fill-opacity="0.49"/>
+<text x="307.5" y="185.0" font-size="16" font-weight="700" fill="#ffffff" text-anchor="middle">16%</text>
+<text x="307.5" y="202.0" font-size="11" fill="#ffffff" fill-opacity="0.85" text-anchor="middle">CV 0.919</text>
+<rect x="363" y="157" width="99" height="56" rx="8" fill="#0d9488" fill-opacity="0.76"/>
+<text x="412.5" y="185.0" font-size="16" font-weight="700" fill="#ffffff" text-anchor="middle">26%</text>
+<text x="412.5" y="202.0" font-size="11" fill="#ffffff" fill-opacity="0.85" text-anchor="middle">CV 0.924</text>
+<rect x="468" y="157" width="99" height="56" rx="8" fill="#0d9488" fill-opacity="0.11"/>
+<text x="517.5" y="185.0" font-size="16" font-weight="700" fill="#1c1917" text-anchor="middle">2%</text>
+<text x="517.5" y="202.0" font-size="11" fill="#1c1917" fill-opacity="0.85" text-anchor="middle">CV 0.897</text>
+<rect x="573" y="157" width="99" height="56" rx="8" fill="#0d9488" fill-opacity="0.07"/>
+<text x="622.5" y="185.0" font-size="16" font-weight="700" fill="#1c1917" text-anchor="middle">0%</text>
+<text x="622.5" y="202.0" font-size="11" fill="#1c1917" fill-opacity="0.85" text-anchor="middle">CV 0.884</text>
+<rect x="678" y="157" width="99" height="56" rx="8" fill="#0d9488" fill-opacity="0.07"/>
+<text x="727.5" y="185.0" font-size="16" font-weight="700" fill="#1c1917" text-anchor="middle">0%</text>
+<text x="727.5" y="202.0" font-size="11" fill="#1c1917" fill-opacity="0.85" text-anchor="middle">CV 0.878</text>
+<text x="136" y="252.0" font-size="14" fill="#1c1917" text-anchor="end">mean_turn</text>
+<rect x="153" y="219" width="99" height="56" rx="8" fill="#0d9488" fill-opacity="0.06"/>
+<text x="202.5" y="247.0" font-size="16" font-weight="700" fill="#1c1917" text-anchor="middle">0%</text>
+<text x="202.5" y="264.0" font-size="11" fill="#1c1917" fill-opacity="0.85" text-anchor="middle">CV 0.861</text>
+<rect x="258" y="219" width="99" height="56" rx="8" fill="#0d9488" fill-opacity="0.11"/>
+<text x="307.5" y="247.0" font-size="16" font-weight="700" fill="#1c1917" text-anchor="middle">2%</text>
+<text x="307.5" y="264.0" font-size="11" fill="#1c1917" fill-opacity="0.85" text-anchor="middle">CV 0.897</text>
+<rect x="363" y="219" width="99" height="56" rx="8" fill="#0d9488" fill-opacity="0.25"/>
+<text x="412.5" y="247.0" font-size="16" font-weight="700" fill="#1c1917" text-anchor="middle">7%</text>
+<text x="412.5" y="264.0" font-size="11" fill="#1c1917" fill-opacity="0.85" text-anchor="middle">CV 0.911</text>
+<rect x="468" y="219" width="99" height="56" rx="8" fill="#0d9488" fill-opacity="0.07"/>
+<text x="517.5" y="247.0" font-size="16" font-weight="700" fill="#1c1917" text-anchor="middle">0%</text>
+<text x="517.5" y="264.0" font-size="11" fill="#1c1917" fill-opacity="0.85" text-anchor="middle">CV 0.880</text>
+<rect x="573" y="219" width="99" height="56" rx="8" fill="#0d9488" fill-opacity="0.06"/>
+<text x="622.5" y="247.0" font-size="16" font-weight="700" fill="#1c1917" text-anchor="middle">0%</text>
+<text x="622.5" y="264.0" font-size="11" fill="#1c1917" fill-opacity="0.85" text-anchor="middle">CV 0.872</text>
+<rect x="678" y="219" width="99" height="56" rx="8" fill="#0d9488" fill-opacity="0.06"/>
+<text x="727.5" y="247.0" font-size="16" font-weight="700" fill="#1c1917" text-anchor="middle">0%</text>
+<text x="727.5" y="264.0" font-size="11" fill="#1c1917" fill-opacity="0.85" text-anchor="middle">CV 0.862</text>
+</svg>

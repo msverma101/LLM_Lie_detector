@@ -15,6 +15,14 @@ We are a team at the **Claude Impact Lab workshop** working on **LLM lying detec
 We are in the **discovery phase**: collecting sources, comparing ideas and shaping a project
 definition together. Everything here is a proposal, open for discussion.
 
+> [!TIP]
+> **First result (2026-11-07):** an automated research loop in which Claude Opus 5.5 improves
+> the FIBS lie-detection probe raised macro-AUROC on **kinds of lies never seen in training**
+> from **0.806 to 0.845**. Full write-up with abstract, methods, all 15 experiments and
+> critique: **[experiments/research_loop/RESULTS.md](experiments/research_loop/RESULTS.md)**
+>
+> ![Research loop progress](experiments/research_loop/results/loop_progress.svg)
+
 ---
 
 ## 💡 The idea in one picture
