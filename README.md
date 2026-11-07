@@ -1,5 +1,7 @@
 # LLM_Lie_detector
 
+[![Plumbline explainer, animated preview (30 s). Click to open the English video](presentation/plumbline-paper-video/plumbline-preview.en.gif)](presentation/plumbline-paper-video/plumbline-lie-detection-paper.en.mp4)
+
 <video src="presentation/plumbline-paper-video/plumbline-lie-detection-paper.en.mp4" controls width="720"></video>
 
 **Video (English, 9:47):** [Plumbline: lies in a model, honestly measured](presentation/plumbline-paper-video/plumbline-lie-detection-paper.en.mp4) · German version: [plumbline-lie-detection-paper.de.mp4](presentation/plumbline-paper-video/plumbline-lie-detection-paper.de.mp4)
