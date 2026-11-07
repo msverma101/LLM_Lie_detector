@@ -14,6 +14,9 @@
 - **WSP is indistinguishable from random edits of the same size** (+0.013 [−0.044, +0.075]).
 - The selection gain (TPR@5% 0.317 → 0.378) **did not transfer** to test. Claude itself wrote in its final summary
   that "the gains are probably within noise". It stopped with 3 evaluations left to avoid overfitting selection.
+- **Caveat:** the setup deviates in important ways from the WSP blog post: fixed edit vocabulary instead of a Python
+  kernel, a data-derived edit op, unlimited dev forward passes, a convex readout with no single cause of failure.
+  This is a negative result for *this* setup, not evidence against WSP. See "Deviations" below.
 
 ## Setup (what changed compared with the code-search loop)
 
@@ -113,6 +116,42 @@ Cost: 430k input + 12k output tokens (≈ $2 at Opus 5.5 list prices), about 8 m
   uses dev data, so it is partly a data-driven edit chosen by Claude, not pure "reasoning in weight space".
 - Scaler statistics (μ, σ) were not editable.
 - Not tested: the published EFC probe (needs token-level activations), architecture additions (protocol arm 5).
+
+## Deviations from the methods in the WSP blog post
+
+Compared with Takehi et al., *Sparks of Weight-Space Programming* (MIT CSAIL, Nov 2026; saved copy in
+`literature/articles/`). In short: **this run tested a constrained, data-assisted search over a convex linear
+probe, not weight-space programming as the post does it.** The negative result therefore says little about WSP
+itself.
+
+| # | Blog post | This run | Effect |
+|---|---|---|---|
+| 1 | **Free Python kernel over the weights** (Exp. 3, 6, 8). The LLM writes any edit itself, e.g. "subtract one direction from 64 output columns" (Exp. 8). | **Fixed edit vocabulary** of 8 ops (`set_layer_weights`, `scale_dims`, `add_dev_mean_diff`, …). Claude cannot write its own vector or code. | Expressiveness was set by us, not by Claude. Most candidates were layer reweightings. |
+| 2 | **No fitting to data:** "Not allowed: training or fitting the weights to data" (Exp. 6). The edit comes from reasoning. | `add_dev_mean_diff` **computes a direction from labelled dev data** (lie mean minus honest mean, i.e. a mass-mean probe). The chosen candidate c15 consists of exactly this op. | The final edit is partly data fitting chosen by Claude, not pure WSP. |
+| 3 | **Forward passes are budgeted** (Exp. 6: 0–50, Exp. 8: 10/25/50). Exp. 3 even forbids running the network at all. | `overview`, `inspect_errors` and `feature_stats` run the probe on labelled `dev_inspect` data **without limit**. Only `evaluate` (selection) was budgeted (20). | Feedback was not bounded the way the post bounds it, and there was no "weights only" condition. |
+| 4 | **The LLM reads the raw weights** (Exp. 1/2: all 17–24k weights in context; Exp. 3: matrix products in Python), and its reasoning comes from that structure. | Claude saw only summaries (norms, quantiles, top 25 of 2,048 dims per layer) and looked at weights 3 times (visible log up to turn 22). The residual dimensions have no meaning attached (like Exp. 3 without the input/output layers). | Hardly any real weight reading happened. The edits came from dev statistics, not from structure in the weights. |
+| 5 | **Successes fix a localized failure with one cause** (Exp. 4: local-minimum policy; Exp. 8: one looping direction). The Gemma control in the post shows: without a single cause, WSP did not help ("could not add an ability the model lacked"). | Task: "generalize better to unseen kinds of lies". This is a distribution shift with no known single cause in θ0. | Our setting resembles the Gemma negative case, not the Qwen success case. |
+| 6 | **Edits the network that makes the mistake** (policy, LM). Those weights come from non-convex training (PPO local minima) and leave room for corrections. | Edits a **logistic-regression readout**. With L2 regularization θ0 is the unique optimum on `dev_fit`, so every edit makes the training loss worse; a gain can only come from knowledge about the shift. | Little room by construction. This also explains why a plain refit with more data wins. |
+| 7 | **Qualitative feedback:** Exp. 6 "plays practice games, looks at how it loses"; Exp. 8 picks its own prompts for forward passes. | Selection returns aggregate numbers only; the dev examples were sampled by us. | Less information about why a candidate fails. |
+| 8 | **Budget scaling** (Exp. 6 and 8 report 0 → 50 forward passes; the Qwen gain appears only at 50). **Several attempts** (Exp. 3: 2, Exp. 7: 4). | **One** budget (20), **one** attempt, one seed. | No statement possible about how the result scales with budget. |
+| 9 | **One-shot without hill-climbing** in Exp. 4/5, i.e. no selection overfitting. | Iterative search against 360 selection rows. One lie = 0.006 TPR. | Selection noise was the size of the effect (0.29–0.38). |
+| 10 | Model: GPT-6 Astra; **complete logs published**. | Claude Opus 5.5 (effort `high`, not `max`); transcript and candidate weights only in the Colab runtime. | Not reproducible from the repo alone (see "Files"). |
+| 11 | Edit size as **share of weights changed** (Qwen: 0.016%). | Relative norm per block; any change in layer weights `a` counts as 1.0. | Numbers are not comparable with the post. |
+| 12 | Baselines: base model (Exp. 8), PPO (Exp. 5/6). | **Stricter:** GD fine-tuning, refit, random edits of the same size, separate calibration. | This is an addition, not a weakness. |
+
+Not tested at all: the **reading** experiments in the post (Exp. 1–3, 7). The analogue here would be: can Claude
+tell from a probe's weight vector which lie family it was trained on, or which layer reacts to which kind of lie?
+
+### Closer replication (proposal, not run)
+
+1. **Python kernel instead of fixed ops:** θ0 as numpy arrays, Claude writes edits as code; label-based fitting
+   (mean differences, regressions, `lstsq` on dev data) is forbidden and checked in the log.
+2. **Count forward passes:** every probe run on dev data uses budget; conditions 0 / 5 / 20 / 50; several attempts.
+3. **A failure with a single cause as the target**, e.g. the miscalibration (5% threshold → 7–10% FPR on new families)
+   or the caving family (AUROC 0.54–0.58), described as "explain the failure, then fix only its cause" (Exp. 4).
+4. **A reading experiment** as a cheap first step: probes trained on single families, Claude assigns weight
+   vectors to families without running them (analogue of Exp. 1).
+5. Store complete logs in the repo.
 
 ## Files in this directory
 
