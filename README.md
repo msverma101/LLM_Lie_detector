@@ -1,1 +1,1 @@
-# LLM_lie_detector
+# LLM_Lie_detector
