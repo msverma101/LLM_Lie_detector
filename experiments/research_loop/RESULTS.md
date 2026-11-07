@@ -256,6 +256,8 @@ We want to be honest about how much this result shows.
 ## 6. Next steps
 
 - [ ] Repeat with 3–5 seeds and bootstrap confidence intervals (cheap: features are cached).
+      Code ready: `robustness.py` (notebook Step 3c). Uses random family re-splits as "seeds";
+      not run on the real activations yet.
 - [ ] Baseline comparison: `search.py` (random hyperparameter search, same budget).
 - [ ] Error analysis (`errors.py`): which lies does the best probe still miss? Start with
       caving, among, werewolf.

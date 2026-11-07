@@ -138,6 +138,7 @@ Tested end to end on synthetic activations (eval, errors, search, loop --mock, r
 - [ ] Error analysis of the baseline (`errors.py`)
 - [x] Research loop: 15 iterations (~22 min, 2 kept)
 - [ ] Comparison: `search.py`, 15 trials
+- [ ] Robustness: `robustness.py` (notebook Step 3c): bootstrap CIs on test + 5 family re-splits, vs. baseline and the search winner. Tested on synthetic activations; **needs a run in Colab on `acts/`**
 - [x] Results: progress plot, per-family baseline vs. best, the best probe's idea (in Colab)
 - [ ] Copy `runs/` (plot, summary, all 15 probes) from Colab into the repo
 - [ ] Optional (weight-space angle): ask Claude to explain the best probe's weights

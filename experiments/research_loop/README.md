@@ -27,6 +27,8 @@ flowchart LR
 | `loop.py` | The loop. Claude only sees **val** scores; **test** families are reserved for the final result |
 | `errors.py` | Error analysis at a fixed threshold (5% false alarms on honest val answers): missed lies and false alarms by family, quadrant, source, with examples. VAL by default |
 | `search.py` | Comparison without an LLM: random hyperparameter search, same budget and keep rule, results in `runs_search/` |
+| `robustness.py` | Is the best probe's gain real? Paired bootstrap intervals on the test families + random family re-splits (all probes refit), optionally vs. the `search.py` winner. No GPU, no API. Output `runs/robustness.md` |
+| `results/baseline_probe.py` | Frozen copy of the baseline, because `loop.py` overwrites `probe.py` with the best candidate |
 | `report.py` | Plot + summary table, incl. TPR at fixed FPR and Claude loop vs. search |
 
 Final criterion ("more lies caught without more false alarms"): besides macro-AUROC,
