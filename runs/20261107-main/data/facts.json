@@ -1,0 +1,1619 @@
+[
+ {
+  "fact_id": "geo00",
+  "family": "geography",
+  "question": "What is the capital of France?",
+  "true_answer": "Paris",
+  "false_answer": "Dublin"
+ },
+ {
+  "fact_id": "geo01",
+  "family": "geography",
+  "question": "What is the capital of Germany?",
+  "true_answer": "Berlin",
+  "false_answer": "Santiago"
+ },
+ {
+  "fact_id": "geo02",
+  "family": "geography",
+  "question": "What is the capital of Italy?",
+  "true_answer": "Rome",
+  "false_answer": "Brussels"
+ },
+ {
+  "fact_id": "geo03",
+  "family": "geography",
+  "question": "What is the capital of Spain?",
+  "true_answer": "Madrid",
+  "false_answer": "Berlin"
+ },
+ {
+  "fact_id": "geo04",
+  "family": "geography",
+  "question": "What is the capital of Portugal?",
+  "true_answer": "Lisbon",
+  "false_answer": "Helsinki"
+ },
+ {
+  "fact_id": "geo05",
+  "family": "geography",
+  "question": "What is the capital of Austria?",
+  "true_answer": "Vienna",
+  "false_answer": "Tokyo"
+ },
+ {
+  "fact_id": "geo06",
+  "family": "geography",
+  "question": "What is the capital of Poland?",
+  "true_answer": "Warsaw",
+  "false_answer": "Bern"
+ },
+ {
+  "fact_id": "geo07",
+  "family": "geography",
+  "question": "What is the capital of Norway?",
+  "true_answer": "Oslo",
+  "false_answer": "Dublin"
+ },
+ {
+  "fact_id": "geo08",
+  "family": "geography",
+  "question": "What is the capital of Sweden?",
+  "true_answer": "Stockholm",
+  "false_answer": "Ankara"
+ },
+ {
+  "fact_id": "geo09",
+  "family": "geography",
+  "question": "What is the capital of Finland?",
+  "true_answer": "Helsinki",
+  "false_answer": "Copenhagen"
+ },
+ {
+  "fact_id": "geo10",
+  "family": "geography",
+  "question": "What is the capital of Denmark?",
+  "true_answer": "Copenhagen",
+  "false_answer": "Bern"
+ },
+ {
+  "fact_id": "geo11",
+  "family": "geography",
+  "question": "What is the capital of Greece?",
+  "true_answer": "Athens",
+  "false_answer": "Budapest"
+ },
+ {
+  "fact_id": "geo12",
+  "family": "geography",
+  "question": "What is the capital of Hungary?",
+  "true_answer": "Budapest",
+  "false_answer": "Cairo"
+ },
+ {
+  "fact_id": "geo13",
+  "family": "geography",
+  "question": "What is the capital of Ireland?",
+  "true_answer": "Dublin",
+  "false_answer": "Warsaw"
+ },
+ {
+  "fact_id": "geo14",
+  "family": "geography",
+  "question": "What is the capital of Belgium?",
+  "true_answer": "Brussels",
+  "false_answer": "Tokyo"
+ },
+ {
+  "fact_id": "geo15",
+  "family": "geography",
+  "question": "What is the capital of Netherlands?",
+  "true_answer": "Amsterdam",
+  "false_answer": "Lisbon"
+ },
+ {
+  "fact_id": "geo16",
+  "family": "geography",
+  "question": "What is the capital of Switzerland?",
+  "true_answer": "Bern",
+  "false_answer": "Helsinki"
+ },
+ {
+  "fact_id": "geo17",
+  "family": "geography",
+  "question": "What is the capital of Japan?",
+  "true_answer": "Tokyo",
+  "false_answer": "Lisbon"
+ },
+ {
+  "fact_id": "geo18",
+  "family": "geography",
+  "question": "What is the capital of China?",
+  "true_answer": "Beijing",
+  "false_answer": "Santiago"
+ },
+ {
+  "fact_id": "geo19",
+  "family": "geography",
+  "question": "What is the capital of Egypt?",
+  "true_answer": "Cairo",
+  "false_answer": "Madrid"
+ },
+ {
+  "fact_id": "geo20",
+  "family": "geography",
+  "question": "What is the capital of Kenya?",
+  "true_answer": "Nairobi",
+  "false_answer": "Cairo"
+ },
+ {
+  "fact_id": "geo21",
+  "family": "geography",
+  "question": "What is the capital of Canada?",
+  "true_answer": "Ottawa",
+  "false_answer": "Ankara"
+ },
+ {
+  "fact_id": "geo22",
+  "family": "geography",
+  "question": "What is the capital of Australia?",
+  "true_answer": "Canberra",
+  "false_answer": "Stockholm"
+ },
+ {
+  "fact_id": "geo23",
+  "family": "geography",
+  "question": "What is the capital of Argentina?",
+  "true_answer": "Buenos Aires",
+  "false_answer": "Tokyo"
+ },
+ {
+  "fact_id": "geo24",
+  "family": "geography",
+  "question": "What is the capital of Peru?",
+  "true_answer": "Lima",
+  "false_answer": "Canberra"
+ },
+ {
+  "fact_id": "geo25",
+  "family": "geography",
+  "question": "What is the capital of Chile?",
+  "true_answer": "Santiago",
+  "false_answer": "Ankara"
+ },
+ {
+  "fact_id": "geo26",
+  "family": "geography",
+  "question": "What is the capital of Turkey?",
+  "true_answer": "Ankara",
+  "false_answer": "Cairo"
+ },
+ {
+  "fact_id": "chem00",
+  "family": "chemistry",
+  "question": "What is the chemical symbol of gold?",
+  "true_answer": "Au",
+  "false_answer": "Pb"
+ },
+ {
+  "fact_id": "chem01",
+  "family": "chemistry",
+  "question": "What is the chemical symbol of silver?",
+  "true_answer": "Ag",
+  "false_answer": "O"
+ },
+ {
+  "fact_id": "chem02",
+  "family": "chemistry",
+  "question": "What is the chemical symbol of iron?",
+  "true_answer": "Fe",
+  "false_answer": "K"
+ },
+ {
+  "fact_id": "chem03",
+  "family": "chemistry",
+  "question": "What is the chemical symbol of sodium?",
+  "true_answer": "Na",
+  "false_answer": "Fe"
+ },
+ {
+  "fact_id": "chem04",
+  "family": "chemistry",
+  "question": "What is the chemical symbol of potassium?",
+  "true_answer": "K",
+  "false_answer": "N"
+ },
+ {
+  "fact_id": "chem05",
+  "family": "chemistry",
+  "question": "What is the chemical symbol of lead?",
+  "true_answer": "Pb",
+  "false_answer": "Ne"
+ },
+ {
+  "fact_id": "chem06",
+  "family": "chemistry",
+  "question": "What is the chemical symbol of copper?",
+  "true_answer": "Cu",
+  "false_answer": "S"
+ },
+ {
+  "fact_id": "chem07",
+  "family": "chemistry",
+  "question": "What is the chemical symbol of tin?",
+  "true_answer": "Sn",
+  "false_answer": "Na"
+ },
+ {
+  "fact_id": "chem08",
+  "family": "chemistry",
+  "question": "What is the chemical symbol of mercury?",
+  "true_answer": "Hg",
+  "false_answer": "C"
+ },
+ {
+  "fact_id": "chem09",
+  "family": "chemistry",
+  "question": "What is the chemical symbol of helium?",
+  "true_answer": "He",
+  "false_answer": "Ca"
+ },
+ {
+  "fact_id": "chem10",
+  "family": "chemistry",
+  "question": "What is the chemical symbol of oxygen?",
+  "true_answer": "O",
+  "false_answer": "N"
+ },
+ {
+  "fact_id": "chem11",
+  "family": "chemistry",
+  "question": "What is the chemical symbol of nitrogen?",
+  "true_answer": "N",
+  "false_answer": "Cu"
+ },
+ {
+  "fact_id": "chem12",
+  "family": "chemistry",
+  "question": "What is the chemical symbol of carbon?",
+  "true_answer": "C",
+  "false_answer": "S"
+ },
+ {
+  "fact_id": "chem13",
+  "family": "chemistry",
+  "question": "What is the chemical symbol of hydrogen?",
+  "true_answer": "H",
+  "false_answer": "Ne"
+ },
+ {
+  "fact_id": "chem14",
+  "family": "chemistry",
+  "question": "What is the chemical symbol of calcium?",
+  "true_answer": "Ca",
+  "false_answer": "Zn"
+ },
+ {
+  "fact_id": "chem15",
+  "family": "chemistry",
+  "question": "What is the chemical symbol of zinc?",
+  "true_answer": "Zn",
+  "false_answer": "Cl"
+ },
+ {
+  "fact_id": "chem16",
+  "family": "chemistry",
+  "question": "What is the chemical symbol of neon?",
+  "true_answer": "Ne",
+  "false_answer": "Hg"
+ },
+ {
+  "fact_id": "chem17",
+  "family": "chemistry",
+  "question": "What is the chemical symbol of chlorine?",
+  "true_answer": "Cl",
+  "false_answer": "Ag"
+ },
+ {
+  "fact_id": "chem18",
+  "family": "chemistry",
+  "question": "What is the chemical symbol of sulfur?",
+  "true_answer": "S",
+  "false_answer": "Cl"
+ },
+ {
+  "fact_id": "chem19",
+  "family": "chemistry",
+  "question": "What is the chemical symbol of magnesium?",
+  "true_answer": "Mg",
+  "false_answer": "Au"
+ },
+ {
+  "fact_id": "sci00",
+  "family": "science",
+  "question": "Which planet is closest to the Sun?",
+  "true_answer": "Mercury",
+  "false_answer": "Venus"
+ },
+ {
+  "fact_id": "sci01",
+  "family": "science",
+  "question": "Which is the largest planet in the Solar System?",
+  "true_answer": "Jupiter",
+  "false_answer": "Saturn"
+ },
+ {
+  "fact_id": "sci02",
+  "family": "science",
+  "question": "Which planet is known as the Red Planet?",
+  "true_answer": "Mars",
+  "false_answer": "Venus"
+ },
+ {
+  "fact_id": "sci03",
+  "family": "science",
+  "question": "How many legs does a spider have?",
+  "true_answer": "eight",
+  "false_answer": "six"
+ },
+ {
+  "fact_id": "sci04",
+  "family": "science",
+  "question": "How many legs does an insect have?",
+  "true_answer": "six",
+  "false_answer": "eight"
+ },
+ {
+  "fact_id": "sci05",
+  "family": "science",
+  "question": "Which gas do plants absorb for photosynthesis?",
+  "true_answer": "carbon dioxide",
+  "false_answer": "oxygen"
+ },
+ {
+  "fact_id": "sci06",
+  "family": "science",
+  "question": "At what temperature in degrees Celsius does water boil at sea level?",
+  "true_answer": "100",
+  "false_answer": "90"
+ },
+ {
+  "fact_id": "sci07",
+  "family": "science",
+  "question": "At what temperature in degrees Celsius does water freeze?",
+  "true_answer": "0",
+  "false_answer": "10"
+ },
+ {
+  "fact_id": "sci08",
+  "family": "science",
+  "question": "How many continents are there?",
+  "true_answer": "seven",
+  "false_answer": "five"
+ },
+ {
+  "fact_id": "sci09",
+  "family": "science",
+  "question": "How many sides does a hexagon have?",
+  "true_answer": "six",
+  "false_answer": "eight"
+ },
+ {
+  "fact_id": "sci10",
+  "family": "science",
+  "question": "How many sides does a triangle have?",
+  "true_answer": "three",
+  "false_answer": "four"
+ },
+ {
+  "fact_id": "sci11",
+  "family": "science",
+  "question": "What is the largest mammal?",
+  "true_answer": "the blue whale",
+  "false_answer": "the elephant"
+ },
+ {
+  "fact_id": "sci12",
+  "family": "science",
+  "question": "What is the fastest land animal?",
+  "true_answer": "the cheetah",
+  "false_answer": "the lion"
+ },
+ {
+  "fact_id": "sci13",
+  "family": "science",
+  "question": "Which organ pumps blood through the body?",
+  "true_answer": "the heart",
+  "false_answer": "the liver"
+ },
+ {
+  "fact_id": "sci14",
+  "family": "science",
+  "question": "How many hours are in a day?",
+  "true_answer": "24",
+  "false_answer": "12"
+ },
+ {
+  "fact_id": "sci15",
+  "family": "science",
+  "question": "How many minutes are in an hour?",
+  "true_answer": "60",
+  "false_answer": "100"
+ },
+ {
+  "fact_id": "sci16",
+  "family": "science",
+  "question": "How many months are in a year?",
+  "true_answer": "12",
+  "false_answer": "10"
+ },
+ {
+  "fact_id": "sci17",
+  "family": "science",
+  "question": "What is the hardest natural material?",
+  "true_answer": "diamond",
+  "false_answer": "quartz"
+ },
+ {
+  "fact_id": "sci18",
+  "family": "science",
+  "question": "What is the chemical formula of table salt?",
+  "true_answer": "NaCl",
+  "false_answer": "KCl"
+ },
+ {
+  "fact_id": "sci19",
+  "family": "science",
+  "question": "Which is the largest ocean?",
+  "true_answer": "the Pacific Ocean",
+  "false_answer": "the Atlantic Ocean"
+ },
+ {
+  "fact_id": "sci20",
+  "family": "science",
+  "question": "Who wrote Romeo and Juliet?",
+  "true_answer": "William Shakespeare",
+  "false_answer": "Charles Dickens"
+ },
+ {
+  "fact_id": "sci21",
+  "family": "science",
+  "question": "What is the chemical formula of water?",
+  "true_answer": "H2O",
+  "false_answer": "CO2"
+ },
+ {
+  "fact_id": "sci22",
+  "family": "science",
+  "question": "Which planet has prominent rings and is the sixth from the Sun?",
+  "true_answer": "Saturn",
+  "false_answer": "Mars"
+ },
+ {
+  "fact_id": "sci23",
+  "family": "science",
+  "question": "What do bees produce?",
+  "true_answer": "honey",
+  "false_answer": "milk"
+ },
+ {
+  "fact_id": "ari00",
+  "family": "arithmetic",
+  "question": "What is 17 plus 37?",
+  "true_answer": "54",
+  "false_answer": "44"
+ },
+ {
+  "fact_id": "ari01",
+  "family": "arithmetic",
+  "question": "What is 43 plus 33?",
+  "true_answer": "76",
+  "false_answer": "78"
+ },
+ {
+  "fact_id": "ari02",
+  "family": "arithmetic",
+  "question": "What is 16 plus 24?",
+  "true_answer": "40",
+  "false_answer": "39"
+ },
+ {
+  "fact_id": "ari03",
+  "family": "arithmetic",
+  "question": "What is 7 times 7?",
+  "true_answer": "49",
+  "false_answer": "51"
+ },
+ {
+  "fact_id": "ari04",
+  "family": "arithmetic",
+  "question": "What is 44 plus 43?",
+  "true_answer": "87",
+  "false_answer": "84"
+ },
+ {
+  "fact_id": "ari05",
+  "family": "arithmetic",
+  "question": "What is 7 times 11?",
+  "true_answer": "77",
+  "false_answer": "76"
+ },
+ {
+  "fact_id": "ari06",
+  "family": "arithmetic",
+  "question": "What is 47 plus 49?",
+  "true_answer": "96",
+  "false_answer": "97"
+ },
+ {
+  "fact_id": "ari07",
+  "family": "arithmetic",
+  "question": "What is 11 times 9?",
+  "true_answer": "99",
+  "false_answer": "100"
+ },
+ {
+  "fact_id": "ari08",
+  "family": "arithmetic",
+  "question": "What is 23 plus 24?",
+  "true_answer": "47",
+  "false_answer": "45"
+ },
+ {
+  "fact_id": "ari09",
+  "family": "arithmetic",
+  "question": "What is 20 plus 21?",
+  "true_answer": "41",
+  "false_answer": "38"
+ },
+ {
+  "fact_id": "ari10",
+  "family": "arithmetic",
+  "question": "What is 46 plus 37?",
+  "true_answer": "83",
+  "false_answer": "84"
+ },
+ {
+  "fact_id": "ari11",
+  "family": "arithmetic",
+  "question": "What is 45 plus 27?",
+  "true_answer": "72",
+  "false_answer": "75"
+ },
+ {
+  "fact_id": "ari12",
+  "family": "arithmetic",
+  "question": "What is 49 plus 29?",
+  "true_answer": "78",
+  "false_answer": "88"
+ },
+ {
+  "fact_id": "ari13",
+  "family": "arithmetic",
+  "question": "What is 43 plus 34?",
+  "true_answer": "77",
+  "false_answer": "79"
+ },
+ {
+  "fact_id": "ari14",
+  "family": "arithmetic",
+  "question": "What is 19 plus 43?",
+  "true_answer": "62",
+  "false_answer": "64"
+ },
+ {
+  "fact_id": "ari15",
+  "family": "arithmetic",
+  "question": "What is 24 plus 27?",
+  "true_answer": "51",
+  "false_answer": "52"
+ },
+ {
+  "fact_id": "ari16",
+  "family": "arithmetic",
+  "question": "What is 19 plus 26?",
+  "true_answer": "45",
+  "false_answer": "47"
+ },
+ {
+  "fact_id": "ari17",
+  "family": "arithmetic",
+  "question": "What is 6 times 7?",
+  "true_answer": "42",
+  "false_answer": "40"
+ },
+ {
+  "fact_id": "ari18",
+  "family": "arithmetic",
+  "question": "What is 26 plus 14?",
+  "true_answer": "40",
+  "false_answer": "37"
+ },
+ {
+  "fact_id": "ari19",
+  "family": "arithmetic",
+  "question": "What is 13 plus 19?",
+  "true_answer": "32",
+  "false_answer": "29"
+ },
+ {
+  "fact_id": "ari20",
+  "family": "arithmetic",
+  "question": "What is 37 plus 17?",
+  "true_answer": "54",
+  "false_answer": "56"
+ },
+ {
+  "fact_id": "ari21",
+  "family": "arithmetic",
+  "question": "What is 19 plus 14?",
+  "true_answer": "33",
+  "false_answer": "32"
+ },
+ {
+  "fact_id": "ari22",
+  "family": "arithmetic",
+  "question": "What is 23 plus 19?",
+  "true_answer": "42",
+  "false_answer": "52"
+ },
+ {
+  "fact_id": "ari23",
+  "family": "arithmetic",
+  "question": "What is 25 plus 15?",
+  "true_answer": "40",
+  "false_answer": "43"
+ },
+ {
+  "fact_id": "ari24",
+  "family": "arithmetic",
+  "question": "What is 18 plus 28?",
+  "true_answer": "46",
+  "false_answer": "43"
+ },
+ {
+  "fact_id": "ari25",
+  "family": "arithmetic",
+  "question": "What is 11 times 12?",
+  "true_answer": "132",
+  "false_answer": "130"
+ },
+ {
+  "fact_id": "ari26",
+  "family": "arithmetic",
+  "question": "What is 15 plus 44?",
+  "true_answer": "59",
+  "false_answer": "69"
+ },
+ {
+  "fact_id": "ari27",
+  "family": "arithmetic",
+  "question": "What is 9 times 10?",
+  "true_answer": "90",
+  "false_answer": "92"
+ },
+ {
+  "fact_id": "ari28",
+  "family": "arithmetic",
+  "question": "What is 42 plus 48?",
+  "true_answer": "90",
+  "false_answer": "88"
+ },
+ {
+  "fact_id": "ari29",
+  "family": "arithmetic",
+  "question": "What is 7 times 13?",
+  "true_answer": "91",
+  "false_answer": "89"
+ },
+ {
+  "fact_id": "ari30",
+  "family": "arithmetic",
+  "question": "What is 12 plus 42?",
+  "true_answer": "54",
+  "false_answer": "57"
+ },
+ {
+  "fact_id": "ari31",
+  "family": "arithmetic",
+  "question": "What is 28 plus 21?",
+  "true_answer": "49",
+  "false_answer": "59"
+ },
+ {
+  "fact_id": "ari32",
+  "family": "arithmetic",
+  "question": "What is 17 plus 33?",
+  "true_answer": "50",
+  "false_answer": "40"
+ },
+ {
+  "fact_id": "ari33",
+  "family": "arithmetic",
+  "question": "What is 46 plus 29?",
+  "true_answer": "75",
+  "false_answer": "74"
+ },
+ {
+  "fact_id": "ari34",
+  "family": "arithmetic",
+  "question": "What is 42 plus 34?",
+  "true_answer": "76",
+  "false_answer": "77"
+ },
+ {
+  "fact_id": "ari35",
+  "family": "arithmetic",
+  "question": "What is 34 plus 49?",
+  "true_answer": "83",
+  "false_answer": "84"
+ },
+ {
+  "fact_id": "ari36",
+  "family": "arithmetic",
+  "question": "What is 36 plus 38?",
+  "true_answer": "74",
+  "false_answer": "71"
+ },
+ {
+  "fact_id": "ari37",
+  "family": "arithmetic",
+  "question": "What is 8 times 9?",
+  "true_answer": "72",
+  "false_answer": "71"
+ },
+ {
+  "fact_id": "ari38",
+  "family": "arithmetic",
+  "question": "What is 40 plus 36?",
+  "true_answer": "76",
+  "false_answer": "79"
+ },
+ {
+  "fact_id": "ari39",
+  "family": "arithmetic",
+  "question": "What is 6 times 8?",
+  "true_answer": "48",
+  "false_answer": "58"
+ },
+ {
+  "fact_id": "ari40",
+  "family": "arithmetic",
+  "question": "What is 16 plus 28?",
+  "true_answer": "44",
+  "false_answer": "42"
+ },
+ {
+  "fact_id": "ari41",
+  "family": "arithmetic",
+  "question": "What is 6 times 6?",
+  "true_answer": "36",
+  "false_answer": "46"
+ },
+ {
+  "fact_id": "ari42",
+  "family": "arithmetic",
+  "question": "What is 32 plus 31?",
+  "true_answer": "63",
+  "false_answer": "73"
+ },
+ {
+  "fact_id": "ari43",
+  "family": "arithmetic",
+  "question": "What is 15 plus 38?",
+  "true_answer": "53",
+  "false_answer": "50"
+ },
+ {
+  "fact_id": "ari44",
+  "family": "arithmetic",
+  "question": "What is 20 plus 12?",
+  "true_answer": "32",
+  "false_answer": "35"
+ },
+ {
+  "fact_id": "ari45",
+  "family": "arithmetic",
+  "question": "What is 38 plus 32?",
+  "true_answer": "70",
+  "false_answer": "69"
+ },
+ {
+  "fact_id": "ari46",
+  "family": "arithmetic",
+  "question": "What is 12 plus 12?",
+  "true_answer": "24",
+  "false_answer": "21"
+ },
+ {
+  "fact_id": "ari47",
+  "family": "arithmetic",
+  "question": "What is 24 plus 19?",
+  "true_answer": "43",
+  "false_answer": "44"
+ },
+ {
+  "fact_id": "ari48",
+  "family": "arithmetic",
+  "question": "What is 29 plus 23?",
+  "true_answer": "52",
+  "false_answer": "49"
+ },
+ {
+  "fact_id": "ari49",
+  "family": "arithmetic",
+  "question": "What is 42 plus 37?",
+  "true_answer": "79",
+  "false_answer": "69"
+ },
+ {
+  "fact_id": "ari50",
+  "family": "arithmetic",
+  "question": "What is 29 plus 40?",
+  "true_answer": "69",
+  "false_answer": "66"
+ },
+ {
+  "fact_id": "ari51",
+  "family": "arithmetic",
+  "question": "What is 7 times 8?",
+  "true_answer": "56",
+  "false_answer": "57"
+ },
+ {
+  "fact_id": "ari52",
+  "family": "arithmetic",
+  "question": "What is 13 plus 14?",
+  "true_answer": "27",
+  "false_answer": "17"
+ },
+ {
+  "fact_id": "ari53",
+  "family": "arithmetic",
+  "question": "What is 11 times 6?",
+  "true_answer": "66",
+  "false_answer": "76"
+ },
+ {
+  "fact_id": "ari54",
+  "family": "arithmetic",
+  "question": "What is 41 plus 39?",
+  "true_answer": "80",
+  "false_answer": "82"
+ },
+ {
+  "fact_id": "ari55",
+  "family": "arithmetic",
+  "question": "What is 46 plus 23?",
+  "true_answer": "69",
+  "false_answer": "72"
+ },
+ {
+  "fact_id": "ari56",
+  "family": "arithmetic",
+  "question": "What is 49 plus 30?",
+  "true_answer": "79",
+  "false_answer": "69"
+ },
+ {
+  "fact_id": "ari57",
+  "family": "arithmetic",
+  "question": "What is 11 times 11?",
+  "true_answer": "121",
+  "false_answer": "123"
+ },
+ {
+  "fact_id": "ari58",
+  "family": "arithmetic",
+  "question": "What is 14 plus 14?",
+  "true_answer": "28",
+  "false_answer": "29"
+ },
+ {
+  "fact_id": "ari59",
+  "family": "arithmetic",
+  "question": "What is 8 times 7?",
+  "true_answer": "56",
+  "false_answer": "57"
+ },
+ {
+  "fact_id": "ari60",
+  "family": "arithmetic",
+  "question": "What is 37 plus 33?",
+  "true_answer": "70",
+  "false_answer": "71"
+ },
+ {
+  "fact_id": "ari61",
+  "family": "arithmetic",
+  "question": "What is 38 plus 18?",
+  "true_answer": "56",
+  "false_answer": "66"
+ },
+ {
+  "fact_id": "ari62",
+  "family": "arithmetic",
+  "question": "What is 42 plus 33?",
+  "true_answer": "75",
+  "false_answer": "77"
+ },
+ {
+  "fact_id": "ari63",
+  "family": "arithmetic",
+  "question": "What is 19 plus 42?",
+  "true_answer": "61",
+  "false_answer": "71"
+ },
+ {
+  "fact_id": "ari64",
+  "family": "arithmetic",
+  "question": "What is 39 plus 14?",
+  "true_answer": "53",
+  "false_answer": "54"
+ },
+ {
+  "fact_id": "ari65",
+  "family": "arithmetic",
+  "question": "What is 33 plus 21?",
+  "true_answer": "54",
+  "false_answer": "57"
+ },
+ {
+  "fact_id": "ari66",
+  "family": "arithmetic",
+  "question": "What is 17 plus 16?",
+  "true_answer": "33",
+  "false_answer": "30"
+ },
+ {
+  "fact_id": "ari67",
+  "family": "arithmetic",
+  "question": "What is 24 plus 26?",
+  "true_answer": "50",
+  "false_answer": "53"
+ },
+ {
+  "fact_id": "ari68",
+  "family": "arithmetic",
+  "question": "What is 12 plus 18?",
+  "true_answer": "30",
+  "false_answer": "33"
+ },
+ {
+  "fact_id": "ari69",
+  "family": "arithmetic",
+  "question": "What is 13 times 13?",
+  "true_answer": "169",
+  "false_answer": "168"
+ },
+ {
+  "fact_id": "ari70",
+  "family": "arithmetic",
+  "question": "What is 39 plus 17?",
+  "true_answer": "56",
+  "false_answer": "58"
+ },
+ {
+  "fact_id": "ari71",
+  "family": "arithmetic",
+  "question": "What is 26 plus 28?",
+  "true_answer": "54",
+  "false_answer": "57"
+ },
+ {
+  "fact_id": "ari72",
+  "family": "arithmetic",
+  "question": "What is 24 plus 34?",
+  "true_answer": "58",
+  "false_answer": "55"
+ },
+ {
+  "fact_id": "ari73",
+  "family": "arithmetic",
+  "question": "What is 9 times 7?",
+  "true_answer": "63",
+  "false_answer": "73"
+ },
+ {
+  "fact_id": "ari74",
+  "family": "arithmetic",
+  "question": "What is 37 plus 28?",
+  "true_answer": "65",
+  "false_answer": "64"
+ },
+ {
+  "fact_id": "ari75",
+  "family": "arithmetic",
+  "question": "What is 14 plus 25?",
+  "true_answer": "39",
+  "false_answer": "36"
+ },
+ {
+  "fact_id": "ari76",
+  "family": "arithmetic",
+  "question": "What is 24 plus 41?",
+  "true_answer": "65",
+  "false_answer": "68"
+ },
+ {
+  "fact_id": "ari77",
+  "family": "arithmetic",
+  "question": "What is 35 plus 46?",
+  "true_answer": "81",
+  "false_answer": "78"
+ },
+ {
+  "fact_id": "ari78",
+  "family": "arithmetic",
+  "question": "What is 43 plus 21?",
+  "true_answer": "64",
+  "false_answer": "67"
+ },
+ {
+  "fact_id": "ari79",
+  "family": "arithmetic",
+  "question": "What is 11 times 13?",
+  "true_answer": "143",
+  "false_answer": "153"
+ },
+ {
+  "fact_id": "ari80",
+  "family": "arithmetic",
+  "question": "What is 24 plus 46?",
+  "true_answer": "70",
+  "false_answer": "69"
+ },
+ {
+  "fact_id": "ari81",
+  "family": "arithmetic",
+  "question": "What is 8 times 12?",
+  "true_answer": "96",
+  "false_answer": "97"
+ },
+ {
+  "fact_id": "ari82",
+  "family": "arithmetic",
+  "question": "What is 42 plus 16?",
+  "true_answer": "58",
+  "false_answer": "55"
+ },
+ {
+  "fact_id": "ari83",
+  "family": "arithmetic",
+  "question": "What is 45 plus 14?",
+  "true_answer": "59",
+  "false_answer": "58"
+ },
+ {
+  "fact_id": "ari84",
+  "family": "arithmetic",
+  "question": "What is 20 plus 14?",
+  "true_answer": "34",
+  "false_answer": "35"
+ },
+ {
+  "fact_id": "ari85",
+  "family": "arithmetic",
+  "question": "What is 8 times 8?",
+  "true_answer": "64",
+  "false_answer": "74"
+ },
+ {
+  "fact_id": "ari86",
+  "family": "arithmetic",
+  "question": "What is 35 plus 44?",
+  "true_answer": "79",
+  "false_answer": "82"
+ },
+ {
+  "fact_id": "ari87",
+  "family": "arithmetic",
+  "question": "What is 45 plus 44?",
+  "true_answer": "89",
+  "false_answer": "86"
+ },
+ {
+  "fact_id": "ari88",
+  "family": "arithmetic",
+  "question": "What is 45 plus 16?",
+  "true_answer": "61",
+  "false_answer": "64"
+ },
+ {
+  "fact_id": "ari89",
+  "family": "arithmetic",
+  "question": "What is 13 times 12?",
+  "true_answer": "156",
+  "false_answer": "155"
+ },
+ {
+  "fact_id": "ari90",
+  "family": "arithmetic",
+  "question": "What is 13 plus 12?",
+  "true_answer": "25",
+  "false_answer": "23"
+ },
+ {
+  "fact_id": "ari91",
+  "family": "arithmetic",
+  "question": "What is 11 times 7?",
+  "true_answer": "77",
+  "false_answer": "87"
+ },
+ {
+  "fact_id": "ari92",
+  "family": "arithmetic",
+  "question": "What is 28 plus 31?",
+  "true_answer": "59",
+  "false_answer": "62"
+ },
+ {
+  "fact_id": "ari93",
+  "family": "arithmetic",
+  "question": "What is 36 plus 36?",
+  "true_answer": "72",
+  "false_answer": "70"
+ },
+ {
+  "fact_id": "ari94",
+  "family": "arithmetic",
+  "question": "What is 20 plus 27?",
+  "true_answer": "47",
+  "false_answer": "48"
+ },
+ {
+  "fact_id": "ari95",
+  "family": "arithmetic",
+  "question": "What is 33 plus 15?",
+  "true_answer": "48",
+  "false_answer": "58"
+ },
+ {
+  "fact_id": "ari96",
+  "family": "arithmetic",
+  "question": "What is 38 plus 21?",
+  "true_answer": "59",
+  "false_answer": "69"
+ },
+ {
+  "fact_id": "ari97",
+  "family": "arithmetic",
+  "question": "What is 12 times 6?",
+  "true_answer": "72",
+  "false_answer": "82"
+ },
+ {
+  "fact_id": "ari98",
+  "family": "arithmetic",
+  "question": "What is 36 plus 41?",
+  "true_answer": "77",
+  "false_answer": "67"
+ },
+ {
+  "fact_id": "ari99",
+  "family": "arithmetic",
+  "question": "What is 18 plus 42?",
+  "true_answer": "60",
+  "false_answer": "50"
+ },
+ {
+  "fact_id": "ari100",
+  "family": "arithmetic",
+  "question": "What is 14 plus 20?",
+  "true_answer": "34",
+  "false_answer": "36"
+ },
+ {
+  "fact_id": "ari101",
+  "family": "arithmetic",
+  "question": "What is 9 times 12?",
+  "true_answer": "108",
+  "false_answer": "118"
+ },
+ {
+  "fact_id": "ari102",
+  "family": "arithmetic",
+  "question": "What is 19 plus 15?",
+  "true_answer": "34",
+  "false_answer": "44"
+ },
+ {
+  "fact_id": "ari103",
+  "family": "arithmetic",
+  "question": "What is 30 plus 19?",
+  "true_answer": "49",
+  "false_answer": "39"
+ },
+ {
+  "fact_id": "ari104",
+  "family": "arithmetic",
+  "question": "What is 37 plus 40?",
+  "true_answer": "77",
+  "false_answer": "79"
+ },
+ {
+  "fact_id": "ari105",
+  "family": "arithmetic",
+  "question": "What is 7 times 6?",
+  "true_answer": "42",
+  "false_answer": "32"
+ },
+ {
+  "fact_id": "ari106",
+  "family": "arithmetic",
+  "question": "What is 43 plus 28?",
+  "true_answer": "71",
+  "false_answer": "61"
+ },
+ {
+  "fact_id": "ari107",
+  "family": "arithmetic",
+  "question": "What is 45 plus 48?",
+  "true_answer": "93",
+  "false_answer": "92"
+ },
+ {
+  "fact_id": "ari108",
+  "family": "arithmetic",
+  "question": "What is 17 plus 44?",
+  "true_answer": "61",
+  "false_answer": "64"
+ },
+ {
+  "fact_id": "ari109",
+  "family": "arithmetic",
+  "question": "What is 44 plus 31?",
+  "true_answer": "75",
+  "false_answer": "73"
+ },
+ {
+  "fact_id": "ari110",
+  "family": "arithmetic",
+  "question": "What is 39 plus 48?",
+  "true_answer": "87",
+  "false_answer": "90"
+ },
+ {
+  "fact_id": "ari111",
+  "family": "arithmetic",
+  "question": "What is 6 times 13?",
+  "true_answer": "78",
+  "false_answer": "80"
+ },
+ {
+  "fact_id": "ari112",
+  "family": "arithmetic",
+  "question": "What is 28 plus 17?",
+  "true_answer": "45",
+  "false_answer": "47"
+ },
+ {
+  "fact_id": "ari113",
+  "family": "arithmetic",
+  "question": "What is 6 times 11?",
+  "true_answer": "66",
+  "false_answer": "68"
+ },
+ {
+  "fact_id": "ari114",
+  "family": "arithmetic",
+  "question": "What is 23 plus 12?",
+  "true_answer": "35",
+  "false_answer": "34"
+ },
+ {
+  "fact_id": "ari115",
+  "family": "arithmetic",
+  "question": "What is 35 plus 16?",
+  "true_answer": "51",
+  "false_answer": "50"
+ },
+ {
+  "fact_id": "ari116",
+  "family": "arithmetic",
+  "question": "What is 12 plus 25?",
+  "true_answer": "37",
+  "false_answer": "34"
+ },
+ {
+  "fact_id": "ari117",
+  "family": "arithmetic",
+  "question": "What is 6 times 9?",
+  "true_answer": "54",
+  "false_answer": "52"
+ },
+ {
+  "fact_id": "ari118",
+  "family": "arithmetic",
+  "question": "What is 23 plus 41?",
+  "true_answer": "64",
+  "false_answer": "61"
+ },
+ {
+  "fact_id": "ari119",
+  "family": "arithmetic",
+  "question": "What is 8 times 6?",
+  "true_answer": "48",
+  "false_answer": "47"
+ },
+ {
+  "fact_id": "ari120",
+  "family": "arithmetic",
+  "question": "What is 35 plus 33?",
+  "true_answer": "68",
+  "false_answer": "78"
+ },
+ {
+  "fact_id": "ari121",
+  "family": "arithmetic",
+  "question": "What is 21 plus 20?",
+  "true_answer": "41",
+  "false_answer": "43"
+ },
+ {
+  "fact_id": "ari122",
+  "family": "arithmetic",
+  "question": "What is 44 plus 27?",
+  "true_answer": "71",
+  "false_answer": "70"
+ },
+ {
+  "fact_id": "ari123",
+  "family": "arithmetic",
+  "question": "What is 12 times 8?",
+  "true_answer": "96",
+  "false_answer": "99"
+ },
+ {
+  "fact_id": "ari124",
+  "family": "arithmetic",
+  "question": "What is 31 plus 34?",
+  "true_answer": "65",
+  "false_answer": "62"
+ },
+ {
+  "fact_id": "ari125",
+  "family": "arithmetic",
+  "question": "What is 6 times 12?",
+  "true_answer": "72",
+  "false_answer": "75"
+ },
+ {
+  "fact_id": "ari126",
+  "family": "arithmetic",
+  "question": "What is 12 plus 38?",
+  "true_answer": "50",
+  "false_answer": "52"
+ },
+ {
+  "fact_id": "ari127",
+  "family": "arithmetic",
+  "question": "What is 10 times 13?",
+  "true_answer": "130",
+  "false_answer": "127"
+ },
+ {
+  "fact_id": "ari128",
+  "family": "arithmetic",
+  "question": "What is 23 plus 18?",
+  "true_answer": "41",
+  "false_answer": "42"
+ },
+ {
+  "fact_id": "ari129",
+  "family": "arithmetic",
+  "question": "What is 19 plus 47?",
+  "true_answer": "66",
+  "false_answer": "76"
+ },
+ {
+  "fact_id": "ari130",
+  "family": "arithmetic",
+  "question": "What is 37 plus 23?",
+  "true_answer": "60",
+  "false_answer": "63"
+ },
+ {
+  "fact_id": "ari131",
+  "family": "arithmetic",
+  "question": "What is 39 plus 23?",
+  "true_answer": "62",
+  "false_answer": "72"
+ },
+ {
+  "fact_id": "ari132",
+  "family": "arithmetic",
+  "question": "What is 33 plus 45?",
+  "true_answer": "78",
+  "false_answer": "76"
+ },
+ {
+  "fact_id": "ari133",
+  "family": "arithmetic",
+  "question": "What is 34 plus 41?",
+  "true_answer": "75",
+  "false_answer": "85"
+ },
+ {
+  "fact_id": "ari134",
+  "family": "arithmetic",
+  "question": "What is 25 plus 30?",
+  "true_answer": "55",
+  "false_answer": "45"
+ },
+ {
+  "fact_id": "ari135",
+  "family": "arithmetic",
+  "question": "What is 40 plus 41?",
+  "true_answer": "81",
+  "false_answer": "80"
+ },
+ {
+  "fact_id": "ari136",
+  "family": "arithmetic",
+  "question": "What is 31 plus 19?",
+  "true_answer": "50",
+  "false_answer": "51"
+ },
+ {
+  "fact_id": "ari137",
+  "family": "arithmetic",
+  "question": "What is 13 times 7?",
+  "true_answer": "91",
+  "false_answer": "101"
+ },
+ {
+  "fact_id": "ari138",
+  "family": "arithmetic",
+  "question": "What is 26 plus 46?",
+  "true_answer": "72",
+  "false_answer": "75"
+ },
+ {
+  "fact_id": "ari139",
+  "family": "arithmetic",
+  "question": "What is 29 plus 13?",
+  "true_answer": "42",
+  "false_answer": "43"
+ },
+ {
+  "fact_id": "ari140",
+  "family": "arithmetic",
+  "question": "What is 14 plus 12?",
+  "true_answer": "26",
+  "false_answer": "27"
+ },
+ {
+  "fact_id": "ari141",
+  "family": "arithmetic",
+  "question": "What is 10 times 11?",
+  "true_answer": "110",
+  "false_answer": "107"
+ },
+ {
+  "fact_id": "ari142",
+  "family": "arithmetic",
+  "question": "What is 22 plus 16?",
+  "true_answer": "38",
+  "false_answer": "41"
+ },
+ {
+  "fact_id": "ari143",
+  "family": "arithmetic",
+  "question": "What is 30 plus 30?",
+  "true_answer": "60",
+  "false_answer": "59"
+ },
+ {
+  "fact_id": "ari144",
+  "family": "arithmetic",
+  "question": "What is 46 plus 18?",
+  "true_answer": "64",
+  "false_answer": "67"
+ },
+ {
+  "fact_id": "ari145",
+  "family": "arithmetic",
+  "question": "What is 35 plus 48?",
+  "true_answer": "83",
+  "false_answer": "81"
+ },
+ {
+  "fact_id": "ari146",
+  "family": "arithmetic",
+  "question": "What is 19 plus 19?",
+  "true_answer": "38",
+  "false_answer": "41"
+ },
+ {
+  "fact_id": "ari147",
+  "family": "arithmetic",
+  "question": "What is 8 times 10?",
+  "true_answer": "80",
+  "false_answer": "82"
+ },
+ {
+  "fact_id": "ari148",
+  "family": "arithmetic",
+  "question": "What is 42 plus 38?",
+  "true_answer": "80",
+  "false_answer": "79"
+ },
+ {
+  "fact_id": "ari149",
+  "family": "arithmetic",
+  "question": "What is 13 times 6?",
+  "true_answer": "78",
+  "false_answer": "88"
+ },
+ {
+  "fact_id": "ari150",
+  "family": "arithmetic",
+  "question": "What is 31 plus 21?",
+  "true_answer": "52",
+  "false_answer": "62"
+ },
+ {
+  "fact_id": "ari151",
+  "family": "arithmetic",
+  "question": "What is 15 plus 25?",
+  "true_answer": "40",
+  "false_answer": "42"
+ },
+ {
+  "fact_id": "ari152",
+  "family": "arithmetic",
+  "question": "What is 12 plus 45?",
+  "true_answer": "57",
+  "false_answer": "54"
+ },
+ {
+  "fact_id": "ari153",
+  "family": "arithmetic",
+  "question": "What is 35 plus 14?",
+  "true_answer": "49",
+  "false_answer": "39"
+ },
+ {
+  "fact_id": "ari154",
+  "family": "arithmetic",
+  "question": "What is 29 plus 30?",
+  "true_answer": "59",
+  "false_answer": "58"
+ },
+ {
+  "fact_id": "ari155",
+  "family": "arithmetic",
+  "question": "What is 8 times 13?",
+  "true_answer": "104",
+  "false_answer": "102"
+ },
+ {
+  "fact_id": "ari156",
+  "family": "arithmetic",
+  "question": "What is 45 plus 32?",
+  "true_answer": "77",
+  "false_answer": "75"
+ },
+ {
+  "fact_id": "ari157",
+  "family": "arithmetic",
+  "question": "What is 9 times 9?",
+  "true_answer": "81",
+  "false_answer": "91"
+ },
+ {
+  "fact_id": "ari158",
+  "family": "arithmetic",
+  "question": "What is 25 plus 49?",
+  "true_answer": "74",
+  "false_answer": "64"
+ },
+ {
+  "fact_id": "ari159",
+  "family": "arithmetic",
+  "question": "What is 36 plus 14?",
+  "true_answer": "50",
+  "false_answer": "47"
+ }
+]

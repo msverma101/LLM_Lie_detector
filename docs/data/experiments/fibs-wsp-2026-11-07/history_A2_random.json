@@ -1,0 +1,399 @@
+[
+ {
+  "round": 0,
+  "edit": {
+   "op": "set_layer_weight",
+   "layer": 3,
+   "value": 0.5395734275277406
+  },
+  "train_before": 0.15765765765765766,
+  "calib_before": 0.21739130434782608,
+  "accepted": true,
+  "train_after": 0.17567567567567569,
+  "calib_after": 0.21739130434782608
+ },
+ {
+  "round": 0,
+  "edit": {
+   "op": "shift_bias",
+   "layer": 0,
+   "delta": -1.9338894578858836
+  },
+  "train_before": 0.17567567567567569,
+  "calib_before": 0.21739130434782608,
+  "accepted": false,
+  "train_after": 0.18018018018018017,
+  "calib_after": 0.21739130434782608
+ },
+ {
+  "round": 0,
+  "edit": {
+   "op": "shift_bias",
+   "layer": 4,
+   "delta": 1.6510223091108869
+  },
+  "train_before": 0.17567567567567569,
+  "calib_before": 0.21739130434782608,
+  "accepted": false,
+  "train_after": 0.17117117117117117,
+  "calib_after": 0.21739130434782608
+ },
+ {
+  "round": 0,
+  "edit": {
+   "op": "project_out",
+   "layer": 3,
+   "name": "ctx"
+  },
+  "train_before": 0.17567567567567569,
+  "calib_before": 0.21739130434782608,
+  "accepted": false,
+  "train_after": 0.15315315315315314,
+  "calib_after": 0.22826086956521738
+ },
+ {
+  "round": 0,
+  "edit": {
+   "op": "sparsify",
+   "layer": 3,
+   "p": 0.8415651814089914
+  },
+  "train_before": 0.17567567567567569,
+  "calib_before": 0.21739130434782608,
+  "accepted": false,
+  "train_after": 0.17567567567567569,
+  "calib_after": 0.22826086956521738
+ },
+ {
+  "round": 1,
+  "edit": {
+   "op": "project_out",
+   "layer": 1,
+   "name": "ctx"
+  },
+  "train_before": 0.17567567567567569,
+  "calib_before": 0.21739130434782608,
+  "accepted": false,
+  "train_after": 0.16216216216216217,
+  "calib_after": 0.2391304347826087
+ },
+ {
+  "round": 1,
+  "edit": {
+   "op": "sparsify",
+   "layer": 0,
+   "p": 0.7716638489288125
+  },
+  "train_before": 0.17567567567567569,
+  "calib_before": 0.21739130434782608,
+  "accepted": false,
+  "train_after": 0.18468468468468469,
+  "calib_after": 0.21739130434782608
+ },
+ {
+  "round": 1,
+  "edit": {
+   "op": "project_out",
+   "layer": 0,
+   "name": "ctx"
+  },
+  "train_before": 0.17567567567567569,
+  "calib_before": 0.21739130434782608,
+  "accepted": false,
+  "train_after": 0.17567567567567569,
+  "calib_after": 0.22826086956521738
+ },
+ {
+  "round": 1,
+  "edit": {
+   "op": "sparsify",
+   "layer": 5,
+   "p": 0.7768610301148979
+  },
+  "train_before": 0.17567567567567569,
+  "calib_before": 0.21739130434782608,
+  "accepted": false,
+  "train_after": 0.14864864864864866,
+  "calib_after": 0.21739130434782608
+ },
+ {
+  "round": 1,
+  "edit": {
+   "op": "shift_bias",
+   "layer": 0,
+   "delta": -0.8011524378504609
+  },
+  "train_before": 0.17567567567567569,
+  "calib_before": 0.21739130434782608,
+  "accepted": false,
+  "train_after": 0.16666666666666666,
+  "calib_after": 0.21739130434782608
+ },
+ {
+  "round": 2,
+  "edit": {
+   "op": "project_out",
+   "layer": 2,
+   "name": "dm"
+  },
+  "train_before": 0.17567567567567569,
+  "calib_before": 0.21739130434782608,
+  "accepted": false,
+  "train_after": 0.17117117117117117,
+  "calib_after": 0.20652173913043478
+ },
+ {
+  "round": 2,
+  "edit": {
+   "op": "add_direction",
+   "layer": 0,
+   "name": "dm",
+   "a": 0.34124882938726064
+  },
+  "train_before": 0.17567567567567569,
+  "calib_before": 0.21739130434782608,
+  "accepted": false,
+  "train_after": 0.17567567567567569,
+  "calib_after": 0.22826086956521738
+ },
+ {
+  "round": 2,
+  "edit": {
+   "op": "scale_layer",
+   "layer": 3,
+   "factor": 1.8461553344437616
+  },
+  "train_before": 0.17567567567567569,
+  "calib_before": 0.21739130434782608,
+  "accepted": false,
+  "train_after": 0.17117117117117117,
+  "calib_after": 0.21739130434782608
+ },
+ {
+  "round": 2,
+  "edit": {
+   "op": "project_out",
+   "layer": 4,
+   "name": "dm"
+  },
+  "train_before": 0.17567567567567569,
+  "calib_before": 0.21739130434782608,
+  "accepted": false,
+  "train_after": 0.14414414414414414,
+  "calib_after": 0.2391304347826087
+ },
+ {
+  "round": 2,
+  "edit": {
+   "op": "add_direction",
+   "layer": 5,
+   "name": "ctx",
+   "a": 0.3710839689613894
+  },
+  "train_before": 0.17567567567567569,
+  "calib_before": 0.21739130434782608,
+  "accepted": true,
+  "train_after": 0.1981981981981982,
+  "calib_after": 0.22826086956521738
+ },
+ {
+  "round": 3,
+  "edit": {
+   "op": "set_layer_weight",
+   "layer": 5,
+   "value": 1.3768934611418802
+  },
+  "train_before": 0.1981981981981982,
+  "calib_before": 0.22826086956521738,
+  "accepted": false,
+  "train_after": 0.1981981981981982,
+  "calib_after": 0.22826086956521738
+ },
+ {
+  "round": 3,
+  "edit": {
+   "op": "project_out",
+   "layer": 4,
+   "name": "dm"
+  },
+  "train_before": 0.1981981981981982,
+  "calib_before": 0.22826086956521738,
+  "accepted": false,
+  "train_after": 0.17567567567567569,
+  "calib_after": 0.20652173913043478
+ },
+ {
+  "round": 3,
+  "edit": {
+   "op": "set_layer_weight",
+   "layer": 0,
+   "value": 1.4429766803881634
+  },
+  "train_before": 0.1981981981981982,
+  "calib_before": 0.22826086956521738,
+  "accepted": false,
+  "train_after": 0.19369369369369369,
+  "calib_after": 0.2391304347826087
+ },
+ {
+  "round": 3,
+  "edit": {
+   "op": "set_layer_weight",
+   "layer": 3,
+   "value": 0.6204837511179113
+  },
+  "train_before": 0.1981981981981982,
+  "calib_before": 0.22826086956521738,
+  "accepted": false,
+  "train_after": 0.1981981981981982,
+  "calib_after": 0.22826086956521738
+ },
+ {
+  "round": 3,
+  "edit": {
+   "op": "add_direction",
+   "layer": 2,
+   "name": "ctx",
+   "a": 0.8680870319124994
+  },
+  "train_before": 0.1981981981981982,
+  "calib_before": 0.22826086956521738,
+  "accepted": false,
+  "train_after": 0.2072072072072072,
+  "calib_after": 0.2717391304347826
+ },
+ {
+  "round": 4,
+  "edit": {
+   "op": "set_layer_weight",
+   "layer": 3,
+   "value": 1.1430596614595219
+  },
+  "train_before": 0.1981981981981982,
+  "calib_before": 0.22826086956521738,
+  "accepted": false,
+  "train_after": 0.1981981981981982,
+  "calib_after": 0.25
+ },
+ {
+  "round": 4,
+  "edit": {
+   "op": "add_direction",
+   "layer": 1,
+   "name": "dm",
+   "a": 0.1886000603993936
+  },
+  "train_before": 0.1981981981981982,
+  "calib_before": 0.22826086956521738,
+  "accepted": false,
+  "train_after": 0.17567567567567569,
+  "calib_after": 0.22826086956521738
+ },
+ {
+  "round": 4,
+  "edit": {
+   "op": "project_out",
+   "layer": 2,
+   "name": "ctx"
+  },
+  "train_before": 0.1981981981981982,
+  "calib_before": 0.22826086956521738,
+  "accepted": true,
+  "train_after": 0.21621621621621623,
+  "calib_after": 0.2391304347826087
+ },
+ {
+  "round": 4,
+  "edit": {
+   "op": "add_direction",
+   "layer": 1,
+   "name": "ctx",
+   "a": -0.5456848129332406
+  },
+  "train_before": 0.21621621621621623,
+  "calib_before": 0.2391304347826087,
+  "accepted": true,
+  "train_after": 0.24774774774774774,
+  "calib_after": 0.29347826086956524
+ },
+ {
+  "round": 4,
+  "edit": {
+   "op": "sparsify",
+   "layer": 3,
+   "p": 0.07561380922414634
+  },
+  "train_before": 0.24774774774774774,
+  "calib_before": 0.29347826086956524,
+  "accepted": false,
+  "train_after": 0.24774774774774774,
+  "calib_after": 0.29347826086956524
+ },
+ {
+  "round": 5,
+  "edit": {
+   "op": "add_direction",
+   "layer": 4,
+   "name": "dm",
+   "a": -0.5212611140140957
+  },
+  "train_before": 0.24774774774774774,
+  "calib_before": 0.29347826086956524,
+  "accepted": false,
+  "train_after": 0.11711711711711711,
+  "calib_after": 0.16304347826086957
+ },
+ {
+  "round": 5,
+  "edit": {
+   "op": "sparsify",
+   "layer": 4,
+   "p": 0.052711231324674916
+  },
+  "train_before": 0.24774774774774774,
+  "calib_before": 0.29347826086956524,
+  "accepted": false,
+  "train_after": 0.24774774774774774,
+  "calib_after": 0.29347826086956524
+ },
+ {
+  "round": 5,
+  "edit": {
+   "op": "set_layer_weight",
+   "layer": 4,
+   "value": 0.30055893378967813
+  },
+  "train_before": 0.24774774774774774,
+  "calib_before": 0.29347826086956524,
+  "accepted": false,
+  "train_after": 0.24774774774774774,
+  "calib_after": 0.2826086956521739
+ },
+ {
+  "round": 5,
+  "edit": {
+   "op": "add_direction",
+   "layer": 5,
+   "name": "dm",
+   "a": 0.5926485405745885
+  },
+  "train_before": 0.24774774774774774,
+  "calib_before": 0.29347826086956524,
+  "accepted": true,
+  "train_after": 0.2702702702702703,
+  "calib_after": 0.32608695652173914
+ },
+ {
+  "round": 5,
+  "edit": {
+   "op": "sparsify",
+   "layer": 1,
+   "p": 0.04681917095796865
+  },
+  "train_before": 0.2702702702702703,
+  "calib_before": 0.32608695652173914,
+  "accepted": false,
+  "train_after": 0.2702702702702703,
+  "calib_after": 0.32608695652173914
+ }
+]
