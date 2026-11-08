@@ -45,7 +45,7 @@ def fit(t,m,X,C=.01):
 
 def better(new,old):
     d=new['macro_recall']-old['macro_recall']
-    return d>.005 or (abs(d)<=.005 and new['macro_auroc']>old['macro_auroc']+1e-12)
+    return d>.005+1e-12 or (abs(d)<=.005+1e-12 and new['macro_auroc']>old['macro_auroc']+1e-12)
 
 def details(root,t,m,X,tag,ids=None,full=True):
     s=score(t,X);cut=threshold(s[m.label==0]);p=s>cut;y=m.label.to_numpy();z=logits(t,X)

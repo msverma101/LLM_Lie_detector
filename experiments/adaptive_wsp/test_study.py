@@ -17,6 +17,7 @@ class HarnessTests(unittest.TestCase):
         self.assertEqual(study.threshold(np.arange(600),.025),585.)
         self.assertEqual(study.threshold(np.arange(20),.025),float('inf'))
         self.assertTrue(study.better({'macro_recall':.3,'macro_auroc':.8},{'macro_recall':.2,'macro_auroc':.9}))
+        self.assertTrue(study.better({'macro_recall':.37,'macro_auroc':.81},{'macro_recall':.375,'macro_auroc':.80}))
         self.assertFalse(study.better({'macro_recall':.2,'macro_auroc':.8},{'macro_recall':.3,'macro_auroc':.7}))
 
     def test_free_edit_cannot_change_frozen_scaler(self):
