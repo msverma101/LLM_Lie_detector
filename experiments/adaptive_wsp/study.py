@@ -142,6 +142,15 @@ def freeze(a):
     if state['incumbent']!='theta0.npz':
         folder=Path(state['incumbent']).parent;spec=json.loads((root/folder/'spec.json').read_text());winners['wsp_parent']=spec['parent']
         for j in range(20):winners[f'random_{j:02d}']=str(folder/f'random_{j:02d}.npz')
+    # Supplementary attribution controls, fixed from the frozen winner, never selected.
+    selected=load(root/winners['wsp']);base=load(root/'theta0.npz');confidence=copy.deepcopy(base);coordinates=copy.deepcopy(selected)
+    factors=[]
+    for l in range(len(base['W'])):
+        valid=np.abs(base['W'][l])>1e-10;factor=float(np.median(selected['W'][l,valid]/base['W'][l,valid]));assert factor>0
+        factors.append(factor);confidence['W'][l]*=factor;confidence['b'][l]*=factor;coordinates['W'][l]/=factor;coordinates['b'][l]/=factor
+    save(root/'ablation_confidence_only.npz',confidence);save(root/'ablation_coordinates_only.npz',coordinates)
+    winners['ablation_confidence_only']='ablation_confidence_only.npz';winners['ablation_coordinates_only']='ablation_coordinates_only.npz'
+    write(root/'ABLATION_CONTRACT.json',{'row_factors':factors,'status':'supplementary, fixed after validation selection before test; no winner reselection'})
     out={'client_date':'2026-11-08','created_unix':time.time(),'winners':winners,'sha256':{k:sha(root/p) for k,p in winners.items()},'alpha':ALPHA,'protocol_sha256':sha(Path(__file__).parent/'PROTOCOL.md'),'study_sha256':sha(__file__),'prediction_counts':COUNTS.copy()};write(root/'FROZEN.json',out);print('FROZEN',json.dumps(out),flush=True)
 
 def sample_groups(m,rng):
