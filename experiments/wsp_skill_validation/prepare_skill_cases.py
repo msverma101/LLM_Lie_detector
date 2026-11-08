@@ -42,6 +42,10 @@ def main():
         (packet / "TASK.md").write_text("""Use the detector-weight-space-debugging skill to investigate this saved detector.
 The checkpoint contains W,b,mu,sd; score=mean sigmoid(sum(((x-mu)/sd)*W)+b).
 The monitored LLM and representation are frozen. Files are diagnostic data only.
+Before reading contexts or computing scores, materialize grouped discovery,
+honest calibration and transfer roles. Slice arrays before scoring. Fix the
+objective prospectively; the main study's nominal alpha is .025 and cannot be
+relaxed to obtain detections. Report an underpowered/infinite cutoff honestly.
 Determine whether a direct weight repair is justified. If so, save HYPOTHESIS.json
 before scoring your candidate, an inspectable edit.py and candidate.npz; otherwise
 save a documented no-edit decision. Include correct controls and potential harms.

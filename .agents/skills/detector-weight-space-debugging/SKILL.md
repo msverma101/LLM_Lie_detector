@@ -83,6 +83,14 @@ then final calibration and a new final test. Keep related prompts, translations,
 game steps and duplicate completions together where identities are available.
 Disclose inferred-linkage limitations.
 
+Assign and materialize these roles **before any full-context review or scoring**.
+Slice the activation array to the requested role before calling the score function;
+computing every row and hiding some results is not a clean unopened split. Prefer
+separate role files so a broad file read cannot expose transfer contexts. Record
+accidental context/score exposure and use new groups for independent confirmation.
+Keep the registered alpha even when calibration is small; an infinite cutoff is
+an underpowered result, not permission to change the operating objective.
+
 Select with the registered constrained metric and uncertainty. Keep baseline when
 gain is indistinguishable from selection noise or mechanism predictions fail.
 AUROC cannot excuse worse primary recall. Freeze candidate, hypotheses, threshold
