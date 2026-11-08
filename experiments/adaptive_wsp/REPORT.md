@@ -163,5 +163,7 @@ replays this study; it does not constitute an independent adaptive-agent replica
 Download the [complete archive release](https://github.com/msverma101/LLM_Lie_detector/releases/tag/adaptive-wsp-2026-11-08). Review the [machine-readable results](results/2026-11-08/FINAL_DONE.json), [frozen hashes](results/2026-11-08/FROZEN.json), and [per-attempt feedback](results/2026-11-08/attempts.tsv).
 
 See [run instructions](README.md), [five-criterion evidence audit](CRITERIA.md), [protocol and references](PROTOCOL.md),
-[executed Colab](https://colab.research.google.com/drive/190C708zzRPSgPdWsINTIo9XZH4t6-kQo)
+[saved snapshot of the executed Colab](https://colab.research.google.com/drive/11QoYm18FpXnWjKWicxaH6bVhWG6F07pi)
 and the machine-readable evidence supplied with this report.
+
+The saved notebook is a copy of the executed session with its outputs. It preserves the completed work after a save conflict without overwriting a remote notebook version; it is not an independent rerun. [Publication verification](results/2026-11-08/PUBLICATION_VERIFICATION.json) confirms that GitHub reports the same archive size and SHA-256 as the local file.

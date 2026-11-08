@@ -1,0 +1,11 @@
+{
+  "client_date": "2026-11-08",
+  "main_research_commit": "0a4fd5979e57f624f937dd502a219ad8b2518b14",
+  "release_url": "https://github.com/msverma101/LLM_Lie_detector/releases/tag/adaptive-wsp-2026-11-08",
+  "release_asset_bytes": 99752164,
+  "github_asset_digest": "sha256:83506fce38d9789aad42eda6d8504aa7a1067337f43e198f1b4e4d4977c56605",
+  "github_asset_state": "uploaded",
+  "github_digest_matches_local": true,
+  "executed_notebook_snapshot": "https://colab.research.google.com/drive/11QoYm18FpXnWjKWicxaH6bVhWG6F07pi",
+  "snapshot_scope": "Copy of executed original notebook, retaining outputs; not a new independent run. Created after an original-notebook save conflict without overwriting the remote version."
+}
