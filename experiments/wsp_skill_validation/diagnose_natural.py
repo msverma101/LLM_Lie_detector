@@ -2,6 +2,7 @@
 import argparse
 import hashlib
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -16,16 +17,21 @@ def main():
     ap.add_argument("--capture", required=True)
     ap.add_argument("--baseline", required=True)
     ap.add_argument("--out", required=True)
+    ap.add_argument("--capture-log", help="Allow only already flushed diagnostic rows while the rest captures")
     args = ap.parse_args()
     root, out = Path(args.capture), Path(args.out)
     out.mkdir(parents=True, exist_ok=False)
-    assert (root / "CAPTURE_DONE.json").exists()
+    capture_complete = (root / "CAPTURE_DONE.json").exists()
     with np.load(args.baseline, allow_pickle=False) as f:
         t = {k: f[k] for k in f.files}
     m = pd.read_csv(root / "meta.csv").fillna("")
     diagnostic = m.partition == "diagnostic"
     transfer = m.group_id.map(lambda g: int(hashlib.sha256(("diagnostic-transfer:" + g).encode()).hexdigest()[:12], 16) % 3 == 0)
     ix = np.flatnonzero((diagnostic & ~transfer).to_numpy())
+    if not capture_complete:
+        assert args.capture_log, "Completed capture or an explicit progress log is required"
+        progress = re.findall(r"^CAPTURE (\d+) \d+ minutes", Path(args.capture_log).read_text(), re.MULTILINE)
+        assert progress and len(ix) and int(ix.max()) < int(progress[-1]), "Requested diagnostic rows not yet flushed"
     x = np.load(root / "acts_last.npy", mmap_mode="r")[ix].astype(np.float64)
     m = m.iloc[ix].reset_index(drop=True)
     raw = pd.read_json(root / "cases_diagnostic.jsonl", lines=True).fillna("")
@@ -45,6 +51,7 @@ def main():
                 "mean_score_deceptive": float(ss[yy == 1].mean()) if np.any(yy == 1) else None,
                 "auroc": float(roc_auc_score(yy, ss)) if len(set(yy)) == 2 else None}
     summary = {"scope": "diagnostic discovery groups only; no transfer/validation/final scores opened",
+               "capture_complete_at_diagnosis": capture_complete,
                "rows": len(m), "groups": m.group_id.nunique(), "temporary_threshold": cut,
                "overall": metrics(np.ones(len(m), dtype=bool)),
                "by_family": {str(v): metrics((m.family == v).to_numpy()) for v in sorted(set(m.family))},
