@@ -1,0 +1,224 @@
+{
+  "scope": "blinded procedural forward tests, not independent natural-efficacy studies",
+  "v1_limitations": [
+    "Both evaluators reviewed some contexts before finalizing their role split; case_b also internally scored transfer rows without inspecting them.",
+    "Evaluators prospectively used their own development alpha (.10/.05); these are not the main study alpha=.025 efficacy tests."
+  ],
+  "correction": "Skill v2 now explicitly requires materializing roles before reading/scoring, slicing arrays before score calls, and preserving the registered alpha. Fresh natural study used separated discovery/transfer scoring and alpha=.025.",
+  "case_a": "Correctly localized injected coordinate1780 and wrote the six-coefficient repair; declined adoption under its small development sample.",
+  "case_b": "Uncorrupted checkpoint retained without weight edits.",
+  "files": [
+    {
+      "path": "ANSWER_KEY.json",
+      "sha256": "66a3230eb6d0ee86506373c6166e6a1ef5e6fa5be987d7293730d9af9a6d9de7"
+    },
+    {
+      "path": "case_a/CONTRACT.json",
+      "sha256": "a6c9f4a3259ac37a4b674a6af593f62760020607be675eac611907306550d814"
+    },
+    {
+      "path": "case_a/DECISION.json",
+      "sha256": "b5b1c17352ac1a5b8613bbba91fc1f6f901ec387cd205d39ceef033576944aa5"
+    },
+    {
+      "path": "case_a/HYPOTHESIS.json",
+      "sha256": "f34a7a7a422808864b04209a0f4f9bf632749ac3daa2a8dde9b8e6f61663af23"
+    },
+    {
+      "path": "case_a/REPORT.md",
+      "sha256": "51b463fc636f02e180dcdb01b67cfeb88d71556bb5309a04ad0da883c6c416b6"
+    },
+    {
+      "path": "case_a/TASK_ACTUALLY_GIVEN.md",
+      "sha256": "1e3ae8e05d83f498261f0b0702263371c361f8a8796642e9083b22f8b697a363"
+    },
+    {
+      "path": "case_a/baseline_discovery.csv",
+      "sha256": "38401f8f6788c7d2c511392b82667acf1a90dcf2d2f09b242af74e0af82b65f9"
+    },
+    {
+      "path": "case_a/candidate.npz",
+      "sha256": "18cee5c71761c2a1e58f035bb07f65f6046dccd03e2d3a05275aead247f7bd0a"
+    },
+    {
+      "path": "case_a/context_review.json",
+      "sha256": "2b4921224e4b08fe3b0f9c7a121f30f556fdf69a5859f07883450058ef9718f1"
+    },
+    {
+      "path": "case_a/control_metrics.json",
+      "sha256": "ad2cf88e7ec649485fdb7e2ee0fa4fa1a963a60c31e548308e713a0079db3c90"
+    },
+    {
+      "path": "case_a/edit.py",
+      "sha256": "207569ec90c6cc6b5350c817c39885acd1a8e29585365971c409f209b12cf44a"
+    },
+    {
+      "path": "case_a/edit_audit.json",
+      "sha256": "2ddf4a85e13bbc7d047e4dd30c6f25546eed077436fdc0ef0ea0610db51521c3"
+    },
+    {
+      "path": "case_a/evaluate.py",
+      "sha256": "ad4e06d51b21c34e75c004dee592ec1e4a203d12893f5530fafac8bcd9cb4e1c"
+    },
+    {
+      "path": "case_a/groups.csv",
+      "sha256": "62f2093c9b77523556de69de2b6a4bc13b1a1c39d83c3e4c53e0e353a5dbd099"
+    },
+    {
+      "path": "case_a/near_threshold_contexts.json",
+      "sha256": "56ac7ac0189a205df924fc6826a6cf271ab37bf007e04db3f0b21edbeaca709b"
+    },
+    {
+      "path": "case_a/paired_development_eval.json",
+      "sha256": "db2ae2ca9b00e747da3de46d752a4ea7376b534734f94407c26c888d4b29e0bd"
+    },
+    {
+      "path": "case_a/prediction_check.json",
+      "sha256": "4fca5fca19b983a96fbe77ce3f7eca087793c3fc93de777c1bad38d66f0700e2"
+    },
+    {
+      "path": "case_a/score_batches.jsonl",
+      "sha256": "50c4684d1639e65642131ef077c4d8dc2f932d516bba2a0a137983d57a9a14c1"
+    },
+    {
+      "path": "case_a/scores_candidate.csv",
+      "sha256": "5e28e3e993f75dd3c6893c8abafe770afad48a42ba2fbfbdad41b6a3e0b69f8d"
+    },
+    {
+      "path": "case_a/scores_half.csv",
+      "sha256": "00b41dcfe21b93553126b41ee724bd166fdd61c0a8d95b34765271b403109ac9"
+    },
+    {
+      "path": "case_a/scores_probe_0.csv",
+      "sha256": "73fa9a7f9ed7f7abf227ab08bcc6c0ce48399bb90e54d2b37228d3bbb03b24dd"
+    },
+    {
+      "path": "case_a/scores_probe_1.csv",
+      "sha256": "b225ae5891a773d470e07610f9a64525248f01e6d2c08410cffc5e630962bc5c"
+    },
+    {
+      "path": "case_a/scores_probe_2.csv",
+      "sha256": "5043b1c4356b433c5401a0bf8bc77daf4cc366efc0ffd0004417dd5e824472e4"
+    },
+    {
+      "path": "case_a/scores_probe_3.csv",
+      "sha256": "cba6c77faca974e693f00fd4d27e6204ed6c944cd9a5126e9d1107da8361673e"
+    },
+    {
+      "path": "case_a/scores_probe_4.csv",
+      "sha256": "a06896c93e69095b4a9ca14694f5c6429f74648fdfe60e22fdf4eed6e9380585"
+    },
+    {
+      "path": "case_a/scores_probe_5.csv",
+      "sha256": "5b2b89d5490ec0cccbb5a0b7671b1b2c4c6ab38bed9a2dca6a01b7f1f0079aee"
+    },
+    {
+      "path": "case_a/scores_random.csv",
+      "sha256": "04839f8815a01318a61df43eb5a03cd58ed870a6aeece050e1998b5b361874b9"
+    },
+    {
+      "path": "case_a/scores_reverse_half.csv",
+      "sha256": "c789b80bfec13fe6b8680f240330aa714877c0dab420e69026e3ce5629d98e07"
+    },
+    {
+      "path": "case_a/scores_wrong_amplify.csv",
+      "sha256": "336423ff076a228aebe494d15b8aabead82d6405a11546f0176c5186f6002110"
+    },
+    {
+      "path": "case_a/scores_zero.csv",
+      "sha256": "2e913b61b6174e6b9d949d733bcfcbd12c9bb06acceb241e2c4bed41865814cb"
+    },
+    {
+      "path": "case_a/transfer_transitions.csv",
+      "sha256": "0f81f27914a7017386835e7f37ac8a8edd0395742c4fab944318d9ac8dca706a"
+    },
+    {
+      "path": "case_b/DECISION.json",
+      "sha256": "a9758a8a20c004e09ec4978291d9fa909bb25b633502022567eef290eda1176b"
+    },
+    {
+      "path": "case_b/HYPOTHESIS.json",
+      "sha256": "82d1f5fd046d9047d98c9f36348fa2f20639df28279d08f2dd17731f134954fc"
+    },
+    {
+      "path": "case_b/PROTOCOL.json",
+      "sha256": "7c9e68cf0c9ae05b73d74baff06c9debc9e7d870cf513302e0c6870e38c72bdc"
+    },
+    {
+      "path": "case_b/REPORT.md",
+      "sha256": "21536dd6b8305c43776bb6a1ea21ebda06e41a386488dd0e235720e1304f7efd"
+    },
+    {
+      "path": "case_b/TASK_ACTUALLY_GIVEN.md",
+      "sha256": "1e3ae8e05d83f498261f0b0702263371c361f8a8796642e9083b22f8b697a363"
+    },
+    {
+      "path": "case_b/arithmetic_contributions.json",
+      "sha256": "072666cea95ca01378be48121dc9d40242a7e08ef5c4b97bb233268ac5841c0c"
+    },
+    {
+      "path": "case_b/baseline_development_scores.csv",
+      "sha256": "b1b099566ef0892b6f53017810a87415c608f980027f3fd98b9e90f79d1d3bf1"
+    },
+    {
+      "path": "case_b/development_metrics.json",
+      "sha256": "7261b6df7aa19d2fbd513c68b573944e10feed870916e9880ff05a2309c92cc9"
+    },
+    {
+      "path": "case_b/discovery_scores.csv",
+      "sha256": "1c1f6037e4d7c3a420259111bd6d3d3a425430e00d537818895a74adcb15dc35"
+    },
+    {
+      "path": "case_b/finalize.py",
+      "sha256": "fd2ca1c316a45a77318380d4e9fff23f2028922e279cbf337ec786fc2858d6e5"
+    },
+    {
+      "path": "case_b/full_context_review.json",
+      "sha256": "07c69d62e5622918194397d73c939ee94214edb373e060419a1f98dc38809e46"
+    },
+    {
+      "path": "case_b/honest_calibration_scores.csv",
+      "sha256": "50133fa2e393b2d3ce9805e4cbb6c85c0023d5462d67c1904ba2a60e6a84fc32"
+    },
+    {
+      "path": "case_b/identity_audit.json",
+      "sha256": "4c2342c37d43963a04e69167e0db555b0271dcb85a44da2863a0f2fc424ea47a"
+    },
+    {
+      "path": "case_b/identity_paired_eval.json",
+      "sha256": "4bfc6209a0e1b5f9a245b5abd18c46d69703aed4476e65c9649ec8fc3b90f85e"
+    },
+    {
+      "path": "case_b/identity_verification.json",
+      "sha256": "58a0b5f615286d4c00b4a07b8c3a3889642b59348e4b1e76e2e69800762f15f4"
+    },
+    {
+      "path": "case_b/investigate.py",
+      "sha256": "97d307c092e30102948ab57e9afa6fd21b4178c506dfa3e26575cc98f5092d1a"
+    },
+    {
+      "path": "case_b/no_edit.py",
+      "sha256": "7c5a2345a17910355b5df6dcd6e8bf0d2ec2768ebd7f765f9b4f95313f239318"
+    },
+    {
+      "path": "case_b/retained_baseline.npz",
+      "sha256": "3d9dfe5dc4142bf876f800fa710a5e2c0f65afcb9977d34255b2bd328e439a89"
+    },
+    {
+      "path": "case_b/score_queries.json",
+      "sha256": "e15d4aca0718dc77c349c6b7519a9380a6890a1a3a0edbb9484859d9550d6a76"
+    },
+    {
+      "path": "case_b/skill_structure_check.json",
+      "sha256": "479b8fa249647a9c435002f9cef79af60cef08495e7e9b703667c6ca1bee84ed"
+    },
+    {
+      "path": "case_b/source_manifest.json",
+      "sha256": "02bc9fd10f11fb8552446d7bb4f37b6c3aa5a94bdb4b397ae9b03f4f2ce6fdae"
+    },
+    {
+      "path": "case_b/split_manifest.csv",
+      "sha256": "044f2aa98001f24848e54611e81019504320561b48fd8cfaff2291fb2606b07b"
+    }
+  ]
+}

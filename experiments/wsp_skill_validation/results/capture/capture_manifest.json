@@ -1,0 +1,330 @@
+{
+  "date": "2026-11-08",
+  "seed": 202611082,
+  "model": "Qwen/Qwen3.5-2B",
+  "model_revision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+  "dataset_revision": "4ad7414fc2e1cc8d694b160e360722a13bee718e",
+  "layers": [
+    7,
+    10,
+    13,
+    16,
+    19,
+    22
+  ],
+  "pool": "last_answer_token",
+  "max_tokens": 2048,
+  "previous_files": [
+    {
+      "path": "/content/fibs_adaptive_20261108/previous_meta.csv",
+      "sha256": "ef360e63cdc44c126ea6e36204ffb4cd6d6514b5ac2b2a589af1240a7f82387d"
+    },
+    {
+      "path": "/content/fibs_adaptive_20261108/capture/meta.csv",
+      "sha256": "9a1c01f1533bfddbd7f56c5803936a068291e27aead7ab55a0bc6124c118dd70"
+    }
+  ],
+  "rejections": {
+    "unmapped_family": 16708,
+    "char_prefilter": 3788,
+    "examined_over_length": 4154,
+    "examined_render_error": 0,
+    "previous_connected_rows": 22282,
+    "cross_source_partition_groups": 778,
+    "unused_calibration_positives": 5037
+  },
+  "counts": [
+    {
+      "partition": "calib",
+      "family": "among",
+      "label": 0,
+      "n": 63
+    },
+    {
+      "partition": "calib",
+      "family": "harm",
+      "label": 0,
+      "n": 100
+    },
+    {
+      "partition": "calib",
+      "family": "medqa",
+      "label": 0,
+      "n": 100
+    },
+    {
+      "partition": "calib",
+      "family": "model",
+      "label": 0,
+      "n": 100
+    },
+    {
+      "partition": "calib",
+      "family": "sandbagging",
+      "label": 0,
+      "n": 100
+    },
+    {
+      "partition": "calib",
+      "family": "werewolf",
+      "label": 0,
+      "n": 95
+    },
+    {
+      "partition": "diagnostic",
+      "family": "among",
+      "label": 0,
+      "n": 50
+    },
+    {
+      "partition": "diagnostic",
+      "family": "among",
+      "label": 1,
+      "n": 50
+    },
+    {
+      "partition": "diagnostic",
+      "family": "harm",
+      "label": 0,
+      "n": 50
+    },
+    {
+      "partition": "diagnostic",
+      "family": "harm",
+      "label": 1,
+      "n": 50
+    },
+    {
+      "partition": "diagnostic",
+      "family": "medqa",
+      "label": 0,
+      "n": 50
+    },
+    {
+      "partition": "diagnostic",
+      "family": "medqa",
+      "label": 1,
+      "n": 50
+    },
+    {
+      "partition": "diagnostic",
+      "family": "model",
+      "label": 0,
+      "n": 50
+    },
+    {
+      "partition": "diagnostic",
+      "family": "model",
+      "label": 1,
+      "n": 50
+    },
+    {
+      "partition": "diagnostic",
+      "family": "sandbagging",
+      "label": 0,
+      "n": 50
+    },
+    {
+      "partition": "diagnostic",
+      "family": "sandbagging",
+      "label": 1,
+      "n": 50
+    },
+    {
+      "partition": "diagnostic",
+      "family": "werewolf",
+      "label": 0,
+      "n": 50
+    },
+    {
+      "partition": "diagnostic",
+      "family": "werewolf",
+      "label": 1,
+      "n": 50
+    },
+    {
+      "partition": "test",
+      "family": "among",
+      "label": 0,
+      "n": 69
+    },
+    {
+      "partition": "test",
+      "family": "among",
+      "label": 1,
+      "n": 72
+    },
+    {
+      "partition": "test",
+      "family": "harm",
+      "label": 0,
+      "n": 100
+    },
+    {
+      "partition": "test",
+      "family": "harm",
+      "label": 1,
+      "n": 100
+    },
+    {
+      "partition": "test",
+      "family": "medqa",
+      "label": 0,
+      "n": 100
+    },
+    {
+      "partition": "test",
+      "family": "medqa",
+      "label": 1,
+      "n": 100
+    },
+    {
+      "partition": "test",
+      "family": "model",
+      "label": 0,
+      "n": 100
+    },
+    {
+      "partition": "test",
+      "family": "model",
+      "label": 1,
+      "n": 100
+    },
+    {
+      "partition": "test",
+      "family": "sandbagging",
+      "label": 0,
+      "n": 100
+    },
+    {
+      "partition": "test",
+      "family": "sandbagging",
+      "label": 1,
+      "n": 100
+    },
+    {
+      "partition": "test",
+      "family": "werewolf",
+      "label": 0,
+      "n": 100
+    },
+    {
+      "partition": "test",
+      "family": "werewolf",
+      "label": 1,
+      "n": 92
+    },
+    {
+      "partition": "val_calib",
+      "family": "among",
+      "label": 0,
+      "n": 50
+    },
+    {
+      "partition": "val_calib",
+      "family": "harm",
+      "label": 0,
+      "n": 50
+    },
+    {
+      "partition": "val_calib",
+      "family": "medqa",
+      "label": 0,
+      "n": 50
+    },
+    {
+      "partition": "val_calib",
+      "family": "model",
+      "label": 0,
+      "n": 50
+    },
+    {
+      "partition": "val_calib",
+      "family": "sandbagging",
+      "label": 0,
+      "n": 50
+    },
+    {
+      "partition": "val_calib",
+      "family": "werewolf",
+      "label": 0,
+      "n": 50
+    },
+    {
+      "partition": "validation",
+      "family": "among",
+      "label": 0,
+      "n": 50
+    },
+    {
+      "partition": "validation",
+      "family": "among",
+      "label": 1,
+      "n": 50
+    },
+    {
+      "partition": "validation",
+      "family": "harm",
+      "label": 0,
+      "n": 50
+    },
+    {
+      "partition": "validation",
+      "family": "harm",
+      "label": 1,
+      "n": 50
+    },
+    {
+      "partition": "validation",
+      "family": "medqa",
+      "label": 0,
+      "n": 50
+    },
+    {
+      "partition": "validation",
+      "family": "medqa",
+      "label": 1,
+      "n": 50
+    },
+    {
+      "partition": "validation",
+      "family": "model",
+      "label": 0,
+      "n": 50
+    },
+    {
+      "partition": "validation",
+      "family": "model",
+      "label": 1,
+      "n": 50
+    },
+    {
+      "partition": "validation",
+      "family": "sandbagging",
+      "label": 0,
+      "n": 50
+    },
+    {
+      "partition": "validation",
+      "family": "sandbagging",
+      "label": 1,
+      "n": 50
+    },
+    {
+      "partition": "validation",
+      "family": "werewolf",
+      "label": 0,
+      "n": 50
+    },
+    {
+      "partition": "validation",
+      "family": "werewolf",
+      "label": 1,
+      "n": 50
+    }
+  ],
+  "previous_row_overlap": 0,
+  "previous_group_overlap": 0,
+  "cross_role_group_overlap": 0,
+  "scope": "Familiar families, recorded-group independence only; fixed text-only adaptation"
+}

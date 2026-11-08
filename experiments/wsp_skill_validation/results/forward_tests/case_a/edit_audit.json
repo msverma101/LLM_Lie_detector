@@ -1,0 +1,74 @@
+{
+  "allowed": true,
+  "purpose": "repair",
+  "issues": [],
+  "changed_entries": 6,
+  "probes": [
+    {
+      "probe": 0,
+      "changed_W_entries": 1,
+      "delta_W_l2": 2.484490503851963,
+      "delta_b": 0.0,
+      "best_scalar": 0.18757916891752896,
+      "scalar_residual": 0.39037574758908644,
+      "global_calibration": false
+    },
+    {
+      "probe": 1,
+      "changed_W_entries": 1,
+      "delta_W_l2": 2.1838484959427875,
+      "delta_b": 0.0,
+      "best_scalar": 0.20753091495015885,
+      "scalar_residual": 0.40553894300068,
+      "global_calibration": false
+    },
+    {
+      "probe": 2,
+      "changed_W_entries": 1,
+      "delta_W_l2": 2.3394996223855835,
+      "delta_b": 0.0,
+      "best_scalar": 0.18588797690318107,
+      "scalar_residual": 0.3890162425221129,
+      "global_calibration": false
+    },
+    {
+      "probe": 3,
+      "changed_W_entries": 1,
+      "delta_W_l2": 3.2707757729069327,
+      "delta_b": 0.0,
+      "best_scalar": 0.10971039404851012,
+      "scalar_residual": 0.3125284362841737,
+      "global_calibration": false
+    },
+    {
+      "probe": 4,
+      "changed_W_entries": 1,
+      "delta_W_l2": 3.1853192789239224,
+      "delta_b": 0.0,
+      "best_scalar": 0.11916990827704749,
+      "scalar_residual": 0.3239883350342842,
+      "global_calibration": false
+    },
+    {
+      "probe": 5,
+      "changed_W_entries": 1,
+      "delta_W_l2": 2.991745042259781,
+      "delta_b": 0.0,
+      "best_scalar": 0.13346489067733872,
+      "scalar_residual": 0.34007648203576907,
+      "global_calibration": false
+    }
+  ],
+  "classification": "localized_or_directional",
+  "mechanism_validated": false,
+  "files": [
+    {
+      "path": "/Users/friedrichreichelt/Documents/Codex/2026-11-07/hast/work/skill-evaluation/case_a/detector.npz",
+      "sha256": "5965effb4737c2d41467d0c6297317cde2019206508ab81e1f8907d70d06666d"
+    },
+    {
+      "path": "/Users/friedrichreichelt/Documents/Codex/2026-11-07/hast/work/skill-evaluation/case_a/output/candidate.npz",
+      "sha256": "18cee5c71761c2a1e58f035bb07f65f6046dccd03e2d3a05275aead247f7bd0a"
+    }
+  ]
+}

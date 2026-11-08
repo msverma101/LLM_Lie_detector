@@ -1,0 +1,19 @@
+{
+  "allowed": true,
+  "purpose": "unchanged-control",
+  "issues": [],
+  "changed_entries": 0,
+  "probes": [],
+  "classification": "unchanged",
+  "mechanism_validated": false,
+  "files": [
+    {
+      "path": "detector.npz",
+      "sha256": "3d9dfe5dc4142bf876f800fa710a5e2c0f65afcb9977d34255b2bd328e439a89"
+    },
+    {
+      "path": "output/retained_baseline.npz",
+      "sha256": "3d9dfe5dc4142bf876f800fa710a5e2c0f65afcb9977d34255b2bd328e439a89"
+    }
+  ]
+}

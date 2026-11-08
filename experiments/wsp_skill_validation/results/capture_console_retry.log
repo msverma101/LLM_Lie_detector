@@ -1,0 +1,120 @@
+LOADED honest_honest 38692
+LOADED honest_deceptive 35657
+LOADED deceptive_honest 32706
+LOADED deceptive_deceptive 35465
+CELL calib among 0 63
+CELL calib harm 0 100
+CELL calib medqa 0 100
+CELL calib model 0 100
+CELL calib sandbagging 0 100
+CELL calib werewolf 0 95
+CELL diagnostic among 0 50
+CELL diagnostic among 1 50
+CELL diagnostic harm 0 50
+CELL diagnostic harm 1 50
+CELL diagnostic medqa 0 50
+CELL diagnostic medqa 1 50
+CELL diagnostic model 0 50
+CELL diagnostic model 1 50
+CELL diagnostic sandbagging 0 50
+CELL diagnostic sandbagging 1 50
+CELL diagnostic werewolf 0 50
+CELL diagnostic werewolf 1 50
+CELL test among 0 69
+CELL test among 1 72
+CELL test harm 0 100
+CELL test harm 1 100
+CELL test medqa 0 100
+CELL test medqa 1 100
+CELL test model 0 100
+CELL test model 1 100
+CELL test sandbagging 0 100
+CELL test sandbagging 1 100
+CELL test werewolf 0 100
+CELL test werewolf 1 92
+CELL val_calib among 0 50
+CELL val_calib harm 0 50
+CELL val_calib medqa 0 50
+CELL val_calib model 0 50
+CELL val_calib sandbagging 0 50
+CELL val_calib werewolf 0 50
+CELL validation among 0 50
+CELL validation among 1 50
+CELL validation harm 0 50
+CELL validation harm 1 50
+CELL validation medqa 0 50
+CELL validation medqa 1 50
+CELL validation model 0 50
+CELL validation model 1 50
+CELL validation sandbagging 0 50
+CELL validation sandbagging 1 50
+CELL validation werewolf 0 50
+CELL validation werewolf 1 50
+SAMPLE_READY 3191 {"unmapped_family": 16708, "char_prefilter": 3788, "examined_over_length": 4154, "examined_render_error": 0, "previous_connected_rows": 22282, "cross_source_partition_groups": 778, "unused_calibration_positives": 5037}
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights:   0%|          | 1/320 [00:07<41:52,  7.88s/it]Loading weights:  40%|████      | 128/320 [00:08<00:08, 22.31it/s]Loading weights:  51%|█████▏    | 164/320 [00:09<00:06, 24.01it/s]Loading weights:  58%|█████▊    | 185/320 [00:10<00:05, 24.62it/s]Loading weights:  62%|██████▏   | 199/320 [00:10<00:04, 24.82it/s]Loading weights:  65%|██████▌   | 209/320 [00:11<00:04, 23.57it/s]Loading weights:  68%|██████▊   | 216/320 [00:11<00:04, 24.83it/s]Loading weights:  70%|██████▉   | 223/320 [00:11<00:03, 26.32it/s]Loading weights:  72%|███████▏  | 229/320 [00:12<00:04, 22.26it/s]Loading weights:  74%|███████▍  | 238/320 [00:12<00:03, 23.20it/s]Loading weights:  76%|███████▌  | 242/320 [00:12<00:03, 21.77it/s]Loading weights:  78%|███████▊  | 251/320 [00:12<00:02, 27.97it/s]Loading weights:  80%|████████  | 256/320 [00:13<00:02, 21.53it/s]Loading weights:  81%|████████▏ | 260/320 [00:13<00:02, 20.86it/s]Loading weights:  83%|████████▎ | 265/320 [00:13<00:02, 23.74it/s]Loading weights:  85%|████████▌ | 273/320 [00:13<00:01, 29.75it/s]Loading weights:  87%|████████▋ | 277/320 [00:13<00:01, 28.39it/s]Loading weights:  88%|████████▊ | 281/320 [00:13<00:01, 26.85it/s]Loading weights:  91%|█████████ | 291/320 [00:14<00:00, 31.54it/s]Loading weights:  92%|█████████▏| 295/320 [00:14<00:00, 28.06it/s]Loading weights:  95%|█████████▌| 305/320 [00:14<00:00, 31.40it/s]Loading weights:  97%|█████████▋| 309/320 [00:14<00:00, 28.19it/s]Loading weights:  98%|█████████▊| 312/320 [00:15<00:00, 24.07it/s]Loading weights:  99%|█████████▉| 318/320 [00:15<00:00, 29.43it/s]Loading weights: 100%|██████████| 320/320 [00:15<00:00, 20.99it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+CAPTURE 50 3191 minutes 0.42 eta_minutes 26.14
+CAPTURE 100 3191 minutes 0.59 eta_minutes 18.18
+CAPTURE 150 3191 minutes 0.68 eta_minutes 13.82
+CAPTURE 200 3191 minutes 0.79 eta_minutes 11.76
+CAPTURE 250 3191 minutes 0.88 eta_minutes 10.37
+CAPTURE 300 3191 minutes 0.97 eta_minutes 9.36
+CAPTURE 350 3191 minutes 1.06 eta_minutes 8.63
+CAPTURE 400 3191 minutes 1.15 eta_minutes 8.03
+CAPTURE 450 3191 minutes 1.24 eta_minutes 7.58
+CAPTURE 500 3191 minutes 1.54 eta_minutes 8.31
+CAPTURE 550 3191 minutes 1.92 eta_minutes 9.2
+CAPTURE 600 3191 minutes 2.34 eta_minutes 10.11
+CAPTURE 650 3191 minutes 2.77 eta_minutes 10.84
+CAPTURE 700 3191 minutes 2.92 eta_minutes 10.41
+CAPTURE 750 3191 minutes 3.04 eta_minutes 9.91
+CAPTURE 800 3191 minutes 3.13 eta_minutes 9.36
+CAPTURE 850 3191 minutes 3.25 eta_minutes 8.95
+CAPTURE 900 3191 minutes 3.37 eta_minutes 8.59
+CAPTURE 950 3191 minutes 3.49 eta_minutes 8.22
+CAPTURE 1000 3191 minutes 3.57 eta_minutes 7.82
+CAPTURE 1050 3191 minutes 3.66 eta_minutes 7.46
+CAPTURE 1100 3191 minutes 3.99 eta_minutes 7.58
+CAPTURE 1150 3191 minutes 4.35 eta_minutes 7.73
+CAPTURE 1200 3191 minutes 4.78 eta_minutes 7.93
+CAPTURE 1250 3191 minutes 5.21 eta_minutes 8.08
+CAPTURE 1300 3191 minutes 5.63 eta_minutes 8.2
+CAPTURE 1350 3191 minutes 5.74 eta_minutes 7.82
+CAPTURE 1400 3191 minutes 5.85 eta_minutes 7.48
+CAPTURE 1450 3191 minutes 5.98 eta_minutes 7.18
+CAPTURE 1500 3191 minutes 6.1 eta_minutes 6.88
+CAPTURE 1550 3191 minutes 6.21 eta_minutes 6.58
+CAPTURE 1600 3191 minutes 6.32 eta_minutes 6.28
+CAPTURE 1650 3191 minutes 6.44 eta_minutes 6.01
+CAPTURE 1700 3191 minutes 6.55 eta_minutes 5.74
+CAPTURE 1750 3191 minutes 6.64 eta_minutes 5.46
+CAPTURE 1800 3191 minutes 6.72 eta_minutes 5.19
+CAPTURE 1850 3191 minutes 6.82 eta_minutes 4.94
+CAPTURE 1900 3191 minutes 6.91 eta_minutes 4.7
+CAPTURE 1950 3191 minutes 7.0 eta_minutes 4.46
+CAPTURE 2000 3191 minutes 7.1 eta_minutes 4.23
+CAPTURE 2050 3191 minutes 7.18 eta_minutes 4.0
+CAPTURE 2100 3191 minutes 7.29 eta_minutes 3.79
+CAPTURE 2150 3191 minutes 7.66 eta_minutes 3.71
+CAPTURE 2200 3191 minutes 8.04 eta_minutes 3.62
+CAPTURE 2250 3191 minutes 8.39 eta_minutes 3.51
+CAPTURE 2300 3191 minutes 8.78 eta_minutes 3.4
+CAPTURE 2350 3191 minutes 9.15 eta_minutes 3.27
+CAPTURE 2400 3191 minutes 9.26 eta_minutes 3.05
+CAPTURE 2450 3191 minutes 9.36 eta_minutes 2.83
+CAPTURE 2500 3191 minutes 9.46 eta_minutes 2.61
+CAPTURE 2550 3191 minutes 9.6 eta_minutes 2.41
+CAPTURE 2600 3191 minutes 9.97 eta_minutes 2.27
+CAPTURE 2650 3191 minutes 10.41 eta_minutes 2.12
+CAPTURE 2700 3191 minutes 10.78 eta_minutes 1.96
+CAPTURE 2750 3191 minutes 10.88 eta_minutes 1.74
+CAPTURE 2800 3191 minutes 10.99 eta_minutes 1.53
+CAPTURE 2850 3191 minutes 11.1 eta_minutes 1.33
+CAPTURE 2900 3191 minutes 11.21 eta_minutes 1.13
+CAPTURE 2950 3191 minutes 11.31 eta_minutes 0.92
+CAPTURE 3000 3191 minutes 11.41 eta_minutes 0.73
+CAPTURE 3050 3191 minutes 11.5 eta_minutes 0.53
+CAPTURE 3100 3191 minutes 11.65 eta_minutes 0.34
+CAPTURE 3150 3191 minutes 12.02 eta_minutes 0.16
+CAPTURE_DONE 3191

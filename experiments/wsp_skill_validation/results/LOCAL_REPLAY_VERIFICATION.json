@@ -1,0 +1,296 @@
+{
+  "scope": "raw activation and saved-checkpoint replay; no independent GPU generation or agent replication",
+  "capture_hashes_verified": 8,
+  "checkpoint_arms_verified": 16,
+  "numerical_note": "Recompute the registered rank cutoff locally. Machine-precision shifts at a calibration tie are recorded, never hidden; all final predictions must also match at the archived cutoff.",
+  "records": [
+    {
+      "arm": "original",
+      "role": "calib",
+      "max_score_error": 2.220446049250313e-16,
+      "archived_threshold": 0.6809026608384174,
+      "locally_recomputed_threshold": 0.6809026608384176,
+      "archived_cutoff_prediction_mismatches": 1,
+      "recalibrated_prediction_mismatches": 0
+    },
+    {
+      "arm": "original",
+      "role": "test",
+      "max_score_error": 3.3306690738754696e-16,
+      "archived_threshold": 0.6809026608384174,
+      "locally_recomputed_threshold": 0.6809026608384176,
+      "archived_cutoff_prediction_mismatches": 0,
+      "recalibrated_prediction_mismatches": 0
+    },
+    {
+      "arm": "selected",
+      "role": "calib",
+      "max_score_error": 2.220446049250313e-16,
+      "archived_threshold": 0.6809026608384174,
+      "locally_recomputed_threshold": 0.6809026608384176,
+      "archived_cutoff_prediction_mismatches": 1,
+      "recalibrated_prediction_mismatches": 0
+    },
+    {
+      "arm": "selected",
+      "role": "test",
+      "max_score_error": 3.3306690738754696e-16,
+      "archived_threshold": 0.6809026608384174,
+      "locally_recomputed_threshold": 0.6809026608384176,
+      "archived_cutoff_prediction_mismatches": 0,
+      "recalibrated_prediction_mismatches": 0
+    },
+    {
+      "arm": "diagnostic_primary_a1",
+      "role": "calib",
+      "max_score_error": 3.3306690738754696e-16,
+      "archived_threshold": 0.7394985046281414,
+      "locally_recomputed_threshold": 0.7394985046281413,
+      "archived_cutoff_prediction_mismatches": 0,
+      "recalibrated_prediction_mismatches": 0
+    },
+    {
+      "arm": "diagnostic_primary_a1",
+      "role": "test",
+      "max_score_error": 3.3306690738754696e-16,
+      "archived_threshold": 0.7394985046281414,
+      "locally_recomputed_threshold": 0.7394985046281413,
+      "archived_cutoff_prediction_mismatches": 0,
+      "recalibrated_prediction_mismatches": 0
+    },
+    {
+      "arm": "diagnostic_dose_a05",
+      "role": "calib",
+      "max_score_error": 2.220446049250313e-16,
+      "archived_threshold": 0.6780714901708723,
+      "locally_recomputed_threshold": 0.6780714901708723,
+      "archived_cutoff_prediction_mismatches": 0,
+      "recalibrated_prediction_mismatches": 0
+    },
+    {
+      "arm": "diagnostic_dose_a05",
+      "role": "test",
+      "max_score_error": 3.3306690738754696e-16,
+      "archived_threshold": 0.6780714901708723,
+      "locally_recomputed_threshold": 0.6780714901708723,
+      "archived_cutoff_prediction_mismatches": 0,
+      "recalibrated_prediction_mismatches": 0
+    },
+    {
+      "arm": "diagnostic_dose_a15",
+      "role": "calib",
+      "max_score_error": 3.3306690738754696e-16,
+      "archived_threshold": 0.7948162307489651,
+      "locally_recomputed_threshold": 0.7948162307489649,
+      "archived_cutoff_prediction_mismatches": 0,
+      "recalibrated_prediction_mismatches": 0
+    },
+    {
+      "arm": "diagnostic_dose_a15",
+      "role": "test",
+      "max_score_error": 3.3306690738754696e-16,
+      "archived_threshold": 0.7948162307489651,
+      "locally_recomputed_threshold": 0.7948162307489649,
+      "archived_cutoff_prediction_mismatches": 0,
+      "recalibrated_prediction_mismatches": 0
+    },
+    {
+      "arm": "diagnostic_wrong_direction",
+      "role": "calib",
+      "max_score_error": 2.220446049250313e-16,
+      "archived_threshold": 0.7494037284446632,
+      "locally_recomputed_threshold": 0.7494037284446632,
+      "archived_cutoff_prediction_mismatches": 0,
+      "recalibrated_prediction_mismatches": 0
+    },
+    {
+      "arm": "diagnostic_wrong_direction",
+      "role": "test",
+      "max_score_error": 3.3306690738754696e-16,
+      "archived_threshold": 0.7494037284446632,
+      "locally_recomputed_threshold": 0.7494037284446632,
+      "archived_cutoff_prediction_mismatches": 0,
+      "recalibrated_prediction_mismatches": 0
+    },
+    {
+      "arm": "diagnostic_orthogonal_random",
+      "role": "calib",
+      "max_score_error": 2.220446049250313e-16,
+      "archived_threshold": 0.6809807476285789,
+      "locally_recomputed_threshold": 0.6809807476285789,
+      "archived_cutoff_prediction_mismatches": 0,
+      "recalibrated_prediction_mismatches": 0
+    },
+    {
+      "arm": "diagnostic_orthogonal_random",
+      "role": "test",
+      "max_score_error": 3.3306690738754696e-16,
+      "archived_threshold": 0.6809807476285789,
+      "locally_recomputed_threshold": 0.6809807476285789,
+      "archived_cutoff_prediction_mismatches": 0,
+      "recalibrated_prediction_mismatches": 0
+    },
+    {
+      "arm": "diagnostic_isolate_0",
+      "role": "calib",
+      "max_score_error": 2.220446049250313e-16,
+      "archived_threshold": 0.6599854275273211,
+      "locally_recomputed_threshold": 0.659985427527321,
+      "archived_cutoff_prediction_mismatches": 0,
+      "recalibrated_prediction_mismatches": 0
+    },
+    {
+      "arm": "diagnostic_isolate_0",
+      "role": "test",
+      "max_score_error": 3.3306690738754696e-16,
+      "archived_threshold": 0.6599854275273211,
+      "locally_recomputed_threshold": 0.659985427527321,
+      "archived_cutoff_prediction_mismatches": 0,
+      "recalibrated_prediction_mismatches": 0
+    },
+    {
+      "arm": "diagnostic_isolate_1",
+      "role": "calib",
+      "max_score_error": 2.220446049250313e-16,
+      "archived_threshold": 0.6767795408582117,
+      "locally_recomputed_threshold": 0.6767795408582117,
+      "archived_cutoff_prediction_mismatches": 0,
+      "recalibrated_prediction_mismatches": 0
+    },
+    {
+      "arm": "diagnostic_isolate_1",
+      "role": "test",
+      "max_score_error": 3.3306690738754696e-16,
+      "archived_threshold": 0.6767795408582117,
+      "locally_recomputed_threshold": 0.6767795408582117,
+      "archived_cutoff_prediction_mismatches": 0,
+      "recalibrated_prediction_mismatches": 0
+    },
+    {
+      "arm": "diagnostic_isolate_2",
+      "role": "calib",
+      "max_score_error": 2.220446049250313e-16,
+      "archived_threshold": 0.6772551905410573,
+      "locally_recomputed_threshold": 0.6772551905410573,
+      "archived_cutoff_prediction_mismatches": 0,
+      "recalibrated_prediction_mismatches": 0
+    },
+    {
+      "arm": "diagnostic_isolate_2",
+      "role": "test",
+      "max_score_error": 3.3306690738754696e-16,
+      "archived_threshold": 0.6772551905410573,
+      "locally_recomputed_threshold": 0.6772551905410573,
+      "archived_cutoff_prediction_mismatches": 0,
+      "recalibrated_prediction_mismatches": 0
+    },
+    {
+      "arm": "diagnostic_isolate_3",
+      "role": "calib",
+      "max_score_error": 2.220446049250313e-16,
+      "archived_threshold": 0.676956695426056,
+      "locally_recomputed_threshold": 0.6769566954260561,
+      "archived_cutoff_prediction_mismatches": 1,
+      "recalibrated_prediction_mismatches": 0
+    },
+    {
+      "arm": "diagnostic_isolate_3",
+      "role": "test",
+      "max_score_error": 3.3306690738754696e-16,
+      "archived_threshold": 0.676956695426056,
+      "locally_recomputed_threshold": 0.6769566954260561,
+      "archived_cutoff_prediction_mismatches": 0,
+      "recalibrated_prediction_mismatches": 0
+    },
+    {
+      "arm": "diagnostic_isolate_4",
+      "role": "calib",
+      "max_score_error": 2.220446049250313e-16,
+      "archived_threshold": 0.6794105360546577,
+      "locally_recomputed_threshold": 0.6794105360546578,
+      "archived_cutoff_prediction_mismatches": 1,
+      "recalibrated_prediction_mismatches": 0
+    },
+    {
+      "arm": "diagnostic_isolate_4",
+      "role": "test",
+      "max_score_error": 3.3306690738754696e-16,
+      "archived_threshold": 0.6794105360546577,
+      "locally_recomputed_threshold": 0.6794105360546578,
+      "archived_cutoff_prediction_mismatches": 0,
+      "recalibrated_prediction_mismatches": 0
+    },
+    {
+      "arm": "diagnostic_isolate_5",
+      "role": "calib",
+      "max_score_error": 2.220446049250313e-16,
+      "archived_threshold": 0.6799914585999872,
+      "locally_recomputed_threshold": 0.6799914585999872,
+      "archived_cutoff_prediction_mismatches": 0,
+      "recalibrated_prediction_mismatches": 0
+    },
+    {
+      "arm": "diagnostic_isolate_5",
+      "role": "test",
+      "max_score_error": 3.3306690738754696e-16,
+      "archived_threshold": 0.6799914585999872,
+      "locally_recomputed_threshold": 0.6799914585999872,
+      "archived_cutoff_prediction_mismatches": 0,
+      "recalibrated_prediction_mismatches": 0
+    },
+    {
+      "arm": "historical_ordinary_extra",
+      "role": "calib",
+      "max_score_error": 1.6653345369377348e-16,
+      "archived_threshold": 0.5649042270281236,
+      "locally_recomputed_threshold": 0.5649042270281236,
+      "archived_cutoff_prediction_mismatches": 0,
+      "recalibrated_prediction_mismatches": 0
+    },
+    {
+      "arm": "historical_ordinary_extra",
+      "role": "test",
+      "max_score_error": 3.3306690738754696e-16,
+      "archived_threshold": 0.5649042270281236,
+      "locally_recomputed_threshold": 0.5649042270281236,
+      "archived_cutoff_prediction_mismatches": 0,
+      "recalibrated_prediction_mismatches": 0
+    },
+    {
+      "arm": "engineered_corrupt",
+      "role": "calib",
+      "max_score_error": 2.220446049250313e-16,
+      "archived_threshold": 0.7564668276059635,
+      "locally_recomputed_threshold": 0.7564668276059635,
+      "archived_cutoff_prediction_mismatches": 0,
+      "recalibrated_prediction_mismatches": 0
+    },
+    {
+      "arm": "engineered_corrupt",
+      "role": "test",
+      "max_score_error": 3.3306690738754696e-16,
+      "archived_threshold": 0.7564668276059635,
+      "locally_recomputed_threshold": 0.7564668276059635,
+      "archived_cutoff_prediction_mismatches": 0,
+      "recalibrated_prediction_mismatches": 0
+    },
+    {
+      "arm": "engineered_repair",
+      "role": "calib",
+      "max_score_error": 2.220446049250313e-16,
+      "archived_threshold": 0.6798276348602399,
+      "locally_recomputed_threshold": 0.6798276348602399,
+      "archived_cutoff_prediction_mismatches": 0,
+      "recalibrated_prediction_mismatches": 0
+    },
+    {
+      "arm": "engineered_repair",
+      "role": "test",
+      "max_score_error": 3.3306690738754696e-16,
+      "archived_threshold": 0.6798276348602399,
+      "locally_recomputed_threshold": 0.6798276348602399,
+      "archived_cutoff_prediction_mismatches": 0,
+      "recalibrated_prediction_mismatches": 0
+    }
+  ]
+}

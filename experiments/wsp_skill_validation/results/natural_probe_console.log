@@ -1,0 +1,584 @@
+{
+  "scope": "diagnostic transfer only; observational source-direction hypothesis, not semantic causal proof",
+  "discovery_rows": 392,
+  "transfer_rows": 208,
+  "score_batches": [
+    {
+      "role": "discovery",
+      "variant": "original",
+      "rows": 392
+    },
+    {
+      "role": "discovery",
+      "variant": "primary_a1",
+      "rows": 392
+    },
+    {
+      "role": "discovery",
+      "variant": "dose_a05",
+      "rows": 392
+    },
+    {
+      "role": "discovery",
+      "variant": "dose_a15",
+      "rows": 392
+    },
+    {
+      "role": "discovery",
+      "variant": "wrong_direction",
+      "rows": 392
+    },
+    {
+      "role": "discovery",
+      "variant": "isolate_0",
+      "rows": 392
+    },
+    {
+      "role": "discovery",
+      "variant": "isolate_1",
+      "rows": 392
+    },
+    {
+      "role": "discovery",
+      "variant": "isolate_2",
+      "rows": 392
+    },
+    {
+      "role": "discovery",
+      "variant": "isolate_3",
+      "rows": 392
+    },
+    {
+      "role": "discovery",
+      "variant": "isolate_4",
+      "rows": 392
+    },
+    {
+      "role": "discovery",
+      "variant": "isolate_5",
+      "rows": 392
+    },
+    {
+      "role": "discovery",
+      "variant": "orthogonal_random",
+      "rows": 392
+    },
+    {
+      "role": "transfer",
+      "variant": "original",
+      "rows": 208
+    },
+    {
+      "role": "transfer",
+      "variant": "primary_a1",
+      "rows": 208
+    },
+    {
+      "role": "transfer",
+      "variant": "dose_a05",
+      "rows": 208
+    },
+    {
+      "role": "transfer",
+      "variant": "dose_a15",
+      "rows": 208
+    },
+    {
+      "role": "transfer",
+      "variant": "wrong_direction",
+      "rows": 208
+    },
+    {
+      "role": "transfer",
+      "variant": "isolate_0",
+      "rows": 208
+    },
+    {
+      "role": "transfer",
+      "variant": "isolate_1",
+      "rows": 208
+    },
+    {
+      "role": "transfer",
+      "variant": "isolate_2",
+      "rows": 208
+    },
+    {
+      "role": "transfer",
+      "variant": "isolate_3",
+      "rows": 208
+    },
+    {
+      "role": "transfer",
+      "variant": "isolate_4",
+      "rows": 208
+    },
+    {
+      "role": "transfer",
+      "variant": "isolate_5",
+      "rows": 208
+    },
+    {
+      "role": "transfer",
+      "variant": "orthogonal_random",
+      "rows": 208
+    }
+  ],
+  "direction_dot_original_weights": [
+    -0.08252284929685938,
+    -0.05063850735041034,
+    -0.017632409229024194,
+    -0.0380693778305604,
+    -0.016194855748909345,
+    -0.022005651183964338
+  ],
+  "variants": {
+    "original": {
+      "overall": {
+        "tp": 38,
+        "fn": 67,
+        "fp": 0,
+        "tn": 103,
+        "recall": 0.3619047619047619,
+        "fpr": 0.0
+      },
+      "game": {
+        "tp": 0,
+        "fn": 38,
+        "fp": 0,
+        "tn": 32,
+        "recall": 0.0,
+        "fpr": 0.0
+      },
+      "nongame": {
+        "tp": 38,
+        "fn": 29,
+        "fp": 0,
+        "tn": 71,
+        "recall": 0.5671641791044776,
+        "fpr": 0.0
+      },
+      "threshold": 0.700157259069591,
+      "game_mean_score_by_label": {
+        "0": 0.22817405256717357,
+        "1": 0.31265730026221966
+      }
+    },
+    "primary_a1": {
+      "overall": {
+        "tp": 31,
+        "fn": 74,
+        "fp": 0,
+        "tn": 103,
+        "recall": 0.29523809523809524,
+        "fpr": 0.0
+      },
+      "game": {
+        "tp": 2,
+        "fn": 36,
+        "fp": 0,
+        "tn": 32,
+        "recall": 0.05263157894736842,
+        "fpr": 0.0
+      },
+      "nongame": {
+        "tp": 29,
+        "fn": 38,
+        "fp": 0,
+        "tn": 71,
+        "recall": 0.43283582089552236,
+        "fpr": 0.0
+      },
+      "threshold": 0.7610554340477487,
+      "game_mean_score_by_label": {
+        "0": 0.4108881230402507,
+        "1": 0.48120526972801886
+      }
+    },
+    "dose_a05": {
+      "overall": {
+        "tp": 39,
+        "fn": 66,
+        "fp": 0,
+        "tn": 103,
+        "recall": 0.37142857142857144,
+        "fpr": 0.0
+      },
+      "game": {
+        "tp": 2,
+        "fn": 36,
+        "fp": 0,
+        "tn": 32,
+        "recall": 0.05263157894736842,
+        "fpr": 0.0
+      },
+      "nongame": {
+        "tp": 37,
+        "fn": 30,
+        "fp": 0,
+        "tn": 71,
+        "recall": 0.5522388059701493,
+        "fpr": 0.0
+      },
+      "threshold": 0.7002920630528592,
+      "game_mean_score_by_label": {
+        "0": 0.3089776733809476,
+        "1": 0.3892169878105237
+      }
+    },
+    "dose_a15": {
+      "overall": {
+        "tp": 27,
+        "fn": 78,
+        "fp": 0,
+        "tn": 103,
+        "recall": 0.2571428571428571,
+        "fpr": 0.0
+      },
+      "game": {
+        "tp": 3,
+        "fn": 35,
+        "fp": 0,
+        "tn": 32,
+        "recall": 0.07894736842105263,
+        "fpr": 0.0
+      },
+      "nongame": {
+        "tp": 24,
+        "fn": 43,
+        "fp": 0,
+        "tn": 71,
+        "recall": 0.3582089552238806,
+        "fpr": 0.0
+      },
+      "threshold": 0.8260012170435002,
+      "game_mean_score_by_label": {
+        "0": 0.5228964011046342,
+        "1": 0.5829535391812122
+      }
+    },
+    "wrong_direction": {
+      "overall": {
+        "tp": 36,
+        "fn": 69,
+        "fp": 0,
+        "tn": 103,
+        "recall": 0.34285714285714286,
+        "fpr": 0.0
+      },
+      "game": {
+        "tp": 0,
+        "fn": 38,
+        "fp": 0,
+        "tn": 32,
+        "recall": 0.0,
+        "fpr": 0.0
+      },
+      "nongame": {
+        "tp": 36,
+        "fn": 31,
+        "fp": 0,
+        "tn": 71,
+        "recall": 0.5373134328358209,
+        "fpr": 0.0
+      },
+      "threshold": 0.753154987123581,
+      "game_mean_score_by_label": {
+        "0": 0.13009270226185798,
+        "1": 0.20369911582267336
+      }
+    },
+    "isolate_0": {
+      "overall": {
+        "tp": 39,
+        "fn": 66,
+        "fp": 0,
+        "tn": 103,
+        "recall": 0.37142857142857144,
+        "fpr": 0.0
+      },
+      "game": {
+        "tp": 1,
+        "fn": 37,
+        "fp": 0,
+        "tn": 32,
+        "recall": 0.02631578947368421,
+        "fpr": 0.0
+      },
+      "nongame": {
+        "tp": 38,
+        "fn": 29,
+        "fp": 0,
+        "tn": 71,
+        "recall": 0.5671641791044776,
+        "fpr": 0.0
+      },
+      "threshold": 0.6938812701126605,
+      "game_mean_score_by_label": {
+        "0": 0.27584259490949714,
+        "1": 0.350728725665374
+      }
+    },
+    "isolate_1": {
+      "overall": {
+        "tp": 39,
+        "fn": 66,
+        "fp": 0,
+        "tn": 103,
+        "recall": 0.37142857142857144,
+        "fpr": 0.0
+      },
+      "game": {
+        "tp": 0,
+        "fn": 38,
+        "fp": 0,
+        "tn": 32,
+        "recall": 0.0,
+        "fpr": 0.0
+      },
+      "nongame": {
+        "tp": 39,
+        "fn": 28,
+        "fp": 0,
+        "tn": 71,
+        "recall": 0.582089552238806,
+        "fpr": 0.0
+      },
+      "threshold": 0.6787666679028189,
+      "game_mean_score_by_label": {
+        "0": 0.2746024405996442,
+        "1": 0.355646552288632
+      }
+    },
+    "isolate_2": {
+      "overall": {
+        "tp": 39,
+        "fn": 66,
+        "fp": 0,
+        "tn": 103,
+        "recall": 0.37142857142857144,
+        "fpr": 0.0
+      },
+      "game": {
+        "tp": 0,
+        "fn": 38,
+        "fp": 0,
+        "tn": 32,
+        "recall": 0.0,
+        "fpr": 0.0
+      },
+      "nongame": {
+        "tp": 39,
+        "fn": 28,
+        "fp": 0,
+        "tn": 71,
+        "recall": 0.582089552238806,
+        "fpr": 0.0
+      },
+      "threshold": 0.6935371426597579,
+      "game_mean_score_by_label": {
+        "0": 0.24656945770967414,
+        "1": 0.33118222278952164
+      }
+    },
+    "isolate_3": {
+      "overall": {
+        "tp": 40,
+        "fn": 65,
+        "fp": 0,
+        "tn": 103,
+        "recall": 0.38095238095238093,
+        "fpr": 0.0
+      },
+      "game": {
+        "tp": 1,
+        "fn": 37,
+        "fp": 0,
+        "tn": 32,
+        "recall": 0.02631578947368421,
+        "fpr": 0.0
+      },
+      "nongame": {
+        "tp": 39,
+        "fn": 28,
+        "fp": 0,
+        "tn": 71,
+        "recall": 0.582089552238806,
+        "fpr": 0.0
+      },
+      "threshold": 0.6901290153519187,
+      "game_mean_score_by_label": {
+        "0": 0.2629832780696196,
+        "1": 0.34828095285505634
+      }
+    },
+    "isolate_4": {
+      "overall": {
+        "tp": 38,
+        "fn": 67,
+        "fp": 0,
+        "tn": 103,
+        "recall": 0.3619047619047619,
+        "fpr": 0.0
+      },
+      "game": {
+        "tp": 0,
+        "fn": 38,
+        "fp": 0,
+        "tn": 32,
+        "recall": 0.0,
+        "fpr": 0.0
+      },
+      "nongame": {
+        "tp": 38,
+        "fn": 29,
+        "fp": 0,
+        "tn": 71,
+        "recall": 0.5671641791044776,
+        "fpr": 0.0
+      },
+      "threshold": 0.6949682692122888,
+      "game_mean_score_by_label": {
+        "0": 0.24383845164135703,
+        "1": 0.3271495723390339
+      }
+    },
+    "isolate_5": {
+      "overall": {
+        "tp": 38,
+        "fn": 67,
+        "fp": 0,
+        "tn": 103,
+        "recall": 0.3619047619047619,
+        "fpr": 0.0
+      },
+      "game": {
+        "tp": 0,
+        "fn": 38,
+        "fp": 0,
+        "tn": 32,
+        "recall": 0.0,
+        "fpr": 0.0
+      },
+      "nongame": {
+        "tp": 38,
+        "fn": 29,
+        "fp": 0,
+        "tn": 71,
+        "recall": 0.5671641791044776,
+        "fpr": 0.0
+      },
+      "threshold": 0.6951638887391298,
+      "game_mean_score_by_label": {
+        "0": 0.24792216294632655,
+        "1": 0.33150374510149905
+      }
+    },
+    "orthogonal_random": {
+      "overall": {
+        "tp": 38,
+        "fn": 67,
+        "fp": 0,
+        "tn": 103,
+        "recall": 0.3619047619047619,
+        "fpr": 0.0
+      },
+      "game": {
+        "tp": 0,
+        "fn": 38,
+        "fp": 0,
+        "tn": 32,
+        "recall": 0.0,
+        "fpr": 0.0
+      },
+      "nongame": {
+        "tp": 38,
+        "fn": 29,
+        "fp": 0,
+        "tn": 71,
+        "recall": 0.5671641791044776,
+        "fpr": 0.0
+      },
+      "threshold": 0.7026975905239109,
+      "game_mean_score_by_label": {
+        "0": 0.22801474579591513,
+        "1": 0.313465902908896
+      }
+    }
+  },
+  "primary_form_audit": {
+    "allowed": true,
+    "purpose": "repair",
+    "issues": [],
+    "changed_entries": 12288,
+    "probes": [
+      {
+        "probe": 0,
+        "changed_W_entries": 2048,
+        "delta_W_l2": 0.08252284929685928,
+        "delta_b": 0.0,
+        "best_scalar": 0.9952269418489211,
+        "scalar_residual": 0.0689222465316199,
+        "global_calibration": false
+      },
+      {
+        "probe": 1,
+        "changed_W_entries": 2048,
+        "delta_W_l2": 0.05063850735041034,
+        "delta_b": 0.0,
+        "best_scalar": 0.9979468810019172,
+        "scalar_residual": 0.045264817468566275,
+        "global_calibration": false
+      },
+      {
+        "probe": 2,
+        "changed_W_entries": 2048,
+        "delta_W_l2": 0.01763240922902417,
+        "delta_b": 0.0,
+        "best_scalar": 0.9997512237251681,
+        "scalar_residual": 0.015770681190014617,
+        "global_calibration": false
+      },
+      {
+        "probe": 3,
+        "changed_W_entries": 2048,
+        "delta_W_l2": 0.038069377830560414,
+        "delta_b": 0.0,
+        "best_scalar": 0.9989013741280043,
+        "scalar_residual": 0.03312731340131927,
+        "global_calibration": false
+      },
+      {
+        "probe": 4,
+        "changed_W_entries": 2048,
+        "delta_W_l2": 0.01619485574890935,
+        "delta_b": 0.0,
+        "best_scalar": 0.9998095575623679,
+        "scalar_residual": 0.01379877419592131,
+        "global_calibration": false
+      },
+      {
+        "probe": 5,
+        "changed_W_entries": 2048,
+        "delta_W_l2": 0.022005651183964314,
+        "delta_b": 0.0,
+        "best_scalar": 0.9996489356254498,
+        "scalar_residual": 0.018733422761343623,
+        "global_calibration": false
+      }
+    ],
+    "classification": "localized_or_directional",
+    "mechanism_validated": false
+  },
+  "checks": {
+    "game_score_each_label": true,
+    "game_recall": true,
+    "nongame_preservation": false,
+    "false_alarm_preservation": true,
+    "edit_form": true
+  },
+  "qualifies_for_validation": false,
+  "decision": "reject_mechanism_keep_original"
+}
+
+STDERR

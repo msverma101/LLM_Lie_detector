@@ -1,0 +1,24 @@
+{
+  "archive_bytes": 76130956,
+  "archive_sha256": "609964470fb090014e3ff7901a096ab5bec2cb619ffd3e0b6f5e97f336f9c127",
+  "capture_hashes_verified": 8,
+  "checkpoint_arms_verified": 16,
+  "final_predictions_match_archived_and_recomputed_cutoffs": true,
+  "maximum_absolute_score_error": 3.3306690738754696e-16,
+  "calibration_boundary_differences_at_archived_cutoff": 4,
+  "registered_rank_cutoff_recomputed_locally": true,
+  "six_software_tests": "passed",
+  "skill_form_validator": "passed",
+  "environment": {
+    "python": "3.12.1",
+    "platform": "macOS-14.2-arm64-arm-64bit",
+    "packages": {
+      "numpy": "2.5.4",
+      "pandas": "3.1.1",
+      "scipy": "1.18.1",
+      "scikit-learn": "1.9.1"
+    }
+  },
+  "scope": "Saved raw-activation replay, not independent GPU regeneration or agent efficacy replication",
+  "repository_kb_gate": "Unavailable locally: repository convention pins a Linux engine/path absent on this Mac; no claim of kb check blocking:0."
+}

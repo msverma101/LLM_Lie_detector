@@ -1,0 +1,13 @@
+{
+  "decision": "retain_baseline",
+  "keep_criteria_pass": false,
+  "no_final_efficacy_claim": true,
+  "candidate_sha256": "18cee5c71761c2a1e58f035bb07f65f6046dccd03e2d3a05275aead247f7bd0a",
+  "score_batches": 13,
+  "reason": "Alpha1 recall gain .0377 is below preregistered .05, bootstrap interval crosses zero, and original-family recall falls .1176 (> .10 limit). Keep baseline. No alternative strength selected after transfer opening.",
+  "ordinary_fitting_control": "omitted because no classifier training/fitting authorized",
+  "uncorrupted_control": "not available in diagnostic packet; do not infer recovery of known fault",
+  "mechanism_status": "No semantic nuisance mechanism established; anomalous coordinate hypothesis only. Partial-dose and component effects are descriptive development observations.",
+  "score_rows": 5014,
+  "skill_validation": "Executable audit passed; paired_eval compare executed with 1000 joint group bootstrap draws. No skill-validator script is included in the permitted skill directory; external validator not accessed under packet-only restriction."
+}

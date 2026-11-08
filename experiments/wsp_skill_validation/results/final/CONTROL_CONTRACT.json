@@ -1,0 +1,19 @@
+{
+  "scope": "Engineered fault positive control, independent evaluator identified coordinate; candidate rejected for adoption in small diagnostic test; frozen here only to assess fault recovery, not natural superiority",
+  "fault_coordinate": 1780,
+  "arrays": {
+    "engineered_corrupt": {
+      "mu": "ce7e24036c912ea5e8779f4544d9d9e75569ac6d48aa94b88d9935f1397b4297",
+      "sd": "44f681700ccb0e3363df766e38fef23f1aa83803f4abbb049173af5065d55b2b",
+      "W": "6891149490756b635773478fea3fa5f790a34f62fdda62bec65b08cbab09df21",
+      "b": "38b46b5262225762181ef8a80d2831dd4379a759ae10d1579d55680e37c283ca"
+    },
+    "engineered_repair": {
+      "mu": "ce7e24036c912ea5e8779f4544d9d9e75569ac6d48aa94b88d9935f1397b4297",
+      "sd": "44f681700ccb0e3363df766e38fef23f1aa83803f4abbb049173af5065d55b2b",
+      "W": "2becdc87125d97a03ba45639b3b6b0d64c9fb692b61c48403646508f395c65b9",
+      "b": "38b46b5262225762181ef8a80d2831dd4379a759ae10d1579d55680e37c283ca"
+    }
+  },
+  "agent_hypothesis_sha256": "f34a7a7a422808864b04209a0f4f9bf632749ac3daa2a8dde9b8e6f61663af23"
+}

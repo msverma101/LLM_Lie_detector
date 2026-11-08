@@ -24,3 +24,7 @@ English, 9:47, built like a paper (abstract, introduction, methodology, results,
 ### Adaptive WSP follow-up (8 November 2026)
 
 A fresh 3,400-example study completed ten adaptive detector-only coefficient edits with fixed features, separate calibration and a frozen final test. The selected WSP detector did not establish an improvement: recall 41.00% versus 42.33% original, with actual FPR 2.00% versus 2.67%. See the [full report](experiments/adaptive_wsp/REPORT.md), [five-criterion evidence audit](experiments/adaptive_wsp/CRITERIA.md) and [complete raw-data replay archive](https://github.com/msverma101/LLM_Lie_detector/releases/tag/adaptive-wsp-2026-11-08).
+
+### Source-grounded WSP skill and fresh validation (8 November 2026)
+
+The [detector-weight-space-debugging skill](.agents/skills/detector-weight-space-debugging/SKILL.md) incorporates a detailed audit of the original authors' procedure, direct detector-only edits, falsifiable hypotheses, controls and independent confirmation. In a fresh 3,191-row study, a natural intervention failed its diagnostic preservation check and was rejected; the unchanged detector remained selected. A separately registered engineered coefficient fault was localized and repaired, increasing detections from 194 to 232 of 564 positives. This demonstrates injected-fault recovery, not improvement over the uncorrupted detector. See the [completed report](experiments/wsp_skill_validation/REPORT.md) and [complete replay archive](https://github.com/msverma101/LLM_Lie_detector/releases/tag/wsp-skill-validation-2026-11-08).

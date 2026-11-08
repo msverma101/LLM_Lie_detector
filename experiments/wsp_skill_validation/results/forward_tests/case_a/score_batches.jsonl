@@ -1,0 +1,13 @@
+{"batch": 1, "checkpoint": "baseline", "rows": 214, "split": "discovery", "purpose": "diagnose baseline errors and correct controls"}
+{"batch": 2, "checkpoint": "zero", "rows": 400, "split": "all diagnostic groups", "purpose": "preregistered strength/component/null check"}
+{"batch": 3, "checkpoint": "half", "rows": 400, "split": "all diagnostic groups", "purpose": "preregistered strength/component/null check"}
+{"batch": 4, "checkpoint": "candidate", "rows": 400, "split": "all diagnostic groups", "purpose": "preregistered strength/component/null check"}
+{"batch": 5, "checkpoint": "reverse_half", "rows": 400, "split": "all diagnostic groups", "purpose": "preregistered strength/component/null check"}
+{"batch": 6, "checkpoint": "wrong_amplify", "rows": 400, "split": "all diagnostic groups", "purpose": "preregistered strength/component/null check"}
+{"batch": 7, "checkpoint": "probe_0", "rows": 400, "split": "all diagnostic groups", "purpose": "preregistered strength/component/null check"}
+{"batch": 8, "checkpoint": "probe_1", "rows": 400, "split": "all diagnostic groups", "purpose": "preregistered strength/component/null check"}
+{"batch": 9, "checkpoint": "probe_2", "rows": 400, "split": "all diagnostic groups", "purpose": "preregistered strength/component/null check"}
+{"batch": 10, "checkpoint": "probe_3", "rows": 400, "split": "all diagnostic groups", "purpose": "preregistered strength/component/null check"}
+{"batch": 11, "checkpoint": "probe_4", "rows": 400, "split": "all diagnostic groups", "purpose": "preregistered strength/component/null check"}
+{"batch": 12, "checkpoint": "probe_5", "rows": 400, "split": "all diagnostic groups", "purpose": "preregistered strength/component/null check"}
+{"batch": 13, "checkpoint": "random", "rows": 400, "split": "all diagnostic groups", "purpose": "preregistered strength/component/null check"}

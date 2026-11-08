@@ -1,0 +1,22 @@
+FROZEN_FINAL_ARM original {"tp": 232, "fn": 332, "fp": 18, "tn": 551, "recall": 0.41134751773049644, "fpr": 0.03163444639718805}
+FROZEN_FINAL_ARM selected {"tp": 232, "fn": 332, "fp": 18, "tn": 551, "recall": 0.41134751773049644, "fpr": 0.03163444639718805}
+FROZEN_FINAL_ARM diagnostic_primary_a1 {"tp": 213, "fn": 351, "fp": 14, "tn": 555, "recall": 0.3776595744680851, "fpr": 0.02460456942003515}
+FROZEN_FINAL_ARM diagnostic_dose_a05 {"tp": 238, "fn": 326, "fp": 14, "tn": 555, "recall": 0.4219858156028369, "fpr": 0.02460456942003515}
+FROZEN_FINAL_ARM diagnostic_dose_a15 {"tp": 189, "fn": 375, "fp": 18, "tn": 551, "recall": 0.3351063829787234, "fpr": 0.03163444639718805}
+FROZEN_FINAL_ARM diagnostic_wrong_direction {"tp": 205, "fn": 359, "fp": 14, "tn": 555, "recall": 0.36347517730496454, "fpr": 0.02460456942003515}
+FROZEN_FINAL_ARM diagnostic_orthogonal_random {"tp": 233, "fn": 331, "fp": 18, "tn": 551, "recall": 0.41312056737588654, "fpr": 0.03163444639718805}
+FROZEN_FINAL_ARM diagnostic_isolate_0 {"tp": 246, "fn": 318, "fp": 14, "tn": 555, "recall": 0.43617021276595747, "fpr": 0.02460456942003515}
+FROZEN_FINAL_ARM diagnostic_isolate_1 {"tp": 236, "fn": 328, "fp": 16, "tn": 553, "recall": 0.41843971631205673, "fpr": 0.028119507908611598}
+FROZEN_FINAL_ARM diagnostic_isolate_2 {"tp": 233, "fn": 331, "fp": 17, "tn": 552, "recall": 0.41312056737588654, "fpr": 0.029876977152899824}
+FROZEN_FINAL_ARM diagnostic_isolate_3 {"tp": 235, "fn": 329, "fp": 17, "tn": 552, "recall": 0.4166666666666667, "fpr": 0.029876977152899824}
+FROZEN_FINAL_ARM diagnostic_isolate_4 {"tp": 234, "fn": 330, "fp": 17, "tn": 552, "recall": 0.4148936170212766, "fpr": 0.029876977152899824}
+FROZEN_FINAL_ARM diagnostic_isolate_5 {"tp": 234, "fn": 330, "fp": 17, "tn": 552, "recall": 0.4148936170212766, "fpr": 0.029876977152899824}
+FROZEN_FINAL_ARM historical_ordinary_extra {"tp": 245, "fn": 319, "fp": 10, "tn": 559, "recall": 0.43439716312056736, "fpr": 0.01757469244288225}
+FROZEN_FINAL_ARM engineered_corrupt {"tp": 194, "fn": 370, "fp": 16, "tn": 553, "recall": 0.34397163120567376, "fpr": 0.028119507908611598}
+FROZEN_FINAL_ARM engineered_repair {"tp": 232, "fn": 332, "fp": 18, "tn": 551, "recall": 0.41134751773049644, "fpr": 0.03163444639718805}
+PAIRED_COMPARISON_DONE primary_selected_vs_original
+PAIRED_COMPARISON_DONE rejected_primary_vs_original
+PAIRED_COMPARISON_DONE engineered_repair_vs_corrupt
+PAIRED_COMPARISON_DONE engineered_repair_vs_uncorrupted
+PAIRED_COMPARISON_DONE historical_ordinary_vs_original
+FINAL_DONE {"selection": "retain_original", "test_rows": 1133, "calibration_rows": 558}

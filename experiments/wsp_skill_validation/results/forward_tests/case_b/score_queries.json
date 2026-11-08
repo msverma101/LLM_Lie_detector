@@ -1,0 +1,28 @@
+{
+  "batches": [
+    {
+      "batch": 1,
+      "arm": "unedited baseline",
+      "roles": [
+        "calibration",
+        "discovery",
+        "transfer (computed but not inspected or released)"
+      ],
+      "rows": 400,
+      "probe_logits": 2400,
+      "reason": "Baseline vectorized scoring computed 400 rows; only 296 calibration/discovery scores were inspected. Transfer scores were not output or saved.",
+      "timestamp": 1794147149.764075
+    },
+    {
+      "batch": 2,
+      "arm": "unchanged baseline identity control",
+      "rows": 296,
+      "probe_logits": 1776,
+      "reason": "Verify preservation after no-edit decision",
+      "timestamp": 1794147231.324045
+    }
+  ],
+  "candidate_batches": 0,
+  "total_forward_scored_rows": 696,
+  "no_independent_transfer_scores_opened": true
+}

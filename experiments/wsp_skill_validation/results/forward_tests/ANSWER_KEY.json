@@ -1,0 +1,23 @@
+{
+  "type": "engineered sparse-fault positive control and unchanged negative control",
+  "case_a": {
+    "fault": "additive coefficient anomaly",
+    "coordinate": 1780,
+    "probes": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "scale": "25 * per-probe maxabs(original W)"
+  },
+  "case_b": {
+    "fault": null
+  },
+  "rows": 400,
+  "groups": 300,
+  "original_checkpoint_sha256": "3d9dfe5dc4142bf876f800fa710a5e2c0f65afcb9977d34255b2bd328e439a89",
+  "data_scope": "previous diagnostic activations, not independent natural efficacy confirmation"
+}

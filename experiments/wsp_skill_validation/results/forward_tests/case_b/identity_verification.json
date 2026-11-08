@@ -1,0 +1,8 @@
+{
+  "checkpoint_byte_identical": true,
+  "score_rows": 296,
+  "max_abs_score_difference_after_csv_roundtrip": 0.0,
+  "parent_sha256": "3d9dfe5dc4142bf876f800fa710a5e2c0f65afcb9977d34255b2bd328e439a89",
+  "retained_sha256": "3d9dfe5dc4142bf876f800fa710a5e2c0f65afcb9977d34255b2bd328e439a89",
+  "representation_identical": true
+}

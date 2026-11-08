@@ -1,0 +1,22 @@
+{
+  "decision": "no_supported_patch",
+  "repair_candidate_written": false,
+  "baseline_retained_byte_identical": true,
+  "discovery": {
+    "TP": 41,
+    "FN": 53,
+    "FP": 1,
+    "TN": 103,
+    "threshold": 0.8392840136733931,
+    "recall": 0.43617021276595747,
+    "fpr": 0.009615384615384616,
+    "auroc": 0.9013911620294598
+  },
+  "score_batches": 2,
+  "candidate_score_batches": 0,
+  "rows_scored": 696,
+  "transfer_rows_score_uninspected": 104,
+  "natural_efficacy_claim": false,
+  "reason": "No repeated localized nuisance separated from useful target signal; unverified labels and heterogeneous failure mechanisms.",
+  "controls": "13 full-context FP/FN/TP/TN cases, six-probe arithmetic contributions, byte-identical zero-edit audit, grouped identity evaluation with calibration bootstrap. No fitting allowed and no justified component/strength/directional experiment."
+}

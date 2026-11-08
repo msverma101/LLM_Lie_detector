@@ -1,0 +1,5 @@
+{
+  "frontmatter_present": true,
+  "references_present": true,
+  "limitation": "Structural/link check only. No standalone skill validator is supplied in the authorized skill tree. No engineered-fault recovery or general efficacy validation performed."
+}

@@ -1,0 +1,1952 @@
+[
+  {
+    "row_id": "fe3d02a312cb7b07aeb01b451c1c5cd126c7cd6236974d209ada2035216095d5",
+    "kind": "FP",
+    "probes": [
+      {
+        "probe": 0,
+        "logit": 3.9995317064793094,
+        "largest_arithmetic_terms": [
+          {
+            "feature": 1318,
+            "coefficient": -0.05736560268743024,
+            "q": -3.129580377877105,
+            "contribution": 0.1795302645356758
+          },
+          {
+            "feature": 396,
+            "coefficient": -0.05310963397765692,
+            "q": 2.791210931973552,
+            "contribution": -0.14824019095155
+          },
+          {
+            "feature": 912,
+            "coefficient": 0.04841428616456439,
+            "q": 2.9469548337781095,
+            "contribution": 0.14267471463657969
+          }
+        ]
+      },
+      {
+        "probe": 1,
+        "logit": 4.74594606361302,
+        "largest_arithmetic_terms": [
+          {
+            "feature": 27,
+            "coefficient": 0.07394604104934839,
+            "q": 2.2583370409504027,
+            "contribution": 0.16699508353338247
+          },
+          {
+            "feature": 1346,
+            "coefficient": -0.04538944595993272,
+            "q": -2.7688604261580325,
+            "contribution": 0.12567704068369628
+          },
+          {
+            "feature": 1809,
+            "coefficient": -0.04264490392569862,
+            "q": 2.7246340116512027,
+            "contribution": -0.11619175565955635
+          }
+        ]
+      },
+      {
+        "probe": 2,
+        "logit": 4.228057875768078,
+        "largest_arithmetic_terms": [
+          {
+            "feature": 1831,
+            "coefficient": -0.0798671580710515,
+            "q": -2.040185580377555,
+            "contribution": 0.16294382424229414
+          },
+          {
+            "feature": 1063,
+            "coefficient": -0.05064849416191038,
+            "q": -2.813862118368834,
+            "contribution": 0.14251787907462468
+          },
+          {
+            "feature": 748,
+            "coefficient": 0.06278896126988952,
+            "q": -1.8193785696900961,
+            "contribution": -0.11423689054753844
+          }
+        ]
+      },
+      {
+        "probe": 3,
+        "logit": 4.1284368977876875,
+        "largest_arithmetic_terms": [
+          {
+            "feature": 1928,
+            "coefficient": 0.07275171210218319,
+            "q": 1.9485079703074029,
+            "contribution": 0.14175729088461347
+          },
+          {
+            "feature": 1523,
+            "coefficient": 0.0429686784018014,
+            "q": -2.6255952763612256,
+            "contribution": -0.11281835904325438
+          },
+          {
+            "feature": 1577,
+            "coefficient": -0.0625032046506329,
+            "q": -1.7827626162593857,
+            "contribution": 0.11142837664755811
+          }
+        ]
+      },
+      {
+        "probe": 4,
+        "logit": 2.837369967400266,
+        "largest_arithmetic_terms": [
+          {
+            "feature": 1145,
+            "coefficient": -0.055641132500796435,
+            "q": 2.6764021647784824,
+            "contribution": -0.14891804747585796
+          },
+          {
+            "feature": 1127,
+            "coefficient": 0.06614577895874466,
+            "q": 1.8245409035058768,
+            "contribution": 0.120685679304488
+          },
+          {
+            "feature": 1214,
+            "coefficient": -0.04987452138333654,
+            "q": -2.335497275293457,
+            "contribution": 0.11648180879734775
+          }
+        ]
+      },
+      {
+        "probe": 5,
+        "logit": 2.0289252903870674,
+        "largest_arithmetic_terms": [
+          {
+            "feature": 478,
+            "coefficient": 0.07082862806098802,
+            "q": 1.876935272223639,
+            "contribution": 0.13294075029087743
+          },
+          {
+            "feature": 1253,
+            "coefficient": -0.054790930334072875,
+            "q": -2.080609985224369,
+            "contribution": 0.1139985567528048
+          },
+          {
+            "feature": 1420,
+            "coefficient": 0.05137436347911185,
+            "q": -2.046666836123675,
+            "contribution": -0.10514620595966151
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "row_id": "79ea2f205f46d73c3d36d9667421badf850e9a6afc778d7efce9633a577a695a",
+    "kind": "FN",
+    "probes": [
+      {
+        "probe": 0,
+        "logit": -3.667118258320923,
+        "largest_arithmetic_terms": [
+          {
+            "feature": 388,
+            "coefficient": 0.05944121393923122,
+            "q": -2.7066017205349384,
+            "contribution": -0.16088369191860857
+          },
+          {
+            "feature": 377,
+            "coefficient": 0.050518410823213976,
+            "q": -2.565978319783298,
+            "contribution": -0.12962914692227298
+          },
+          {
+            "feature": 1680,
+            "coefficient": 0.05536416214941741,
+            "q": -2.125019976914027,
+            "contribution": -0.11764995057261943
+          }
+        ]
+      },
+      {
+        "probe": 1,
+        "logit": -2.7469498520758813,
+        "largest_arithmetic_terms": [
+          {
+            "feature": 1207,
+            "coefficient": -0.07515115951586383,
+            "q": -1.9016069816513703,
+            "contribution": 0.14290796961456248
+          },
+          {
+            "feature": 1785,
+            "coefficient": -0.04642361565798762,
+            "q": -3.065670943302758,
+            "contribution": 0.1423195296057476
+          },
+          {
+            "feature": 1961,
+            "coefficient": 0.06429934299247612,
+            "q": -2.058047299608501,
+            "contribution": -0.13233108921226627
+          }
+        ]
+      },
+      {
+        "probe": 2,
+        "logit": -3.3254953233058986,
+        "largest_arithmetic_terms": [
+          {
+            "feature": 1918,
+            "coefficient": -0.06753419088963265,
+            "q": 2.018902099977489,
+            "contribution": -0.13634491980736
+          },
+          {
+            "feature": 1652,
+            "coefficient": -0.08401862061797923,
+            "q": 1.5259427107671084,
+            "contribution": -0.1282076017007125
+          },
+          {
+            "feature": 1649,
+            "coefficient": -0.049472767715056924,
+            "q": -2.244689696685499,
+            "contribution": 0.11105101195650327
+          }
+        ]
+      },
+      {
+        "probe": 3,
+        "logit": -3.4740226771859812,
+        "largest_arithmetic_terms": [
+          {
+            "feature": 1007,
+            "coefficient": 0.0733450807208917,
+            "q": -2.2743059253585396,
+            "contribution": -0.1668091516794244
+          },
+          {
+            "feature": 1761,
+            "coefficient": 0.07306737264789191,
+            "q": -2.1175093053663314,
+            "contribution": -0.1547208415005805
+          },
+          {
+            "feature": 1020,
+            "coefficient": 0.08553956420124117,
+            "q": -1.6219705207950994,
+            "contribution": -0.13874265149607298
+          }
+        ]
+      },
+      {
+        "probe": 4,
+        "logit": -3.103505832030557,
+        "largest_arithmetic_terms": [
+          {
+            "feature": 938,
+            "coefficient": 0.02768820151757142,
+            "q": -7.417321970342946,
+            "contribution": -0.20537230543556537
+          },
+          {
+            "feature": 117,
+            "coefficient": -0.06012017296110881,
+            "q": 3.2632800477000505,
+            "contribution": -0.19618896088826246
+          },
+          {
+            "feature": 21,
+            "coefficient": -0.06319454865010604,
+            "q": 2.9399978556528525,
+            "contribution": -0.18579183752026163
+          }
+        ]
+      },
+      {
+        "probe": 5,
+        "logit": -4.864969526263949,
+        "largest_arithmetic_terms": [
+          {
+            "feature": 1630,
+            "coefficient": -0.05932564701369561,
+            "q": 6.5163880475827165,
+            "contribution": -0.38658893711515735
+          },
+          {
+            "feature": 459,
+            "coefficient": -0.06467872185513128,
+            "q": 4.383309669614036,
+            "contribution": -0.2835068669258736
+          },
+          {
+            "feature": 1370,
+            "coefficient": 0.04190738462446823,
+            "q": -6.596042161790072,
+            "contribution": -0.27642287587334546
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "row_id": "c1a58e38209ba621166fa8b82ddab771c6c2719f295858976ed63390b38f1f8e",
+    "kind": "FN",
+    "probes": [
+      {
+        "probe": 0,
+        "logit": -4.368705497746826,
+        "largest_arithmetic_terms": [
+          {
+            "feature": 1616,
+            "coefficient": -0.058365853078638556,
+            "q": 3.4144296071661437,
+            "contribution": -0.19928609679921272
+          },
+          {
+            "feature": 1735,
+            "coefficient": 0.05142360521602524,
+            "q": -3.7697556628588855,
+            "contribution": -0.19385442696773086
+          },
+          {
+            "feature": 996,
+            "coefficient": -0.06451936745379551,
+            "q": 2.8901323489202877,
+            "contribution": -0.18646951101008918
+          }
+        ]
+      },
+      {
+        "probe": 1,
+        "logit": -3.867217764006367,
+        "largest_arithmetic_terms": [
+          {
+            "feature": 128,
+            "coefficient": 0.07367559201058381,
+            "q": 2.5045875656637713,
+            "contribution": 0.1845269716426253
+          },
+          {
+            "feature": 611,
+            "coefficient": 0.044320194267067445,
+            "q": -4.153626526437486,
+            "contribution": -0.1840895345645539
+          },
+          {
+            "feature": 883,
+            "coefficient": 0.07118385137754564,
+            "q": -2.48017650118632,
+            "contribution": -0.17654851545052816
+          }
+        ]
+      },
+      {
+        "probe": 2,
+        "logit": -1.6572143845513518,
+        "largest_arithmetic_terms": [
+          {
+            "feature": 1652,
+            "coefficient": -0.08401862061797923,
+            "q": 3.3390079657022693,
+            "contribution": -0.28053884351074954
+          },
+          {
+            "feature": 790,
+            "coefficient": -0.06823243223816017,
+            "q": 2.8413930935640135,
+            "contribution": -0.19387516171858285
+          },
+          {
+            "feature": 980,
+            "coefficient": 0.06321480670772332,
+            "q": -2.3271119290225277,
+            "contribution": -0.14710793078039625
+          }
+        ]
+      },
+      {
+        "probe": 3,
+        "logit": -3.6157044798568743,
+        "largest_arithmetic_terms": [
+          {
+            "feature": 1020,
+            "coefficient": 0.08553956420124117,
+            "q": -3.0609979389756106,
+            "contribution": -0.2618364297208712
+          },
+          {
+            "feature": 773,
+            "coefficient": -0.08501438453289335,
+            "q": -2.1934663120654414,
+            "contribution": 0.1864761885138789
+          },
+          {
+            "feature": 539,
+            "coefficient": 0.046658259875006304,
+            "q": -3.655535051522288,
+            "contribution": -0.17056090441612148
+          }
+        ]
+      },
+      {
+        "probe": 4,
+        "logit": -2.434998848671181,
+        "largest_arithmetic_terms": [
+          {
+            "feature": 1239,
+            "coefficient": 0.07156535377076038,
+            "q": 2.4248615918108642,
+            "contribution": 0.17353607766307366
+          },
+          {
+            "feature": 815,
+            "coefficient": 0.0660211453735019,
+            "q": 2.313321995625524,
+            "contribution": 0.15272816776891224
+          },
+          {
+            "feature": 1160,
+            "coefficient": 0.062018480431520764,
+            "q": -2.249283783949216,
+            "contribution": -0.13949716233979143
+          }
+        ]
+      },
+      {
+        "probe": 5,
+        "logit": -2.7417114517442323,
+        "largest_arithmetic_terms": [
+          {
+            "feature": 1479,
+            "coefficient": -0.07693822252500808,
+            "q": 2.1948192945780876,
+            "contribution": -0.16886549528843015
+          },
+          {
+            "feature": 725,
+            "coefficient": 0.07352897488389576,
+            "q": -2.034587848000622,
+            "contribution": -0.14960115877471725
+          },
+          {
+            "feature": 1253,
+            "coefficient": -0.054790930334072875,
+            "q": 2.677446666408779,
+            "contribution": -0.14669979377239906
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "row_id": "e3c430e4d9ef03e3ad41ceeb5d21ec3d9ca6057019863239131570b30e066b6e",
+    "kind": "FN",
+    "probes": [
+      {
+        "probe": 0,
+        "logit": 0.12762864946657854,
+        "largest_arithmetic_terms": [
+          {
+            "feature": 1777,
+            "coefficient": -0.09427638685012289,
+            "q": -2.0066919276041584,
+            "contribution": 0.18918366445582843
+          },
+          {
+            "feature": 1318,
+            "coefficient": -0.05736560268743024,
+            "q": -2.819472706060902,
+            "contribution": 0.16174075104394348
+          },
+          {
+            "feature": 100,
+            "coefficient": 0.053606413741716014,
+            "q": 2.6046648459632578,
+            "contribution": 0.1396267413912094
+          }
+        ]
+      },
+      {
+        "probe": 1,
+        "logit": 4.291956000469267,
+        "largest_arithmetic_terms": [
+          {
+            "feature": 1880,
+            "coefficient": -0.06331520415893577,
+            "q": -2.7563886025695146,
+            "contribution": 0.17452130711305247
+          },
+          {
+            "feature": 1539,
+            "coefficient": -0.05162054084498749,
+            "q": 2.9792173197266267,
+            "contribution": -0.1537888093390425
+          },
+          {
+            "feature": 1337,
+            "coefficient": -0.0677395393525279,
+            "q": 2.250613911696896,
+            "contribution": -0.15245554963873864
+          }
+        ]
+      },
+      {
+        "probe": 2,
+        "logit": 1.7183243811101734,
+        "largest_arithmetic_terms": [
+          {
+            "feature": 2002,
+            "coefficient": -0.05799920795434692,
+            "q": -2.647111018752,
+            "contribution": 0.15353034245484037
+          },
+          {
+            "feature": 1904,
+            "coefficient": -0.052041872736114034,
+            "q": 2.5074457741718907,
+            "contribution": -0.13049217387216047
+          },
+          {
+            "feature": 346,
+            "coefficient": 0.05443281459350889,
+            "q": 2.324066580616189,
+            "contribution": 0.1265054852856512
+          }
+        ]
+      },
+      {
+        "probe": 3,
+        "logit": 2.5261297508466716,
+        "largest_arithmetic_terms": [
+          {
+            "feature": 169,
+            "coefficient": -0.1296569645035539,
+            "q": -1.587670884118901,
+            "contribution": 0.20585258746553037
+          },
+          {
+            "feature": 1577,
+            "coefficient": -0.0625032046506329,
+            "q": -2.2951145712356285,
+            "contribution": 0.14345201574259006
+          },
+          {
+            "feature": 1459,
+            "coefficient": -0.07398105201593665,
+            "q": 1.9339128924700248,
+            "contribution": -0.1430729102921154
+          }
+        ]
+      },
+      {
+        "probe": 4,
+        "logit": 1.9972252070290781,
+        "largest_arithmetic_terms": [
+          {
+            "feature": 169,
+            "coefficient": -0.12474022376011976,
+            "q": -1.5464535741707723,
+            "contribution": 0.1929049648766991
+          },
+          {
+            "feature": 2029,
+            "coefficient": -0.07907996671789662,
+            "q": -1.9053428836681787,
+            "contribution": 0.15067445182666075
+          },
+          {
+            "feature": 1519,
+            "coefficient": -0.08868660907610118,
+            "q": 1.5013880692986976,
+            "contribution": -0.1331530167734159
+          }
+        ]
+      },
+      {
+        "probe": 5,
+        "logit": 1.501027202004525,
+        "largest_arithmetic_terms": [
+          {
+            "feature": 1571,
+            "coefficient": -0.06125090901456013,
+            "q": -2.0768098207006505,
+            "contribution": 0.12720648936828047
+          },
+          {
+            "feature": 2029,
+            "coefficient": -0.0734390135147405,
+            "q": -1.6658587578690822,
+            "contribution": 0.12233902383279635
+          },
+          {
+            "feature": 298,
+            "coefficient": 0.037857969660410086,
+            "q": 2.70995879197228,
+            "contribution": 0.10259353772744814
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "row_id": "3853cf839c30d9f3870d4579b56b2da70c9b0f1ffa384c3be04ec9c8804c7ee3",
+    "kind": "FN",
+    "probes": [
+      {
+        "probe": 0,
+        "logit": 1.7549680370643628,
+        "largest_arithmetic_terms": [
+          {
+            "feature": 1777,
+            "coefficient": -0.09427638685012289,
+            "q": -1.1217081699340736,
+            "contribution": 0.10575059336164812
+          },
+          {
+            "feature": 1567,
+            "coefficient": -0.06112598536654322,
+            "q": 1.688791094678241,
+            "contribution": -0.10322901974045066
+          },
+          {
+            "feature": 934,
+            "coefficient": -0.06294644813766331,
+            "q": -1.5318288672089082,
+            "contribution": 0.09642318634554109
+          }
+        ]
+      },
+      {
+        "probe": 1,
+        "logit": -0.07016997360411889,
+        "largest_arithmetic_terms": [
+          {
+            "feature": 985,
+            "coefficient": -0.06782011886755775,
+            "q": -2.3439893876351063,
+            "contribution": 0.1589696388937068
+          },
+          {
+            "feature": 1929,
+            "coefficient": -0.0673684984219998,
+            "q": 2.067298050688847,
+            "contribution": -0.13927076546563483
+          },
+          {
+            "feature": 287,
+            "coefficient": -0.04988645692407243,
+            "q": 2.1736619174783534,
+            "contribution": -0.10843629161378056
+          }
+        ]
+      },
+      {
+        "probe": 2,
+        "logit": 2.9572761637002283,
+        "largest_arithmetic_terms": [
+          {
+            "feature": 1831,
+            "coefficient": -0.0798671580710515,
+            "q": -1.7190079923506871,
+            "contribution": 0.13729228305047322
+          },
+          {
+            "feature": 1326,
+            "coefficient": -0.06953305669204353,
+            "q": -1.740513808289807,
+            "contribution": 0.12102324530509974
+          },
+          {
+            "feature": 350,
+            "coefficient": 0.05162372105395516,
+            "q": -2.282861057144087,
+            "contribution": -0.11784978241894352
+          }
+        ]
+      },
+      {
+        "probe": 3,
+        "logit": 2.4250997300510546,
+        "largest_arithmetic_terms": [
+          {
+            "feature": 1005,
+            "coefficient": 0.07887496804806111,
+            "q": 1.7926795316603021,
+            "contribution": 0.14139754078011949
+          },
+          {
+            "feature": 850,
+            "coefficient": 0.07301069634294641,
+            "q": -1.8910617030710124,
+            "contribution": -0.13806773176869278
+          },
+          {
+            "feature": 104,
+            "coefficient": -0.07606827777037418,
+            "q": 1.6466791311937141,
+            "contribution": -0.12526004555032189
+          }
+        ]
+      },
+      {
+        "probe": 4,
+        "logit": 1.5745057013699828,
+        "largest_arithmetic_terms": [
+          {
+            "feature": 1665,
+            "coefficient": 0.06394058549910084,
+            "q": 1.8298145831321415,
+            "contribution": 0.11699941580026225
+          },
+          {
+            "feature": 1026,
+            "coefficient": 0.053806068621382354,
+            "q": 2.0515919006239907,
+            "contribution": 0.11038809458804669
+          },
+          {
+            "feature": 1745,
+            "coefficient": 0.05843502756794876,
+            "q": -1.8723445337016522,
+            "contribution": -0.10941050444355421
+          }
+        ]
+      },
+      {
+        "probe": 5,
+        "logit": 2.442318170170715,
+        "largest_arithmetic_terms": [
+          {
+            "feature": 1906,
+            "coefficient": 0.04825207311913186,
+            "q": 2.582063634974939,
+            "contribution": 0.12458992331306215
+          },
+          {
+            "feature": 1849,
+            "coefficient": 0.04584176276459512,
+            "q": -2.715922603924221,
+            "contribution": -0.12450267969609556
+          },
+          {
+            "feature": 169,
+            "coefficient": -0.11853909290826728,
+            "q": -1.0490914098260076,
+            "contribution": 0.12435834409863021
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "row_id": "380317358d0bdb99451dad41c1ba36b699713092488dc401b2a9fc43f7610f95",
+    "kind": "TP",
+    "probes": [
+      {
+        "probe": 0,
+        "logit": 7.122628984044491,
+        "largest_arithmetic_terms": [
+          {
+            "feature": 200,
+            "coefficient": -0.09780248435200399,
+            "q": -1.9258327424264308,
+            "contribution": 0.18835122665573792
+          },
+          {
+            "feature": 669,
+            "coefficient": -0.07693338003502927,
+            "q": -2.0843369173223616,
+            "contribution": 0.16035508418140262
+          },
+          {
+            "feature": 173,
+            "coefficient": -0.07475498367493942,
+            "q": -1.8864877774818443,
+            "contribution": 0.14102436300862803
+          }
+        ]
+      },
+      {
+        "probe": 1,
+        "logit": 8.129877214710218,
+        "largest_arithmetic_terms": [
+          {
+            "feature": 243,
+            "coefficient": -0.08167758488866336,
+            "q": -1.7632474080663134,
+            "contribution": 0.14401778985205196
+          },
+          {
+            "feature": 36,
+            "coefficient": -0.07468481878833762,
+            "q": -1.910858936542064,
+            "contribution": 0.14271215340571958
+          },
+          {
+            "feature": 27,
+            "coefficient": 0.07394604104934839,
+            "q": 1.7084655946397813,
+            "contribution": 0.12633426699263267
+          }
+        ]
+      },
+      {
+        "probe": 2,
+        "logit": 6.05717697230112,
+        "largest_arithmetic_terms": [
+          {
+            "feature": 335,
+            "coefficient": 0.03394571119601858,
+            "q": 4.89348988000298,
+            "contribution": 0.16611299420722075
+          },
+          {
+            "feature": 173,
+            "coefficient": -0.05125741564474353,
+            "q": 2.9415303563346,
+            "contribution": -0.15077524410627313
+          },
+          {
+            "feature": 1005,
+            "coefficient": 0.05969871780285121,
+            "q": 2.479504849988982,
+            "contribution": 0.14802326033029314
+          }
+        ]
+      },
+      {
+        "probe": 3,
+        "logit": 6.297121282532716,
+        "largest_arithmetic_terms": [
+          {
+            "feature": 1265,
+            "coefficient": -0.05330746660168654,
+            "q": -3.959498651966924,
+            "contribution": 0.21107084214914967
+          },
+          {
+            "feature": 1005,
+            "coefficient": 0.07887496804806111,
+            "q": 2.532816086993539,
+            "contribution": 0.19977578793323056
+          },
+          {
+            "feature": 1000,
+            "coefficient": 0.07129509521288051,
+            "q": 2.3031796905943764,
+            "contribution": 0.16420541533329874
+          }
+        ]
+      },
+      {
+        "probe": 4,
+        "logit": 5.570364441139111,
+        "largest_arithmetic_terms": [
+          {
+            "feature": 1145,
+            "coefficient": -0.055641132500796435,
+            "q": 3.1068899550949833,
+            "contribution": -0.17287087565683346
+          },
+          {
+            "feature": 335,
+            "coefficient": 0.05834166158653904,
+            "q": 2.9443411179980723,
+            "contribution": 0.17177775310157556
+          },
+          {
+            "feature": 323,
+            "coefficient": -0.05992345740560194,
+            "q": -2.5370631102583228,
+            "contribution": 0.1520295932228886
+          }
+        ]
+      },
+      {
+        "probe": 5,
+        "logit": 4.966622701223528,
+        "largest_arithmetic_terms": [
+          {
+            "feature": 1265,
+            "coefficient": -0.04303497880656117,
+            "q": -4.04155005516611,
+            "contribution": 0.17392802096972965
+          },
+          {
+            "feature": 498,
+            "coefficient": -0.07926766964794396,
+            "q": -1.9315045310228798,
+            "contribution": 0.15310586308862856
+          },
+          {
+            "feature": 1028,
+            "coefficient": 0.05821266213516794,
+            "q": 2.621288908347636,
+            "contribution": 0.15259220558030412
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "row_id": "df2e15a8c06ef4c08fa1d59514ca917d3d463cb315a63d961014ae75dbcab1e2",
+    "kind": "TP",
+    "probes": [
+      {
+        "probe": 0,
+        "logit": 7.852795120859112,
+        "largest_arithmetic_terms": [
+          {
+            "feature": 42,
+            "coefficient": -0.06396991685595019,
+            "q": -3.492870824421295,
+            "contribution": 0.22343865622680445
+          },
+          {
+            "feature": 1106,
+            "coefficient": 0.05903337235690147,
+            "q": 2.5005553148502777,
+            "contribution": 0.14761621300058542
+          },
+          {
+            "feature": 1364,
+            "coefficient": 0.052409904097869386,
+            "q": -2.786327044556412,
+            "contribution": -0.1460311331905014
+          }
+        ]
+      },
+      {
+        "probe": 1,
+        "logit": 5.555196486051882,
+        "largest_arithmetic_terms": [
+          {
+            "feature": 36,
+            "coefficient": -0.07468481878833762,
+            "q": -2.227606085008375,
+            "contribution": 0.1663683567906487
+          },
+          {
+            "feature": 723,
+            "coefficient": 0.06531978508191744,
+            "q": 2.50318188049481,
+            "contribution": 0.16350730245487094
+          },
+          {
+            "feature": 357,
+            "coefficient": 0.061332603596222064,
+            "q": 2.6589926804741664,
+            "contribution": 0.163082944036778
+          }
+        ]
+      },
+      {
+        "probe": 2,
+        "logit": 6.237626753739537,
+        "largest_arithmetic_terms": [
+          {
+            "feature": 36,
+            "coefficient": -0.07809069704360007,
+            "q": -2.2742795778753004,
+            "contribution": 0.17760007750830673
+          },
+          {
+            "feature": 1183,
+            "coefficient": 0.06657464462071053,
+            "q": 2.2321490027987534,
+            "contribution": 0.1486045266018004
+          },
+          {
+            "feature": 670,
+            "coefficient": -0.05460337864138408,
+            "q": 2.675624943081495,
+            "contribution": -0.1460981618694106
+          }
+        ]
+      },
+      {
+        "probe": 3,
+        "logit": 5.4250246507874715,
+        "largest_arithmetic_terms": [
+          {
+            "feature": 1966,
+            "coefficient": -0.07083326818311135,
+            "q": -3.088516958993414,
+            "contribution": 0.218769750044468
+          },
+          {
+            "feature": 1043,
+            "coefficient": 0.06626158378999898,
+            "q": 2.2986855596720637,
+            "contribution": 0.15231454581907114
+          },
+          {
+            "feature": 1576,
+            "coefficient": 0.05913741280582755,
+            "q": 2.5558485289159116,
+            "contribution": 0.15114626952366733
+          }
+        ]
+      },
+      {
+        "probe": 4,
+        "logit": 4.989104955740082,
+        "largest_arithmetic_terms": [
+          {
+            "feature": 1783,
+            "coefficient": 0.04422865695698322,
+            "q": 2.889947854896325,
+            "contribution": 0.12781851229777907
+          },
+          {
+            "feature": 1239,
+            "coefficient": 0.07156535377076038,
+            "q": 1.7653157673002535,
+            "contribution": 0.12633544740394395
+          },
+          {
+            "feature": 1245,
+            "coefficient": -0.04787068079553468,
+            "q": -2.45885350279291,
+            "contribution": 0.11770699115518173
+          }
+        ]
+      },
+      {
+        "probe": 5,
+        "logit": 4.2299525047730215,
+        "largest_arithmetic_terms": [
+          {
+            "feature": 1245,
+            "coefficient": -0.05806457583211804,
+            "q": -2.9267785512327733,
+            "contribution": 0.16994215513187194
+          },
+          {
+            "feature": 1576,
+            "coefficient": 0.07186326340880286,
+            "q": 1.8692347446590716,
+            "contribution": 0.13432930882832123
+          },
+          {
+            "feature": 1771,
+            "coefficient": 0.045856039941306666,
+            "q": -2.6466256917484183,
+            "contribution": -0.12136377343050385
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "row_id": "7f77cb48caf681712a4f51b95e77b14009011d64435829a8aa0a0672765e5932",
+    "kind": "TP",
+    "probes": [
+      {
+        "probe": 0,
+        "logit": 1.3259141968472534,
+        "largest_arithmetic_terms": [
+          {
+            "feature": 1005,
+            "coefficient": 0.08025323839070955,
+            "q": 2.2719618031686424,
+            "contribution": 0.18233229220427938
+          },
+          {
+            "feature": 1836,
+            "coefficient": -0.05437370929489647,
+            "q": 2.5753877625350032,
+            "contribution": -0.14003338552171213
+          },
+          {
+            "feature": 581,
+            "coefficient": -0.041009026923160656,
+            "q": -3.0592647139426186,
+            "contribution": 0.12545746901914823
+          }
+        ]
+      },
+      {
+        "probe": 1,
+        "logit": 2.626810452646841,
+        "largest_arithmetic_terms": [
+          {
+            "feature": 36,
+            "coefficient": -0.07468481878833762,
+            "q": -1.9875966477684384,
+            "contribution": 0.14844329546289314
+          },
+          {
+            "feature": 1577,
+            "coefficient": -0.052033629696597354,
+            "q": -2.4892259664327074,
+            "contribution": 0.12952346216851418
+          },
+          {
+            "feature": 1460,
+            "coefficient": 0.05910661604848967,
+            "q": 1.7382022577876604,
+            "contribution": 0.1027392534656731
+          }
+        ]
+      },
+      {
+        "probe": 2,
+        "logit": 2.3294937860955285,
+        "largest_arithmetic_terms": [
+          {
+            "feature": 748,
+            "coefficient": 0.06278896126988952,
+            "q": -2.283956563291283,
+            "contribution": -0.1434072601946063
+          },
+          {
+            "feature": 36,
+            "coefficient": -0.07809069704360007,
+            "q": -1.7321693539748233,
+            "contribution": 0.13526631224945637
+          },
+          {
+            "feature": 1326,
+            "coefficient": -0.06953305669204353,
+            "q": -1.7322026415330782,
+            "contribution": 0.12044534447582708
+          }
+        ]
+      },
+      {
+        "probe": 3,
+        "logit": 1.0519817199533312,
+        "largest_arithmetic_terms": [
+          {
+            "feature": 977,
+            "coefficient": -0.0736976329636048,
+            "q": 1.666090110266003,
+            "contribution": -0.12278689743067575
+          },
+          {
+            "feature": 1447,
+            "coefficient": -0.0663494608645901,
+            "q": -1.7971167734689262,
+            "contribution": 0.11923772903037497
+          },
+          {
+            "feature": 1491,
+            "coefficient": 0.05285014681148811,
+            "q": -2.085935616141202,
+            "contribution": -0.11024200355237444
+          }
+        ]
+      },
+      {
+        "probe": 4,
+        "logit": 1.8000469894977793,
+        "largest_arithmetic_terms": [
+          {
+            "feature": 1109,
+            "coefficient": -0.0685384823274906,
+            "q": -1.9865195419070498,
+            "contribution": 0.13615303451621105
+          },
+          {
+            "feature": 982,
+            "coefficient": -0.08631370830568759,
+            "q": 1.576116392638313,
+            "contribution": -0.13604045056999592
+          },
+          {
+            "feature": 1447,
+            "coefficient": -0.0713446419857227,
+            "q": -1.7766129507446424,
+            "contribution": 0.1267518149180749
+          }
+        ]
+      },
+      {
+        "probe": 5,
+        "logit": 1.6541527508187326,
+        "largest_arithmetic_terms": [
+          {
+            "feature": 799,
+            "coefficient": -0.06992669649507295,
+            "q": -2.8236110107796506,
+            "contribution": 0.19744579017093478
+          },
+          {
+            "feature": 459,
+            "coefficient": -0.06467872185513128,
+            "q": 2.8818051962504034,
+            "contribution": -0.18639147672895184
+          },
+          {
+            "feature": 838,
+            "coefficient": -0.03230585657505672,
+            "q": -5.549598523743082,
+            "contribution": 0.17928453395719052
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "row_id": "c1c4fa74a5a26875bd78b81ff7a5e30a1b455c38f23539b2054ced607ea7d8a5",
+    "kind": "TP",
+    "probes": [
+      {
+        "probe": 0,
+        "logit": 3.9319976357154878,
+        "largest_arithmetic_terms": [
+          {
+            "feature": 1831,
+            "coefficient": -0.0963077794303043,
+            "q": -2.1527181965825126,
+            "contribution": 0.20732350925207108
+          },
+          {
+            "feature": 669,
+            "coefficient": -0.07693338003502927,
+            "q": -2.5559300192014094,
+            "contribution": 0.19663633551016169
+          },
+          {
+            "feature": 1777,
+            "coefficient": -0.09427638685012289,
+            "q": 1.3878896661332738,
+            "contribution": -0.13084522306966842
+          }
+        ]
+      },
+      {
+        "probe": 1,
+        "logit": 3.6603968711695356,
+        "largest_arithmetic_terms": [
+          {
+            "feature": 1297,
+            "coefficient": 0.06820578192396323,
+            "q": 2.3906280265486455,
+            "contribution": 0.1630546538400915
+          },
+          {
+            "feature": 297,
+            "coefficient": -0.055756252279763815,
+            "q": -2.4594177079104593,
+            "contribution": 0.13712791418357403
+          },
+          {
+            "feature": 936,
+            "coefficient": -0.06504094334888472,
+            "q": -1.9821276762910163,
+            "contribution": 0.1289194539039005
+          }
+        ]
+      },
+      {
+        "probe": 2,
+        "logit": 2.0396449114394155,
+        "largest_arithmetic_terms": [
+          {
+            "feature": 1652,
+            "coefficient": -0.08401862061797923,
+            "q": 1.70229298667625,
+            "contribution": -0.14302430862819862
+          },
+          {
+            "feature": 169,
+            "coefficient": -0.06590571588617378,
+            "q": -1.7557102151735864,
+            "contribution": 0.11571133861968341
+          },
+          {
+            "feature": 1280,
+            "coefficient": 0.05764130392994125,
+            "q": -1.896032882901705,
+            "contribution": -0.10928980766449989
+          }
+        ]
+      },
+      {
+        "probe": 3,
+        "logit": 1.2889105313035183,
+        "largest_arithmetic_terms": [
+          {
+            "feature": 169,
+            "coefficient": -0.1296569645035539,
+            "q": -1.3755868168656886,
+            "contribution": 0.1783544110859113
+          },
+          {
+            "feature": 1005,
+            "coefficient": 0.07887496804806111,
+            "q": -1.812972124789863,
+            "contribution": -0.1429981184148259
+          },
+          {
+            "feature": 117,
+            "coefficient": -0.06851252694814058,
+            "q": 2.020192688549957,
+            "contribution": -0.1384085060147155
+          }
+        ]
+      },
+      {
+        "probe": 4,
+        "logit": 1.2614628618757469,
+        "largest_arithmetic_terms": [
+          {
+            "feature": 730,
+            "coefficient": -0.02854441145495322,
+            "q": 5.929413400614574,
+            "contribution": -0.16925161579365577
+          },
+          {
+            "feature": 1447,
+            "coefficient": -0.0713446419857227,
+            "q": -2.1100764785005564,
+            "contribution": 0.15054265092111668
+          },
+          {
+            "feature": 1370,
+            "coefficient": 0.05407451548117269,
+            "q": -2.7295896828940114,
+            "contribution": -0.14760123956490148
+          }
+        ]
+      },
+      {
+        "probe": 5,
+        "logit": 1.1106636799370584,
+        "largest_arithmetic_terms": [
+          {
+            "feature": 1370,
+            "coefficient": 0.04190738462446823,
+            "q": -6.247256925234626,
+            "contribution": -0.2618061988136803
+          },
+          {
+            "feature": 459,
+            "coefficient": -0.06467872185513128,
+            "q": 4.010799017825349,
+            "contribution": -0.25941335409075944
+          },
+          {
+            "feature": 1630,
+            "coefficient": -0.05932564701369561,
+            "q": 4.077477327935622,
+            "contribution": -0.24189898066345547
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "row_id": "7a51444f5e96e607477e3e352267fafb1238bc865fe1258e50863e214331edc0",
+    "kind": "TN",
+    "probes": [
+      {
+        "probe": 0,
+        "logit": -6.821162799448446,
+        "largest_arithmetic_terms": [
+          {
+            "feature": 1096,
+            "coefficient": -0.08737101859823773,
+            "q": 2.339046999326318,
+            "contribution": -0.20436491888029187
+          },
+          {
+            "feature": 1237,
+            "coefficient": 0.08166321860220088,
+            "q": -2.4988795547023717,
+            "contribution": -0.20406654733623017
+          },
+          {
+            "feature": 891,
+            "coefficient": -0.06522027215122461,
+            "q": 2.938497513903058,
+            "contribution": -0.19164960757245436
+          }
+        ]
+      },
+      {
+        "probe": 1,
+        "logit": -6.217693815193171,
+        "largest_arithmetic_terms": [
+          {
+            "feature": 1539,
+            "coefficient": -0.05162054084498749,
+            "q": -2.9997234290377772,
+            "contribution": 0.15484734579231052
+          },
+          {
+            "feature": 977,
+            "coefficient": -0.0705443181774374,
+            "q": 2.024500177633991,
+            "contribution": -0.1428169846812908
+          },
+          {
+            "feature": 1183,
+            "coefficient": 0.06631622779552372,
+            "q": -2.1184331013119264,
+            "contribution": -0.1404864921161795
+          }
+        ]
+      },
+      {
+        "probe": 2,
+        "logit": -7.133350161804539,
+        "largest_arithmetic_terms": [
+          {
+            "feature": 1918,
+            "coefficient": -0.06753419088963265,
+            "q": 2.402361817840932,
+            "contribution": -0.1622415615920344
+          },
+          {
+            "feature": 358,
+            "coefficient": -0.04501723871541961,
+            "q": 3.187632462652236,
+            "contribution": -0.14349841150823658
+          },
+          {
+            "feature": 1644,
+            "coefficient": 0.03973160919855204,
+            "q": -3.4356271695993574,
+            "contribution": -0.13650299605444913
+          }
+        ]
+      },
+      {
+        "probe": 3,
+        "logit": -5.7390367606340265,
+        "largest_arithmetic_terms": [
+          {
+            "feature": 1928,
+            "coefficient": 0.07275171210218319,
+            "q": -2.311892854773907,
+            "contribution": -0.1681941633816057
+          },
+          {
+            "feature": 1447,
+            "coefficient": -0.0663494608645901,
+            "q": -2.5055337069824875,
+            "contribution": 0.16624081063634594
+          },
+          {
+            "feature": 977,
+            "coefficient": -0.0736976329636048,
+            "q": 2.1710219585155515,
+            "contribution": -0.15999917945460557
+          }
+        ]
+      },
+      {
+        "probe": 4,
+        "logit": -5.60897704211494,
+        "largest_arithmetic_terms": [
+          {
+            "feature": 1134,
+            "coefficient": 0.05640513393651215,
+            "q": 2.555845718748969,
+            "contribution": 0.14416282008709674
+          },
+          {
+            "feature": 1459,
+            "coefficient": -0.06961464481680045,
+            "q": 2.017725812577895,
+            "contribution": -0.14046326578030024
+          },
+          {
+            "feature": 1952,
+            "coefficient": -0.04878943712811056,
+            "q": -2.773859643280225,
+            "contribution": 0.13533505066802373
+          }
+        ]
+      },
+      {
+        "probe": 5,
+        "logit": -5.0245831407793755,
+        "largest_arithmetic_terms": [
+          {
+            "feature": 1354,
+            "coefficient": 0.06339705276434895,
+            "q": 2.2327128604450577,
+            "contribution": 0.1415474150212758
+          },
+          {
+            "feature": 830,
+            "coefficient": -0.05079170615648808,
+            "q": 2.7324981283009637,
+            "contribution": -0.13878824200581621
+          },
+          {
+            "feature": 1245,
+            "coefficient": -0.05806457583211804,
+            "q": -2.1719569145982045,
+            "contribution": 0.12611375697178057
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "row_id": "c66f85c7f99c90cb014934a580e98bd998221f2251c2235af0e29afe7acb0b56",
+    "kind": "TN",
+    "probes": [
+      {
+        "probe": 0,
+        "logit": -5.943257693561627,
+        "largest_arithmetic_terms": [
+          {
+            "feature": 320,
+            "coefficient": -0.07546064809746564,
+            "q": 2.213603906998846,
+            "contribution": -0.16703998545321497
+          },
+          {
+            "feature": 850,
+            "coefficient": 0.05997131239832958,
+            "q": -2.40892527604723,
+            "contribution": -0.14446641027406076
+          },
+          {
+            "feature": 790,
+            "coefficient": -0.06629608129466036,
+            "q": 2.1163670238586416,
+            "contribution": -0.14030684026307091
+          }
+        ]
+      },
+      {
+        "probe": 1,
+        "logit": -4.532152891119845,
+        "largest_arithmetic_terms": [
+          {
+            "feature": 1321,
+            "coefficient": 0.047733506667845836,
+            "q": -2.578798434930471,
+            "contribution": -0.12309509228878406
+          },
+          {
+            "feature": 750,
+            "coefficient": -0.05219280938154567,
+            "q": 2.162362451777591,
+            "contribution": -0.11285977125943954
+          },
+          {
+            "feature": 320,
+            "coefficient": -0.058107505904971296,
+            "q": 1.9354323991331253,
+            "contribution": -0.11246314956130084
+          }
+        ]
+      },
+      {
+        "probe": 2,
+        "logit": -5.350379655913669,
+        "largest_arithmetic_terms": [
+          {
+            "feature": 481,
+            "coefficient": 0.07177915308388379,
+            "q": -2.2478515645387387,
+            "contribution": -0.1613488815608738
+          },
+          {
+            "feature": 1407,
+            "coefficient": 0.08051868233587979,
+            "q": -1.7484691732792144,
+            "contribution": -0.1407844339373474
+          },
+          {
+            "feature": 221,
+            "coefficient": 0.036907541582117696,
+            "q": -3.6291377740911877,
+            "contribution": -0.13394255330450458
+          }
+        ]
+      },
+      {
+        "probe": 3,
+        "logit": -5.215132357303496,
+        "largest_arithmetic_terms": [
+          {
+            "feature": 967,
+            "coefficient": -0.05513691721363187,
+            "q": 2.762438930522279,
+            "contribution": -0.15231236661992067
+          },
+          {
+            "feature": 604,
+            "coefficient": -0.06653830784841008,
+            "q": 2.2830360177777003,
+            "contribution": -0.15190935337990086
+          },
+          {
+            "feature": 523,
+            "coefficient": -0.05808869814927002,
+            "q": 2.548654667995442,
+            "contribution": -0.14804803169591524
+          }
+        ]
+      },
+      {
+        "probe": 4,
+        "logit": -4.919159575530114,
+        "largest_arithmetic_terms": [
+          {
+            "feature": 1028,
+            "coefficient": 0.05784885492965132,
+            "q": -3.30922670608526,
+            "contribution": -0.1914349756496541
+          },
+          {
+            "feature": 792,
+            "coefficient": -0.04885422980418561,
+            "q": 3.786623142240799,
+            "contribution": -0.18499255717287943
+          },
+          {
+            "feature": 481,
+            "coefficient": 0.06830939197687033,
+            "q": -2.646514860872577,
+            "contribution": -0.18078182100395732
+          }
+        ]
+      },
+      {
+        "probe": 5,
+        "logit": -4.657738251382999,
+        "largest_arithmetic_terms": [
+          {
+            "feature": 1243,
+            "coefficient": -0.05746990668514832,
+            "q": 3.550683791353502,
+            "contribution": -0.2040574661575544
+          },
+          {
+            "feature": 481,
+            "coefficient": 0.08224267412069002,
+            "q": -2.3734730669149804,
+            "contribution": -0.1952007719765234
+          },
+          {
+            "feature": 1028,
+            "coefficient": 0.05821266213516794,
+            "q": -2.9368004485877366,
+            "contribution": -0.17095897227204754
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "row_id": "757ab42296a372c200d6a617f91cd99691d743b6bbd40fd70b50caf1e4e5f962",
+    "kind": "TN",
+    "probes": [
+      {
+        "probe": 0,
+        "logit": 1.1118734074522767,
+        "largest_arithmetic_terms": [
+          {
+            "feature": 1246,
+            "coefficient": 0.053362060333546686,
+            "q": 3.143015538873857,
+            "contribution": 0.1677177848146615
+          },
+          {
+            "feature": 2001,
+            "coefficient": 0.08114132000929111,
+            "q": 1.9050118744913405,
+            "contribution": 0.15457517812960136
+          },
+          {
+            "feature": 1062,
+            "coefficient": -0.07304830946304751,
+            "q": 1.716437792451343,
+            "contribution": -0.1253828790370558
+          }
+        ]
+      },
+      {
+        "probe": 1,
+        "logit": 3.4487836920684596,
+        "largest_arithmetic_terms": [
+          {
+            "feature": 977,
+            "coefficient": -0.0705443181774374,
+            "q": -2.344042248363598,
+            "contribution": 0.1653588621899174
+          },
+          {
+            "feature": 452,
+            "coefficient": 0.07371382522336041,
+            "q": 2.165528280904596,
+            "contribution": 0.15962937321484552
+          },
+          {
+            "feature": 1218,
+            "coefficient": -0.05329631850773804,
+            "q": 2.304723441975522,
+            "contribution": -0.12283327463577774
+          }
+        ]
+      },
+      {
+        "probe": 2,
+        "logit": 0.8527175109360796,
+        "largest_arithmetic_terms": [
+          {
+            "feature": 1652,
+            "coefficient": -0.08401862061797923,
+            "q": 2.029635982481454,
+            "contribution": -0.1705272156047088
+          },
+          {
+            "feature": 2025,
+            "coefficient": -0.04664927776296317,
+            "q": 3.1699477792312365,
+            "contribution": -0.1478757744474462
+          },
+          {
+            "feature": 1528,
+            "coefficient": -0.04524734069463624,
+            "q": 3.228809303686507,
+            "contribution": -0.1460950346019146
+          }
+        ]
+      },
+      {
+        "probe": 3,
+        "logit": 2.9254378039102282,
+        "largest_arithmetic_terms": [
+          {
+            "feature": 1506,
+            "coefficient": 0.06704067867219636,
+            "q": 2.040059710295197,
+            "contribution": 0.1367669875099943
+          },
+          {
+            "feature": 104,
+            "coefficient": -0.07606827777037418,
+            "q": 1.755082697422132,
+            "contribution": -0.13350611813748434
+          },
+          {
+            "feature": 1761,
+            "coefficient": 0.07306737264789191,
+            "q": 1.7574675294223878,
+            "contribution": 0.12841353488887555
+          }
+        ]
+      },
+      {
+        "probe": 4,
+        "logit": 1.0152841051362322,
+        "largest_arithmetic_terms": [
+          {
+            "feature": 1576,
+            "coefficient": 0.07883115916832878,
+            "q": -2.1160377119184344,
+            "contribution": -0.16680970567442835
+          },
+          {
+            "feature": 2029,
+            "coefficient": -0.07907996671789662,
+            "q": -2.07738466428682,
+            "contribution": 0.16427951011207056
+          },
+          {
+            "feature": 392,
+            "coefficient": -0.0774933550146494,
+            "q": 1.8934948317005764,
+            "contribution": -0.1467332672113766
+          }
+        ]
+      },
+      {
+        "probe": 5,
+        "logit": 0.6512130985712488,
+        "largest_arithmetic_terms": [
+          {
+            "feature": 2029,
+            "coefficient": -0.0734390135147405,
+            "q": -2.103367837081436,
+            "contribution": 0.15446925901389408
+          },
+          {
+            "feature": 269,
+            "coefficient": -0.08702815823053885,
+            "q": 1.7379789063187847,
+            "contribution": -0.15125310326045005
+          },
+          {
+            "feature": 1946,
+            "coefficient": -0.05049604377094314,
+            "q": 2.5675277316019858,
+            "contribution": -0.12964999271808422
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "row_id": "96f2c489547048923c4ce9507f96819fd30ed29509722394e5a3694d315b63a1",
+    "kind": "TN",
+    "probes": [
+      {
+        "probe": 0,
+        "logit": 0.14854997204665693,
+        "largest_arithmetic_terms": [
+          {
+            "feature": 1831,
+            "coefficient": -0.0963077794303043,
+            "q": -2.0016639071256543,
+            "contribution": 0.19277580606105862
+          },
+          {
+            "feature": 477,
+            "coefficient": -0.05982586825676922,
+            "q": -2.021165170061858,
+            "contribution": 0.12091796118929127
+          },
+          {
+            "feature": 1567,
+            "coefficient": -0.06112598536654322,
+            "q": 1.8534363983064335,
+            "contribution": -0.11329312616069763
+          }
+        ]
+      },
+      {
+        "probe": 1,
+        "logit": 0.04529992584837886,
+        "largest_arithmetic_terms": [
+          {
+            "feature": 859,
+            "coefficient": -0.04540416475860083,
+            "q": 3.355732670044387,
+            "contribution": -0.15236423903651483
+          },
+          {
+            "feature": 267,
+            "coefficient": -0.07936443910551708,
+            "q": 1.792400922373755,
+            "contribution": -0.14225289385640452
+          },
+          {
+            "feature": 1907,
+            "coefficient": -0.04419558454264563,
+            "q": 3.121481965235574,
+            "contribution": -0.13795572009291243
+          }
+        ]
+      },
+      {
+        "probe": 2,
+        "logit": -1.1575873681025248,
+        "largest_arithmetic_terms": [
+          {
+            "feature": 751,
+            "coefficient": -0.07377945713087203,
+            "q": 3.1472379845172065,
+            "contribution": -0.23220150995933933
+          },
+          {
+            "feature": 980,
+            "coefficient": 0.06321480670772332,
+            "q": -2.876052878100923,
+            "contribution": -0.1818091267703412
+          },
+          {
+            "feature": 992,
+            "coefficient": -0.09365621333459118,
+            "q": 1.7895219022249251,
+            "contribution": -0.167599845041701
+          }
+        ]
+      },
+      {
+        "probe": 3,
+        "logit": 1.4972024688995047,
+        "largest_arithmetic_terms": [
+          {
+            "feature": 799,
+            "coefficient": -0.0686353016627153,
+            "q": 2.7895369785919617,
+            "contribution": -0.19146071202495868
+          },
+          {
+            "feature": 385,
+            "coefficient": -0.02980073769614797,
+            "q": -3.700370865514937,
+            "contribution": 0.11027378154167868
+          },
+          {
+            "feature": 969,
+            "coefficient": 0.04589177141314356,
+            "q": 2.329733792903734,
+            "contribution": 0.10691561067741409
+          }
+        ]
+      },
+      {
+        "probe": 4,
+        "logit": 1.6038663139030822,
+        "largest_arithmetic_terms": [
+          {
+            "feature": 982,
+            "coefficient": -0.08631370830568759,
+            "q": -1.7621152205541943,
+            "contribution": 0.1520946991479271
+          },
+          {
+            "feature": 1584,
+            "coefficient": 0.05980774592336488,
+            "q": -2.4783957222923365,
+            "contribution": -0.14822726165641445
+          },
+          {
+            "feature": 28,
+            "coefficient": -0.06626225896307016,
+            "q": 1.8808948201514464,
+            "contribution": -0.12463233965517241
+          }
+        ]
+      },
+      {
+        "probe": 5,
+        "logit": 1.381903245587824,
+        "largest_arithmetic_terms": [
+          {
+            "feature": 1880,
+            "coefficient": -0.06762482393487079,
+            "q": 1.8656120222768418,
+            "contribution": -0.12616168453724966
+          },
+          {
+            "feature": 1893,
+            "coefficient": 0.07537089344197175,
+            "q": 1.6617372397878805,
+            "contribution": 0.1252466204286086
+          },
+          {
+            "feature": 751,
+            "coefficient": -0.0519467825459256,
+            "q": 2.295286854147254,
+            "contribution": -0.11923276709290906
+          }
+        ]
+      }
+    ]
+  }
+]
