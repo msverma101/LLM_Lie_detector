@@ -1,0 +1,14 @@
+{
+  "rows": 3400,
+  "minutes": 13.054709254983331,
+  "sha256": {
+    "cases_inspect.jsonl": "372ba657ecb36564da9995914fa8164e31c0c8ac68fdab08f52c99c54fed9722",
+    "meta.csv": "9a1c01f1533bfddbd7f56c5803936a068291e27aead7ab55a0bc6124c118dd70",
+    "capture_manifest.json": "5b5ca988bb49b34f045479aef6f79df9a8df6d1bdb57242ff7746e30c9c9f8e0",
+    "cases_calib.jsonl": "f4dc59516eda3a6c9063c5759196bf7f34285cc2244d15d1998284a835f0aed8",
+    "cases_test.jsonl": "2dec8d8287a67b47118455c6747dca43aeeeac1779602b3ef9478a08b68a21d0",
+    "cases_fit.jsonl": "0d0a7b9905c8fe068c2c8b39ed28d89cfa86d9c702cec18890b9e4d659e95765",
+    "acts_last.npy": "2396e3bae62ba61fa6a27f1641f3af6e0f997fbb4ee7d2a9f83fb73b1026734d",
+    "cases_selection.jsonl": "1527763ac3227da87cbc9dacf35b9ca22b525d297af10d6d3fc08c17a5a3e4f9"
+  }
+}

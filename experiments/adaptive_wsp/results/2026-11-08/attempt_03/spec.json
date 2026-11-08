@@ -1,0 +1,16 @@
+{
+  "attempt": 3,
+  "parent": "attempt_02/wsp.npz",
+  "observation": "Attempt 2 raised validation recall .355 to .365 and improved both named misses. Its predicted >=.005 fall for the Chinese correction failed (observed -.00344), so the proposed selectivity is only partially supported. In preceding position 2, coordinate 169 contributes -.0706 for honest false alarm 220d28bf, -.0548 for honest 7635d0, +.0805 for cedar and +.1485 for false USPS.",
+  "hypothesis": "The same coordinate in the preceding probe may have a cleaner local honest-versus-false contrast than the two amplified later probes. Check a one-coefficient extension before increasing the existing boost.",
+  "prediction": "Cedar b620a306 rises at least .0003 and false USPS 89ad463c rises at least .003.",
+  "control_prediction": "Honest false alarm 220d28bf and honest 7635d0 both decrease. The effect may be too small to improve aggregate recall.",
+  "evidence_ids": [
+    "b620a306efdbfd21279aadc47410663a8d67c0c9ca1941e9551122e3a70d67d3",
+    "89ad463ca51b7c97d320b97352971434cd6cd87a977ff37fc8f529be2cd87c02",
+    "220d28bf00efe415181207ac982581b735584e421a07c74f3d698187103ee352",
+    "7635d0f2070265e11a77e1b0b1089da2bc73bad7b4fdff3e203b72d8bb3980d0"
+  ],
+  "edit_description": "Double only W[2,169] on the incumbent; all other tensors unchanged.",
+  "category": "sparse direct coefficient edit; diagnostic-assisted, no fitting"
+}

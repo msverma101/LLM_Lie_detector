@@ -1,0 +1,46 @@
+{
+  "created_unix": 1794138937.2734027,
+  "client_date": "2026-11-08",
+  "completed": 10,
+  "incumbent": "attempt_08/wsp.npz",
+  "incumbent_validation": {
+    "tp": 75,
+    "fn": 125,
+    "fp": 4,
+    "tn": 196,
+    "recall": 0.375,
+    "fpr": 0.02,
+    "macro_recall": 0.375,
+    "macro_auroc": 0.8108,
+    "per_family_auroc": {
+      "b1-bare": 0.92,
+      "b1-followup": 0.95,
+      "caving": 0.6335999999999999,
+      "negotiation": 0.7395999999999999
+    },
+    "per_family_recall": {
+      "b1-bare": 0.5,
+      "b1-followup": 0.74,
+      "caving": 0.14,
+      "negotiation": 0.12
+    }
+  },
+  "capture_done_sha256": "690fd0e416c7de82e0064fdad2f8d11e652b243e48d23e6e37b7ea91c4d32cd3",
+  "theta0_sha256": "3d9dfe5dc4142bf876f800fa710a5e2c0f65afcb9977d34255b2bd328e439a89",
+  "sklearn_replay_error": 3.3306690738754696e-16,
+  "frozen_contract": {
+    "mu_sha256": "ad4b541de5b49c0ae3b09a6677c94cded58ad9872711f8f365fbfadb481adc73",
+    "sd_sha256": "12b313778ba27dab699a34af2c60a9eaa64e587939a847d3597ac8f27da36682",
+    "shape": [
+      6,
+      2048
+    ],
+    "pool": "last_answer_token",
+    "equal_layer_weights": true
+  },
+  "prediction_counts": {
+    "score_calls": 3,
+    "score_rows": 1600
+  },
+  "precision_note": "selection_precision_correction.json"
+}

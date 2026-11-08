@@ -1,0 +1,37 @@
+{
+  "capture_hashes_ok": {
+    "cases_inspect.jsonl": true,
+    "meta.csv": true,
+    "capture_manifest.json": true,
+    "cases_calib.jsonl": true,
+    "cases_test.jsonl": true,
+    "cases_fit.jsonl": true,
+    "acts_last.npy": true,
+    "cases_selection.jsonl": true
+  },
+  "old_row_overlap": 0,
+  "cross_partition_groups": 0,
+  "counts": {
+    "calib": {
+      "rows": 600,
+      "groups": 568
+    },
+    "fit": {
+      "rows": 800,
+      "groups": 775
+    },
+    "inspect": {
+      "rows": 400,
+      "groups": 300
+    },
+    "selection": {
+      "rows": 400,
+      "groups": 391
+    },
+    "test": {
+      "rows": 1200,
+      "groups": 1087
+    }
+  },
+  "test_opened": false
+}

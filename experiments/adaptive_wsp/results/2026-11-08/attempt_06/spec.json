@@ -1,0 +1,18 @@
+{
+  "attempt": 6,
+  "parent": "attempt_05/wsp.npz",
+  "observation": "Attempt 5 met named predictions and raised validation recall .365 to .375, but lost one diagnostic detection. Coordinate 1581 contributes -.240/-.198 to false wine retraction while contributing +.089/+.157 to honest short control and +.060/+.119 to the Chinese honest correction. Soy honest alarm has +.080/+.022. This is a local reversal of the desired ordering.",
+  "hypothesis": "Two late coordinate-1581 coefficients encode a contribution counterproductive for this retraction-versus-honest-control contrast. Ablating them may recover the contradiction while reducing those honest scores. No unique semantic feature claim is made.",
+  "prediction": "Wine contradiction 2f951470 increases at least .015; cedar b620a306 changes less than .005.",
+  "control_prediction": "Honest 7635d0 decreases at least .005; soy e40a90d1 and Chinese correction 9903fd5c do not increase. Monitor Japanese falsehood for spillover.",
+  "evidence_ids": [
+    "2f951470b0cfeae7f87389fb5a7de958b66090ffbcd7e5b17e67bd59a2ffda7f",
+    "b620a306efdbfd21279aadc47410663a8d67c0c9ca1941e9551122e3a70d67d3",
+    "7635d0f2070265e11a77e1b0b1089da2bc73bad7b4fdff3e203b72d8bb3980d0",
+    "e40a90d1b53adab486b1e8e32b3bf00e4f913b7d48c02d8f253da0620c11910a",
+    "9903fd5cab6e1c6472708d1c1ab5b31a7dece6658500b0861d93121c8284989e",
+    "5972e44b0f749e863468439b9408c7551ae237caf1d7169ab67a0208fc37f586"
+  ],
+  "edit_description": "Zero only W[4,1581] and W[5,1581] of the incumbent.",
+  "category": "sparse direct coefficient ablation; diagnostic-assisted, no fitting"
+}

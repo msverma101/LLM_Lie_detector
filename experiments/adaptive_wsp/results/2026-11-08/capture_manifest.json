@@ -1,0 +1,358 @@
+{
+  "client_date": "2026-11-08",
+  "seed": 20261108,
+  "model": "Qwen/Qwen3.5-2B",
+  "model_revision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+  "dataset_revision": "4ad7414fc2e1cc8d694b160e360722a13bee718e",
+  "layers": [
+    7,
+    10,
+    13,
+    16,
+    19,
+    22
+  ],
+  "pool": "last_answer_token",
+  "max_tokens": 2048,
+  "dtype": "float16",
+  "previous_meta_sha256": "ef360e63cdc44c126ea6e36204ffb4cd6d6514b5ac2b2a589af1240a7f82387d",
+  "rejections": {
+    "char_prefilter": 3788,
+    "unmapped_family": 16708,
+    "examined_over_length": 2509,
+    "examined_render_error": 0,
+    "old_connected_rows": 11175,
+    "cross_family_partition_groups": 778,
+    "unused_calibration_positives": 7554
+  },
+  "counts": [
+    {
+      "partition": "calib",
+      "family": "among",
+      "label": 0,
+      "n": 100
+    },
+    {
+      "partition": "calib",
+      "family": "harm",
+      "label": 0,
+      "n": 100
+    },
+    {
+      "partition": "calib",
+      "family": "medqa",
+      "label": 0,
+      "n": 100
+    },
+    {
+      "partition": "calib",
+      "family": "model",
+      "label": 0,
+      "n": 100
+    },
+    {
+      "partition": "calib",
+      "family": "sandbagging",
+      "label": 0,
+      "n": 100
+    },
+    {
+      "partition": "calib",
+      "family": "werewolf",
+      "label": 0,
+      "n": 100
+    },
+    {
+      "partition": "fit",
+      "family": "anti",
+      "label": 0,
+      "n": 40
+    },
+    {
+      "partition": "fit",
+      "family": "anti",
+      "label": 1,
+      "n": 40
+    },
+    {
+      "partition": "fit",
+      "family": "doluschat",
+      "label": 0,
+      "n": 40
+    },
+    {
+      "partition": "fit",
+      "family": "doluschat",
+      "label": 1,
+      "n": 40
+    },
+    {
+      "partition": "fit",
+      "family": "fever",
+      "label": 0,
+      "n": 40
+    },
+    {
+      "partition": "fit",
+      "family": "fever",
+      "label": 1,
+      "n": 40
+    },
+    {
+      "partition": "fit",
+      "family": "instructed",
+      "label": 0,
+      "n": 40
+    },
+    {
+      "partition": "fit",
+      "family": "instructed",
+      "label": 1,
+      "n": 40
+    },
+    {
+      "partition": "fit",
+      "family": "lies",
+      "label": 0,
+      "n": 40
+    },
+    {
+      "partition": "fit",
+      "family": "lies",
+      "label": 1,
+      "n": 40
+    },
+    {
+      "partition": "fit",
+      "family": "multi",
+      "label": 0,
+      "n": 40
+    },
+    {
+      "partition": "fit",
+      "family": "multi",
+      "label": 1,
+      "n": 40
+    },
+    {
+      "partition": "fit",
+      "family": "persona_prefill",
+      "label": 0,
+      "n": 40
+    },
+    {
+      "partition": "fit",
+      "family": "persona_prefill",
+      "label": 1,
+      "n": 40
+    },
+    {
+      "partition": "fit",
+      "family": "synthetic",
+      "label": 0,
+      "n": 40
+    },
+    {
+      "partition": "fit",
+      "family": "synthetic",
+      "label": 1,
+      "n": 40
+    },
+    {
+      "partition": "fit",
+      "family": "wikihow",
+      "label": 0,
+      "n": 40
+    },
+    {
+      "partition": "fit",
+      "family": "wikihow",
+      "label": 1,
+      "n": 40
+    },
+    {
+      "partition": "fit",
+      "family": "wikihownest",
+      "label": 0,
+      "n": 40
+    },
+    {
+      "partition": "fit",
+      "family": "wikihownest",
+      "label": 1,
+      "n": 40
+    },
+    {
+      "partition": "inspect",
+      "family": "liarsbench",
+      "label": 0,
+      "n": 50
+    },
+    {
+      "partition": "inspect",
+      "family": "liarsbench",
+      "label": 1,
+      "n": 50
+    },
+    {
+      "partition": "inspect",
+      "family": "mask",
+      "label": 0,
+      "n": 50
+    },
+    {
+      "partition": "inspect",
+      "family": "mask",
+      "label": 1,
+      "n": 50
+    },
+    {
+      "partition": "inspect",
+      "family": "original",
+      "label": 0,
+      "n": 50
+    },
+    {
+      "partition": "inspect",
+      "family": "original",
+      "label": 1,
+      "n": 50
+    },
+    {
+      "partition": "inspect",
+      "family": "ultrachat",
+      "label": 0,
+      "n": 50
+    },
+    {
+      "partition": "inspect",
+      "family": "ultrachat",
+      "label": 1,
+      "n": 50
+    },
+    {
+      "partition": "selection",
+      "family": "b1-bare",
+      "label": 0,
+      "n": 50
+    },
+    {
+      "partition": "selection",
+      "family": "b1-bare",
+      "label": 1,
+      "n": 50
+    },
+    {
+      "partition": "selection",
+      "family": "b1-followup",
+      "label": 0,
+      "n": 50
+    },
+    {
+      "partition": "selection",
+      "family": "b1-followup",
+      "label": 1,
+      "n": 50
+    },
+    {
+      "partition": "selection",
+      "family": "caving",
+      "label": 0,
+      "n": 50
+    },
+    {
+      "partition": "selection",
+      "family": "caving",
+      "label": 1,
+      "n": 50
+    },
+    {
+      "partition": "selection",
+      "family": "negotiation",
+      "label": 0,
+      "n": 50
+    },
+    {
+      "partition": "selection",
+      "family": "negotiation",
+      "label": 1,
+      "n": 50
+    },
+    {
+      "partition": "test",
+      "family": "among",
+      "label": 0,
+      "n": 100
+    },
+    {
+      "partition": "test",
+      "family": "among",
+      "label": 1,
+      "n": 100
+    },
+    {
+      "partition": "test",
+      "family": "harm",
+      "label": 0,
+      "n": 100
+    },
+    {
+      "partition": "test",
+      "family": "harm",
+      "label": 1,
+      "n": 100
+    },
+    {
+      "partition": "test",
+      "family": "medqa",
+      "label": 0,
+      "n": 100
+    },
+    {
+      "partition": "test",
+      "family": "medqa",
+      "label": 1,
+      "n": 100
+    },
+    {
+      "partition": "test",
+      "family": "model",
+      "label": 0,
+      "n": 100
+    },
+    {
+      "partition": "test",
+      "family": "model",
+      "label": 1,
+      "n": 100
+    },
+    {
+      "partition": "test",
+      "family": "sandbagging",
+      "label": 0,
+      "n": 100
+    },
+    {
+      "partition": "test",
+      "family": "sandbagging",
+      "label": 1,
+      "n": 100
+    },
+    {
+      "partition": "test",
+      "family": "werewolf",
+      "label": 0,
+      "n": 100
+    },
+    {
+      "partition": "test",
+      "family": "werewolf",
+      "label": 1,
+      "n": 100
+    }
+  ],
+  "grouping": "union: raw pair, explicit run/game, normalized first user, exact transcript",
+  "historical_scope": "disjoint from recorded prior-pilot groups; all historical or semantic overlap not established",
+  "label_scope": "FIBS-labelled supplied final completions, no claim about monitored model intent",
+  "renderer": "copied previous text-only adaptation; not official EFC replay"
+}

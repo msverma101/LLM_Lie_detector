@@ -1,0 +1,11 @@
+{
+  "client_date": "2026-11-08",
+  "archive_sha256": "83506fce38d9789aad42eda6d8504aa7a1067337f43e198f1b4e4d4977c56605",
+  "archive_bytes": 99752164,
+  "capture_files_verified": 8,
+  "activation_and_score_replay_arms": 27,
+  "replay_stdout": "ACTIVATION_AND_SCORE_REPLAY_OK 27 arms",
+  "software_tests_passed": 2,
+  "independent_gpu_capture": "not performed",
+  "scope": "independent local numerical replay of the same captured data; not independent study replication"
+}

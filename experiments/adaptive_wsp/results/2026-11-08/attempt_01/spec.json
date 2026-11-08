@@ -1,0 +1,16 @@
+{
+  "attempt": 1,
+  "parent": "theta0.npz",
+  "observation": "The false M1 retraction 20fc7e has earliest logit -2.112 despite later logits 3.84/3.38/3.22/2.80; Chinese honest explanation 96c4bb has early logit 4.118. Correct short honest control 7635d0 has earliest logit near zero.",
+  "hypothesis": "The earliest probe can saturate on answer-form signals that conflict with contextual contradiction evidence later in the residual stream. Attenuating its confidence may reduce this veto and reduce some early-driven false alarms. This is a provisional behavioral explanation, not a discovered semantic circuit.",
+  "prediction": "20fc7e score rises by at least 0.02; 96c4bb falls by at least 0.01. This must be measured before any aggregate claim.",
+  "control_prediction": "7635d0 changes by less than 0.01. Cedar-oil miss b620a3 may worsen because its early logit is positive; record that side effect.",
+  "evidence_ids": [
+    "20fc7ea91c6e8db7f43d22b8946d7592006a596a1d6ab1cde961fdde176711a0",
+    "96c4bb7ef281000e67d48fc381a8174f260e91239767ce86883cbf339de87bff",
+    "7635d0f2070265e11a77e1b0b1089da2bc73bad7b4fdff3e203b72d8bb3980d0",
+    "b620a306efdbfd21279aadc47410663a8d67c0c9ca1941e9551122e3a70d67d3"
+  ],
+  "edit_description": "Multiply W and b of layer position 0 (decoder block 7) by 0.5. All other coefficients and every representation component stay fixed.",
+  "category": "direct_coefficient_edit; diagnostic-feedback-guided, no gradient or fitted direction"
+}

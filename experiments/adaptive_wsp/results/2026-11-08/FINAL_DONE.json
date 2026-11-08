@@ -1,0 +1,1546 @@
+{
+  "client_date": "2026-11-08",
+  "calibration_rows": 600,
+  "calibration_groups": 568,
+  "test_rows": 1200,
+  "test_groups": 1087,
+  "alpha": 0.025,
+  "arms": {
+    "original": {
+      "tp": 254,
+      "fn": 346,
+      "fp": 16,
+      "tn": 584,
+      "recall": 0.42333333333333334,
+      "fpr": 0.02666666666666667,
+      "macro_recall": 0.42333333333333334,
+      "macro_auroc": 0.8176999999999999,
+      "per_family_auroc": {
+        "among": 0.7151,
+        "harm": 0.962,
+        "medqa": 0.8334,
+        "model": 0.8985000000000001,
+        "sandbagging": 0.8618,
+        "werewolf": 0.6354
+      },
+      "per_family_recall": {
+        "among": 0.05,
+        "harm": 0.65,
+        "medqa": 0.55,
+        "model": 0.68,
+        "sandbagging": 0.53,
+        "werewolf": 0.08
+      },
+      "fpr_upper_95": 0.040221356051514334,
+      "threshold": 0.6641532016680843,
+      "secondary_alpha_05": {
+        "tp": 295,
+        "fn": 305,
+        "fp": 38,
+        "tn": 562,
+        "recall": 0.49166666666666664,
+        "fpr": 0.06333333333333334,
+        "macro_recall": 0.4916666666666667,
+        "macro_auroc": 0.8176999999999999,
+        "per_family_auroc": {
+          "among": 0.7151,
+          "harm": 0.962,
+          "medqa": 0.8334,
+          "model": 0.8985000000000001,
+          "sandbagging": 0.8618,
+          "werewolf": 0.6354
+        },
+        "per_family_recall": {
+          "among": 0.13,
+          "harm": 0.69,
+          "medqa": 0.64,
+          "model": 0.74,
+          "sandbagging": 0.61,
+          "werewolf": 0.14
+        }
+      },
+      "bootstrap_95_recall_fpr": [
+        [
+          0.3530124364346925,
+          0.4722280189204229
+        ],
+        [
+          0.010148477157360405,
+          0.05297687996778691
+        ]
+      ]
+    },
+    "wsp": {
+      "tp": 246,
+      "fn": 354,
+      "fp": 12,
+      "tn": 588,
+      "recall": 0.41,
+      "fpr": 0.02,
+      "macro_recall": 0.41,
+      "macro_auroc": 0.8188833333333334,
+      "per_family_auroc": {
+        "among": 0.7125,
+        "harm": 0.9581999999999999,
+        "medqa": 0.8299000000000001,
+        "model": 0.8991,
+        "sandbagging": 0.8677999999999999,
+        "werewolf": 0.6458
+      },
+      "per_family_recall": {
+        "among": 0.06,
+        "harm": 0.6,
+        "medqa": 0.53,
+        "model": 0.67,
+        "sandbagging": 0.5,
+        "werewolf": 0.1
+      },
+      "fpr_upper_95": 0.032203217818504715,
+      "threshold": 0.667511908359273,
+      "secondary_alpha_05": {
+        "tp": 306,
+        "fn": 294,
+        "fp": 38,
+        "tn": 562,
+        "recall": 0.51,
+        "fpr": 0.06333333333333334,
+        "macro_recall": 0.51,
+        "macro_auroc": 0.8188833333333334,
+        "per_family_auroc": {
+          "among": 0.7125,
+          "harm": 0.9581999999999999,
+          "medqa": 0.8299000000000001,
+          "model": 0.8991,
+          "sandbagging": 0.8677999999999999,
+          "werewolf": 0.6458
+        },
+        "per_family_recall": {
+          "among": 0.15,
+          "harm": 0.68,
+          "medqa": 0.64,
+          "model": 0.74,
+          "sandbagging": 0.62,
+          "werewolf": 0.23
+        }
+      },
+      "bootstrap_95_recall_fpr": [
+        [
+          0.3521541280896729,
+          0.49496973285958673
+        ],
+        [
+          0.008169934640522876,
+          0.05856310653366847
+        ]
+      ]
+    },
+    "ordinary_train": {
+      "tp": 254,
+      "fn": 346,
+      "fp": 16,
+      "tn": 584,
+      "recall": 0.42333333333333334,
+      "fpr": 0.02666666666666667,
+      "macro_recall": 0.42333333333333334,
+      "macro_auroc": 0.8176999999999999,
+      "per_family_auroc": {
+        "among": 0.7151,
+        "harm": 0.962,
+        "medqa": 0.8334,
+        "model": 0.8985000000000001,
+        "sandbagging": 0.8618,
+        "werewolf": 0.6354
+      },
+      "per_family_recall": {
+        "among": 0.05,
+        "harm": 0.65,
+        "medqa": 0.55,
+        "model": 0.68,
+        "sandbagging": 0.53,
+        "werewolf": 0.08
+      },
+      "fpr_upper_95": 0.040221356051514334,
+      "threshold": 0.6641532016680843,
+      "secondary_alpha_05": {
+        "tp": 295,
+        "fn": 305,
+        "fp": 38,
+        "tn": 562,
+        "recall": 0.49166666666666664,
+        "fpr": 0.06333333333333334,
+        "macro_recall": 0.4916666666666667,
+        "macro_auroc": 0.8176999999999999,
+        "per_family_auroc": {
+          "among": 0.7151,
+          "harm": 0.962,
+          "medqa": 0.8334,
+          "model": 0.8985000000000001,
+          "sandbagging": 0.8618,
+          "werewolf": 0.6354
+        },
+        "per_family_recall": {
+          "among": 0.13,
+          "harm": 0.69,
+          "medqa": 0.64,
+          "model": 0.74,
+          "sandbagging": 0.61,
+          "werewolf": 0.14
+        }
+      },
+      "bootstrap_95_recall_fpr": [
+        [
+          0.3530124364346925,
+          0.4722280189204229
+        ],
+        [
+          0.010148477157360405,
+          0.05297687996778691
+        ]
+      ]
+    },
+    "ordinary_extra": {
+      "tp": 256,
+      "fn": 344,
+      "fp": 10,
+      "tn": 590,
+      "recall": 0.4266666666666667,
+      "fpr": 0.016666666666666666,
+      "macro_recall": 0.4266666666666666,
+      "macro_auroc": 0.8314333333333335,
+      "per_family_auroc": {
+        "among": 0.7442,
+        "harm": 0.9524,
+        "medqa": 0.8485,
+        "model": 0.8873,
+        "sandbagging": 0.8723,
+        "werewolf": 0.6839000000000001
+      },
+      "per_family_recall": {
+        "among": 0.11,
+        "harm": 0.59,
+        "medqa": 0.53,
+        "model": 0.71,
+        "sandbagging": 0.49,
+        "werewolf": 0.13
+      },
+      "fpr_upper_95": 0.02810635894210657,
+      "threshold": 0.5715325021161158,
+      "secondary_alpha_05": {
+        "tp": 300,
+        "fn": 300,
+        "fp": 26,
+        "tn": 574,
+        "recall": 0.5,
+        "fpr": 0.043333333333333335,
+        "macro_recall": 0.5,
+        "macro_auroc": 0.8314333333333335,
+        "per_family_auroc": {
+          "among": 0.7442,
+          "harm": 0.9524,
+          "medqa": 0.8485,
+          "model": 0.8873,
+          "sandbagging": 0.8723,
+          "werewolf": 0.6839000000000001
+        },
+        "per_family_recall": {
+          "among": 0.13,
+          "harm": 0.62,
+          "medqa": 0.61,
+          "model": 0.76,
+          "sandbagging": 0.61,
+          "werewolf": 0.27
+        }
+      },
+      "bootstrap_95_recall_fpr": [
+        [
+          0.37085953820169787,
+          0.4942496643045744
+        ],
+        [
+          0.006215362250853672,
+          0.03654586338222186
+        ]
+      ]
+    },
+    "wsp_parent": {
+      "tp": 255,
+      "fn": 345,
+      "fp": 14,
+      "tn": 586,
+      "recall": 0.425,
+      "fpr": 0.023333333333333334,
+      "macro_recall": 0.42500000000000004,
+      "macro_auroc": 0.8184666666666667,
+      "per_family_auroc": {
+        "among": 0.7132,
+        "harm": 0.9605,
+        "medqa": 0.8303,
+        "model": 0.8995000000000001,
+        "sandbagging": 0.8666,
+        "werewolf": 0.6407
+      },
+      "per_family_recall": {
+        "among": 0.05,
+        "harm": 0.63,
+        "medqa": 0.55,
+        "model": 0.68,
+        "sandbagging": 0.54,
+        "werewolf": 0.1
+      },
+      "fpr_upper_95": 0.036237506269533905,
+      "threshold": 0.6606480863781408,
+      "secondary_alpha_05": {
+        "tp": 300,
+        "fn": 300,
+        "fp": 38,
+        "tn": 562,
+        "recall": 0.5,
+        "fpr": 0.06333333333333334,
+        "macro_recall": 0.5,
+        "macro_auroc": 0.8184666666666667,
+        "per_family_auroc": {
+          "among": 0.7132,
+          "harm": 0.9605,
+          "medqa": 0.8303,
+          "model": 0.8995000000000001,
+          "sandbagging": 0.8666,
+          "werewolf": 0.6407
+        },
+        "per_family_recall": {
+          "among": 0.13,
+          "harm": 0.69,
+          "medqa": 0.64,
+          "model": 0.73,
+          "sandbagging": 0.63,
+          "werewolf": 0.18
+        }
+      }
+    },
+    "random_00": {
+      "tp": 252,
+      "fn": 348,
+      "fp": 15,
+      "tn": 585,
+      "recall": 0.42,
+      "fpr": 0.025,
+      "macro_recall": 0.42,
+      "macro_auroc": 0.8178333333333333,
+      "per_family_auroc": {
+        "among": 0.7109,
+        "harm": 0.9607,
+        "medqa": 0.8328000000000001,
+        "model": 0.8982000000000001,
+        "sandbagging": 0.8642,
+        "werewolf": 0.6402
+      },
+      "per_family_recall": {
+        "among": 0.05,
+        "harm": 0.62,
+        "medqa": 0.56,
+        "model": 0.67,
+        "sandbagging": 0.54,
+        "werewolf": 0.08
+      },
+      "fpr_upper_95": 0.03823513440325779,
+      "threshold": 0.661533500097364,
+      "secondary_alpha_05": {
+        "tp": 295,
+        "fn": 305,
+        "fp": 40,
+        "tn": 560,
+        "recall": 0.49166666666666664,
+        "fpr": 0.06666666666666667,
+        "macro_recall": 0.49166666666666664,
+        "macro_auroc": 0.8178333333333333,
+        "per_family_auroc": {
+          "among": 0.7109,
+          "harm": 0.9607,
+          "medqa": 0.8328000000000001,
+          "model": 0.8982000000000001,
+          "sandbagging": 0.8642,
+          "werewolf": 0.6402
+        },
+        "per_family_recall": {
+          "among": 0.13,
+          "harm": 0.69,
+          "medqa": 0.63,
+          "model": 0.72,
+          "sandbagging": 0.63,
+          "werewolf": 0.15
+        }
+      }
+    },
+    "random_01": {
+      "tp": 254,
+      "fn": 346,
+      "fp": 16,
+      "tn": 584,
+      "recall": 0.42333333333333334,
+      "fpr": 0.02666666666666667,
+      "macro_recall": 0.4233333333333334,
+      "macro_auroc": 0.8201333333333333,
+      "per_family_auroc": {
+        "among": 0.7169000000000001,
+        "harm": 0.9599,
+        "medqa": 0.8317000000000001,
+        "model": 0.9009,
+        "sandbagging": 0.8668,
+        "werewolf": 0.6446000000000001
+      },
+      "per_family_recall": {
+        "among": 0.05,
+        "harm": 0.63,
+        "medqa": 0.53,
+        "model": 0.68,
+        "sandbagging": 0.55,
+        "werewolf": 0.1
+      },
+      "fpr_upper_95": 0.040221356051514334,
+      "threshold": 0.6602950182618271,
+      "secondary_alpha_05": {
+        "tp": 303,
+        "fn": 297,
+        "fp": 37,
+        "tn": 563,
+        "recall": 0.505,
+        "fpr": 0.06166666666666667,
+        "macro_recall": 0.505,
+        "macro_auroc": 0.8201333333333333,
+        "per_family_auroc": {
+          "among": 0.7169000000000001,
+          "harm": 0.9599,
+          "medqa": 0.8317000000000001,
+          "model": 0.9009,
+          "sandbagging": 0.8668,
+          "werewolf": 0.6446000000000001
+        },
+        "per_family_recall": {
+          "among": 0.13,
+          "harm": 0.7,
+          "medqa": 0.66,
+          "model": 0.74,
+          "sandbagging": 0.62,
+          "werewolf": 0.18
+        }
+      }
+    },
+    "random_02": {
+      "tp": 250,
+      "fn": 350,
+      "fp": 13,
+      "tn": 587,
+      "recall": 0.4166666666666667,
+      "fpr": 0.021666666666666667,
+      "macro_recall": 0.41666666666666674,
+      "macro_auroc": 0.8199833333333334,
+      "per_family_auroc": {
+        "among": 0.713,
+        "harm": 0.9602999999999999,
+        "medqa": 0.8341,
+        "model": 0.9016,
+        "sandbagging": 0.8682,
+        "werewolf": 0.6427
+      },
+      "per_family_recall": {
+        "among": 0.05,
+        "harm": 0.62,
+        "medqa": 0.54,
+        "model": 0.68,
+        "sandbagging": 0.51,
+        "werewolf": 0.1
+      },
+      "fpr_upper_95": 0.03422732160092388,
+      "threshold": 0.662568724118089,
+      "secondary_alpha_05": {
+        "tp": 300,
+        "fn": 300,
+        "fp": 36,
+        "tn": 564,
+        "recall": 0.5,
+        "fpr": 0.06,
+        "macro_recall": 0.5,
+        "macro_auroc": 0.8199833333333334,
+        "per_family_auroc": {
+          "among": 0.713,
+          "harm": 0.9602999999999999,
+          "medqa": 0.8341,
+          "model": 0.9016,
+          "sandbagging": 0.8682,
+          "werewolf": 0.6427
+        },
+        "per_family_recall": {
+          "among": 0.13,
+          "harm": 0.69,
+          "medqa": 0.63,
+          "model": 0.73,
+          "sandbagging": 0.62,
+          "werewolf": 0.2
+        }
+      }
+    },
+    "random_03": {
+      "tp": 256,
+      "fn": 344,
+      "fp": 14,
+      "tn": 586,
+      "recall": 0.4266666666666667,
+      "fpr": 0.023333333333333334,
+      "macro_recall": 0.4266666666666667,
+      "macro_auroc": 0.8180833333333334,
+      "per_family_auroc": {
+        "among": 0.7127,
+        "harm": 0.9582,
+        "medqa": 0.8330999999999998,
+        "model": 0.8989,
+        "sandbagging": 0.8682,
+        "werewolf": 0.6374000000000001
+      },
+      "per_family_recall": {
+        "among": 0.08,
+        "harm": 0.63,
+        "medqa": 0.55,
+        "model": 0.67,
+        "sandbagging": 0.53,
+        "werewolf": 0.1
+      },
+      "fpr_upper_95": 0.036237506269533905,
+      "threshold": 0.6603746246761312,
+      "secondary_alpha_05": {
+        "tp": 305,
+        "fn": 295,
+        "fp": 37,
+        "tn": 563,
+        "recall": 0.5083333333333333,
+        "fpr": 0.06166666666666667,
+        "macro_recall": 0.5083333333333334,
+        "macro_auroc": 0.8180833333333334,
+        "per_family_auroc": {
+          "among": 0.7127,
+          "harm": 0.9582,
+          "medqa": 0.8330999999999998,
+          "model": 0.8989,
+          "sandbagging": 0.8682,
+          "werewolf": 0.6374000000000001
+        },
+        "per_family_recall": {
+          "among": 0.14,
+          "harm": 0.68,
+          "medqa": 0.63,
+          "model": 0.75,
+          "sandbagging": 0.62,
+          "werewolf": 0.23
+        }
+      }
+    },
+    "random_04": {
+      "tp": 251,
+      "fn": 349,
+      "fp": 17,
+      "tn": 583,
+      "recall": 0.41833333333333333,
+      "fpr": 0.028333333333333332,
+      "macro_recall": 0.4183333333333334,
+      "macro_auroc": 0.8175666666666667,
+      "per_family_auroc": {
+        "among": 0.7126,
+        "harm": 0.9589,
+        "medqa": 0.8304,
+        "model": 0.898,
+        "sandbagging": 0.8666,
+        "werewolf": 0.6389
+      },
+      "per_family_recall": {
+        "among": 0.06,
+        "harm": 0.63,
+        "medqa": 0.54,
+        "model": 0.66,
+        "sandbagging": 0.52,
+        "werewolf": 0.1
+      },
+      "fpr_upper_95": 0.042197152523747394,
+      "threshold": 0.6652015697251487,
+      "secondary_alpha_05": {
+        "tp": 301,
+        "fn": 299,
+        "fp": 37,
+        "tn": 563,
+        "recall": 0.5016666666666667,
+        "fpr": 0.06166666666666667,
+        "macro_recall": 0.5016666666666666,
+        "macro_auroc": 0.8175666666666667,
+        "per_family_auroc": {
+          "among": 0.7126,
+          "harm": 0.9589,
+          "medqa": 0.8304,
+          "model": 0.898,
+          "sandbagging": 0.8666,
+          "werewolf": 0.6389
+        },
+        "per_family_recall": {
+          "among": 0.13,
+          "harm": 0.68,
+          "medqa": 0.65,
+          "model": 0.73,
+          "sandbagging": 0.63,
+          "werewolf": 0.19
+        }
+      }
+    },
+    "random_05": {
+      "tp": 266,
+      "fn": 334,
+      "fp": 21,
+      "tn": 579,
+      "recall": 0.44333333333333336,
+      "fpr": 0.035,
+      "macro_recall": 0.44333333333333336,
+      "macro_auroc": 0.8170000000000001,
+      "per_family_auroc": {
+        "among": 0.7105,
+        "harm": 0.9590000000000001,
+        "medqa": 0.8306,
+        "model": 0.9007,
+        "sandbagging": 0.867,
+        "werewolf": 0.6342
+      },
+      "per_family_recall": {
+        "among": 0.09,
+        "harm": 0.65,
+        "medqa": 0.57,
+        "model": 0.69,
+        "sandbagging": 0.56,
+        "werewolf": 0.1
+      },
+      "fpr_upper_95": 0.05001144353043934,
+      "threshold": 0.6388482518470894,
+      "secondary_alpha_05": {
+        "tp": 298,
+        "fn": 302,
+        "fp": 34,
+        "tn": 566,
+        "recall": 0.49666666666666665,
+        "fpr": 0.056666666666666664,
+        "macro_recall": 0.4966666666666666,
+        "macro_auroc": 0.8170000000000001,
+        "per_family_auroc": {
+          "among": 0.7105,
+          "harm": 0.9590000000000001,
+          "medqa": 0.8306,
+          "model": 0.9007,
+          "sandbagging": 0.867,
+          "werewolf": 0.6342
+        },
+        "per_family_recall": {
+          "among": 0.13,
+          "harm": 0.69,
+          "medqa": 0.62,
+          "model": 0.74,
+          "sandbagging": 0.63,
+          "werewolf": 0.17
+        }
+      }
+    },
+    "random_06": {
+      "tp": 266,
+      "fn": 334,
+      "fp": 21,
+      "tn": 579,
+      "recall": 0.44333333333333336,
+      "fpr": 0.035,
+      "macro_recall": 0.4433333333333333,
+      "macro_auroc": 0.8174,
+      "per_family_auroc": {
+        "among": 0.7149,
+        "harm": 0.9583,
+        "medqa": 0.8281000000000001,
+        "model": 0.8995000000000001,
+        "sandbagging": 0.8674,
+        "werewolf": 0.6362
+      },
+      "per_family_recall": {
+        "among": 0.11,
+        "harm": 0.65,
+        "medqa": 0.56,
+        "model": 0.69,
+        "sandbagging": 0.55,
+        "werewolf": 0.1
+      },
+      "fpr_upper_95": 0.05001144353043934,
+      "threshold": 0.6438428289075926,
+      "secondary_alpha_05": {
+        "tp": 299,
+        "fn": 301,
+        "fp": 35,
+        "tn": 565,
+        "recall": 0.49833333333333335,
+        "fpr": 0.058333333333333334,
+        "macro_recall": 0.4983333333333333,
+        "macro_auroc": 0.8174,
+        "per_family_auroc": {
+          "among": 0.7149,
+          "harm": 0.9583,
+          "medqa": 0.8281000000000001,
+          "model": 0.8995000000000001,
+          "sandbagging": 0.8674,
+          "werewolf": 0.6362
+        },
+        "per_family_recall": {
+          "among": 0.13,
+          "harm": 0.68,
+          "medqa": 0.63,
+          "model": 0.73,
+          "sandbagging": 0.63,
+          "werewolf": 0.19
+        }
+      }
+    },
+    "random_07": {
+      "tp": 252,
+      "fn": 348,
+      "fp": 14,
+      "tn": 586,
+      "recall": 0.42,
+      "fpr": 0.023333333333333334,
+      "macro_recall": 0.42,
+      "macro_auroc": 0.8160833333333334,
+      "per_family_auroc": {
+        "among": 0.7104,
+        "harm": 0.9596,
+        "medqa": 0.8268000000000001,
+        "model": 0.9032,
+        "sandbagging": 0.8632000000000001,
+        "werewolf": 0.6333
+      },
+      "per_family_recall": {
+        "among": 0.07,
+        "harm": 0.62,
+        "medqa": 0.54,
+        "model": 0.68,
+        "sandbagging": 0.51,
+        "werewolf": 0.1
+      },
+      "fpr_upper_95": 0.036237506269533905,
+      "threshold": 0.6588206638657131,
+      "secondary_alpha_05": {
+        "tp": 299,
+        "fn": 301,
+        "fp": 39,
+        "tn": 561,
+        "recall": 0.49833333333333335,
+        "fpr": 0.065,
+        "macro_recall": 0.4983333333333333,
+        "macro_auroc": 0.8160833333333334,
+        "per_family_auroc": {
+          "among": 0.7104,
+          "harm": 0.9596,
+          "medqa": 0.8268000000000001,
+          "model": 0.9032,
+          "sandbagging": 0.8632000000000001,
+          "werewolf": 0.6333
+        },
+        "per_family_recall": {
+          "among": 0.13,
+          "harm": 0.69,
+          "medqa": 0.62,
+          "model": 0.73,
+          "sandbagging": 0.63,
+          "werewolf": 0.19
+        }
+      }
+    },
+    "random_08": {
+      "tp": 254,
+      "fn": 346,
+      "fp": 13,
+      "tn": 587,
+      "recall": 0.42333333333333334,
+      "fpr": 0.021666666666666667,
+      "macro_recall": 0.4233333333333334,
+      "macro_auroc": 0.8165333333333334,
+      "per_family_auroc": {
+        "among": 0.7059,
+        "harm": 0.9599,
+        "medqa": 0.8307,
+        "model": 0.8987,
+        "sandbagging": 0.8701,
+        "werewolf": 0.6339000000000001
+      },
+      "per_family_recall": {
+        "among": 0.05,
+        "harm": 0.62,
+        "medqa": 0.54,
+        "model": 0.68,
+        "sandbagging": 0.55,
+        "werewolf": 0.1
+      },
+      "fpr_upper_95": 0.03422732160092388,
+      "threshold": 0.6686531472031146,
+      "secondary_alpha_05": {
+        "tp": 303,
+        "fn": 297,
+        "fp": 37,
+        "tn": 563,
+        "recall": 0.505,
+        "fpr": 0.06166666666666667,
+        "macro_recall": 0.505,
+        "macro_auroc": 0.8165333333333334,
+        "per_family_auroc": {
+          "among": 0.7059,
+          "harm": 0.9599,
+          "medqa": 0.8307,
+          "model": 0.8987,
+          "sandbagging": 0.8701,
+          "werewolf": 0.6339000000000001
+        },
+        "per_family_recall": {
+          "among": 0.13,
+          "harm": 0.69,
+          "medqa": 0.64,
+          "model": 0.73,
+          "sandbagging": 0.65,
+          "werewolf": 0.19
+        }
+      }
+    },
+    "random_09": {
+      "tp": 254,
+      "fn": 346,
+      "fp": 13,
+      "tn": 587,
+      "recall": 0.42333333333333334,
+      "fpr": 0.021666666666666667,
+      "macro_recall": 0.4233333333333334,
+      "macro_auroc": 0.8175833333333333,
+      "per_family_auroc": {
+        "among": 0.7101,
+        "harm": 0.9588,
+        "medqa": 0.8306,
+        "model": 0.8992000000000001,
+        "sandbagging": 0.8676,
+        "werewolf": 0.6392
+      },
+      "per_family_recall": {
+        "among": 0.05,
+        "harm": 0.63,
+        "medqa": 0.54,
+        "model": 0.68,
+        "sandbagging": 0.54,
+        "werewolf": 0.1
+      },
+      "fpr_upper_95": 0.03422732160092388,
+      "threshold": 0.6651726545314767,
+      "secondary_alpha_05": {
+        "tp": 293,
+        "fn": 307,
+        "fp": 36,
+        "tn": 564,
+        "recall": 0.48833333333333334,
+        "fpr": 0.06,
+        "macro_recall": 0.48833333333333334,
+        "macro_auroc": 0.8175833333333333,
+        "per_family_auroc": {
+          "among": 0.7101,
+          "harm": 0.9588,
+          "medqa": 0.8306,
+          "model": 0.8992000000000001,
+          "sandbagging": 0.8676,
+          "werewolf": 0.6392
+        },
+        "per_family_recall": {
+          "among": 0.13,
+          "harm": 0.68,
+          "medqa": 0.62,
+          "model": 0.71,
+          "sandbagging": 0.63,
+          "werewolf": 0.16
+        }
+      }
+    },
+    "random_10": {
+      "tp": 254,
+      "fn": 346,
+      "fp": 14,
+      "tn": 586,
+      "recall": 0.42333333333333334,
+      "fpr": 0.023333333333333334,
+      "macro_recall": 0.42333333333333334,
+      "macro_auroc": 0.8182,
+      "per_family_auroc": {
+        "among": 0.7103,
+        "harm": 0.9594,
+        "medqa": 0.8318,
+        "model": 0.8996,
+        "sandbagging": 0.8654,
+        "werewolf": 0.6427
+      },
+      "per_family_recall": {
+        "among": 0.07,
+        "harm": 0.63,
+        "medqa": 0.54,
+        "model": 0.68,
+        "sandbagging": 0.52,
+        "werewolf": 0.1
+      },
+      "fpr_upper_95": 0.036237506269533905,
+      "threshold": 0.6637333954812538,
+      "secondary_alpha_05": {
+        "tp": 298,
+        "fn": 302,
+        "fp": 36,
+        "tn": 564,
+        "recall": 0.49666666666666665,
+        "fpr": 0.06,
+        "macro_recall": 0.49666666666666665,
+        "macro_auroc": 0.8182,
+        "per_family_auroc": {
+          "among": 0.7103,
+          "harm": 0.9594,
+          "medqa": 0.8318,
+          "model": 0.8996,
+          "sandbagging": 0.8654,
+          "werewolf": 0.6427
+        },
+        "per_family_recall": {
+          "among": 0.13,
+          "harm": 0.69,
+          "medqa": 0.64,
+          "model": 0.73,
+          "sandbagging": 0.63,
+          "werewolf": 0.16
+        }
+      }
+    },
+    "random_11": {
+      "tp": 249,
+      "fn": 351,
+      "fp": 14,
+      "tn": 586,
+      "recall": 0.415,
+      "fpr": 0.023333333333333334,
+      "macro_recall": 0.415,
+      "macro_auroc": 0.8199166666666665,
+      "per_family_auroc": {
+        "among": 0.7185,
+        "harm": 0.9607,
+        "medqa": 0.838,
+        "model": 0.8976000000000002,
+        "sandbagging": 0.865,
+        "werewolf": 0.6396999999999999
+      },
+      "per_family_recall": {
+        "among": 0.04,
+        "harm": 0.63,
+        "medqa": 0.54,
+        "model": 0.67,
+        "sandbagging": 0.51,
+        "werewolf": 0.1
+      },
+      "fpr_upper_95": 0.036237506269533905,
+      "threshold": 0.6734543644078227,
+      "secondary_alpha_05": {
+        "tp": 298,
+        "fn": 302,
+        "fp": 36,
+        "tn": 564,
+        "recall": 0.49666666666666665,
+        "fpr": 0.06,
+        "macro_recall": 0.4966666666666666,
+        "macro_auroc": 0.8199166666666665,
+        "per_family_auroc": {
+          "among": 0.7185,
+          "harm": 0.9607,
+          "medqa": 0.838,
+          "model": 0.8976000000000002,
+          "sandbagging": 0.865,
+          "werewolf": 0.6396999999999999
+        },
+        "per_family_recall": {
+          "among": 0.13,
+          "harm": 0.68,
+          "medqa": 0.65,
+          "model": 0.72,
+          "sandbagging": 0.63,
+          "werewolf": 0.17
+        }
+      }
+    },
+    "random_12": {
+      "tp": 250,
+      "fn": 350,
+      "fp": 14,
+      "tn": 586,
+      "recall": 0.4166666666666667,
+      "fpr": 0.023333333333333334,
+      "macro_recall": 0.4166666666666667,
+      "macro_auroc": 0.8191333333333334,
+      "per_family_auroc": {
+        "among": 0.7121,
+        "harm": 0.9605,
+        "medqa": 0.8327,
+        "model": 0.9007,
+        "sandbagging": 0.8656,
+        "werewolf": 0.6432
+      },
+      "per_family_recall": {
+        "among": 0.07,
+        "harm": 0.63,
+        "medqa": 0.53,
+        "model": 0.68,
+        "sandbagging": 0.5,
+        "werewolf": 0.09
+      },
+      "fpr_upper_95": 0.036237506269533905,
+      "threshold": 0.6677224763110985,
+      "secondary_alpha_05": {
+        "tp": 299,
+        "fn": 301,
+        "fp": 37,
+        "tn": 563,
+        "recall": 0.49833333333333335,
+        "fpr": 0.06166666666666667,
+        "macro_recall": 0.4983333333333333,
+        "macro_auroc": 0.8191333333333334,
+        "per_family_auroc": {
+          "among": 0.7121,
+          "harm": 0.9605,
+          "medqa": 0.8327,
+          "model": 0.9007,
+          "sandbagging": 0.8656,
+          "werewolf": 0.6432
+        },
+        "per_family_recall": {
+          "among": 0.13,
+          "harm": 0.69,
+          "medqa": 0.63,
+          "model": 0.74,
+          "sandbagging": 0.61,
+          "werewolf": 0.19
+        }
+      }
+    },
+    "random_13": {
+      "tp": 247,
+      "fn": 353,
+      "fp": 12,
+      "tn": 588,
+      "recall": 0.4116666666666667,
+      "fpr": 0.02,
+      "macro_recall": 0.4116666666666667,
+      "macro_auroc": 0.8179333333333333,
+      "per_family_auroc": {
+        "among": 0.7110000000000001,
+        "harm": 0.9607,
+        "medqa": 0.8338,
+        "model": 0.9004000000000001,
+        "sandbagging": 0.8652,
+        "werewolf": 0.6365000000000001
+      },
+      "per_family_recall": {
+        "among": 0.06,
+        "harm": 0.62,
+        "medqa": 0.54,
+        "model": 0.66,
+        "sandbagging": 0.49,
+        "werewolf": 0.1
+      },
+      "fpr_upper_95": 0.032203217818504715,
+      "threshold": 0.6777653756508532,
+      "secondary_alpha_05": {
+        "tp": 301,
+        "fn": 299,
+        "fp": 38,
+        "tn": 562,
+        "recall": 0.5016666666666667,
+        "fpr": 0.06333333333333334,
+        "macro_recall": 0.5016666666666667,
+        "macro_auroc": 0.8179333333333333,
+        "per_family_auroc": {
+          "among": 0.7110000000000001,
+          "harm": 0.9607,
+          "medqa": 0.8338,
+          "model": 0.9004000000000001,
+          "sandbagging": 0.8652,
+          "werewolf": 0.6365000000000001
+        },
+        "per_family_recall": {
+          "among": 0.14,
+          "harm": 0.69,
+          "medqa": 0.63,
+          "model": 0.73,
+          "sandbagging": 0.62,
+          "werewolf": 0.2
+        }
+      }
+    },
+    "random_14": {
+      "tp": 253,
+      "fn": 347,
+      "fp": 16,
+      "tn": 584,
+      "recall": 0.4216666666666667,
+      "fpr": 0.02666666666666667,
+      "macro_recall": 0.4216666666666667,
+      "macro_auroc": 0.8179666666666666,
+      "per_family_auroc": {
+        "among": 0.7167,
+        "harm": 0.9591000000000001,
+        "medqa": 0.8286,
+        "model": 0.8991,
+        "sandbagging": 0.8671,
+        "werewolf": 0.6371999999999999
+      },
+      "per_family_recall": {
+        "among": 0.05,
+        "harm": 0.63,
+        "medqa": 0.55,
+        "model": 0.66,
+        "sandbagging": 0.54,
+        "werewolf": 0.1
+      },
+      "fpr_upper_95": 0.040221356051514334,
+      "threshold": 0.6620128449749781,
+      "secondary_alpha_05": {
+        "tp": 295,
+        "fn": 305,
+        "fp": 35,
+        "tn": 565,
+        "recall": 0.49166666666666664,
+        "fpr": 0.058333333333333334,
+        "macro_recall": 0.49166666666666664,
+        "macro_auroc": 0.8179666666666666,
+        "per_family_auroc": {
+          "among": 0.7167,
+          "harm": 0.9591000000000001,
+          "medqa": 0.8286,
+          "model": 0.8991,
+          "sandbagging": 0.8671,
+          "werewolf": 0.6371999999999999
+        },
+        "per_family_recall": {
+          "among": 0.13,
+          "harm": 0.68,
+          "medqa": 0.63,
+          "model": 0.74,
+          "sandbagging": 0.61,
+          "werewolf": 0.16
+        }
+      }
+    },
+    "random_15": {
+      "tp": 258,
+      "fn": 342,
+      "fp": 16,
+      "tn": 584,
+      "recall": 0.43,
+      "fpr": 0.02666666666666667,
+      "macro_recall": 0.4300000000000001,
+      "macro_auroc": 0.81575,
+      "per_family_auroc": {
+        "among": 0.7108,
+        "harm": 0.9553,
+        "medqa": 0.8316,
+        "model": 0.8977,
+        "sandbagging": 0.8676999999999999,
+        "werewolf": 0.6314
+      },
+      "per_family_recall": {
+        "among": 0.07,
+        "harm": 0.63,
+        "medqa": 0.55,
+        "model": 0.68,
+        "sandbagging": 0.55,
+        "werewolf": 0.1
+      },
+      "fpr_upper_95": 0.040221356051514334,
+      "threshold": 0.6540623253295179,
+      "secondary_alpha_05": {
+        "tp": 299,
+        "fn": 301,
+        "fp": 36,
+        "tn": 564,
+        "recall": 0.49833333333333335,
+        "fpr": 0.06,
+        "macro_recall": 0.4983333333333333,
+        "macro_auroc": 0.81575,
+        "per_family_auroc": {
+          "among": 0.7108,
+          "harm": 0.9553,
+          "medqa": 0.8316,
+          "model": 0.8977,
+          "sandbagging": 0.8676999999999999,
+          "werewolf": 0.6314
+        },
+        "per_family_recall": {
+          "among": 0.13,
+          "harm": 0.68,
+          "medqa": 0.62,
+          "model": 0.74,
+          "sandbagging": 0.63,
+          "werewolf": 0.19
+        }
+      }
+    },
+    "random_16": {
+      "tp": 244,
+      "fn": 356,
+      "fp": 13,
+      "tn": 587,
+      "recall": 0.4066666666666667,
+      "fpr": 0.021666666666666667,
+      "macro_recall": 0.40666666666666673,
+      "macro_auroc": 0.8185333333333333,
+      "per_family_auroc": {
+        "among": 0.7137,
+        "harm": 0.9595999999999999,
+        "medqa": 0.8334,
+        "model": 0.8987999999999999,
+        "sandbagging": 0.8663000000000001,
+        "werewolf": 0.6394000000000001
+      },
+      "per_family_recall": {
+        "among": 0.05,
+        "harm": 0.62,
+        "medqa": 0.53,
+        "model": 0.66,
+        "sandbagging": 0.5,
+        "werewolf": 0.08
+      },
+      "fpr_upper_95": 0.03422732160092388,
+      "threshold": 0.6694369755043663,
+      "secondary_alpha_05": {
+        "tp": 303,
+        "fn": 297,
+        "fp": 35,
+        "tn": 565,
+        "recall": 0.505,
+        "fpr": 0.058333333333333334,
+        "macro_recall": 0.505,
+        "macro_auroc": 0.8185333333333333,
+        "per_family_auroc": {
+          "among": 0.7137,
+          "harm": 0.9595999999999999,
+          "medqa": 0.8334,
+          "model": 0.8987999999999999,
+          "sandbagging": 0.8663000000000001,
+          "werewolf": 0.6394000000000001
+        },
+        "per_family_recall": {
+          "among": 0.13,
+          "harm": 0.69,
+          "medqa": 0.64,
+          "model": 0.74,
+          "sandbagging": 0.63,
+          "werewolf": 0.2
+        }
+      }
+    },
+    "random_17": {
+      "tp": 251,
+      "fn": 349,
+      "fp": 15,
+      "tn": 585,
+      "recall": 0.41833333333333333,
+      "fpr": 0.025,
+      "macro_recall": 0.4183333333333334,
+      "macro_auroc": 0.8190666666666667,
+      "per_family_auroc": {
+        "among": 0.7151,
+        "harm": 0.9595,
+        "medqa": 0.8315000000000001,
+        "model": 0.9005,
+        "sandbagging": 0.8653,
+        "werewolf": 0.6425000000000001
+      },
+      "per_family_recall": {
+        "among": 0.05,
+        "harm": 0.63,
+        "medqa": 0.55,
+        "model": 0.67,
+        "sandbagging": 0.51,
+        "werewolf": 0.1
+      },
+      "fpr_upper_95": 0.03823513440325779,
+      "threshold": 0.6609664678837791,
+      "secondary_alpha_05": {
+        "tp": 294,
+        "fn": 306,
+        "fp": 37,
+        "tn": 563,
+        "recall": 0.49,
+        "fpr": 0.06166666666666667,
+        "macro_recall": 0.49,
+        "macro_auroc": 0.8190666666666667,
+        "per_family_auroc": {
+          "among": 0.7151,
+          "harm": 0.9595,
+          "medqa": 0.8315000000000001,
+          "model": 0.9005,
+          "sandbagging": 0.8653,
+          "werewolf": 0.6425000000000001
+        },
+        "per_family_recall": {
+          "among": 0.12,
+          "harm": 0.69,
+          "medqa": 0.62,
+          "model": 0.73,
+          "sandbagging": 0.63,
+          "werewolf": 0.15
+        }
+      }
+    },
+    "random_18": {
+      "tp": 254,
+      "fn": 346,
+      "fp": 15,
+      "tn": 585,
+      "recall": 0.42333333333333334,
+      "fpr": 0.025,
+      "macro_recall": 0.42333333333333334,
+      "macro_auroc": 0.8174333333333332,
+      "per_family_auroc": {
+        "among": 0.7098,
+        "harm": 0.9595,
+        "medqa": 0.8331999999999999,
+        "model": 0.8987999999999999,
+        "sandbagging": 0.8649,
+        "werewolf": 0.6384000000000001
+      },
+      "per_family_recall": {
+        "among": 0.07,
+        "harm": 0.64,
+        "medqa": 0.54,
+        "model": 0.67,
+        "sandbagging": 0.53,
+        "werewolf": 0.09
+      },
+      "fpr_upper_95": 0.03823513440325779,
+      "threshold": 0.6537010362697043,
+      "secondary_alpha_05": {
+        "tp": 296,
+        "fn": 304,
+        "fp": 37,
+        "tn": 563,
+        "recall": 0.49333333333333335,
+        "fpr": 0.06166666666666667,
+        "macro_recall": 0.49333333333333335,
+        "macro_auroc": 0.8174333333333332,
+        "per_family_auroc": {
+          "among": 0.7098,
+          "harm": 0.9595,
+          "medqa": 0.8331999999999999,
+          "model": 0.8987999999999999,
+          "sandbagging": 0.8649,
+          "werewolf": 0.6384000000000001
+        },
+        "per_family_recall": {
+          "among": 0.13,
+          "harm": 0.68,
+          "medqa": 0.63,
+          "model": 0.73,
+          "sandbagging": 0.61,
+          "werewolf": 0.18
+        }
+      }
+    },
+    "random_19": {
+      "tp": 255,
+      "fn": 345,
+      "fp": 15,
+      "tn": 585,
+      "recall": 0.425,
+      "fpr": 0.025,
+      "macro_recall": 0.42500000000000004,
+      "macro_auroc": 0.8186833333333333,
+      "per_family_auroc": {
+        "among": 0.7138999999999999,
+        "harm": 0.9593,
+        "medqa": 0.8343,
+        "model": 0.9003999999999999,
+        "sandbagging": 0.8662,
+        "werewolf": 0.638
+      },
+      "per_family_recall": {
+        "among": 0.05,
+        "harm": 0.63,
+        "medqa": 0.55,
+        "model": 0.69,
+        "sandbagging": 0.53,
+        "werewolf": 0.1
+      },
+      "fpr_upper_95": 0.03823513440325779,
+      "threshold": 0.6578115027744325,
+      "secondary_alpha_05": {
+        "tp": 300,
+        "fn": 300,
+        "fp": 38,
+        "tn": 562,
+        "recall": 0.5,
+        "fpr": 0.06333333333333334,
+        "macro_recall": 0.5,
+        "macro_auroc": 0.8186833333333333,
+        "per_family_auroc": {
+          "among": 0.7138999999999999,
+          "harm": 0.9593,
+          "medqa": 0.8343,
+          "model": 0.9003999999999999,
+          "sandbagging": 0.8662,
+          "werewolf": 0.638
+        },
+        "per_family_recall": {
+          "among": 0.13,
+          "harm": 0.69,
+          "medqa": 0.62,
+          "model": 0.73,
+          "sandbagging": 0.62,
+          "werewolf": 0.21
+        }
+      }
+    },
+    "ablation_confidence_only": {
+      "tp": 242,
+      "fn": 358,
+      "fp": 11,
+      "tn": 589,
+      "recall": 0.4033333333333333,
+      "fpr": 0.018333333333333333,
+      "macro_recall": 0.4033333333333334,
+      "macro_auroc": 0.8173833333333334,
+      "per_family_auroc": {
+        "among": 0.7123,
+        "harm": 0.9595,
+        "medqa": 0.8298,
+        "model": 0.9002000000000001,
+        "sandbagging": 0.8659999999999999,
+        "werewolf": 0.6364999999999998
+      },
+      "per_family_recall": {
+        "among": 0.05,
+        "harm": 0.6,
+        "medqa": 0.52,
+        "model": 0.66,
+        "sandbagging": 0.49,
+        "werewolf": 0.1
+      },
+      "fpr_upper_95": 0.030163560213745434,
+      "threshold": 0.6703611709548216,
+      "secondary_alpha_05": {
+        "tp": 299,
+        "fn": 301,
+        "fp": 36,
+        "tn": 564,
+        "recall": 0.49833333333333335,
+        "fpr": 0.06,
+        "macro_recall": 0.49833333333333335,
+        "macro_auroc": 0.8173833333333334,
+        "per_family_auroc": {
+          "among": 0.7123,
+          "harm": 0.9595,
+          "medqa": 0.8298,
+          "model": 0.9002000000000001,
+          "sandbagging": 0.8659999999999999,
+          "werewolf": 0.6364999999999998
+        },
+        "per_family_recall": {
+          "among": 0.15,
+          "harm": 0.69,
+          "medqa": 0.63,
+          "model": 0.73,
+          "sandbagging": 0.61,
+          "werewolf": 0.18
+        }
+      }
+    },
+    "ablation_coordinates_only": {
+      "tp": 259,
+      "fn": 341,
+      "fp": 18,
+      "tn": 582,
+      "recall": 0.43166666666666664,
+      "fpr": 0.03,
+      "macro_recall": 0.43166666666666664,
+      "macro_auroc": 0.8194666666666667,
+      "per_family_auroc": {
+        "among": 0.7176000000000001,
+        "harm": 0.9618,
+        "medqa": 0.8337000000000001,
+        "model": 0.8977999999999999,
+        "sandbagging": 0.8636999999999999,
+        "werewolf": 0.6422
+      },
+      "per_family_recall": {
+        "among": 0.05,
+        "harm": 0.65,
+        "medqa": 0.57,
+        "model": 0.69,
+        "sandbagging": 0.54,
+        "werewolf": 0.09
+      },
+      "fpr_upper_95": 0.0441633692121401,
+      "threshold": 0.6523342061954206,
+      "secondary_alpha_05": {
+        "tp": 290,
+        "fn": 310,
+        "fp": 36,
+        "tn": 564,
+        "recall": 0.48333333333333334,
+        "fpr": 0.06,
+        "macro_recall": 0.4833333333333334,
+        "macro_auroc": 0.8194666666666667,
+        "per_family_auroc": {
+          "among": 0.7176000000000001,
+          "harm": 0.9618,
+          "medqa": 0.8337000000000001,
+          "model": 0.8977999999999999,
+          "sandbagging": 0.8636999999999999,
+          "werewolf": 0.6422
+        },
+        "per_family_recall": {
+          "among": 0.13,
+          "harm": 0.68,
+          "medqa": 0.62,
+          "model": 0.72,
+          "sandbagging": 0.6,
+          "werewolf": 0.15
+        }
+      }
+    }
+  },
+  "wsp_minus_comparator_95_recall_fpr": {
+    "original": [
+      [
+        -0.03044993980738363,
+        0.043264909502383486
+      ],
+      [
+        -0.01520334579503361,
+        0.0210024650888007
+      ]
+    ],
+    "ordinary_train": [
+      [
+        -0.03044993980738363,
+        0.043264909502383486
+      ],
+      [
+        -0.01520334579503361,
+        0.0210024650888007
+      ]
+    ],
+    "ordinary_extra": [
+      [
+        -0.073344262295082,
+        0.055653920547537504
+      ],
+      [
+        -0.013268102085247641,
+        0.03877419169977731
+      ]
+    ]
+  },
+  "bootstrap_draws": 2000,
+  "bootstrap_scope": "paired source groups, including calibration; conditional on familiar families",
+  "prediction_counts": {
+    "score_calls": 54,
+    "score_rows": 48600
+  }
+}

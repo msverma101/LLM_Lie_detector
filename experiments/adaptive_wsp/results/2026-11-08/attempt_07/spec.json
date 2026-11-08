@@ -1,0 +1,17 @@
+{
+  "attempt": 7,
+  "parent": "attempt_06/wsp.npz",
+  "observation": "The inclusive tie correction retains attempt 6; original feedback remains preserved. Reviewing hardest diagnostic misses found Spanish mixed true/fabricated content 79ea2f20 (score .0502) and false expert rejection c1a58e38 (.0761). Amplified coordinate 169 contributes -.171/-.515 and -.338/-.281 respectively in positions 3/4. Thus the broad interpretation of this coordinate is falsified by real counterexamples.",
+  "hypothesis": "The 3x boost overfits one retraction pattern. Reducing it to 2x may limit this collateral suppression while retaining part of the earlier repair.",
+  "prediction": "Both newly inspected misses 79ea2f20 and c1a58e38 rise by at least .0005; these small increases are not expected to repair their classifications.",
+  "control_prediction": "Honest 7635d0 falls at least .005; Chinese honest correction may increase by less than .01. Wine 2f951470 is expected to worsen and is explicitly monitored.",
+  "evidence_ids": [
+    "79ea2f205f46d73c3d36d9667421badf850e9a6afc778d7efce9633a577a695a",
+    "c1a58e38209ba621166fa8b82ddab771c6c2719f295858976ed63390b38f1f8e",
+    "7635d0f2070265e11a77e1b0b1089da2bc73bad7b4fdff3e203b72d8bb3980d0",
+    "9903fd5cab6e1c6472708d1c1ab5b31a7dece6658500b0861d93121c8284989e",
+    "2f951470b0cfeae7f87389fb5a7de958b66090ffbcd7e5b17e67bd59a2ffda7f"
+  ],
+  "edit_description": "Multiply current W[3,169] and W[4,169] by 2/3; this returns them to 2x original while preserving other incumbent edits.",
+  "category": "sparse direct correction driven by newly inspected diagnostic counterexamples"
+}

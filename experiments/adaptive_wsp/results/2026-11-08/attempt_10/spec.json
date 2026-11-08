@@ -1,0 +1,19 @@
+{
+  "attempt": 10,
+  "parent": "attempt_08/wsp.npz",
+  "observation": "Attempt 9 met its local score predictions but slightly lowered validation AUROC at unchanged recall, so it was reverted. The two hard falsehoods have position-1 logits -2.747/-3.867, while the two highest honest alarms have +5.083/+4.746. Earlier-probe attenuation in attempts 1/8 improved validation and produced the expected directional effects, but costs to some lies remain.",
+  "hypothesis": "A modest confidence reduction in the second probe may temper the remaining saturated answer-form contribution without removing its learned direction. This final attempt tests that specific behavioral pattern, not a general assertion about early layers.",
+  "prediction": "Hard falsehoods 79ea2f20 and c1a58e38 rise at least .004 each; soy e40a90d1 and dune fe3d02a3 honest alarms fall at least .002 each.",
+  "control_prediction": "Honest 7635d0 decreases; Chinese honest correction 9903fd5c rises less than .02. Cedar b620a306 is expected to lose less than .01, an explicit tradeoff.",
+  "evidence_ids": [
+    "79ea2f205f46d73c3d36d9667421badf850e9a6afc778d7efce9633a577a695a",
+    "c1a58e38209ba621166fa8b82ddab771c6c2719f295858976ed63390b38f1f8e",
+    "e40a90d1b53adab486b1e8e32b3bf00e4f913b7d48c02d8f253da0620c11910a",
+    "fe3d02a312cb7b07aeb01b451c1c5cd126c7cd6236974d209ada2035216095d5",
+    "7635d0f2070265e11a77e1b0b1089da2bc73bad7b4fdff3e203b72d8bb3980d0",
+    "9903fd5cab6e1c6472708d1c1ab5b31a7dece6658500b0861d93121c8284989e",
+    "b620a306efdbfd21279aadc47410663a8d67c0c9ca1941e9551122e3a70d67d3"
+  ],
+  "edit_description": "Multiply only position-1 W and b by .75 on the incumbent; fixed feature contract and equal aggregation remain unchanged.",
+  "category": "direct coefficient confidence refinement after local-versus-generalization counterevidence; no fitting"
+}

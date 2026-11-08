@@ -1,0 +1,88 @@
+{
+  "file": "adaptive_wsp_complete.tar.xz",
+  "bytes": 99752164,
+  "sha256": "83506fce38d9789aad42eda6d8504aa7a1067337f43e198f1b4e4d4977c56605",
+  "parts": [
+    {
+      "name": "transfer_000.bin",
+      "bytes": 6291456,
+      "sha256": "7484c390653be8156f6c878a74258db1ef831e004ea2576395c7eb66bf2804ec"
+    },
+    {
+      "name": "transfer_001.bin",
+      "bytes": 6291456,
+      "sha256": "77de147ac9b4d4dfa7293894a661a6a94a3ccb8f55856e56120351b1b92c2439"
+    },
+    {
+      "name": "transfer_002.bin",
+      "bytes": 6291456,
+      "sha256": "a7c94117028d4ee5ae72cc00eb5eb0d0b0c25ba378119401486311e3809d6090"
+    },
+    {
+      "name": "transfer_003.bin",
+      "bytes": 6291456,
+      "sha256": "6ce63fcb385fdb270fe0801460f14d2d039130791708881da4e4eaafd23327c2"
+    },
+    {
+      "name": "transfer_004.bin",
+      "bytes": 6291456,
+      "sha256": "9e5ebe6228d12578c2b1cbedbd40c6243bd8323830ec13ddf89081d766d7350e"
+    },
+    {
+      "name": "transfer_005.bin",
+      "bytes": 6291456,
+      "sha256": "6493187290c1a2be42b92acf03437a923b45865dd3069659608a9e85ce04ac2b"
+    },
+    {
+      "name": "transfer_006.bin",
+      "bytes": 6291456,
+      "sha256": "7fe55877bdd4dc6c50b3fd11818578d824eeb2d608e199281f8b09c65afb1c91"
+    },
+    {
+      "name": "transfer_007.bin",
+      "bytes": 6291456,
+      "sha256": "505f6b076d3ea09b87df84daf6baa39921f72de51b47e50669d31fe03fa816ed"
+    },
+    {
+      "name": "transfer_008.bin",
+      "bytes": 6291456,
+      "sha256": "25f79559a785d85c786cad1ecf4ba1b0610942d7b300f8567e76f06766a15d69"
+    },
+    {
+      "name": "transfer_009.bin",
+      "bytes": 6291456,
+      "sha256": "54fe3cdc20f153730b8ca198c4ddc6d19ebf8256c519a30134a2385f83fdaeca"
+    },
+    {
+      "name": "transfer_010.bin",
+      "bytes": 6291456,
+      "sha256": "fba6af6158c60b093bc9abad1a2a134ec9fb203790e8d61821541920e0c2257e"
+    },
+    {
+      "name": "transfer_011.bin",
+      "bytes": 6291456,
+      "sha256": "d8acf2d7b7c6c8f66f3685ad878f134112411755af5ade1ab5d9121ce0cbd5fb"
+    },
+    {
+      "name": "transfer_012.bin",
+      "bytes": 6291456,
+      "sha256": "4039dc894a97281b9da507cfaeed515c7452ca9252827672d33a7c5d65724397"
+    },
+    {
+      "name": "transfer_013.bin",
+      "bytes": 6291456,
+      "sha256": "c98ed4175326348d298a69ac49c4de3fab9b900882bbf56d27b3316195f7614b"
+    },
+    {
+      "name": "transfer_014.bin",
+      "bytes": 6291456,
+      "sha256": "a039f092e9ab89387a9d229953344f995a8313306679c5282670c836d795a623"
+    },
+    {
+      "name": "transfer_015.bin",
+      "bytes": 5380324,
+      "sha256": "60fd805dd43932df60d625eca9e8bf95c80336a65589e2da232fa016c0e3b49c"
+    }
+  ],
+  "includes_raw_activations": true
+}

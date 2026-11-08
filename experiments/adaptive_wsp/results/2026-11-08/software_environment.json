@@ -1,0 +1,13 @@
+{
+  "python": "3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]",
+  "packages": {
+    "torch": "2.14.1+cu130",
+    "transformers": "5.22.1",
+    "numpy": "2.4.6",
+    "pandas": "2.2.3",
+    "scikit-learn": "1.6.1",
+    "scipy": "1.16.3",
+    "pyarrow": "23.0.1",
+    "huggingface-hub": "1.33.0"
+  }
+}

@@ -6,6 +6,8 @@ sequential coefficient-edit modules, using each outcome to decide the next edit.
 The monitored Qwen model is never edited. This is a FIBS-labelled pilot using our
 own linear ensemble; it is not the published EFC checkpoint.
 
+**Completed result:** the selected WSP candidate did not establish an improvement. See the [final report](REPORT.md) and [five-criterion audit](CRITERIA.md).
+
 The [prospective protocol](PROTOCOL.md) was committed before capture. Read the
 [numerical correction](SELECTION_PRECISION_NOTE.md) and the
 [supplementary attribution controls](SUPPLEMENTARY_ABLATION_NOTE.md) when evaluating

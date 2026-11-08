@@ -19,3 +19,8 @@ English, 9:47, built like a paper (abstract, introduction, methodology, results,
 ## Harness and preregistered experiment
 
 [Documentation of the `liedet` package](src/liedet/README.md): published FIBS probes, calibrated evaluation, LLM-proposed probe edits (WSP) and the first preregistered run (WSP not supported on 65 held-out facts). Plan, result note and raw data are under [`docs/`](docs/) and `docs/data/experiments/fibs-wsp-2026-11-07/`.
+
+
+### Adaptive WSP follow-up (8 November 2026)
+
+A fresh 3,400-example study completed ten adaptive detector-only coefficient edits with fixed features, separate calibration and a frozen final test. The selected WSP detector did not establish an improvement: recall 41.00% versus 42.33% original, with actual FPR 2.00% versus 2.67%. See the [full report](experiments/adaptive_wsp/REPORT.md), [five-criterion evidence audit](experiments/adaptive_wsp/CRITERIA.md) and [complete raw-data replay archive](https://github.com/msverma101/LLM_Lie_detector/releases/tag/adaptive-wsp-2026-11-08).
