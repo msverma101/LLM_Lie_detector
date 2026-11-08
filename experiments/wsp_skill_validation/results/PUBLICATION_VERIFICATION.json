@@ -1,0 +1,55 @@
+{
+  "verified_at_utc": "2026-11-08T19:17:34.188586+00:00",
+  "repository": "msverma101/LLM_Lie_detector",
+  "content_commit": "38003407512b9390f953b03fe00eec47fed07382",
+  "main_verified_at_publication": "38003407512b9390f953b03fe00eec47fed07382",
+  "release_url": "https://github.com/msverma101/LLM_Lie_detector/releases/tag/wsp-skill-validation-2026-11-08",
+  "release_tag": "wsp-skill-validation-2026-11-08",
+  "release_published_at": "2026-11-08T19:16:32Z",
+  "release_draft": false,
+  "assets": [
+    {
+      "name": "ARTIFACT_MANIFEST.json",
+      "bytes": 579,
+      "sha256": "db4c22c31579192196abf1572d99e5550f300d771f7a1729fc518f00732d774a",
+      "download_url": "https://github.com/msverma101/LLM_Lie_detector/releases/download/wsp-skill-validation-2026-11-08/ARTIFACT_MANIFEST.json",
+      "github_digest_matched": true
+    },
+    {
+      "name": "detector-weight-space-debugging.zip",
+      "bytes": 14768,
+      "sha256": "cec74c20db38e393700db3be95671368349d7120163d6d3cf712c83b5525a439",
+      "download_url": "https://github.com/msverma101/LLM_Lie_detector/releases/download/wsp-skill-validation-2026-11-08/detector-weight-space-debugging.zip",
+      "github_digest_matched": true
+    },
+    {
+      "name": "FIBS_WSP_SKILL_EXECUTED.ipynb",
+      "bytes": 347007,
+      "sha256": "36e3cf6f65eb23390f12e68a1caecffa9c7d141f0a1f8c61a431bb0a1f3d5acd",
+      "download_url": "https://github.com/msverma101/LLM_Lie_detector/releases/download/wsp-skill-validation-2026-11-08/FIBS_WSP_SKILL_EXECUTED.ipynb",
+      "github_digest_matched": true
+    },
+    {
+      "name": "replay_and_pack.py",
+      "bytes": 4791,
+      "sha256": "50df4d5bef52340abea748cc4b07f65f38842a915d310873c0f58bd4bb9a7083",
+      "download_url": "https://github.com/msverma101/LLM_Lie_detector/releases/download/wsp-skill-validation-2026-11-08/replay_and_pack.py",
+      "github_digest_matched": true
+    },
+    {
+      "name": "SHA256SUMS",
+      "bytes": 386,
+      "sha256": "b4a1929f186a548d3a6c762f7b16e8e1b6159efe925a5d3faf6a56b0ba13648e",
+      "download_url": "https://github.com/msverma101/LLM_Lie_detector/releases/download/wsp-skill-validation-2026-11-08/SHA256SUMS",
+      "github_digest_matched": true
+    },
+    {
+      "name": "wsp_skill_validation_complete.tar.xz",
+      "bytes": 76130956,
+      "sha256": "609964470fb090014e3ff7901a096ab5bec2cb619ffd3e0b6f5e97f336f9c127",
+      "download_url": "https://github.com/msverma101/LLM_Lie_detector/releases/download/wsp-skill-validation-2026-11-08/wsp_skill_validation_complete.tar.xz",
+      "github_digest_matched": true
+    }
+  ],
+  "verification_scope": "Local file size and SHA-256 compared against GitHub asset size/digest. Complete local raw-activation replay recorded separately; assets were not independently re-downloaded."
+}

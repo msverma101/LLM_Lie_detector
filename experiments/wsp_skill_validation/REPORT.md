@@ -153,6 +153,8 @@ provides the raw archive and portable skill. The executed notebook is a preserve
 Colab snapshot with transport-only cells/links removed and a labelled results
 preface; it is an execution record, not an assertion that rerunning opened holdouts
 constitutes a fresh experiment.
+All six published assets matched local byte counts and GitHub-reported SHA-256
+digests; see [publication verification](results/PUBLICATION_VERIFICATION.json).
 
 Group linkage uses recorded pair/run/first-user/exact-transcript identities;
 unrecorded semantic overlap and unavailable older team runs remain uncertain.
