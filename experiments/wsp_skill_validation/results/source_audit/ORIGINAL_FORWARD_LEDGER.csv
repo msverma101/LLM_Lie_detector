@@ -1,0 +1,390 @@
+request_id,type,model,ok,n_items,error
+1,generate,original,True,96,
+2,teacher_forced,original,True,8,
+3,teacher_forced,original,False,2,IndexError: tuple index out of range
+4,teacher_forced,original,True,8,
+5,generate,both,True,32,
+6,teacher_forced,original,False,1,IndexError: tuple index out of range
+7,generate,both,True,32,
+8,generate,both,True,32,
+9,generate,both,True,32,
+10,generate,both,True,32,
+11,generate,both,True,32,
+12,generate,both,False,32,ValueError: unknown practice ids: ['gsm8k_train3513']
+13,generate,both,True,128,
+14,generate,both,True,64,
+15,generate,both,False,64,"RuntimeError: generation worker failed:  self.llm_engine = LLMEngine.from_engine_args(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/llm_engine.py"", line 184, in from_engine_args
+    return cls(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/llm_engine.py"", line 109, in __init__
+    self.engine_core = EngineCoreClient.make_client(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/core_client.py"", line 122, in make_client
+    return SyncMPClient(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/tracing/otel.py"", line 178, in sync_wrapper
+    return func(*args, **kwargs)
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/core_client.py"", line 880, in __init__
+    super().__init__(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/core_client.py"", line 656, in __init__
+    with launch_core_engines(
+  File ""/.uv/python_install/cpython-3.10-linux-x86_64-gnu/lib/python3.10/contextlib.py"", line 142, in __exit__
+    next(self.gen)
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/utils.py"", line 1240, in launch_core_engines
+    wait_for_engine_startup(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/utils.py"", line 1320, in wait_for_engine_startup
+    raise RuntimeError(
+RuntimeError: Engine core initialization failed. See root cause above. Failed core proc(s): {}
+"
+16,generate,both,True,64,
+17,generate,both,False,64,"RuntimeError: generation worker failed:  self.llm_engine = LLMEngine.from_engine_args(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/llm_engine.py"", line 184, in from_engine_args
+    return cls(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/llm_engine.py"", line 109, in __init__
+    self.engine_core = EngineCoreClient.make_client(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/core_client.py"", line 122, in make_client
+    return SyncMPClient(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/tracing/otel.py"", line 178, in sync_wrapper
+    return func(*args, **kwargs)
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/core_client.py"", line 880, in __init__
+    super().__init__(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/core_client.py"", line 656, in __init__
+    with launch_core_engines(
+  File ""/.uv/python_install/cpython-3.10-linux-x86_64-gnu/lib/python3.10/contextlib.py"", line 142, in __exit__
+    next(self.gen)
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/utils.py"", line 1240, in launch_core_engines
+    wait_for_engine_startup(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/utils.py"", line 1320, in wait_for_engine_startup
+    raise RuntimeError(
+RuntimeError: Engine core initialization failed. See root cause above. Failed core proc(s): {}
+"
+18,generate,both,False,64,"RuntimeError: generation worker failed:  self.llm_engine = LLMEngine.from_engine_args(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/llm_engine.py"", line 184, in from_engine_args
+    return cls(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/llm_engine.py"", line 109, in __init__
+    self.engine_core = EngineCoreClient.make_client(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/core_client.py"", line 122, in make_client
+    return SyncMPClient(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/tracing/otel.py"", line 178, in sync_wrapper
+    return func(*args, **kwargs)
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/core_client.py"", line 880, in __init__
+    super().__init__(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/core_client.py"", line 656, in __init__
+    with launch_core_engines(
+  File ""/.uv/python_install/cpython-3.10-linux-x86_64-gnu/lib/python3.10/contextlib.py"", line 142, in __exit__
+    next(self.gen)
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/utils.py"", line 1240, in launch_core_engines
+    wait_for_engine_startup(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/utils.py"", line 1320, in wait_for_engine_startup
+    raise RuntimeError(
+RuntimeError: Engine core initialization failed. See root cause above. Failed core proc(s): {}
+"
+19,teacher_forced,original,True,2,
+20,teacher_forced,edited,True,2,
+21,generate,both,False,64,"RuntimeError: generation worker failed:  self.llm_engine = LLMEngine.from_engine_args(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/llm_engine.py"", line 184, in from_engine_args
+    return cls(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/llm_engine.py"", line 109, in __init__
+    self.engine_core = EngineCoreClient.make_client(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/core_client.py"", line 122, in make_client
+    return SyncMPClient(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/tracing/otel.py"", line 178, in sync_wrapper
+    return func(*args, **kwargs)
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/core_client.py"", line 880, in __init__
+    super().__init__(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/core_client.py"", line 656, in __init__
+    with launch_core_engines(
+  File ""/.uv/python_install/cpython-3.10-linux-x86_64-gnu/lib/python3.10/contextlib.py"", line 142, in __exit__
+    next(self.gen)
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/utils.py"", line 1240, in launch_core_engines
+    wait_for_engine_startup(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/utils.py"", line 1320, in wait_for_engine_startup
+    raise RuntimeError(
+RuntimeError: Engine core initialization failed. See root cause above. Failed core proc(s): {}
+"
+22,teacher_forced,edited,True,2,
+23,generate,both,False,64,"RuntimeError: generation worker failed:  self.llm_engine = LLMEngine.from_engine_args(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/llm_engine.py"", line 184, in from_engine_args
+    return cls(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/llm_engine.py"", line 109, in __init__
+    self.engine_core = EngineCoreClient.make_client(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/core_client.py"", line 122, in make_client
+    return SyncMPClient(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/tracing/otel.py"", line 178, in sync_wrapper
+    return func(*args, **kwargs)
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/core_client.py"", line 880, in __init__
+    super().__init__(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/core_client.py"", line 656, in __init__
+    with launch_core_engines(
+  File ""/.uv/python_install/cpython-3.10-linux-x86_64-gnu/lib/python3.10/contextlib.py"", line 142, in __exit__
+    next(self.gen)
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/utils.py"", line 1240, in launch_core_engines
+    wait_for_engine_startup(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/utils.py"", line 1320, in wait_for_engine_startup
+    raise RuntimeError(
+RuntimeError: Engine core initialization failed. See root cause above. Failed core proc(s): {}
+"
+24,teacher_forced,original,True,14,
+25,teacher_forced,edited,True,14,
+26,teacher_forced,edited,True,14,
+27,generate,both,True,128,
+28,generate,both,False,64,"RuntimeError: generation worker failed:  self.llm_engine = LLMEngine.from_engine_args(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/llm_engine.py"", line 184, in from_engine_args
+    return cls(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/llm_engine.py"", line 109, in __init__
+    self.engine_core = EngineCoreClient.make_client(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/core_client.py"", line 122, in make_client
+    return SyncMPClient(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/tracing/otel.py"", line 178, in sync_wrapper
+    return func(*args, **kwargs)
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/core_client.py"", line 880, in __init__
+    super().__init__(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/core_client.py"", line 656, in __init__
+    with launch_core_engines(
+  File ""/.uv/python_install/cpython-3.10-linux-x86_64-gnu/lib/python3.10/contextlib.py"", line 142, in __exit__
+    next(self.gen)
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/utils.py"", line 1240, in launch_core_engines
+    wait_for_engine_startup(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/utils.py"", line 1320, in wait_for_engine_startup
+    raise RuntimeError(
+RuntimeError: Engine core initialization failed. See root cause above. Failed core proc(s): {}
+"
+29,generate,both,True,128,
+30,generate,both,False,128,"RuntimeError: generation worker failed:  self.llm_engine = LLMEngine.from_engine_args(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/llm_engine.py"", line 184, in from_engine_args
+    return cls(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/llm_engine.py"", line 109, in __init__
+    self.engine_core = EngineCoreClient.make_client(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/core_client.py"", line 122, in make_client
+    return SyncMPClient(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/tracing/otel.py"", line 178, in sync_wrapper
+    return func(*args, **kwargs)
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/core_client.py"", line 880, in __init__
+    super().__init__(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/core_client.py"", line 656, in __init__
+    with launch_core_engines(
+  File ""/.uv/python_install/cpython-3.10-linux-x86_64-gnu/lib/python3.10/contextlib.py"", line 142, in __exit__
+    next(self.gen)
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/utils.py"", line 1240, in launch_core_engines
+    wait_for_engine_startup(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/utils.py"", line 1320, in wait_for_engine_startup
+    raise RuntimeError(
+RuntimeError: Engine core initialization failed. See root cause above. Failed core proc(s): {}
+"
+31,generate,both,False,128,"RuntimeError: generation worker failed:  self.llm_engine = LLMEngine.from_engine_args(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/llm_engine.py"", line 184, in from_engine_args
+    return cls(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/llm_engine.py"", line 109, in __init__
+    self.engine_core = EngineCoreClient.make_client(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/core_client.py"", line 122, in make_client
+    return SyncMPClient(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/tracing/otel.py"", line 178, in sync_wrapper
+    return func(*args, **kwargs)
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/core_client.py"", line 880, in __init__
+    super().__init__(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/core_client.py"", line 656, in __init__
+    with launch_core_engines(
+  File ""/.uv/python_install/cpython-3.10-linux-x86_64-gnu/lib/python3.10/contextlib.py"", line 142, in __exit__
+    next(self.gen)
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/utils.py"", line 1240, in launch_core_engines
+    wait_for_engine_startup(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/utils.py"", line 1320, in wait_for_engine_startup
+    raise RuntimeError(
+RuntimeError: Engine core initialization failed. See root cause above. Failed core proc(s): {}
+"
+32,teacher_forced,edited,True,14,
+33,generate,both,False,128,"RuntimeError: generation worker failed:  self.llm_engine = LLMEngine.from_engine_args(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/llm_engine.py"", line 184, in from_engine_args
+    return cls(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/llm_engine.py"", line 109, in __init__
+    self.engine_core = EngineCoreClient.make_client(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/core_client.py"", line 122, in make_client
+    return SyncMPClient(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/tracing/otel.py"", line 178, in sync_wrapper
+    return func(*args, **kwargs)
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/core_client.py"", line 880, in __init__
+    super().__init__(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/core_client.py"", line 656, in __init__
+    with launch_core_engines(
+  File ""/.uv/python_install/cpython-3.10-linux-x86_64-gnu/lib/python3.10/contextlib.py"", line 142, in __exit__
+    next(self.gen)
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/utils.py"", line 1240, in launch_core_engines
+    wait_for_engine_startup(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/utils.py"", line 1320, in wait_for_engine_startup
+    raise RuntimeError(
+RuntimeError: Engine core initialization failed. See root cause above. Failed core proc(s): {}
+"
+34,teacher_forced,edited,True,14,
+35,generate,both,True,64,
+36,generate,both,False,64,"RuntimeError: generation worker failed:  self.llm_engine = LLMEngine.from_engine_args(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/llm_engine.py"", line 184, in from_engine_args
+    return cls(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/llm_engine.py"", line 109, in __init__
+    self.engine_core = EngineCoreClient.make_client(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/core_client.py"", line 122, in make_client
+    return SyncMPClient(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/tracing/otel.py"", line 178, in sync_wrapper
+    return func(*args, **kwargs)
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/core_client.py"", line 880, in __init__
+    super().__init__(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/core_client.py"", line 656, in __init__
+    with launch_core_engines(
+  File ""/.uv/python_install/cpython-3.10-linux-x86_64-gnu/lib/python3.10/contextlib.py"", line 142, in __exit__
+    next(self.gen)
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/utils.py"", line 1240, in launch_core_engines
+    wait_for_engine_startup(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/utils.py"", line 1320, in wait_for_engine_startup
+    raise RuntimeError(
+RuntimeError: Engine core initialization failed. See root cause above. Failed core proc(s): {}
+"
+37,teacher_forced,edited,True,14,
+38,teacher_forced,edited,True,14,
+39,teacher_forced,edited,True,14,
+40,generate,both,False,64,"RuntimeError: generation worker failed:  self.llm_engine = LLMEngine.from_engine_args(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/llm_engine.py"", line 184, in from_engine_args
+    return cls(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/llm_engine.py"", line 109, in __init__
+    self.engine_core = EngineCoreClient.make_client(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/core_client.py"", line 122, in make_client
+    return SyncMPClient(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/tracing/otel.py"", line 178, in sync_wrapper
+    return func(*args, **kwargs)
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/core_client.py"", line 880, in __init__
+    super().__init__(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/core_client.py"", line 656, in __init__
+    with launch_core_engines(
+  File ""/.uv/python_install/cpython-3.10-linux-x86_64-gnu/lib/python3.10/contextlib.py"", line 142, in __exit__
+    next(self.gen)
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/utils.py"", line 1240, in launch_core_engines
+    wait_for_engine_startup(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/utils.py"", line 1320, in wait_for_engine_startup
+    raise RuntimeError(
+RuntimeError: Engine core initialization failed. See root cause above. Failed core proc(s): {}
+"
+41,generate,both,True,64,
+42,generate,both,True,64,
+43,generate,both,False,64,"RuntimeError: generation worker failed:  self.llm_engine = LLMEngine.from_engine_args(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/llm_engine.py"", line 184, in from_engine_args
+    return cls(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/llm_engine.py"", line 109, in __init__
+    self.engine_core = EngineCoreClient.make_client(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/core_client.py"", line 122, in make_client
+    return SyncMPClient(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/tracing/otel.py"", line 178, in sync_wrapper
+    return func(*args, **kwargs)
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/core_client.py"", line 880, in __init__
+    super().__init__(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/core_client.py"", line 656, in __init__
+    with launch_core_engines(
+  File ""/.uv/python_install/cpython-3.10-linux-x86_64-gnu/lib/python3.10/contextlib.py"", line 142, in __exit__
+    next(self.gen)
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/utils.py"", line 1240, in launch_core_engines
+    wait_for_engine_startup(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/utils.py"", line 1320, in wait_for_engine_startup
+    raise RuntimeError(
+RuntimeError: Engine core initialization failed. See root cause above. Failed core proc(s): {}
+"
+44,teacher_forced,edited,True,14,
+45,generate,both,True,64,
+46,generate,both,False,128,"RuntimeError: generation worker failed:  self.llm_engine = LLMEngine.from_engine_args(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/llm_engine.py"", line 184, in from_engine_args
+    return cls(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/llm_engine.py"", line 109, in __init__
+    self.engine_core = EngineCoreClient.make_client(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/core_client.py"", line 122, in make_client
+    return SyncMPClient(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/tracing/otel.py"", line 178, in sync_wrapper
+    return func(*args, **kwargs)
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/core_client.py"", line 880, in __init__
+    super().__init__(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/core_client.py"", line 656, in __init__
+    with launch_core_engines(
+  File ""/.uv/python_install/cpython-3.10-linux-x86_64-gnu/lib/python3.10/contextlib.py"", line 142, in __exit__
+    next(self.gen)
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/utils.py"", line 1240, in launch_core_engines
+    wait_for_engine_startup(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/utils.py"", line 1320, in wait_for_engine_startup
+    raise RuntimeError(
+RuntimeError: Engine core initialization failed. See root cause above. Failed core proc(s): {}
+"
+47,generate,both,False,64,"RuntimeError: generation worker failed:  self.llm_engine = LLMEngine.from_engine_args(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/llm_engine.py"", line 184, in from_engine_args
+    return cls(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/llm_engine.py"", line 109, in __init__
+    self.engine_core = EngineCoreClient.make_client(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/core_client.py"", line 122, in make_client
+    return SyncMPClient(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/tracing/otel.py"", line 178, in sync_wrapper
+    return func(*args, **kwargs)
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/core_client.py"", line 880, in __init__
+    super().__init__(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/core_client.py"", line 656, in __init__
+    with launch_core_engines(
+  File ""/.uv/python_install/cpython-3.10-linux-x86_64-gnu/lib/python3.10/contextlib.py"", line 142, in __exit__
+    next(self.gen)
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/utils.py"", line 1240, in launch_core_engines
+    wait_for_engine_startup(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/utils.py"", line 1320, in wait_for_engine_startup
+    raise RuntimeError(
+RuntimeError: Engine core initialization failed. See root cause above. Failed core proc(s): {}
+"
+48,teacher_forced,original,True,12,
+49,teacher_forced,edited,True,12,
+50,generate,both,True,64,
+51,generate,both,False,64,"RuntimeError: generation worker failed:  self.llm_engine = LLMEngine.from_engine_args(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/llm_engine.py"", line 184, in from_engine_args
+    return cls(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/llm_engine.py"", line 109, in __init__
+    self.engine_core = EngineCoreClient.make_client(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/core_client.py"", line 122, in make_client
+    return SyncMPClient(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/tracing/otel.py"", line 178, in sync_wrapper
+    return func(*args, **kwargs)
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/core_client.py"", line 880, in __init__
+    super().__init__(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/core_client.py"", line 656, in __init__
+    with launch_core_engines(
+  File ""/.uv/python_install/cpython-3.10-linux-x86_64-gnu/lib/python3.10/contextlib.py"", line 142, in __exit__
+    next(self.gen)
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/utils.py"", line 1240, in launch_core_engines
+    wait_for_engine_startup(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/utils.py"", line 1320, in wait_for_engine_startup
+    raise RuntimeError(
+RuntimeError: Engine core initialization failed. See root cause above. Failed core proc(s): {}
+"
+52,generate,both,True,64,
+53,generate,both,True,64,
+54,generate,both,True,64,
+55,generate,both,True,64,
+56,generate,both,True,64,
+57,generate,both,False,64,"RuntimeError: generation worker failed:  self.llm_engine = LLMEngine.from_engine_args(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/llm_engine.py"", line 184, in from_engine_args
+    return cls(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/llm_engine.py"", line 109, in __init__
+    self.engine_core = EngineCoreClient.make_client(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/core_client.py"", line 122, in make_client
+    return SyncMPClient(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/tracing/otel.py"", line 178, in sync_wrapper
+    return func(*args, **kwargs)
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/core_client.py"", line 880, in __init__
+    super().__init__(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/core_client.py"", line 656, in __init__
+    with launch_core_engines(
+  File ""/.uv/python_install/cpython-3.10-linux-x86_64-gnu/lib/python3.10/contextlib.py"", line 142, in __exit__
+    next(self.gen)
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/utils.py"", line 1240, in launch_core_engines
+    wait_for_engine_startup(
+  File ""<venvs>/llmrl/lib/python3.10/site-packages/vllm/v1/engine/utils.py"", line 1320, in wait_for_engine_startup
+    raise RuntimeError(
+RuntimeError: Engine core initialization failed. See root cause above. Failed core proc(s): {}
+"
+58,generate,both,True,64,
+59,generate,both,True,64,
+60,generate,both,True,64,
+61,generate,both,True,64,
+62,generate,both,True,64,
+63,generate,both,True,64,
+64,generate,both,True,64,
+65,generate,both,True,64,
+66,generate,both,True,64,
+67,generate,both,True,64,
+68,generate,both,True,64,
+69,generate,both,True,64,

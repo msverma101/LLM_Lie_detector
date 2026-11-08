@@ -1,0 +1,408 @@
+{
+  "source_repository": "https://github.com/RikiyaT/lm_understand-logs",
+  "revision": "4d09ba6d6a7e891dd8063974dfe81b3d78e3494f",
+  "verification_type": "recomputed released records; no independent inference",
+  "python_runs": 80,
+  "turns": 158,
+  "forward_requests": 69,
+  "successful_passes": 50,
+  "failed_requests": 19,
+  "successful_by_type": {
+    "generate": 34,
+    "teacher_forced": 16
+  },
+  "tool_log_span_hours": 20.31826467792193,
+  "initial_generations": 96,
+  "initial_accuracy": 0.11458333333333333,
+  "initial_failures": {
+    "wrong_answer": 0,
+    "no_answer_finished": 0,
+    "cut_at_max_tokens": 85
+  },
+  "touched_values_from_shapes": 131072,
+  "changed_bfloat16_values": 130188,
+  "confirmation_rows": 1152,
+  "confirmation_columns": [
+    "id",
+    "run",
+    "source",
+    "original",
+    "edited",
+    "delta",
+    "original_cut",
+    "edited_cut",
+    "original_tokens",
+    "edited_tokens"
+  ],
+  "confirmation": {
+    "original_correct": 122,
+    "edited_correct": 696,
+    "rescues": 579,
+    "regressions": 5,
+    "rescued_originally_cut": 576
+  },
+  "benchmarks": {
+    "math500": {
+      "unedited": {
+        "acc": 0.079,
+        "cut_share": 0.93,
+        "mean_tokens": 30868.4345,
+        "problems": 500,
+        "complete": true,
+        "acc_lenient": null
+      },
+      "p50c": {
+        "acc": 0.481,
+        "cut_share": 0.3305,
+        "mean_tokens": 22037.1475,
+        "problems": 500,
+        "complete": true,
+        "acc_lenient": null
+      }
+    },
+    "gsm8k": {
+      "unedited": {
+        "acc": 0.13836239575435935,
+        "cut_share": 0.8749052312357847,
+        "mean_tokens": 29288.653904473085,
+        "problems": 1319,
+        "complete": true,
+        "acc_lenient": null
+      },
+      "p50c": {
+        "acc": 0.6709628506444276,
+        "cut_share": 0.07240333586050038,
+        "mean_tokens": 11993.395375284306,
+        "problems": 1319,
+        "complete": true,
+        "acc_lenient": null
+      }
+    },
+    "ifeval": {
+      "unedited": {
+        "acc": 0.2097966728280961,
+        "cut_share": 0.7486136783733827,
+        "mean_tokens": 25296.210720887248,
+        "problems": 541,
+        "complete": true,
+        "acc_lenient": 0.2097966728280961
+      },
+      "p50c": {
+        "acc": 0.6229205175600739,
+        "cut_share": 0.022181146025878003,
+        "mean_tokens": 4240.579482439926,
+        "problems": 541,
+        "complete": true,
+        "acc_lenient": 0.6229205175600739
+      }
+    }
+  },
+  "consulted_files": [
+    {
+      "path": "LICENSE",
+      "sha256": "395f7febedfda6b5498ca36cfe3344d3986659ce4385dd8b03d2d75604250a8e",
+      "bytes": 1819,
+      "url": "https://github.com/RikiyaT/lm_understand-logs/blob/4d09ba6d6a7e891dd8063974dfe81b3d78e3494f/LICENSE"
+    },
+    {
+      "path": "README.md",
+      "sha256": "b1c51eeb9b9e2935ff227fdc7796c2a67bd3a55014cf99291224f9cc7b93d342",
+      "bytes": 6198,
+      "url": "https://github.com/RikiyaT/lm_understand-logs/blob/4d09ba6d6a7e891dd8063974dfe81b3d78e3494f/README.md"
+    },
+    {
+      "path": "exp4_fix_car/README.md",
+      "sha256": "97cf395dd262069b09137807c492fc96dee396f45505fd5df2ab4b85a71102ce",
+      "bytes": 6997,
+      "url": "https://github.com/RikiyaT/lm_understand-logs/blob/4d09ba6d6a7e891dd8063974dfe81b3d78e3494f/exp4_fix_car/README.md"
+    },
+    {
+      "path": "exp6_go_from_scratch/README.md",
+      "sha256": "835e03d29cae4041d41a6b822593434dd455fa331ba4611cee0ec47fa685a5b1",
+      "bytes": 8611,
+      "url": "https://github.com/RikiyaT/lm_understand-logs/blob/4d09ba6d6a7e891dd8063974dfe81b3d78e3494f/exp6_go_from_scratch/README.md"
+    },
+    {
+      "path": "exp8_math/README.md",
+      "sha256": "473e386ade21ff52240103003b6b125e4362d9fa11010916c1b770ddb0edcbbd",
+      "bytes": 13447,
+      "url": "https://github.com/RikiyaT/lm_understand-logs/blob/4d09ba6d6a7e891dd8063974dfe81b3d78e3494f/exp8_math/README.md"
+    },
+    {
+      "path": "exp8_math/code/apply_edit.py",
+      "sha256": "d2b627a6cf344f309cca4bcab4ff6ccc6ad1c8f29cabda78d11f99c19d1b1c5d",
+      "bytes": 3005,
+      "url": "https://github.com/RikiyaT/lm_understand-logs/blob/4d09ba6d6a7e891dd8063974dfe81b3d78e3494f/exp8_math/code/apply_edit.py"
+    },
+    {
+      "path": "exp8_math/code/build_ckpt.py",
+      "sha256": "da0759bd0a150392b7aaa330f9d242429f47b49c0f900d0d890c91832c9217db",
+      "bytes": 2437,
+      "url": "https://github.com/RikiyaT/lm_understand-logs/blob/4d09ba6d6a7e891dd8063974dfe81b3d78e3494f/exp8_math/code/build_ckpt.py"
+    },
+    {
+      "path": "exp8_math/code/evaluate.py",
+      "sha256": "c93f477c02b3ae0d6b37abe3afad8bb7353e273322ff963eec7ff2270012035d",
+      "bytes": 13371,
+      "url": "https://github.com/RikiyaT/lm_understand-logs/blob/4d09ba6d6a7e891dd8063974dfe81b3d78e3494f/exp8_math/code/evaluate.py"
+    },
+    {
+      "path": "exp8_math/code/make_edit_diff.py",
+      "sha256": "2bf84b497e308e07be94d969d6763cd8396de44cb0aaf5213a6b1075999287a1",
+      "bytes": 4641,
+      "url": "https://github.com/RikiyaT/lm_understand-logs/blob/4d09ba6d6a7e891dd8063974dfe81b3d78e3494f/exp8_math/code/make_edit_diff.py"
+    },
+    {
+      "path": "exp8_math/code/mathqa.py",
+      "sha256": "f0d576a1adc625dede7bff749b3bf8c9a5a8f6bae43d51e2d0ee36d694e89843",
+      "bytes": 25874,
+      "url": "https://github.com/RikiyaT/lm_understand-logs/blob/4d09ba6d6a7e891dd8063974dfe81b3d78e3494f/exp8_math/code/mathqa.py"
+    },
+    {
+      "path": "exp8_math/code/merge.py",
+      "sha256": "2ecd0420c929f721f547b8f189cf0a24343d960ed3b0e9b2892d9c7c8cede021",
+      "bytes": 2904,
+      "url": "https://github.com/RikiyaT/lm_understand-logs/blob/4d09ba6d6a7e891dd8063974dfe81b3d78e3494f/exp8_math/code/merge.py"
+    },
+    {
+      "path": "exp8_math/code/practice35.py",
+      "sha256": "6e19a615fd04d20af7641900c32198010a716939b91f926c7fe2c1cc781f99db",
+      "bytes": 3173,
+      "url": "https://github.com/RikiyaT/lm_understand-logs/blob/4d09ba6d6a7e891dd8063974dfe81b3d78e3494f/exp8_math/code/practice35.py"
+    },
+    {
+      "path": "exp8_math/code/profiles.py",
+      "sha256": "ba4be365e44c3e165b9c3982af9dbcd8ec94f7fd0430e5fd9de1d57f249a4ae4",
+      "bytes": 9144,
+      "url": "https://github.com/RikiyaT/lm_understand-logs/blob/4d09ba6d6a7e891dd8063974dfe81b3d78e3494f/exp8_math/code/profiles.py"
+    },
+    {
+      "path": "exp8_math/code/st_numpy.py",
+      "sha256": "3c4e532fb8edf374e1a4636aa806a04d062f824943eaf4bca0d3af5b0e7dca40",
+      "bytes": 2230,
+      "url": "https://github.com/RikiyaT/lm_understand-logs/blob/4d09ba6d6a7e891dd8063974dfe81b3d78e3494f/exp8_math/code/st_numpy.py"
+    },
+    {
+      "path": "exp8_math/eval/RESULTS_excerpt.md",
+      "sha256": "5f4e24a45b86ada2890ef999b7fca4b07c22765de4816a0aa3255f63288a4881",
+      "bytes": 6256,
+      "url": "https://github.com/RikiyaT/lm_understand-logs/blob/4d09ba6d6a7e891dd8063974dfe81b3d78e3494f/exp8_math/eval/RESULTS_excerpt.md"
+    },
+    {
+      "path": "exp8_math/eval/p50c/merged.json",
+      "sha256": "c93d3db30a612ef0da396014fdfbe011efbcf2cd417e2e6125664d7effdd0471",
+      "bytes": 1777,
+      "url": "https://github.com/RikiyaT/lm_understand-logs/blob/4d09ba6d6a7e891dd8063974dfe81b3d78e3494f/exp8_math/eval/p50c/merged.json"
+    },
+    {
+      "path": "exp8_math/eval/unedited/merged.json",
+      "sha256": "5c31370485b9f197f592745e935eeaee6b09dc127daa5b2a8be1ebbcbc210221",
+      "bytes": 1706,
+      "url": "https://github.com/RikiyaT/lm_understand-logs/blob/4d09ba6d6a7e891dd8063974dfe81b3d78e3494f/exp8_math/eval/unedited/merged.json"
+    },
+    {
+      "path": "exp8_math/gemma_followup/README.md",
+      "sha256": "a1920da492020d92a24439bbe5ffa711faf1c48e17b071d09a9bc3a26575e674",
+      "bytes": 5861,
+      "url": "https://github.com/RikiyaT/lm_understand-logs/blob/4d09ba6d6a7e891dd8063974dfe81b3d78e3494f/exp8_math/gemma_followup/README.md"
+    },
+    {
+      "path": "exp8_math/runs/p50c/edit/manifest.json",
+      "sha256": "83185c1db46e3dafb34af645f8c5ce033c09cc99d4512b9e1b8e3aba9d269225",
+      "bytes": 1326,
+      "url": "https://github.com/RikiyaT/lm_understand-logs/blob/4d09ba6d6a7e891dd8063974dfe81b3d78e3494f/exp8_math/runs/p50c/edit/manifest.json"
+    },
+    {
+      "path": "exp8_math/runs/p50c/final_answer.md",
+      "sha256": "497ea024210e9bbc10826756997ef41b454dd524390fff1b2d4cdec6782c30d1",
+      "bytes": 1409,
+      "url": "https://github.com/RikiyaT/lm_understand-logs/blob/4d09ba6d6a7e891dd8063974dfe81b3d78e3494f/exp8_math/runs/p50c/final_answer.md"
+    },
+    {
+      "path": "exp8_math/runs/p50c/instructions.md",
+      "sha256": "b33fe0624137cd6f190e42a8659046baf16261f3c29cd6455734523ba473afeb",
+      "bytes": 27,
+      "url": "https://github.com/RikiyaT/lm_understand-logs/blob/4d09ba6d6a7e891dd8063974dfe81b3d78e3494f/exp8_math/runs/p50c/instructions.md"
+    },
+    {
+      "path": "exp8_math/runs/p50c/loop.log",
+      "sha256": "fc8c53604339a6209b9ea8bdade3dac9c994ccb59c5f1456c450a2d75da60f2f",
+      "bytes": 23482,
+      "url": "https://github.com/RikiyaT/lm_understand-logs/blob/4d09ba6d6a7e891dd8063974dfe81b3d78e3494f/exp8_math/runs/p50c/loop.log"
+    },
+    {
+      "path": "exp8_math/runs/p50c/state.json",
+      "sha256": "3eaceeef9fac9324b330704873bd807dfa1abd26ec60938a2e042ab402875aa5",
+      "bytes": 3889,
+      "url": "https://github.com/RikiyaT/lm_understand-logs/blob/4d09ba6d6a7e891dd8063974dfe81b3d78e3494f/exp8_math/runs/p50c/state.json"
+    },
+    {
+      "path": "exp8_math/runs/p50c/tool_calls.jsonl",
+      "sha256": "4d772ae69caeb1099ee8d134375baa5738c8bdce20bc44236acd466d8c76c597",
+      "bytes": 601037,
+      "url": "https://github.com/RikiyaT/lm_understand-logs/blob/4d09ba6d6a7e891dd8063974dfe81b3d78e3494f/exp8_math/runs/p50c/tool_calls.jsonl"
+    },
+    {
+      "path": "exp8_math/runs/p50c/turns/t001/prompt.txt",
+      "sha256": "b676831fd616c469722e7e34accec542c12a5558eb7ff62e5d4a1722d6031aac",
+      "bytes": 10315,
+      "url": "https://github.com/RikiyaT/lm_understand-logs/blob/4d09ba6d6a7e891dd8063974dfe81b3d78e3494f/exp8_math/runs/p50c/turns/t001/prompt.txt"
+    },
+    {
+      "path": "exp8_math/runs/p50c/work_notes/attention_probe_request.json",
+      "sha256": "ede66b2b190ac0a82d8125bd1138621359c6cc7149ec1a8c3195e5a83a1250ca",
+      "bytes": 1633,
+      "url": "https://github.com/RikiyaT/lm_understand-logs/blob/4d09ba6d6a7e891dd8063974dfe81b3d78e3494f/exp8_math/runs/p50c/work_notes/attention_probe_request.json"
+    },
+    {
+      "path": "exp8_math/runs/p50c/work_notes/confirmation_through_pass49.csv",
+      "sha256": "ac182a35432e5dcf6380a2f7fd3d5b73925fe4395c0a96861065ffa1245fe407",
+      "bytes": 57355,
+      "url": "https://github.com/RikiyaT/lm_understand-logs/blob/4d09ba6d6a7e891dd8063974dfe81b3d78e3494f/exp8_math/runs/p50c/work_notes/confirmation_through_pass49.csv"
+    },
+    {
+      "path": "exp8_math/runs/p50c/work_notes/current_plan.json",
+      "sha256": "589b9bd47a100cf6ed81c2a4f23a2b9f115b1bb2dd5f2b2161968f2bb4f9f38a",
+      "bytes": 3343,
+      "url": "https://github.com/RikiyaT/lm_understand-logs/blob/4d09ba6d6a7e891dd8063974dfe81b3d78e3494f/exp8_math/runs/p50c/work_notes/current_plan.json"
+    },
+    {
+      "path": "exp8_math/runs/p50c/work_notes/eval_prompt_format.txt",
+      "sha256": "6aff9ff9c1f67cfa071fa85db87d3020acece233e90fcc3d80218587cb9066a4",
+      "bytes": 482,
+      "url": "https://github.com/RikiyaT/lm_understand-logs/blob/4d09ba6d6a7e891dd8063974dfe81b3d78e3494f/exp8_math/runs/p50c/work_notes/eval_prompt_format.txt"
+    },
+    {
+      "path": "exp8_math/runs/p50c/work_notes/experiment_history.md",
+      "sha256": "dfaec381b3832f3694bc2e203ad9cd08030dcd59f3b50a47e863780a0d029a0b",
+      "bytes": 51186,
+      "url": "https://github.com/RikiyaT/lm_understand-logs/blob/4d09ba6d6a7e891dd8063974dfe81b3d78e3494f/exp8_math/runs/p50c/work_notes/experiment_history.md"
+    },
+    {
+      "path": "exp8_math/runs/p50c/work_notes/final_choice.json",
+      "sha256": "42ce17c23a7396a3639f3fbdfeb7a7c602ee725bba6353b0bfcdde46c298a1c1",
+      "bytes": 564,
+      "url": "https://github.com/RikiyaT/lm_understand-logs/blob/4d09ba6d6a7e891dd8063974dfe81b3d78e3494f/exp8_math/runs/p50c/work_notes/final_choice.json"
+    },
+    {
+      "path": "exp8_math/runs/p50c/work_notes/final_confirmation.csv",
+      "sha256": "f3f4a1933ff7bcc3a9cc1e0ccf3dc7ce4e9c70ec4ef87052e6e20bc2cd96030f",
+      "bytes": 60769,
+      "url": "https://github.com/RikiyaT/lm_understand-logs/blob/4d09ba6d6a7e891dd8063974dfe81b3d78e3494f/exp8_math/runs/p50c/work_notes/final_confirmation.csv"
+    },
+    {
+      "path": "exp8_math/runs/p50c/work_notes/final_report.md",
+      "sha256": "d74088bc1ebe81aa00ebbef148dc40c446a99ec89c731b61b68a49061d452178",
+      "bytes": 3981,
+      "url": "https://github.com/RikiyaT/lm_understand-logs/blob/4d09ba6d6a7e891dd8063974dfe81b3d78e3494f/exp8_math/runs/p50c/work_notes/final_report.md"
+    },
+    {
+      "path": "exp8_math/runs/p50c/work_notes/fresh_splits.json",
+      "sha256": "b08197c17a5001caffa10957dddf253921f7b2bae312114dfa312828c5517274",
+      "bytes": 34258,
+      "url": "https://github.com/RikiyaT/lm_understand-logs/blob/4d09ba6d6a7e891dd8063974dfe81b3d78e3494f/exp8_math/runs/p50c/work_notes/fresh_splits.json"
+    },
+    {
+      "path": "exp8_math/runs/p50c/work_notes/frozen_edit_audit.json",
+      "sha256": "2f2729701a684c6bea58a5433df3497249a0e7c2ab12519b2dcb3e0789516c4e",
+      "bytes": 755,
+      "url": "https://github.com/RikiyaT/lm_understand-logs/blob/4d09ba6d6a7e891dd8063974dfe81b3d78e3494f/exp8_math/runs/p50c/work_notes/frozen_edit_audit.json"
+    },
+    {
+      "path": "exp8_math/runs/p50c/work_notes/frozen_eval_plan.json",
+      "sha256": "a5e78c6107aa393bb04b5067808b0a6223a1cb845089cefa21d4dfd373c670c3",
+      "bytes": 37374,
+      "url": "https://github.com/RikiyaT/lm_understand-logs/blob/4d09ba6d6a7e891dd8063974dfe81b3d78e3494f/exp8_math/runs/p50c/work_notes/frozen_eval_plan.json"
+    },
+    {
+      "path": "exp8_math/runs/p50c/work_notes/frozen_eval_progress.json",
+      "sha256": "800a92d08a81a37e90b4d6c696b0558f43911b5df7476c29738fe18886549f80",
+      "bytes": 9958,
+      "url": "https://github.com/RikiyaT/lm_understand-logs/blob/4d09ba6d6a7e891dd8063974dfe81b3d78e3494f/exp8_math/runs/p50c/work_notes/frozen_eval_progress.json"
+    },
+    {
+      "path": "exp8_math/runs/p50c/work_notes/frozen_subgroups_interim.json",
+      "sha256": "42037b404ce398269491bee7dd7b69f7ba1a116305c18bb9370ea43e93a66ed3",
+      "bytes": 2293,
+      "url": "https://github.com/RikiyaT/lm_understand-logs/blob/4d09ba6d6a7e891dd8063974dfe81b3d78e3494f/exp8_math/runs/p50c/work_notes/frozen_subgroups_interim.json"
+    },
+    {
+      "path": "exp8_math/runs/p50c/work_notes/frozen_weights_manifest.json",
+      "sha256": "f0a76e3cbebce1dd373a2f5e351368f3fdb51be70c494109edf8adc5452f3564",
+      "bytes": 2259,
+      "url": "https://github.com/RikiyaT/lm_understand-logs/blob/4d09ba6d6a7e891dd8063974dfe81b3d78e3494f/exp8_math/runs/p50c/work_notes/frozen_weights_manifest.json"
+    },
+    {
+      "path": "exp8_math/runs/p50c/work_notes/gen62_noanswer_audit.json",
+      "sha256": "beae62f6e24e9cad6da5528d5c5c6f22d5208c9dc13168cc3ecb4b42d3bfb4e6",
+      "bytes": 2248,
+      "url": "https://github.com/RikiyaT/lm_understand-logs/blob/4d09ba6d6a7e891dd8063974dfe81b3d78e3494f/exp8_math/runs/p50c/work_notes/gen62_noanswer_audit.json"
+    },
+    {
+      "path": "exp8_math/runs/p50c/work_notes/notes.md",
+      "sha256": "d74088bc1ebe81aa00ebbef148dc40c446a99ec89c731b61b68a49061d452178",
+      "bytes": 3981,
+      "url": "https://github.com/RikiyaT/lm_understand-logs/blob/4d09ba6d6a7e891dd8063974dfe81b3d78e3494f/exp8_math/runs/p50c/work_notes/notes.md"
+    },
+    {
+      "path": "exp8_math/runs/p50c/work_notes/notes_before_pass26.md",
+      "sha256": "3187817412b16bc172d864e521db6d3b7bd828bed821e0a9a6d1d4f1b8a60cde",
+      "bytes": 28900,
+      "url": "https://github.com/RikiyaT/lm_understand-logs/blob/4d09ba6d6a7e891dd8063974dfe81b3d78e3494f/exp8_math/runs/p50c/work_notes/notes_before_pass26.md"
+    },
+    {
+      "path": "exp8_math/runs/p50c/work_notes/probe_bounds.json",
+      "sha256": "079577e4d54eef81a9e460069b525d187499a932145e5e816d0c6ef6c6c31dc5",
+      "bytes": 114,
+      "url": "https://github.com/RikiyaT/lm_understand-logs/blob/4d09ba6d6a7e891dd8063974dfe81b3d78e3494f/exp8_math/runs/p50c/work_notes/probe_bounds.json"
+    },
+    {
+      "path": "exp8_math/runs/p50c/work_notes/splits.json",
+      "sha256": "b88db2a521c2497ebce42559c264be7311d184693a2055559931f57255190ac1",
+      "bytes": 16657,
+      "url": "https://github.com/RikiyaT/lm_understand-logs/blob/4d09ba6d6a7e891dd8063974dfe81b3d78e3494f/exp8_math/runs/p50c/work_notes/splits.json"
+    },
+    {
+      "path": "exp8_math/runs/p50c/work_notes/submission_evidence.json",
+      "sha256": "de3da918922f143489e4a66146cf6057d2adc8fffe9e6923d7263817b389c8f8",
+      "bytes": 9431,
+      "url": "https://github.com/RikiyaT/lm_understand-logs/blob/4d09ba6d6a7e891dd8063974dfe81b3d78e3494f/exp8_math/runs/p50c/work_notes/submission_evidence.json"
+    },
+    {
+      "path": "exp8_math/runs/p50c/work_notes/transfer_probe_bounds.json",
+      "sha256": "8e260e869f04551de679c75d9738b06a23fe02eada14fd942d2236aff808e685",
+      "bytes": 2694,
+      "url": "https://github.com/RikiyaT/lm_understand-logs/blob/4d09ba6d6a7e891dd8063974dfe81b3d78e3494f/exp8_math/runs/p50c/work_notes/transfer_probe_bounds.json"
+    },
+    {
+      "path": "exp8_math/runs/p50c/work_notes/transfer_probe_labels.json",
+      "sha256": "4bc3c0340e78b89292017491a427fe14ea17fc170d3644f6844bf11fec6814cb",
+      "bytes": 2192,
+      "url": "https://github.com/RikiyaT/lm_understand-logs/blob/4d09ba6d6a7e891dd8063974dfe81b3d78e3494f/exp8_math/runs/p50c/work_notes/transfer_probe_labels.json"
+    },
+    {
+      "path": "exp8_math/runs/p50c/work_notes/transfer_probe_request.json",
+      "sha256": "d940f18c3f2c2e530bb1f3b0b0e1a7391e675c802a68ddd1943b8d8c57847413",
+      "bytes": 6486,
+      "url": "https://github.com/RikiyaT/lm_understand-logs/blob/4d09ba6d6a7e891dd8063974dfe81b3d78e3494f/exp8_math/runs/p50c/work_notes/transfer_probe_request.json"
+    },
+    {
+      "path": "harness/codex_config.toml",
+      "sha256": "0ed095ea5be86d47daade93f8fac2d0fd102681b6e2d2e46273cdd70e30bf93c",
+      "bytes": 973,
+      "url": "https://github.com/RikiyaT/lm_understand-logs/blob/4d09ba6d6a7e891dd8063974dfe81b3d78e3494f/harness/codex_config.toml"
+    },
+    {
+      "path": "harness/instructions.md",
+      "sha256": "b33fe0624137cd6f190e42a8659046baf16261f3c29cd6455734523ba473afeb",
+      "bytes": 27,
+      "url": "https://github.com/RikiyaT/lm_understand-logs/blob/4d09ba6d6a7e891dd8063974dfe81b3d78e3494f/harness/instructions.md"
+    },
+    {
+      "path": "harness/sandbox.py",
+      "sha256": "f3e81f9ae9edac578a64b4f7d19e742beea2950866da969b41c576512cfbc46d",
+      "bytes": 3282,
+      "url": "https://github.com/RikiyaT/lm_understand-logs/blob/4d09ba6d6a7e891dd8063974dfe81b3d78e3494f/harness/sandbox.py"
+    }
+  ]
+}

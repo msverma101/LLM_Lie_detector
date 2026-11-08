@@ -1,0 +1,4 @@
+interface:
+  display_name: "Detector Weight-Space Debugging"
+  short_description: "Diagnose and test direct detector weight repairs"
+  default_prompt: "Use $detector-weight-space-debugging to investigate and test a targeted repair of our frozen-LLM activation detector."

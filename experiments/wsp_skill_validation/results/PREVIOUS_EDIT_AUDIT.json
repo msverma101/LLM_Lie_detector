@@ -1,0 +1,281 @@
+{
+  "scope": "retrospective form/integrity check, not new efficacy evaluation",
+  "attempts": [
+    {
+      "allowed": false,
+      "purpose": "repair",
+      "issues": [
+        "whole_probe_calibration:0"
+      ],
+      "changed_entries": 2049,
+      "probes": [
+        {
+          "probe": 0,
+          "changed_W_entries": 2048,
+          "delta_W_l2": 0.597235832352109,
+          "delta_b": -0.07758256732018323,
+          "best_scalar": 0.5,
+          "scalar_residual": 0.0,
+          "global_calibration": true
+        }
+      ],
+      "classification": "contains_global_calibration",
+      "mechanism_validated": false,
+      "attempt": 1,
+      "parent": "theta0.npz",
+      "original_decision": true
+    },
+    {
+      "allowed": true,
+      "purpose": "repair",
+      "issues": [],
+      "changed_entries": 2,
+      "probes": [
+        {
+          "probe": 3,
+          "changed_W_entries": 1,
+          "delta_W_l2": 0.1296569645035539,
+          "delta_b": 0.0,
+          "best_scalar": 1.0127435363891042,
+          "scalar_residual": 0.11008117594430586,
+          "global_calibration": false
+        },
+        {
+          "probe": 4,
+          "changed_W_entries": 1,
+          "delta_W_l2": 0.12474022376011976,
+          "delta_b": 0.0,
+          "best_scalar": 1.0112985471221068,
+          "scalar_residual": 0.10394546216613033,
+          "global_calibration": false
+        }
+      ],
+      "classification": "localized_or_directional",
+      "mechanism_validated": false,
+      "attempt": 2,
+      "parent": "attempt_01/wsp.npz",
+      "original_decision": true
+    },
+    {
+      "allowed": true,
+      "purpose": "repair",
+      "issues": [],
+      "changed_entries": 1,
+      "probes": [
+        {
+          "probe": 2,
+          "changed_W_entries": 1,
+          "delta_W_l2": 0.06590571588617378,
+          "delta_b": 0.0,
+          "best_scalar": 1.0034756161812497,
+          "scalar_residual": 0.058547375451934384,
+          "global_calibration": false
+        }
+      ],
+      "classification": "localized_or_directional",
+      "mechanism_validated": false,
+      "attempt": 3,
+      "parent": "attempt_02/wsp.npz",
+      "original_decision": true
+    },
+    {
+      "allowed": true,
+      "purpose": "repair",
+      "issues": [],
+      "changed_entries": 2,
+      "probes": [
+        {
+          "probe": 3,
+          "changed_W_entries": 1,
+          "delta_W_l2": 0.1296569645035539,
+          "delta_b": 0.0,
+          "best_scalar": 1.024548566140474,
+          "scalar_residual": 0.10486545665631225,
+          "global_calibration": false
+        },
+        {
+          "probe": 4,
+          "changed_W_entries": 1,
+          "delta_W_l2": 0.12474022376011978,
+          "delta_b": 0.0,
+          "best_scalar": 1.0218562622184493,
+          "scalar_residual": 0.09954396325899309,
+          "global_calibration": false
+        }
+      ],
+      "classification": "localized_or_directional",
+      "mechanism_validated": false,
+      "attempt": 4,
+      "parent": "attempt_03/wsp.npz",
+      "original_decision": true
+    },
+    {
+      "allowed": true,
+      "purpose": "repair",
+      "issues": [],
+      "changed_entries": 2,
+      "probes": [
+        {
+          "probe": 4,
+          "changed_W_entries": 1,
+          "delta_W_l2": 0.06208687704923836,
+          "delta_b": 0.0,
+          "best_scalar": 0.9974329875129245,
+          "scalar_residual": 0.05060062187331918,
+          "global_calibration": false
+        },
+        {
+          "probe": 5,
+          "changed_W_entries": 1,
+          "delta_W_l2": 0.054579787194903785,
+          "delta_b": 0.0,
+          "best_scalar": 0.9978403568950951,
+          "scalar_residual": 0.04642175186875519,
+          "global_calibration": false
+        }
+      ],
+      "classification": "localized_or_directional",
+      "mechanism_validated": false,
+      "attempt": 5,
+      "parent": "attempt_04/wsp.npz",
+      "original_decision": true
+    },
+    {
+      "allowed": true,
+      "purpose": "repair",
+      "issues": [],
+      "changed_entries": 2,
+      "probes": [
+        {
+          "probe": 4,
+          "changed_W_entries": 1,
+          "delta_W_l2": 0.0752790548501515,
+          "delta_b": 0.0,
+          "best_scalar": 0.9962165069678941,
+          "scalar_residual": 0.06139363332286113,
+          "global_calibration": false
+        },
+        {
+          "probe": 5,
+          "changed_W_entries": 1,
+          "delta_W_l2": 0.07010787490885556,
+          "delta_b": 0.0,
+          "best_scalar": 0.9964289917581951,
+          "scalar_residual": 0.0596511202069316,
+          "global_calibration": false
+        }
+      ],
+      "classification": "localized_or_directional",
+      "mechanism_validated": false,
+      "attempt": 6,
+      "parent": "attempt_05/wsp.npz",
+      "original_decision": false
+    },
+    {
+      "allowed": true,
+      "purpose": "repair",
+      "issues": [],
+      "changed_entries": 2,
+      "probes": [
+        {
+          "probe": 3,
+          "changed_W_entries": 1,
+          "delta_W_l2": 0.1296569645035539,
+          "delta_b": 0.0,
+          "best_scalar": 0.9653063492401226,
+          "scalar_residual": 0.10178851040389643,
+          "global_calibration": false
+        },
+        {
+          "probe": 4,
+          "changed_W_entries": 1,
+          "delta_W_l2": 0.12474022376011978,
+          "delta_b": 0.0,
+          "best_scalar": 0.9687157907830329,
+          "scalar_residual": 0.09720785972676337,
+          "global_calibration": false
+        }
+      ],
+      "classification": "localized_or_directional",
+      "mechanism_validated": false,
+      "attempt": 7,
+      "parent": "attempt_06/wsp.npz",
+      "original_decision": false
+    },
+    {
+      "allowed": false,
+      "purpose": "repair",
+      "issues": [
+        "whole_probe_calibration:0"
+      ],
+      "changed_entries": 2049,
+      "probes": [
+        {
+          "probe": 0,
+          "changed_W_entries": 2048,
+          "delta_W_l2": 0.2986179161760545,
+          "delta_b": -0.038791283660091616,
+          "best_scalar": 0.5,
+          "scalar_residual": 0.0,
+          "global_calibration": true
+        }
+      ],
+      "classification": "contains_global_calibration",
+      "mechanism_validated": false,
+      "attempt": 8,
+      "parent": "attempt_06/wsp.npz",
+      "original_decision": true
+    },
+    {
+      "allowed": true,
+      "purpose": "repair",
+      "issues": [],
+      "changed_entries": 1,
+      "probes": [
+        {
+          "probe": 2,
+          "changed_W_entries": 1,
+          "delta_W_l2": 0.04200931030898961,
+          "delta_b": 0.0,
+          "best_scalar": 0.9972048709234117,
+          "scalar_residual": 0.037279374883967445,
+          "global_calibration": false
+        }
+      ],
+      "classification": "localized_or_directional",
+      "mechanism_validated": false,
+      "attempt": 9,
+      "parent": "attempt_08/wsp.npz",
+      "original_decision": false
+    },
+    {
+      "allowed": false,
+      "purpose": "repair",
+      "issues": [
+        "whole_probe_calibration:1"
+      ],
+      "changed_entries": 2049,
+      "probes": [
+        {
+          "probe": 1,
+          "changed_W_entries": 2048,
+          "delta_W_l2": 0.27939192086286696,
+          "delta_b": -0.061494775907577376,
+          "best_scalar": 0.7500000000000002,
+          "scalar_residual": 2.272645748866258e-16,
+          "global_calibration": true
+        }
+      ],
+      "classification": "contains_global_calibration",
+      "mechanism_validated": false,
+      "attempt": 10,
+      "parent": "attempt_08/wsp.npz",
+      "original_decision": false
+    }
+  ],
+  "rejected_as_mechanistic": [
+    1,
+    8,
+    10
+  ]
+}
